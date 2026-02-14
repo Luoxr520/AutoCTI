@@ -1,0 +1,82 @@
+{
+    "CTI": {
+        "text": "A hacker installed a custom infotainment system in his Toyota that enabled control over the ignition module and the vehicle's AC. The infotainment also allowed the changing of the honk sound and allowed honking through the infotainment instead of the steering wheel. The vehicle had to be immobilized with its key fob for the device to work.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A hacker",
+                "relation": "installed",
+                "object": "a custom infotainment system"
+            },
+            {
+                "subject": "custom infotainment system",
+                "relation": "enabled control over",
+                "object": "the ignition module"
+            },
+            {
+                "subject": "custom infotainment system",
+                "relation": "enabled control over",
+                "object": "the vehicle's AC"
+            },
+            {
+                "subject": "custom infotainment system",
+                "relation": "allowed changing of",
+                "object": "the honk sound"
+            },
+            {
+                "subject": "custom infotainment system",
+                "relation": "allowed honking through",
+                "object": "the infotainment instead of the steering wheel"
+            },
+            {
+                "subject": "vehicle",
+                "relation": "had to be immobilized with",
+                "object": "its key fob for the device to work"
+            }
+        ],
+        "triples_count": 6,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2692,
+                "cost": 0.0021536
+            },
+            "output": {
+                "tokens": 180,
+                "cost": 0.00035999999999999997
+            },
+            "total": {
+                "tokens": 2872,
+                "cost": 0.0025136
+            }
+        },
+        "time": 10.569242000579834,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-18-QD1-d67.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: vultur.json",
+                    0.03917524009663868
+                ],
+                [
+                    "thehackernews: Xamalicious.json",
+                    0.045058133264831574
+                ],
+                [
+                    "darkreading: Microsoft-Outlook.json",
+                    0.04738535312195938
+                ],
+                [
+                    "AVERTIUM: CVE-2023-36884.json",
+                    0.06445283699866487
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

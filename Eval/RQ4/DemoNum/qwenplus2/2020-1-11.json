@@ -1,0 +1,72 @@
+{
+    "CTI": {
+        "text": "Motorcycle company, Royal Enfield, misconfigured a database revealing information of over 450 thousand customers in India who created a profile on the company's website. The information exposed included the names, emails, phone numbers, encrypted passwords, vehicle-related information, social media links of regular users,and additional details on the accounts of 1,470 \"privileged users\" dealers accounts.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Royal Enfield",
+                "relation": "misconfigured",
+                "object": "a database"
+            },
+            {
+                "subject": "the misconfigured database",
+                "relation": "revealed",
+                "object": "information of over 450 thousand customers"
+            },
+            {
+                "subject": "the exposed information",
+                "relation": "included",
+                "object": "names, emails, phone numbers, encrypted passwords, vehicle-related information, social media links"
+            },
+            {
+                "subject": "the exposed information",
+                "relation": "included",
+                "object": "additional details on the accounts of 1,470 privileged users dealers accounts"
+            }
+        ],
+        "triples_count": 4,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2429,
+                "cost": 0.0019432
+            },
+            "output": {
+                "tokens": 129,
+                "cost": 0.000258
+            },
+            "total": {
+                "tokens": 2558,
+                "cost": 0.0022012
+            }
+        },
+        "time": 6.806565046310425,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-1-11-QD1-168.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.09003780400606776
+                ],
+                [
+                    "darkreading: CitrixBleed.json",
+                    0.1020087836816546
+                ],
+                [
+                    "Google_TAG: iranian.json",
+                    0.10398437410437765
+                ],
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.14440285455752636
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

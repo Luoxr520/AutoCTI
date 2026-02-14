@@ -1,0 +1,77 @@
+{
+    "CTI": {
+        "text": "Surveillance cameras captured two men in black hoodies stealing a Volkswagen Golf sedan that was parked in a busy Chicago street. Experts assume the thieves used an electronic device to capture and relay the frequencies of the vehicle\u2019s key fob.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Surveillance cameras",
+                "relation": "captured",
+                "object": "two men in black hoodies"
+            },
+            {
+                "subject": "Two men in black hoodies",
+                "relation": "stole",
+                "object": "a Volkswagen Golf sedan"
+            },
+            {
+                "subject": "Volkswagen Golf sedan",
+                "relation": "was parked in",
+                "object": "a busy Chicago street"
+            },
+            {
+                "subject": "Thieves",
+                "relation": "used",
+                "object": "an electronic device"
+            },
+            {
+                "subject": "Electronic device",
+                "relation": "captured and relayed",
+                "object": "the frequencies of the vehicle\u2019s key fob"
+            }
+        ],
+        "triples_count": 5,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2497,
+                "cost": 0.0019976
+            },
+            "output": {
+                "tokens": 143,
+                "cost": 0.000286
+            },
+            "total": {
+                "tokens": 2640,
+                "cost": 0.0022836
+            }
+        },
+        "time": 8.352115869522095,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-10-4-QD1-42a.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Google_TAG: egypt.json",
+                    0.037875986472586456
+                ],
+                [
+                    "securityweek: screenconnect.json",
+                    0.0381545775746809
+                ],
+                [
+                    "threatPost: Hikvision.json",
+                    0.04698136454930388
+                ],
+                [
+                    "threatPost: zuorat.json",
+                    0.07064582101102984
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

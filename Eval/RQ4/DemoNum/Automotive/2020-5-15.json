@@ -1,0 +1,99 @@
+{
+    "CTI": {
+        "text": "A tool created by researchers enables steering control for Tesla models that were built without the Autopilot feature. The self-driving capabilities in these earlier Tesla models are limited by the gateway, and typically a message is sent indicating that steering over CAN is disabled. The newly created tool patches the firmware and alters the message to allow steering over CAN and connection to a Comma.ai device.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "A tool",
+                    "relation": "created by",
+                    "object": "researchers"
+                },
+                {
+                    "subject": "The tool",
+                    "relation": "enables",
+                    "object": "steering control for Tesla models"
+                },
+                {
+                    "subject": "Tesla models",
+                    "relation": "were built without",
+                    "object": "Autopilot feature"
+                },
+                {
+                    "subject": "self-driving capabilities",
+                    "relation": "are limited by",
+                    "object": "the gateway"
+                },
+                {
+                    "subject": "gateway",
+                    "relation": "sends",
+                    "object": "a message indicating that steering over CAN is disabled"
+                },
+                {
+                    "subject": "The tool",
+                    "relation": "patches",
+                    "object": "the firmware"
+                },
+                {
+                    "subject": "The tool",
+                    "relation": "alters",
+                    "object": "the message"
+                },
+                {
+                    "subject": "Altered message",
+                    "relation": "allows",
+                    "object": "steering over CAN"
+                },
+                {
+                    "subject": "Altered message",
+                    "relation": "allows connection to",
+                    "object": "a Comma.ai device"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3165,
+                "cost": 0.002532
+            },
+            "output": {
+                "tokens": 229,
+                "cost": 0.00045799999999999997
+            },
+            "total": {
+                "tokens": 3394,
+                "cost": 0.00299
+            }
+        },
+        "time": 10.379668474197388,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-15-QD1-4ce.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: purplefox.json",
+                    0.051844207085674165
+                ],
+                [
+                    "Unit42: PlugX.json",
+                    0.053885654923943316
+                ],
+                [
+                    "thehackernews: ESG.json",
+                    0.058616409640004856
+                ],
+                [
+                    "securityweek: vultur.json",
+                    0.09776538500137788
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

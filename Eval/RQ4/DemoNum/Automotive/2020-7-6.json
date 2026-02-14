@@ -1,0 +1,72 @@
+{
+    "CTI": {
+        "text": "Researchers discovered a LDAP injection vulnerability in Traccar GPS Tracking System. The issue occurs when user input is used in the LDAP search filter. By providing specially crafted input, an attacker can modify the logic of the LDAP query and get admin privileges.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "LDAP injection vulnerability",
+                "relation": "in",
+                "object": "Traccar GPS Tracking System"
+            },
+            {
+                "subject": "issue",
+                "relation": "occurs when",
+                "object": "user input is used in the LDAP search filter"
+            },
+            {
+                "subject": "attacker",
+                "relation": "can modify",
+                "object": "the logic of the LDAP query"
+            },
+            {
+                "subject": "attacker",
+                "relation": "can get",
+                "object": "admin privileges"
+            }
+        ],
+        "triples_count": 4,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 2228,
+                "cost": 0.0017824
+            },
+            "output": {
+                "tokens": 105,
+                "cost": 0.00020999999999999998
+            },
+            "total": {
+                "tokens": 2333,
+                "cost": 0.0019924
+            }
+        },
+        "time": 4.765225172042847,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-6-QD1-b91.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Follina.json",
+                    0.05817981576345445
+                ],
+                [
+                    "securityweek: wallescape.json",
+                    0.0697180520235145
+                ],
+                [
+                    "darkreading: Google-Patches.json",
+                    0.0739176322524036
+                ],
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.0751672072203894
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

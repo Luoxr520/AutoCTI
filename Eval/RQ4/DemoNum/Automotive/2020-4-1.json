@@ -1,0 +1,84 @@
+{
+    "CTI": {
+        "text": "The My Renault app had an unsecured S3 bucket that exposed the activity and private information of the app's hundreds of thousand users in India. The information included personal details of the customers such as: name, email, phone, address, login details and all of the recorded user interactions with the app and its services.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "The My Renault app",
+                    "relation": "had",
+                    "object": "an unsecured S3 bucket"
+                },
+                {
+                    "subject": "The unsecured S3 bucket",
+                    "relation": "exposed",
+                    "object": "the activity and private information of the app's users"
+                },
+                {
+                    "subject": "The app's users",
+                    "relation": "are located in",
+                    "object": "India"
+                },
+                {
+                    "subject": "The exposed information",
+                    "relation": "included",
+                    "object": "personal details of the customers"
+                },
+                {
+                    "subject": "The personal details",
+                    "relation": "include",
+                    "object": "name, email, phone, address, login details"
+                },
+                {
+                    "subject": "The exposed information",
+                    "relation": "included",
+                    "object": "all of the recorded user interactions with the app and its services"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2401,
+                "cost": 0.0019207999999999999
+            },
+            "output": {
+                "tokens": 182,
+                "cost": 0.00036399999999999996
+            },
+            "total": {
+                "tokens": 2583,
+                "cost": 0.0022848
+            }
+        },
+        "time": 12.431365489959717,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-4-1-QD1-95c.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Clop.json",
+                    0.07813501403999744
+                ],
+                [
+                    "Microsoft: app-installer.json",
+                    0.09369505789767348
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.09451629521278032
+                ],
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.16496871730044854
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

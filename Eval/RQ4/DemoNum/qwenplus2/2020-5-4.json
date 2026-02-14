@@ -1,0 +1,119 @@
+{
+    "CTI": {
+        "text": "Security experts have discovered old Tesla car parts for sale on eBay that still contained user data belonging to the previous owner, in a sign that the firm\u2019s retrofitting service is failing customers on privacy. Some of the resold infotainment contents were phone books, hundreds of call log entries, calendar entries, home, and work locations. The units were loaded with Gmail accounts, YouTube, and Netflix session cookies. The researcher also discovered readable Wi-Fi and Spotify passwords.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "old Tesla car parts",
+                    "relation": "for sale on",
+                    "object": "eBay"
+                },
+                {
+                    "subject": "old Tesla car parts",
+                    "relation": "contained",
+                    "object": "user data"
+                },
+                {
+                    "subject": "user data",
+                    "relation": "belonging to",
+                    "object": "the previous owner"
+                },
+                {
+                    "subject": "Tesla retrofitting service",
+                    "relation": "failing customers on",
+                    "object": "privacy"
+                },
+                {
+                    "subject": "resold infotainment contents",
+                    "relation": "included",
+                    "object": "phone books"
+                },
+                {
+                    "subject": "resold infotainment contents",
+                    "relation": "included",
+                    "object": "call log entries"
+                },
+                {
+                    "subject": "resold infotainment contents",
+                    "relation": "included",
+                    "object": "calendar entries"
+                },
+                {
+                    "subject": "resold infotainment contents",
+                    "relation": "included",
+                    "object": "home and work locations"
+                },
+                {
+                    "subject": "units",
+                    "relation": "loaded with",
+                    "object": "Gmail accounts"
+                },
+                {
+                    "subject": "units",
+                    "relation": "loaded with",
+                    "object": "YouTube session cookies"
+                },
+                {
+                    "subject": "units",
+                    "relation": "loaded with",
+                    "object": "Netflix session cookies"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "discovered",
+                    "object": "readable Wi-Fi passwords"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "discovered",
+                    "object": "readable Spotify passwords"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2613,
+                "cost": 0.0020904
+            },
+            "output": {
+                "tokens": 404,
+                "cost": 0.000808
+            },
+            "total": {
+                "tokens": 3017,
+                "cost": 0.0028984
+            }
+        },
+        "time": 22.534427165985107,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-4-QD1-f28.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: wallescape.json",
+                    0.04376318481311072
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.0502911458972387
+                ],
+                [
+                    "symantec: Log4j.json",
+                    0.06291223658362081
+                ],
+                [
+                    "Google_TAG: iranian.json",
+                    0.07085739444076476
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

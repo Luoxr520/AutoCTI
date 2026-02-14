@@ -1,0 +1,82 @@
+{
+    "CTI": {
+        "text": "Researchers analyzed Tesla's undocumented API and found unique exploits to control the Tesla Model S vehicle remotely through the API. The researchers demonstrated that they could control the vehicle's motion and steering through the API, and that they were able to unlock the vehicle and flash the vehicle's headlights using the same method.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Researchers",
+                "relation": "analyzed",
+                "object": "Tesla's undocumented API"
+            },
+            {
+                "subject": "Tesla's undocumented API",
+                "relation": "has",
+                "object": "unique exploits"
+            },
+            {
+                "subject": "unique exploits",
+                "relation": "allow",
+                "object": "remote control of Tesla Model S"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "demonstrated",
+                "object": "control over vehicle's motion and steering"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "were able to",
+                "object": "unlock the vehicle"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "were able to",
+                "object": "flash the vehicle's headlights"
+            }
+        ],
+        "triples_count": 6,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2622,
+                "cost": 0.0020976
+            },
+            "output": {
+                "tokens": 147,
+                "cost": 0.000294
+            },
+            "total": {
+                "tokens": 2769,
+                "cost": 0.0023916
+            }
+        },
+        "time": 8.339430570602417,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-11-2-QD1-24d.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.04055975190994369
+                ],
+                [
+                    "Unit42: Diplomats-Beware.json",
+                    0.0525243774900777
+                ],
+                [
+                    "BleepingComputer: gitlab.json",
+                    0.058547041678787465
+                ],
+                [
+                    "symantec: Graphican.json",
+                    0.14711061304101683
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

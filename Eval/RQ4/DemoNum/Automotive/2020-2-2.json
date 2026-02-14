@@ -1,0 +1,51 @@
+{
+    "CTI": {
+        "text": "An artist manipulated Google Maps' navigation system by slowly pulling a wagon filled with 99 phones through a vacant Berlin street. The hacker/artist tricked the maps app into \u201cthinking\u201d there was a traffic gridlock, essentially creating a virtual traffic jam. Because of this manipulated \u201ctraffic jam\u201d, the app redirected vehicles to alternative routes perceived by the app as more efficient. If replicated, this could create real traffic jams in those rerouted areas and slow down traffic in a city.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [],
+        "triples_count": 0,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2523,
+                "cost": 0.0020184
+            },
+            "output": {
+                "tokens": 5,
+                "cost": 9.999999999999999e-06
+            },
+            "total": {
+                "tokens": 2528,
+                "cost": 0.0020284
+            }
+        },
+        "time": 1.4246950149536133,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-2-2-QD1-db8.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: app-installer.json",
+                    0.04078781901962546
+                ],
+                [
+                    "threatPost: Hijacker.json",
+                    0.05048146995286832
+                ],
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.055422766201330145
+                ],
+                [
+                    "Unit42: CryptoClippy.json",
+                    0.0638955445336142
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

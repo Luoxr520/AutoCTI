@@ -1,0 +1,202 @@
+{
+    "CTI": {
+        "text": "Security researchers have spotted a recent increase in attacks involving a sophisticated new variant of Jupyter, an information stealer that has been targeting users of Chrome, Edge, and Firefox browsers since at least 2020. The malware, also referred to as Yellow Cockatoo, Solarmarker, and Polazert, can backdoor machines and harvest a variety of credential information, including computer name, the user's admin privileges, cookies, Web data, browser password manager information, and other sensitive data from victim systems - such as logins for crypto-wallets and remote access apps. Researchers from VMware's Carbon Black managed detection and response (MDR) service recently observed the new version of the malware leveraging PowerShell command modifications and legitimate-looking, digitally signed payloads, infecting a steadily rising number of systems since late October. Morphisec and BlackBerry \u2014 two other vendors that have previously tracked Jupyter \u2014 have identified the malware as capable of functioning as a full-fledged backdoor. They have described its capabilities as including support for command and control (C2) communications, acting as a dropper and loader for other malware, hollowing shell code to evade detection, and executing PowerShell scripts and commands. BlackBerry has reported observing Jupyter also targeting crypto-wallets, such as Ethereum Wallet, MyMonero Wallet, and Atomic Wallet, in addition to accessing OpenVPN, Remote Desktop Protocol, and other remote access applications.",
+        "link": "https://www.darkreading.com/cyberattacks-data-breaches/evasive-jupyter-infostealer-campaign-dangerous-variant"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Jupyter",
+                "relation": "is a",
+                "object": "information stealer"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "also referred to as",
+                "object": "Yellow Cockatoo"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "also referred to as",
+                "object": "Solarmarker"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "also referred to as",
+                "object": "Polazert"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "targets users of",
+                "object": "Chrome, Edge, and Firefox browsers"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "can backdoor",
+                "object": "machines"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "harvests",
+                "object": "credential information"
+            },
+            {
+                "subject": "credential information",
+                "relation": "includes",
+                "object": "computer name"
+            },
+            {
+                "subject": "credential information",
+                "relation": "includes",
+                "object": "user's admin privileges"
+            },
+            {
+                "subject": "credential information",
+                "relation": "includes",
+                "object": "cookies"
+            },
+            {
+                "subject": "credential information",
+                "relation": "includes",
+                "object": "Web data"
+            },
+            {
+                "subject": "credential information",
+                "relation": "includes",
+                "object": "browser password manager information"
+            },
+            {
+                "subject": "credential information",
+                "relation": "includes",
+                "object": "logins for crypto-wallets"
+            },
+            {
+                "subject": "credential information",
+                "relation": "includes",
+                "object": "remote access apps"
+            },
+            {
+                "subject": "new version of Jupyter",
+                "relation": "leverages",
+                "object": "PowerShell command modifications"
+            },
+            {
+                "subject": "new version of Jupyter",
+                "relation": "uses",
+                "object": "legitimate-looking, digitally signed payloads"
+            },
+            {
+                "subject": "VMware's Carbon Black MDR service",
+                "relation": "observed",
+                "object": "new version of the malware"
+            },
+            {
+                "subject": "Morphisec and BlackBerry",
+                "relation": "have tracked",
+                "object": "Jupyter"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "functions as",
+                "object": "full-fledged backdoor"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "supports",
+                "object": "command and control (C2) communications"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "acts as",
+                "object": "dropper and loader for other malware"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "hollows",
+                "object": "shell code to evade detection"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "executes",
+                "object": "PowerShell scripts and commands"
+            },
+            {
+                "subject": "BlackBerry",
+                "relation": "reported observing",
+                "object": "Jupyter targeting crypto-wallets"
+            },
+            {
+                "subject": "crypto-wallets targeted by Jupyter",
+                "relation": "include",
+                "object": "Ethereum Wallet"
+            },
+            {
+                "subject": "crypto-wallets targeted by Jupyter",
+                "relation": "include",
+                "object": "MyMonero Wallet"
+            },
+            {
+                "subject": "crypto-wallets targeted by Jupyter",
+                "relation": "include",
+                "object": "Atomic Wallet"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "accesses",
+                "object": "OpenVPN"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "accesses",
+                "object": "Remote Desktop Protocol"
+            },
+            {
+                "subject": "Jupyter",
+                "relation": "accesses",
+                "object": "other remote access applications"
+            }
+        ],
+        "triples_count": 30,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3221,
+                "cost": 0.0025767999999999998
+            },
+            "output": {
+                "tokens": 759,
+                "cost": 0.001518
+            },
+            "total": {
+                "tokens": 3980,
+                "cost": 0.0040948
+            }
+        },
+        "time": 47.667311906814575,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\darkreading\\Jupyter-Infostealer-QD1-bdf.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "thehackernews: Rugmi.json",
+                    0.1130079957348192
+                ],
+                [
+                    "securityweek: screenconnect.json",
+                    0.11657393055465957
+                ],
+                [
+                    "thehackernews: JinxLoader.json",
+                    0.12453916212660286
+                ],
+                [
+                    "Unit42: CryptoClippy.json",
+                    0.17180355314040152
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

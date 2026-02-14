@@ -1,0 +1,102 @@
+{
+    "CTI": {
+        "text": "Since mid-November 2023, Microsoft Threat Intelligence has observed threat actors, including financially motivated actors like Storm-0569, Storm-1113, Sangria Tempest, and Storm-1674, utilizing the ms-appinstaller URI scheme (App Installer) to distribute malware. In addition to ensuring that customers are protected from observed attacker activity, Microsoft investigated the use of App Installer in these attacks. In response to this activity, Microsoft has disabled the ms-appinstaller protocol handler by default. The observed threat actor activity abuses the current implementation of the ms-appinstaller protocol handler as an access vector for malware that may lead to ransomware distribution. Multiple cybercriminals are also selling a malware kit as a service that abuses the MSIX file format and ms-appinstaller protocol handler. These threat actors distribute signed malicious MSIX application packages using websites accessed through malicious advertisements for legitimate popular software. A second vector of phishing through Microsoft Teams is also in use by Storm-1674.",
+        "link": "https://www.microsoft.com/en-us/security/blog/2023/12/28/financially-motivated-threat-actors-misusing-app-installer/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Microsoft Threat Intelligence",
+                "relation": "has observed",
+                "object": "threat actors utilizing the ms-appinstaller URI scheme"
+            },
+            {
+                "subject": "threat actors",
+                "relation": "include",
+                "object": "financially motivated actors like Storm-0569, Storm-1113, Sangria Tempest, and Storm-1674"
+            },
+            {
+                "subject": "threat actors",
+                "relation": "utilize",
+                "object": "ms-appinstaller URI scheme (App Installer) to distribute malware"
+            },
+            {
+                "subject": "Microsoft",
+                "relation": "investigated",
+                "object": "the use of App Installer in these attacks"
+            },
+            {
+                "subject": "Microsoft",
+                "relation": "has disabled",
+                "object": "the ms-appinstaller protocol handler by default"
+            },
+            {
+                "subject": "observed threat actor activity",
+                "relation": "abuses",
+                "object": "the current implementation of the ms-appinstaller protocol handler as an access vector for malware"
+            },
+            {
+                "subject": "malware",
+                "relation": "may lead to",
+                "object": "ransomware distribution"
+            },
+            {
+                "subject": "cybercriminals",
+                "relation": "are selling",
+                "object": "a malware kit as a service that abuses the MSIX file format and ms-appinstaller protocol handler"
+            },
+            {
+                "subject": "threat actors",
+                "relation": "distribute",
+                "object": "signed malicious MSIX application packages using websites accessed through malicious advertisements for legitimate popular software"
+            },
+            {
+                "subject": "Storm-1674",
+                "relation": "uses",
+                "object": "phishing through Microsoft Teams"
+            }
+        ],
+        "triples_count": 10,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3047,
+                "cost": 0.0024376
+            },
+            "output": {
+                "tokens": 341,
+                "cost": 0.000682
+            },
+            "total": {
+                "tokens": 3388,
+                "cost": 0.0031195999999999997
+            }
+        },
+        "time": 17.245117664337158,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\Microsoft\\app-installer-QD1-bb6.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: diamond-sleet.json",
+                    0.11715630186787497
+                ],
+                [
+                    "AVERTIUM: mallox.json",
+                    0.12876887316392452
+                ],
+                [
+                    "symantec: Follina.json",
+                    0.17125762592487073
+                ],
+                [
+                    "Microsoft: malware-distributor.json",
+                    0.3527168512943631
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

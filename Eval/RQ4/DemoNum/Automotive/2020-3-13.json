@@ -1,0 +1,94 @@
+{
+    "CTI": {
+        "text": "Researchers discovered that the remote keyless system on Honda HR-V 2017 vehicles sends the same RF signal for each door-open request. Once an attacker obtains the frequency of the key fob and captures the \u201copen door\u201d transmission sent from the fob, they can re-use the \u201copen door\u201d signal in a replay attack as the RF signal sent by the fob doesn't vary. Other car models made by the OEM may have the same keyless system and therefore be prone to replay attacks.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "the remote keyless system",
+                    "relation": "is on",
+                    "object": "Honda HR-V 2017 vehicles"
+                },
+                {
+                    "subject": "the remote keyless system",
+                    "relation": "sends",
+                    "object": "the same RF signal for each door-open request"
+                },
+                {
+                    "subject": "an attacker",
+                    "relation": "obtains",
+                    "object": "the frequency of the key fob"
+                },
+                {
+                    "subject": "an attacker",
+                    "relation": "captures",
+                    "object": "the \u201copen door\u201d transmission sent from the fob"
+                },
+                {
+                    "subject": "an attacker",
+                    "relation": "can re-use",
+                    "object": "the \u201copen door\u201d signal in a replay attack"
+                },
+                {
+                    "subject": "the RF signal sent by the fob",
+                    "relation": "doesn't vary",
+                    "object": ""
+                },
+                {
+                    "subject": "Other car models made by the OEM",
+                    "relation": "may have",
+                    "object": "the same keyless system"
+                },
+                {
+                    "subject": "Other car models made by the OEM",
+                    "relation": "be prone to",
+                    "object": "replay attacks"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3033,
+                "cost": 0.0024264
+            },
+            "output": {
+                "tokens": 296,
+                "cost": 0.000592
+            },
+            "total": {
+                "tokens": 3329,
+                "cost": 0.0030184
+            }
+        },
+        "time": 13.694273948669434,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-3-13-QD1-a07.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "thehackernews: OfBiz.json",
+                    0.044390905952211165
+                ],
+                [
+                    "darkreading: Gh0st-RAT.json",
+                    0.04523406884068439
+                ],
+                [
+                    "symantec: Crambus.json",
+                    0.04597082716326833
+                ],
+                [
+                    "darkreading: SolarWinds-Style.json",
+                    0.06307207244462115
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "CTI": {
+        "text": "While reverse engineering Tesla's power improvements, a researcher discovered that the battery management system (BMS) defined the drive unit's power limit. The researcher used CAN messages, UDS messages, firmware files, and decrypted diagnostic messages to reverse engineer the upgrade process. He discovered which hardware changes were required in the BMS to execute the power improvement upgrade and performed them on a P85D. Later, he modified the firmware of the BMS and the relevant files on the security gateway to accept the modified battery pack. He bricked the car during the firmware update process and had to troubleshoot it.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "researcher",
+                    "relation": "discovered",
+                    "object": "battery management system (BMS) defined the drive unit's power limit"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "used",
+                    "object": "CAN messages"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "used",
+                    "object": "UDS messages"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "used",
+                    "object": "firmware files"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "used",
+                    "object": "decrypted diagnostic messages"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "reverse engineered",
+                    "object": "the upgrade process"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "discovered",
+                    "object": "hardware changes required in the BMS"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "executed",
+                    "object": "power improvement upgrade on a P85D"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "modified",
+                    "object": "firmware of the BMS"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "modified",
+                    "object": "relevant files on the security gateway"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "bricked",
+                    "object": "the car during the firmware update process"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "had to troubleshoot",
+                    "object": "the car"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 3007,
+                "cost": 0.0024056
+            },
+            "output": {
+                "tokens": 312,
+                "cost": 0.000624
+            },
+            "total": {
+                "tokens": 3319,
+                "cost": 0.0030296
+            }
+        },
+        "time": 14.977910041809082,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-9-QD1-68f.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "thehackernews: Agent-Tesla.json",
+                    0.04187416404733904
+                ],
+                [
+                    "securityweek: vultur.json",
+                    0.044121977249568636
+                ],
+                [
+                    "darkreading: SpectralBlur.json",
+                    0.04807706070119897
+                ],
+                [
+                    "thehackernews: Sea-Turtle.json",
+                    0.05068486563554339
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

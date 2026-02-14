@@ -1,0 +1,92 @@
+{
+    "CTI": {
+        "text": "A researcher discovered a vulnerability in the \u2018Car Rental System\u2019 plugin for WordPress. Persistent XSS can occur in most of the fields in the booking form. XSS can lead to an administrator\u2019s session hijacking, and if used with a social engineering attack, it can also lead to disclosure of sensitive data, CSRF attacks, and other critical attacks.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A researcher",
+                "relation": "discovered",
+                "object": "a vulnerability"
+            },
+            {
+                "subject": "the vulnerability",
+                "relation": "is in",
+                "object": "the \u2018Car Rental System\u2019 plugin for WordPress"
+            },
+            {
+                "subject": "Persistent XSS",
+                "relation": "can occur in",
+                "object": "most of the fields in the booking form"
+            },
+            {
+                "subject": "XSS",
+                "relation": "can lead to",
+                "object": "an administrator\u2019s session hijacking"
+            },
+            {
+                "subject": "XSS",
+                "relation": "can lead to",
+                "object": "disclosure of sensitive data"
+            },
+            {
+                "subject": "XSS",
+                "relation": "can lead to",
+                "object": "CSRF attacks"
+            },
+            {
+                "subject": "XSS",
+                "relation": "can lead to",
+                "object": "other critical attacks"
+            },
+            {
+                "subject": "XSS",
+                "relation": "is used with",
+                "object": "a social engineering attack"
+            }
+        ],
+        "triples_count": 8,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2564,
+                "cost": 0.0020512
+            },
+            "output": {
+                "tokens": 212,
+                "cost": 0.000424
+            },
+            "total": {
+                "tokens": 2776,
+                "cost": 0.0024752
+            }
+        },
+        "time": 14.285566806793213,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-19-QD1-bd3.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: uantum-ransomware.json",
+                    0.07828236477292763
+                ],
+                [
+                    "Unit42: Citrix-Bleed.json",
+                    0.08639269904647819
+                ],
+                [
+                    "symantec: Log4j.json",
+                    0.09986770985925976
+                ],
+                [
+                    "Google_TAG: zimbra.json",
+                    0.12464646487704753
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

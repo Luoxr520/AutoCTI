@@ -1,0 +1,109 @@
+{
+    "CTI": {
+        "text": "Researchers from Consumer Watchdog claimed that they hacked a Tesla vehicle using a device that infiltrated the cellular network. In a video, the researchers demonstrated that they could take over the infotainment screen in the Tesla to access the CAN-BUS and claimed that they could perform a wide-scale attack by amplifying the signal on the device. Viewers however, claimed that the hack seen in the video showed a Wi-Fi server that could intercept the network requests sent to Tesla and thus caused the red hacked message to be displayed on the screen.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Researchers",
+                    "relation": "from",
+                    "object": "Consumer Watchdog"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "claimed that they hacked",
+                    "object": "Tesla vehicle"
+                },
+                {
+                    "subject": "hacked Tesla vehicle",
+                    "relation": "using",
+                    "object": "a device"
+                },
+                {
+                    "subject": "device",
+                    "relation": "infiltrated",
+                    "object": "cellular network"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "demonstrated",
+                    "object": "take over the infotainment screen in the Tesla"
+                },
+                {
+                    "subject": "infotainment screen",
+                    "relation": "accesses",
+                    "object": "CAN-BUS"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "claimed",
+                    "object": "could perform a wide-scale attack"
+                },
+                {
+                    "subject": "wide-scale attack",
+                    "relation": "by amplifying",
+                    "object": "signal on the device"
+                },
+                {
+                    "subject": "Viewers",
+                    "relation": "claimed",
+                    "object": "hack seen in the video showed a Wi-Fi server"
+                },
+                {
+                    "subject": "Wi-Fi server",
+                    "relation": "intercepts",
+                    "object": "network requests sent to Tesla"
+                },
+                {
+                    "subject": "Wi-Fi server",
+                    "relation": "caused",
+                    "object": "red hacked message to be displayed on the screen"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2806,
+                "cost": 0.0022448
+            },
+            "output": {
+                "tokens": 291,
+                "cost": 0.0005819999999999999
+            },
+            "total": {
+                "tokens": 3097,
+                "cost": 0.0028268
+            }
+        },
+        "time": 12.887920141220093,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-11-8-QD1-72e.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: migraine-could.json",
+                    0.05983828086480036
+                ],
+                [
+                    "darkreading: SolarWinds-Style.json",
+                    0.06477188942136047
+                ],
+                [
+                    "thehackernews: OfBiz.json",
+                    0.08112772400405581
+                ],
+                [
+                    "securityweek: vultur.json",
+                    0.09376316058387787
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

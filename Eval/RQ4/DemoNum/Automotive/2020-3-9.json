@@ -1,0 +1,84 @@
+{
+    "CTI": {
+        "text": "\u201cGhost rider\u201d accounts are taking over the Russian car sharing apps, with many professionals selling accounts for less than 5 thousand rubles (about $66 USD). The accounts utilized passport and credit card information bought from the dark web. Since the service is cheap, people under the driving age limit set by the app often purchase these accounts to bypass the app's driving age verification. One victim had to pay 14 thousand rubles for a Mercedes that was rented in his name.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Ghost rider accounts",
+                    "relation": "are taking over",
+                    "object": "Russian car sharing apps"
+                },
+                {
+                    "subject": "professionals",
+                    "relation": "sell",
+                    "object": "accounts for less than 5 thousand rubles"
+                },
+                {
+                    "subject": "accounts",
+                    "relation": "utilized",
+                    "object": "passport and credit card information"
+                },
+                {
+                    "subject": "passport and credit card information",
+                    "relation": "bought from",
+                    "object": "the dark web"
+                },
+                {
+                    "subject": "people under the driving age limit",
+                    "relation": "purchase",
+                    "object": "these accounts to bypass the app's driving age verification"
+                },
+                {
+                    "subject": "one victim",
+                    "relation": "had to pay",
+                    "object": "14 thousand rubles for a Mercedes rented in his name"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2495,
+                "cost": 0.001996
+            },
+            "output": {
+                "tokens": 217,
+                "cost": 0.000434
+            },
+            "total": {
+                "tokens": 2712,
+                "cost": 0.00243
+            }
+        },
+        "time": 12.389536619186401,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-3-9-QD1-7fd.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.053907665104837035
+                ],
+                [
+                    "thehackernews: Xamalicious.json",
+                    0.05590062345549024
+                ],
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.08676481284135026
+                ],
+                [
+                    "Google_TAG: iranian.json",
+                    0.11299113981411875
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

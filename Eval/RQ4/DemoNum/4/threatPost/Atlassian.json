@@ -1,0 +1,122 @@
+{
+    "CTI": {
+        "text": "Threat actors are using public exploits to pummel a critical zero-day remote code execution (RCE) flaw that affects all versions of a popular collaboration tool used in cloud and hybrid server environments and allows for complete host takeover.Researchers from Volexity uncovered the flaw in Atlassian Confluence Server and Data Center software over the Memorial Day weekend after they detected suspicious activity on two internet-facing web servers belonging to a customer running the software, they said in a blog post published last week. The researchers tracked the activity to a public exploit for the vulnerability, CVE-2022-26134, that\u2019s been spreading rapidly, and subsequently reported the flaw to Atlassian. As observed by Volexity researchers, what\u2019s being described as an \u201cOGNL injection vulnerability\u201d appears to allow for a Java Server Page (JSP) webshell to be written into a publicly accessible web directory on Confluence software.",
+        "link": "https://threatpost.com/public-exploits-atlassian-confluence-flaw/179887/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Threat actors",
+                "relation": "are using",
+                "object": "public exploits"
+            },
+            {
+                "subject": "public exploits",
+                "relation": "target",
+                "object": "a critical zero-day remote code execution (RCE) flaw"
+            },
+            {
+                "subject": "zero-day RCE flaw",
+                "relation": "affects",
+                "object": "all versions of a popular collaboration tool"
+            },
+            {
+                "subject": "popular collaboration tool",
+                "relation": "used in",
+                "object": "cloud and hybrid server environments"
+            },
+            {
+                "subject": "zero-day RCE flaw",
+                "relation": "allows for",
+                "object": "complete host takeover"
+            },
+            {
+                "subject": "Researchers from Volexity",
+                "relation": "uncovered",
+                "object": "the flaw in Atlassian Confluence Server and Data Center software"
+            },
+            {
+                "subject": "Volexity researchers",
+                "relation": "detected suspicious activity on",
+                "object": "two internet-facing web servers"
+            },
+            {
+                "subject": "suspicious activity",
+                "relation": "belonging to",
+                "object": "a customer running the software"
+            },
+            {
+                "subject": "Volexity researchers",
+                "relation": "tracked the activity to",
+                "object": "a public exploit for the vulnerability"
+            },
+            {
+                "subject": "vulnerability",
+                "relation": "tracked as",
+                "object": "CVE-2022-26134"
+            },
+            {
+                "subject": "public exploit",
+                "relation": "for",
+                "object": "CVE-2022-26134"
+            },
+            {
+                "subject": "CVE-2022-26134",
+                "relation": "described as",
+                "object": "an OGNL injection vulnerability"
+            },
+            {
+                "subject": "OGNL injection vulnerability",
+                "relation": "appears to allow for",
+                "object": "a Java Server Page (JSP) webshell to be written into a publicly accessible web directory"
+            },
+            {
+                "subject": "Java Server Page (JSP) webshell",
+                "relation": "written into",
+                "object": "a publicly accessible web directory on Confluence software"
+            }
+        ],
+        "triples_count": 14,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2572,
+                "cost": 0.0020575999999999997
+            },
+            "output": {
+                "tokens": 450,
+                "cost": 0.0009
+            },
+            "total": {
+                "tokens": 3022,
+                "cost": 0.0029575999999999995
+            }
+        },
+        "time": 24.942406177520752,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\threatPost\\Atlassian-QD1-8b4.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: Microsoft.json",
+                    0.13497379047743446
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.14395134752323036
+                ],
+                [
+                    "darkreading: apache-activemq.json",
+                    0.17207592732463362
+                ],
+                [
+                    "BleepingComputer: atlassian.json",
+                    0.3393723065054859
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "CTI": {
+        "text": "Last week Google\u2019s Threat Analysis Group (TAG), in partnership with The Citizen Lab, discovered an in-the-wild 0-day exploit chain for iPhones. Developed by the commercial surveillance vendor, Intellexa, this exploit chain is used to install its Predator spyware surreptitiously onto a device. In response, yesterday, Apple patched the bugs in iOS 16.7 and iOS 17.0.1 as CVE-2023-41991, CVE-2023-41992, CVE-2023-41993. This quick patching from Apple helps to better protect users and we encourage all iOS users to install them as soon as possible.",
+        "link": "https://blog.google/threat-analysis-group/0-days-exploited-by-commercial-surveillance-vendor-in-egypt/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Google\u2019s Threat Analysis Group (TAG)",
+                "relation": "discovered",
+                "object": "an in-the-wild 0-day exploit chain"
+            },
+            {
+                "subject": "The Citizen Lab",
+                "relation": "in partnership with",
+                "object": "Google\u2019s Threat Analysis Group (TAG)"
+            },
+            {
+                "subject": "exploit chain",
+                "relation": "developed by",
+                "object": "Intellexa"
+            },
+            {
+                "subject": "exploit chain",
+                "relation": "used to install",
+                "object": "Predator spyware"
+            },
+            {
+                "subject": "Predator spyware",
+                "relation": "installed onto",
+                "object": "a device"
+            },
+            {
+                "subject": "Apple",
+                "relation": "patched",
+                "object": "bugs in iOS 16.7 and iOS 17.0.1"
+            },
+            {
+                "subject": "bugs",
+                "relation": "patched as",
+                "object": "CVE-2023-41991"
+            },
+            {
+                "subject": "bugs",
+                "relation": "patched as",
+                "object": "CVE-2023-41992"
+            },
+            {
+                "subject": "bugs",
+                "relation": "patched as",
+                "object": "CVE-2023-41993"
+            },
+            {
+                "subject": "quick patching from Apple",
+                "relation": "helps to protect",
+                "object": "users"
+            },
+            {
+                "subject": "iOS users",
+                "relation": "encouraged to install",
+                "object": "patches"
+            }
+        ],
+        "triples_count": 11,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2680,
+                "cost": 0.002144
+            },
+            "output": {
+                "tokens": 327,
+                "cost": 0.000654
+            },
+            "total": {
+                "tokens": 3007,
+                "cost": 0.002798
+            }
+        },
+        "time": 22.38901400566101,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\Google_TAG\\egypt-QD1-fa2.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: apple.json",
+                    0.18367907801321035
+                ],
+                [
+                    "Google_TAG: apt37.json",
+                    0.18696161443239828
+                ],
+                [
+                    "threatPost: iPhone-Users.json",
+                    0.23654332601359448
+                ],
+                [
+                    "symantec: Pegasus.json",
+                    0.28013082439129466
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

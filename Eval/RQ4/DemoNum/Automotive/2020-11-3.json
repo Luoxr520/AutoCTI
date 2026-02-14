@@ -1,0 +1,89 @@
+{
+    "CTI": {
+        "text": "An Indian gang used sophisticated tools including a chip-reader and a hacking system, which included software available online, to steal more than 200 vehicles. The thieves procured different keys online and transferred the vehicles' sensor coding to those keys, effectively duplicating the real key.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "An Indian gang",
+                    "relation": "used",
+                    "object": "sophisticated tools"
+                },
+                {
+                    "subject": "sophisticated tools",
+                    "relation": "include",
+                    "object": "a chip-reader"
+                },
+                {
+                    "subject": "sophisticated tools",
+                    "relation": "include",
+                    "object": "a hacking system"
+                },
+                {
+                    "subject": "hacking system",
+                    "relation": "included",
+                    "object": "software available online"
+                },
+                {
+                    "subject": "The thieves",
+                    "relation": "procured",
+                    "object": "different keys online"
+                },
+                {
+                    "subject": "The thieves",
+                    "relation": "transferred",
+                    "object": "vehicles' sensor coding to those keys"
+                },
+                {
+                    "subject": "The thieves",
+                    "relation": "effectively duplicated",
+                    "object": "the real key"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2224,
+                "cost": 0.0017791999999999999
+            },
+            "output": {
+                "tokens": 182,
+                "cost": 0.00036399999999999996
+            },
+            "total": {
+                "tokens": 2406,
+                "cost": 0.0021431999999999996
+            }
+        },
+        "time": 7.601815700531006,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-11-3-QD1-25c.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: cactus.json",
+                    0.04836275294396338
+                ],
+                [
+                    "trendmicro: Earth-Berberoka.json",
+                    0.048757566252965574
+                ],
+                [
+                    "trendmicro: Crysis.json",
+                    0.055936481937638206
+                ],
+                [
+                    "BleepingComputer: github.json",
+                    0.06110181918409313
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

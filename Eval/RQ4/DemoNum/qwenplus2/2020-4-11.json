@@ -1,0 +1,107 @@
+{
+    "CTI": {
+        "text": "A hacker modified his OBD dongle to expose the serial lines between its ELM327 OBD chip and its Bluetooth chip and used them to connect to an Arduino powering an information display on the vehicle's dashboard. The device displayed information of some of the ECU units installed in the vehicle, including the battery voltage, RPM, MAP, Spark advance, intake temperature, engine coolant temperature, and information from the throttle position sensor.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A hacker",
+                "relation": "modified",
+                "object": "his OBD dongle"
+            },
+            {
+                "subject": "OBD dongle",
+                "relation": "exposes",
+                "object": "the serial lines between its ELM327 OBD chip and its Bluetooth chip"
+            },
+            {
+                "subject": "serial lines",
+                "relation": "connect to",
+                "object": "an Arduino"
+            },
+            {
+                "subject": "Arduino",
+                "relation": "powers",
+                "object": "an information display on the vehicle's dashboard"
+            },
+            {
+                "subject": "information display",
+                "relation": "shows",
+                "object": "battery voltage"
+            },
+            {
+                "subject": "information display",
+                "relation": "shows",
+                "object": "RPM"
+            },
+            {
+                "subject": "information display",
+                "relation": "shows",
+                "object": "MAP"
+            },
+            {
+                "subject": "information display",
+                "relation": "shows",
+                "object": "Spark advance"
+            },
+            {
+                "subject": "information display",
+                "relation": "shows",
+                "object": "intake temperature"
+            },
+            {
+                "subject": "information display",
+                "relation": "shows",
+                "object": "engine coolant temperature"
+            },
+            {
+                "subject": "information display",
+                "relation": "shows",
+                "object": "throttle position sensor information"
+            }
+        ],
+        "triples_count": 11,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2456,
+                "cost": 0.0019648
+            },
+            "output": {
+                "tokens": 268,
+                "cost": 0.000536
+            },
+            "total": {
+                "tokens": 2724,
+                "cost": 0.0025008
+            }
+        },
+        "time": 20.41083288192749,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-4-11-QD1-7d0.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.0416735995405062
+                ],
+                [
+                    "Unit42: Agonizing-Serpens.json",
+                    0.04242095300963102
+                ],
+                [
+                    "securityweek: vultur.json",
+                    0.0438421041399509
+                ],
+                [
+                    "darkreading: Bluetooth-Flaw.json",
+                    0.09121941701092387
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

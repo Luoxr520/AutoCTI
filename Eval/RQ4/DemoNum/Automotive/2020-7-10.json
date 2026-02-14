@@ -1,0 +1,87 @@
+{
+    "CTI": {
+        "text": "A researcher created a mobile phone sized attack device that jams the Collision Avoidance System (CAS) in autonomous vehicles from a relatively short distance. He was able to cause an accident by making the forward collision warning (FCW) and autonomous emergency braking (AEB) less sensitive and slow to respond. He demonstrated the attack on a Tesla Model 3 and Lynk&Co 01 and provided tools to assist other researchers to find the vehicle's collision avoidance system radar parameter, facilitating future attacks on autonomous vehicles.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A researcher",
+                "relation": "created",
+                "object": "a mobile phone sized attack device"
+            },
+            {
+                "subject": "the attack device",
+                "relation": "jams",
+                "object": "the Collision Avoidance System (CAS) in autonomous vehicles"
+            },
+            {
+                "subject": "the attack",
+                "relation": "causes",
+                "object": "an accident"
+            },
+            {
+                "subject": "the attack",
+                "relation": "makes",
+                "object": "the forward collision warning (FCW) and autonomous emergency braking (AEB) less sensitive and slow to respond"
+            },
+            {
+                "subject": "the researcher",
+                "relation": "demonstrated the attack on",
+                "object": "a Tesla Model 3 and Lynk&Co 01"
+            },
+            {
+                "subject": "the researcher",
+                "relation": "provided",
+                "object": "tools to assist other researchers"
+            },
+            {
+                "subject": "the tools",
+                "relation": "help find",
+                "object": "the vehicle's collision avoidance system radar parameter"
+            }
+        ],
+        "triples_count": 7,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2885,
+                "cost": 0.0023079999999999997
+            },
+            "output": {
+                "tokens": 216,
+                "cost": 0.000432
+            },
+            "total": {
+                "tokens": 3101,
+                "cost": 0.00274
+            }
+        },
+        "time": 10.954986095428467,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-10-QD1-58b.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "thehackernews: Xamalicious.json",
+                    0.03819289449754175
+                ],
+                [
+                    "symantec: Pegasus.json",
+                    0.03831820432613445
+                ],
+                [
+                    "securityweek: pwn2own.json",
+                    0.04006945302296805
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.047017196100215854
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

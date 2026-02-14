@@ -1,0 +1,181 @@
+{
+    "nodes": [
+        {
+            "id": 0,
+            "name": "Seedworm",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Muddywater",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 5,
+            "name": "organizations in the telecommunications sector",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 4,
+            "name": "targeted organizations",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Egypt",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Sudan",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Tanzania",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 9,
+            "name": "at least 2017",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 10,
+            "name": "attacks on organizations in the Middle East",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 3,
+            "name": "a cyberespionage group",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Iran's Ministry of Intelligence and Security (MOIS)",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 12,
+            "name": "MuddyC2Go infrastructure",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 13,
+            "name": "a MuddyC2Go PowerShell launcher",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 14,
+            "name": "the SimpleHelp remote access tool",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Venom Proxy",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 17,
+            "name": "a custom keylogging tool",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 16,
+            "name": "publicly available and living-off-the-land tools",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        },
+        {
+            "id": 1,
+            "name": "The attackers",
+            "image": "https://nrdstudio.cn/res/n.jpg"
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 2,
+            "relation": "is known as"
+        },
+        {
+            "source": 0,
+            "target": 5,
+            "relation": "targeted"
+        },
+        {
+            "source": 4,
+            "target": 6,
+            "relation": "locate in"
+        },
+        {
+            "source": 4,
+            "target": 7,
+            "relation": "locate in"
+        },
+        {
+            "source": 4,
+            "target": 8,
+            "relation": "locate in"
+        },
+        {
+            "source": 0,
+            "target": 9,
+            "relation": "has been active since"
+        },
+        {
+            "source": 0,
+            "target": 10,
+            "relation": "is most strongly associated with"
+        },
+        {
+            "source": 0,
+            "target": 3,
+            "relation": "is"
+        },
+        {
+            "source": 0,
+            "target": 11,
+            "relation": "is a subordinate part of"
+        },
+        {
+            "source": 1,
+            "target": 12,
+            "relation": "used"
+        },
+        {
+            "source": 1,
+            "target": 13,
+            "relation": "used"
+        },
+        {
+            "source": 1,
+            "target": 14,
+            "relation": "use"
+        },
+        {
+            "source": 1,
+            "target": 15,
+            "relation": "use"
+        },
+        {
+            "source": 1,
+            "target": 17,
+            "relation": "use"
+        },
+        {
+            "source": 1,
+            "target": 16,
+            "relation": "use"
+        },
+        {
+            "source": 4,
+            "target": 0,
+            "relation": "are targeted by"
+        },
+        {
+            "source": 1,
+            "target": 0,
+            "relation": "are members of"
+        }
+    ]
+}

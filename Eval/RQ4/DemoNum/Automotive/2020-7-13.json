@@ -1,0 +1,51 @@
+{
+    "CTI": {
+        "text": "The two high-value Range Rovers and a top-of-the-range Mercedes-Benz were stolen by thieves. The thieves had disabled the OEM vehicle tracking services but had missed the dedicated aftermarket telematics tracking devices, which enabled the vehicles to be located in containers at Ilford, Essex, ready for shipping abroad.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [],
+        "triples_count": 0,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2889,
+                "cost": 0.0023112
+            },
+            "output": {
+                "tokens": 5,
+                "cost": 9.999999999999999e-06
+            },
+            "total": {
+                "tokens": 2894,
+                "cost": 0.0023212
+            }
+        },
+        "time": 1.742638349533081,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-13-QD1-3c4.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "thehackernews: FalseFont.json",
+                    0.04173853997042811
+                ],
+                [
+                    "Google_TAG: iranian.json",
+                    0.042169963177915167
+                ],
+                [
+                    "BleepingComputer: chrome.json",
+                    0.04416159205332857
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.0464470587517035
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

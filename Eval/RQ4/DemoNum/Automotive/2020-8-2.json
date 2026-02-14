@@ -1,0 +1,104 @@
+{
+    "CTI": {
+        "text": "A researcher discovered that Power Line Communications ( PLC ) signals could be easily read using active antennas placed between 6-8 feet away from the trailer. The cybersecurity impact of this vulnerability is heavily dependent on which information is sent by ECUs on the trailer PLC bus. Typical trailer traffic includes only ABS fault messages and will thus have minimal loss of confidentiality. However, the vulnerability can have a severe impact in cases where manufacturers leverage PLC for sensitive information such as air weight axles or key exchange in setting up high-speed wireless links in future tractor-trailer interfaces.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Power Line Communications (PLC) signals",
+                    "relation": "can be read using",
+                    "object": "active antennas"
+                },
+                {
+                    "subject": "active antennas",
+                    "relation": "placed",
+                    "object": "between 6-8 feet away from the trailer"
+                },
+                {
+                    "subject": "cybersecurity impact",
+                    "relation": "is dependent on",
+                    "object": "information sent by ECUs on the trailer PLC bus"
+                },
+                {
+                    "subject": "typical trailer traffic",
+                    "relation": "includes",
+                    "object": "ABS fault messages"
+                },
+                {
+                    "subject": "ABS fault messages",
+                    "relation": "have",
+                    "object": "minimal loss of confidentiality"
+                },
+                {
+                    "subject": "vulnerability",
+                    "relation": "can have",
+                    "object": "a severe impact"
+                },
+                {
+                    "subject": "manufacturers",
+                    "relation": "leverage",
+                    "object": "PLC for sensitive information"
+                },
+                {
+                    "subject": "sensitive information",
+                    "relation": "includes",
+                    "object": "air weight axles"
+                },
+                {
+                    "subject": "sensitive information",
+                    "relation": "includes",
+                    "object": "key exchange in setting up high-speed wireless links"
+                },
+                {
+                    "subject": "high-speed wireless links",
+                    "relation": "used in",
+                    "object": "future tractor-trailer interfaces"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 2343,
+                "cost": 0.0018743999999999998
+            },
+            "output": {
+                "tokens": 279,
+                "cost": 0.000558
+            },
+            "total": {
+                "tokens": 2622,
+                "cost": 0.0024324
+            }
+        },
+        "time": 12.769564390182495,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-8-2-QD1-000.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: chrome.json",
+                    0.03943076400694747
+                ],
+                [
+                    "threatPost: toddycat.json",
+                    0.0400904830385547
+                ],
+                [
+                    "BleepingComputer: mastodon.json",
+                    0.0414313791256548
+                ],
+                [
+                    "BleepingComputer: apple.json",
+                    0.04872454202705816
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

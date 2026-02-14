@@ -1,0 +1,72 @@
+{
+    "CTI": {
+        "text": "Using a relay device, thieves unlocked and stole a Range Rover parking outside its owner's home in the West Midlands, UK.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "thieves",
+                "relation": "used",
+                "object": "a relay device"
+            },
+            {
+                "subject": "thieves",
+                "relation": "unlocked and stole",
+                "object": "a Range Rover"
+            },
+            {
+                "subject": "Range Rover",
+                "relation": "was parking outside",
+                "object": "its owner's home"
+            },
+            {
+                "subject": "owner's home",
+                "relation": "is located in",
+                "object": "the West Midlands, UK"
+            }
+        ],
+        "triples_count": 4,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2196,
+                "cost": 0.0017568
+            },
+            "output": {
+                "tokens": 105,
+                "cost": 0.00020999999999999998
+            },
+            "total": {
+                "tokens": 2301,
+                "cost": 0.0019668
+            }
+        },
+        "time": 6.4490647315979,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-3-4-QD1-443.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Unit42: Agonizing-Serpens.json",
+                    0.03858060872132265
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.04240985038636132
+                ],
+                [
+                    "Unit42: CL0P-Seeds.json",
+                    0.044136392969859516
+                ],
+                [
+                    "thehackernews: Xamalicious.json",
+                    0.04538053019242713
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

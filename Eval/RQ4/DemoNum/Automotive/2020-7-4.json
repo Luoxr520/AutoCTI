@@ -1,0 +1,119 @@
+{
+    "CTI": {
+        "text": "A researcher reversed engineered the content of Tesla's dashcam hard drive and found that none of the dashcam recording outputs was signed. The researcher was able to edit the metadata related to the recordings including the date of the recording and its location and replace the MP4 video recordings. As dashcam recordings are used in insurance claims as evidence for acts of theft, vandalism, or accidents, this vulnerability can cost a lot to insurers. People can use this hack to replace the video and metadata of a dashcam recording with a similar vehicle that had a crash to get entitled for free repair if they have third party insurance.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "researcher",
+                    "relation": "reversed engineered",
+                    "object": "Tesla's dashcam hard drive"
+                },
+                {
+                    "subject": "dashcam recording outputs",
+                    "relation": "were not",
+                    "object": "signed"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "edited",
+                    "object": "metadata related to the recordings"
+                },
+                {
+                    "subject": "metadata",
+                    "relation": "includes",
+                    "object": "date of the recording"
+                },
+                {
+                    "subject": "metadata",
+                    "relation": "includes",
+                    "object": "location"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "replaced",
+                    "object": "MP4 video recordings"
+                },
+                {
+                    "subject": "dashcam recordings",
+                    "relation": "used as",
+                    "object": "evidence in insurance claims"
+                },
+                {
+                    "subject": "insurance claims",
+                    "relation": "for",
+                    "object": "acts of theft"
+                },
+                {
+                    "subject": "insurance claims",
+                    "relation": "for",
+                    "object": "vandalism"
+                },
+                {
+                    "subject": "insurance claims",
+                    "relation": "for",
+                    "object": "accidents"
+                },
+                {
+                    "subject": "people",
+                    "relation": "can use",
+                    "object": "this hack to replace video and metadata"
+                },
+                {
+                    "subject": "hack",
+                    "relation": "allows",
+                    "object": "replacing with a similar vehicle that had a crash"
+                },
+                {
+                    "subject": "hack",
+                    "relation": "entitles for",
+                    "object": "free repair with third party insurance"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 2835,
+                "cost": 0.002268
+            },
+            "output": {
+                "tokens": 398,
+                "cost": 0.0007959999999999999
+            },
+            "total": {
+                "tokens": 3233,
+                "cost": 0.003064
+            }
+        },
+        "time": 11.087421655654907,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-4-QD1-afe.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: qualcomm.json",
+                    0.02748746736428784
+                ],
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.027591625699444382
+                ],
+                [
+                    "Unit42: CryptoClippy.json",
+                    0.029614325239422673
+                ],
+                [
+                    "securityweek: pwn2own.json",
+                    0.043874478676342615
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

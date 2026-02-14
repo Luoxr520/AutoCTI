@@ -1,0 +1,92 @@
+{
+    "CTI": {
+        "text": "Researchers found a vulnerability in Volkswagen Polo\u2019s infotainment software update process and were able to exploit it to hack the unit. They also discovered that the infotainment unit used third-party software libraries that had known security flaws. The researchers also analyzed Ford Focus and identified what is suspected to be a Wi-Fi password from Ford's manufacturing plant. Using basic equipment, the hackers were able to intercept the messages being sent from the (Ford) tyres' TPMS to the car\u2019s brain. The researches also bought a second-hand infotainment unit and discovered the previous owner\u2019s personal details.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Researchers",
+                "relation": "found",
+                "object": "a vulnerability in Volkswagen Polo\u2019s infotainment software update process"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "exploited",
+                "object": "the vulnerability to hack the unit"
+            },
+            {
+                "subject": "Infotainment unit",
+                "relation": "used",
+                "object": "third-party software libraries with known security flaws"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "analyzed",
+                "object": "Ford Focus"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "identified",
+                "object": "suspected Wi-Fi password from Ford's manufacturing plant"
+            },
+            {
+                "subject": "Hackers",
+                "relation": "intercepted",
+                "object": "messages from Ford tyres' TPMS to the car\u2019s brain"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "bought",
+                "object": "a second-hand infotainment unit"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "discovered",
+                "object": "previous owner\u2019s personal details"
+            }
+        ],
+        "triples_count": 8,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3076,
+                "cost": 0.0024608
+            },
+            "output": {
+                "tokens": 222,
+                "cost": 0.000444
+            },
+            "total": {
+                "tokens": 3298,
+                "cost": 0.0029048
+            }
+        },
+        "time": 10.474187135696411,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-4-2-QD1-629.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: mallox.json",
+                    0.06373463244836802
+                ],
+                [
+                    "Unit42: P2PInfect.json",
+                    0.06495230071773912
+                ],
+                [
+                    "Unit42: CryptoClippy.json",
+                    0.06993830210900806
+                ],
+                [
+                    "Unit42: Exposed-IAM-Keys.json",
+                    0.07314548024083553
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

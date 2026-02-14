@@ -1,0 +1,77 @@
+{
+    "CTI": {
+        "text": "Aebi Schmidt announced that its systems were hit by a malware-based cyber attack. The malware infected Windows systems and disrupted some of the company's operations, such as email management. They had to temporarily switch off the affected systems.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Aebi Schmidt",
+                "relation": "announced",
+                "object": "systems were hit by a malware-based cyber attack"
+            },
+            {
+                "subject": "malware",
+                "relation": "infected",
+                "object": "Windows systems"
+            },
+            {
+                "subject": "malware",
+                "relation": "disrupted",
+                "object": "some of the company's operations"
+            },
+            {
+                "subject": "operations",
+                "relation": "include",
+                "object": "email management"
+            },
+            {
+                "subject": "Aebi Schmidt",
+                "relation": "had to temporarily switch off",
+                "object": "the affected systems"
+            }
+        ],
+        "triples_count": 5,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2731,
+                "cost": 0.0021847999999999998
+            },
+            "output": {
+                "tokens": 128,
+                "cost": 0.000256
+            },
+            "total": {
+                "tokens": 2859,
+                "cost": 0.0024408
+            }
+        },
+        "time": 5.980090618133545,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-4-4-QD1-c59.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "trendmicro: Earth-Berberoka.json",
+                    0.08526235799095812
+                ],
+                [
+                    "AVERTIUM: muddywater.json",
+                    0.08597346308338938
+                ],
+                [
+                    "Unit42: PlugX.json",
+                    0.09409738428210528
+                ],
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.09690477692545305
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

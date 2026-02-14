@@ -1,0 +1,102 @@
+{
+    "CTI": {
+        "text": "Croydon, London\u2019s local police reported an increased number of car theft cases using relay devices. BMW vehicles, Ford Fiestas and Focus were all victims of the recent keyless theft incidents. The police claimed that the vehicles were stolen to facilitate further crime, including catalytic converter theft, vehicle crime, metal thefts, and burglaries.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Croydon, London's local police",
+                "relation": "reported",
+                "object": "an increased number of car theft cases"
+            },
+            {
+                "subject": "car theft cases",
+                "relation": "used",
+                "object": "relay devices"
+            },
+            {
+                "subject": "BMW vehicles",
+                "relation": "were victims of",
+                "object": "keyless theft incidents"
+            },
+            {
+                "subject": "Ford Fiestas",
+                "relation": "were victims of",
+                "object": "keyless theft incidents"
+            },
+            {
+                "subject": "Ford Focus",
+                "relation": "were victims of",
+                "object": "keyless theft incidents"
+            },
+            {
+                "subject": "vehicles",
+                "relation": "were stolen to facilitate",
+                "object": "further crime"
+            },
+            {
+                "subject": "further crime",
+                "relation": "includes",
+                "object": "catalytic converter theft"
+            },
+            {
+                "subject": "further crime",
+                "relation": "includes",
+                "object": "vehicle crime"
+            },
+            {
+                "subject": "further crime",
+                "relation": "includes",
+                "object": "metal thefts"
+            },
+            {
+                "subject": "further crime",
+                "relation": "includes",
+                "object": "burglaries"
+            }
+        ],
+        "triples_count": 10,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3006,
+                "cost": 0.0024048
+            },
+            "output": {
+                "tokens": 254,
+                "cost": 0.000508
+            },
+            "total": {
+                "tokens": 3260,
+                "cost": 0.0029128
+            }
+        },
+        "time": 14.682908535003662,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-17-QD1-ee6.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: muddywater.json",
+                    0.04611655554338127
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.04619171421756787
+                ],
+                [
+                    "BleepingComputer: qualcomm.json",
+                    0.0486087180087522
+                ],
+                [
+                    "symantec: Clop.json",
+                    0.07603870551475453
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

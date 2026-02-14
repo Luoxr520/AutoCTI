@@ -1,0 +1,82 @@
+{
+    "CTI": {
+        "text": "ADIF, a Spanish state-owned railway infrastructure management system, was hit by REVil ransomware operators. The hackers claimed to have stolen 800GB of data, including correspondence and contracts. As proof of the attack, the ransomware operators posted a sample of files exfiltrated from the company, and threatened to release confidential data online if a ransom was not paid.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "ADIF",
+                "relation": "was hit by",
+                "object": "REVil ransomware operators"
+            },
+            {
+                "subject": "REVil ransomware operators",
+                "relation": "claimed to have stolen",
+                "object": "800GB of data"
+            },
+            {
+                "subject": "Stolen data",
+                "relation": "includes",
+                "object": "correspondence and contracts"
+            },
+            {
+                "subject": "REVil ransomware operators",
+                "relation": "posted",
+                "object": "a sample of files exfiltrated from the company"
+            },
+            {
+                "subject": "REVil ransomware operators",
+                "relation": "threatened to release",
+                "object": "confidential data online"
+            },
+            {
+                "subject": "Threat",
+                "relation": "conditional on",
+                "object": "not paying a ransom"
+            }
+        ],
+        "triples_count": 6,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2558,
+                "cost": 0.0020464
+            },
+            "output": {
+                "tokens": 167,
+                "cost": 0.000334
+            },
+            "total": {
+                "tokens": 2725,
+                "cost": 0.0023804
+            }
+        },
+        "time": 5.825023651123047,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-14-QD1-4a8.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.1093834095115621
+                ],
+                [
+                    "darkreading: apache-activemq.json",
+                    0.1106336867220428
+                ],
+                [
+                    "trendmicro: BlackCat.json",
+                    0.11123570767531923
+                ],
+                [
+                    "AVERTIUM: akira.json",
+                    0.12104012362523278
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

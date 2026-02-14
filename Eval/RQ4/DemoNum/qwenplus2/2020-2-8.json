@@ -1,0 +1,97 @@
+{
+    "CTI": {
+        "text": "A custom open source mobile app enables users to bypass the access pin and prompt required by Fordpass to then remotely control various Ford vehicle functions. In order to issue commands, the open source app simply requires configuring Fordpass credentials and VIN. Then, the open source app sends HTTP requests directly to Fordpass\u2019s API. Users of the open source app can retrieve the vehicle status information, start and stop the engine, and issue lock/unlock commands to the vehicle. Deploying the custom app on cloud platforms enables the users to create a shortcut on their mobile and even issue voice commands to the vehicle using SIRI.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A custom open source mobile app",
+                "relation": "enables",
+                "object": "users to bypass the access pin and prompt required by Fordpass"
+            },
+            {
+                "subject": "A custom open source mobile app",
+                "relation": "remotely control",
+                "object": "various Ford vehicle functions"
+            },
+            {
+                "subject": "The open source app",
+                "relation": "requires",
+                "object": "configuring Fordpass credentials and VIN"
+            },
+            {
+                "subject": "The open source app",
+                "relation": "sends",
+                "object": "HTTP requests directly to Fordpass\u2019s API"
+            },
+            {
+                "subject": "Users of the open source app",
+                "relation": "can retrieve",
+                "object": "vehicle status information"
+            },
+            {
+                "subject": "Users of the open source app",
+                "relation": "can start and stop",
+                "object": "the engine"
+            },
+            {
+                "subject": "Users of the open source app",
+                "relation": "can issue",
+                "object": "lock/unlock commands to the vehicle"
+            },
+            {
+                "subject": "Deploying the custom app on cloud platforms",
+                "relation": "enables",
+                "object": "users to create a shortcut on their mobile"
+            },
+            {
+                "subject": "Deploying the custom app on cloud platforms",
+                "relation": "enables",
+                "object": "issuing voice commands to the vehicle using SIRI"
+            }
+        ],
+        "triples_count": 9,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2501,
+                "cost": 0.0020008
+            },
+            "output": {
+                "tokens": 288,
+                "cost": 0.000576
+            },
+            "total": {
+                "tokens": 2789,
+                "cost": 0.0025768
+            }
+        },
+        "time": 11.478596210479736,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-2-8-QD1-d08.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: goanywhere.json",
+                    0.06923902298029184
+                ],
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.07048930523438271
+                ],
+                [
+                    "thehackernews: Xamalicious.json",
+                    0.10715778314385106
+                ],
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.11578173352142554
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

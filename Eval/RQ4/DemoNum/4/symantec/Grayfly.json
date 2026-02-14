@@ -1,0 +1,217 @@
+{
+    "CTI": {
+        "text": "Grayfly (aka GREF and Wicked Panda) is a targeted attack group that has been active since at least March 2017 using a custom backdoor known as Backdoor.Motnug (aka TOMMYGUN/CROSSWALK), a custom loader called Trojan.Chattak, Cobalt Strike (aka Trojan.Agentemis), and ancillary tools in its attacks. Grayfly has been observed targeting a number of countries in Asia, Europe, and North America across a variety of industries, including food, financial, healthcare, hospitality, manufacturing, and telecommunications. In more recent activity, Grayfly has continued with its focus on telecommunications but has also been observed targeting organizations operating within the media, finance, and IT service provider sectors. Typically Grayfly targets publicly facing web servers to install web shells for initial intrusion, before spreading further within the network. Once a network has been compromised, Grayfly may install its custom backdoors onto additional systems. These tools allow the attackers to have comprehensive remote access to the network and proxy connections allowing them to access hard-to-reach segments of a target's network. Although sometimes labeled APT41, we consider Grayfly the espionage arm of APT41. Similarly, Symantec tracks other sub-groups of APT41 separately, such as Blackfly, its cyber-crime arm.",
+        "link": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/grayfly-china-sidewalk-malware"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Grayfly",
+                "relation": "is known as",
+                "object": "GREF"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "is known as",
+                "object": "Wicked Panda"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "is",
+                "object": "a targeted attack group"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "has been active since",
+                "object": "at least March 2017"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "uses",
+                "object": "Backdoor.Motnug"
+            },
+            {
+                "subject": "Backdoor.Motnug",
+                "relation": "is also known as",
+                "object": "TOMMYGUN"
+            },
+            {
+                "subject": "Backdoor.Motnug",
+                "relation": "is also known as",
+                "object": "CROSSWALK"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "uses",
+                "object": "Trojan.Chattak"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "uses",
+                "object": "Cobalt Strike"
+            },
+            {
+                "subject": "Cobalt Strike",
+                "relation": "is also known as",
+                "object": "Trojan.Agentemis"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "uses",
+                "object": "ancillary tools"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targeted",
+                "object": "countries in Asia"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targeted",
+                "object": "countries in Europe"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targeted",
+                "object": "countries in North America"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targets",
+                "object": "food industry"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targets",
+                "object": "financial industry"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targets",
+                "object": "healthcare industry"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targets",
+                "object": "hospitality industry"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targets",
+                "object": "manufacturing industry"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targets",
+                "object": "telecommunications industry"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "focuses on",
+                "object": "telecommunications"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targets",
+                "object": "media sector"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targets",
+                "object": "finance sector"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targets",
+                "object": "IT service provider sectors"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "targets",
+                "object": "publicly facing web servers"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "installs",
+                "object": "web shells for initial intrusion"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "spreads further within",
+                "object": "the network"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "installs",
+                "object": "custom backdoors onto additional systems"
+            },
+            {
+                "subject": "custom backdoors",
+                "relation": "allow",
+                "object": "comprehensive remote access to the network"
+            },
+            {
+                "subject": "custom backdoors",
+                "relation": "proxy connections allowing them to access",
+                "object": "hard-to-reach segments of a target's network"
+            },
+            {
+                "subject": "Grayfly",
+                "relation": "is considered",
+                "object": "the espionage arm of APT41"
+            },
+            {
+                "subject": "Symantec",
+                "relation": "tracks",
+                "object": "other sub-groups of APT41 separately"
+            },
+            {
+                "subject": "Blackfly",
+                "relation": "is",
+                "object": "the cyber-crime arm of APT41"
+            }
+        ],
+        "triples_count": 33,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2944,
+                "cost": 0.0023552
+            },
+            "output": {
+                "tokens": 825,
+                "cost": 0.00165
+            },
+            "total": {
+                "tokens": 3769,
+                "cost": 0.0040052
+            }
+        },
+        "time": 43.79566717147827,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\symantec\\Grayfly-QD1-d84.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: toddycat.json",
+                    0.11366341347893055
+                ],
+                [
+                    "AVERTIUM: muddywater.json",
+                    0.12377972809486798
+                ],
+                [
+                    "symantec: Budworm.json",
+                    0.12458109733839273
+                ],
+                [
+                    "symantec: Seedworm.json",
+                    0.14091394584449432
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

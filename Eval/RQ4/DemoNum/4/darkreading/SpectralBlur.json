@@ -1,0 +1,132 @@
+{
+    "CTI": {
+        "text": "The prolific North Korean state-backed threat actor known as TA444 is back with shiny new malware for targeting macOS users, dubbed \"SpectralBlur.\" The custom tool is the latest in a string of proprietary malware that the advanced persistent threat (APT) group has been consistently generating \u2014 a trait that sets it apart from other DPRK-sponsored threats.According to Proofpoint threat researcher Greg Lesnewich, TA444 (aka APT38, BlueNoroff, BlackAlicanto, Coperenicum, Sapphire Sleet, and Stardust Chollima) debuted the SpectralBlur malware in August. It's a \"moderately capable backdoor, that can upload/download files, run a shell, update its configuration, delete files, hibernate, or sleep, based on commands issued from the [command-and-control server],\"",
+        "link": ""
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "TA444",
+                "relation": "is known as",
+                "object": "APT38"
+            },
+            {
+                "subject": "TA444",
+                "relation": "is known as",
+                "object": "BlueNoroff"
+            },
+            {
+                "subject": "TA444",
+                "relation": "is known as",
+                "object": "BlackAlicanto"
+            },
+            {
+                "subject": "TA444",
+                "relation": "is known as",
+                "object": "Coperenicum"
+            },
+            {
+                "subject": "TA444",
+                "relation": "is known as",
+                "object": "Sapphire Sleet"
+            },
+            {
+                "subject": "TA444",
+                "relation": "is known as",
+                "object": "Stardust Chollima"
+            },
+            {
+                "subject": "TA444",
+                "relation": "is",
+                "object": "a North Korean state-backed threat actor"
+            },
+            {
+                "subject": "TA444",
+                "relation": "debuted",
+                "object": "SpectralBlur malware"
+            },
+            {
+                "subject": "SpectralBlur",
+                "relation": "targets",
+                "object": "macOS users"
+            },
+            {
+                "subject": "SpectralBlur",
+                "relation": "is a",
+                "object": "moderately capable backdoor"
+            },
+            {
+                "subject": "SpectralBlur",
+                "relation": "can upload/download",
+                "object": "files"
+            },
+            {
+                "subject": "SpectralBlur",
+                "relation": "can run",
+                "object": "a shell"
+            },
+            {
+                "subject": "SpectralBlur",
+                "relation": "can update",
+                "object": "its configuration"
+            },
+            {
+                "subject": "SpectralBlur",
+                "relation": "can delete",
+                "object": "files"
+            },
+            {
+                "subject": "SpectralBlur",
+                "relation": "can hibernate or sleep",
+                "object": "based on commands issued from the command-and-control server"
+            },
+            {
+                "subject": "TA444",
+                "relation": "has been generating",
+                "object": "proprietary malware"
+            }
+        ],
+        "triples_count": 16,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2414,
+                "cost": 0.0019311999999999999
+            },
+            "output": {
+                "tokens": 423,
+                "cost": 0.000846
+            },
+            "total": {
+                "tokens": 2837,
+                "cost": 0.0027771999999999996
+            }
+        },
+        "time": 26.27234935760498,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\darkreading\\SpectralBlur-QD1-d5e.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Unit42: Bear-Hallmarks.json",
+                    0.11789135888437353
+                ],
+                [
+                    "Microsoft: north-korean.json",
+                    0.12290979540880767
+                ],
+                [
+                    "trendmicro: Earth-Berberoka.json",
+                    0.12342674412961985
+                ],
+                [
+                    "AVERTIUM: charming-kitten.json",
+                    0.13824441249427863
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

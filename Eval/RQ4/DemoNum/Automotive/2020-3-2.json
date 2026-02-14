@@ -1,0 +1,79 @@
+{
+    "CTI": {
+        "text": "Visser Precision, a parts contractor for Tesla was hit by a \u201ccybersecurity incident,\u201d which led to exposure of confidential documents belonging to the OEM. Visser Precision\u2019s incident was likely caused by the information stealing ransomware \u201cDoppelPaymer\u201d.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Visser Precision",
+                    "relation": "was hit by",
+                    "object": "a cybersecurity incident"
+                },
+                {
+                    "subject": "Visser Precision",
+                    "relation": "is a parts contractor for",
+                    "object": "Tesla"
+                },
+                {
+                    "subject": "cybersecurity incident",
+                    "relation": "led to exposure of",
+                    "object": "confidential documents belonging to Tesla"
+                },
+                {
+                    "subject": "Visser Precision's incident",
+                    "relation": "was likely caused by",
+                    "object": "DoppelPaymer"
+                },
+                {
+                    "subject": "DoppelPaymer",
+                    "relation": "is",
+                    "object": "information stealing ransomware"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2372,
+                "cost": 0.0018976
+            },
+            "output": {
+                "tokens": 144,
+                "cost": 0.000288
+            },
+            "total": {
+                "tokens": 2516,
+                "cost": 0.0021855999999999998
+            }
+        },
+        "time": 6.536890268325806,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-3-2-QD1-4b7.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.03570040009544482
+                ],
+                [
+                    "Unit42: Citrix-Bleed.json",
+                    0.04331932683232018
+                ],
+                [
+                    "securityweek: pypi.json",
+                    0.05962062883437617
+                ],
+                [
+                    "Unit42: CL0P-Seeds.json",
+                    0.08369486363213874
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

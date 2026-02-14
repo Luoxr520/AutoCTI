@@ -1,0 +1,94 @@
+{
+    "CTI": {
+        "text": "Advanced driver-assistance systems are susceptible to attacks by phantom objects - depthless objects projected or glued to the floor manipulating the ADASs and autopilot preception system to recognize the fake object as an actual obstacle or a road sign. This kind of objects can cause the Tesla Model X (HW 2.5) to brake suddenly or deviate to a different lane. These attacks can easily be applied remotly using a drone equipped with a portable projector or by hacking digital billboards that are located close to roads.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Advanced driver-assistance systems",
+                    "relation": "are susceptible to attacks by",
+                    "object": "phantom objects"
+                },
+                {
+                    "subject": "phantom objects",
+                    "relation": "are",
+                    "object": "depthless objects projected or glued to the floor"
+                },
+                {
+                    "subject": "phantom objects",
+                    "relation": "manipulate",
+                    "object": "ADASs and autopilot perception system"
+                },
+                {
+                    "subject": "ADASs and autopilot perception system",
+                    "relation": "recognize",
+                    "object": "the fake object as an actual obstacle or a road sign"
+                },
+                {
+                    "subject": "Tesla Model X (HW 2.5)",
+                    "relation": "can be caused to",
+                    "object": "brake suddenly or deviate to a different lane"
+                },
+                {
+                    "subject": "attacks",
+                    "relation": "can be applied remotely using",
+                    "object": "a drone equipped with a portable projector"
+                },
+                {
+                    "subject": "attacks",
+                    "relation": "can be applied by",
+                    "object": "hacking digital billboards"
+                },
+                {
+                    "subject": "digital billboards",
+                    "relation": "are located",
+                    "object": "close to roads"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2723,
+                "cost": 0.0021784
+            },
+            "output": {
+                "tokens": 301,
+                "cost": 0.000602
+            },
+            "total": {
+                "tokens": 3024,
+                "cost": 0.0027804
+            }
+        },
+        "time": 10.096934080123901,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-1-7-QD1-da1.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.03837567609447113
+                ],
+                [
+                    "trendmicro: Crysis.json",
+                    0.047724056027367436
+                ],
+                [
+                    "BleepingComputer: kasseika.json",
+                    0.06210318618662604
+                ],
+                [
+                    "securityweek: rootkit.json",
+                    0.07237222982372883
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,127 @@
+{
+    "CTI": {
+        "text": "The Iranian Crambus espionage group (aka OilRig, APT34) staged an eight-month-long intrusion against a government in the Middle East between February and September 2023. During the compromise, the attackers stole files and passwords and, in one case, installed a PowerShell backdoor (dubbed PowerExchange) that was used to monitor incoming mails sent from an Exchange Server in order to execute commands sent by the attackers in the form of emails, and surreptitiously forwarded results  to the attackers. Malicious activity occurred on at least 12 computers and there is evidence that the attackers deployed backdoors and keyloggers on dozens more. In addition to deploying malware, the attackers made frequent use of the publicly available network administration tool Plink to configure port-forwarding rules on compromised machines, enabling remote access via the Remote Desktop Protocol (RDP). There is also evidence the attackers modified Windows firewall rules in order to enable remote access.",
+        "link": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/crambus-middle-east-government"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Crambus",
+                "relation": "is known as",
+                "object": "OilRig"
+            },
+            {
+                "subject": "Crambus",
+                "relation": "is known as",
+                "object": "APT34"
+            },
+            {
+                "subject": "Crambus",
+                "relation": "staged",
+                "object": "an eight-month-long intrusion against a government in the Middle East"
+            },
+            {
+                "subject": "attackers",
+                "relation": "stole",
+                "object": "files and passwords"
+            },
+            {
+                "subject": "attackers",
+                "relation": "installed",
+                "object": "a PowerShell backdoor dubbed PowerExchange"
+            },
+            {
+                "subject": "PowerExchange",
+                "relation": "was used to",
+                "object": "monitor incoming mails sent from an Exchange Server"
+            },
+            {
+                "subject": "PowerExchange",
+                "relation": "executes",
+                "object": "commands sent by the attackers in the form of emails"
+            },
+            {
+                "subject": "PowerExchange",
+                "relation": "forwarded",
+                "object": "results surreptitiously to the attackers"
+            },
+            {
+                "subject": "malicious activity",
+                "relation": "occurred on",
+                "object": "at least 12 computers"
+            },
+            {
+                "subject": "attackers",
+                "relation": "deployed",
+                "object": "backdoors and keyloggers on dozens more"
+            },
+            {
+                "subject": "attackers",
+                "relation": "made frequent use of",
+                "object": "the publicly available network administration tool Plink"
+            },
+            {
+                "subject": "Plink",
+                "relation": "used to",
+                "object": "configure port-forwarding rules on compromised machines"
+            },
+            {
+                "subject": "port-forwarding rules",
+                "relation": "enabled",
+                "object": "remote access via the Remote Desktop Protocol (RDP)"
+            },
+            {
+                "subject": "attackers",
+                "relation": "modified",
+                "object": "Windows firewall rules"
+            },
+            {
+                "subject": "modified Windows firewall rules",
+                "relation": "enabled",
+                "object": "remote access"
+            }
+        ],
+        "triples_count": 15,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2477,
+                "cost": 0.0019816
+            },
+            "output": {
+                "tokens": 416,
+                "cost": 0.000832
+            },
+            "total": {
+                "tokens": 2893,
+                "cost": 0.0028136
+            }
+        },
+        "time": 25.841108322143555,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\symantec\\Crambus-QD1-6c0.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: mastodon.json",
+                    0.10816494785328407
+                ],
+                [
+                    "BleepingComputer: github.json",
+                    0.10989713519777133
+                ],
+                [
+                    "AVERTIUM: charming-kitten.json",
+                    0.11361033053935626
+                ],
+                [
+                    "symantec: Seedworm.json",
+                    0.15037958606867594
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

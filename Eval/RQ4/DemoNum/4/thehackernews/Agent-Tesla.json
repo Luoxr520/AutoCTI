@@ -1,0 +1,149 @@
+{
+    "CTI": {
+        "text": "Attackers are weaponizing an old Microsoft Office vulnerability as part of phishing campaigns to distribute a strain of malware called Agent Tesla. The infection chains leverage decoy Excel documents attached in invoice-themed messages to trick potential targets into opening them and activate the exploitation of CVE-2017-11882 (CVSS score: 7.8), a memory corruption vulnerability in Office's Equation Editor that could result in code execution with the privileges of the user. The findings, which come from Zscaler ThreatLabz, build on prior reports from Fortinet FortiGuard Labs, which detailed a similar phishing campaign that exploited the security flaw to deliver the malware. Once a user downloads a malicious attachment and opens it, if their version of Microsoft Excel is vulnerable, the Excel file initiates communication with a malicious destination and proceeds to download additional files without requiring any further user interaction. The first payload is an obfuscated Visual Basic Script, which initiates the download of a malicious JPG file that comes embedded with a Base64-encoded DLL file.",
+        "link": "https://thehackernews.com/2023/12/hackers-exploiting-old-ms-excel.html"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "attackers",
+                    "relation": "weaponizing",
+                    "object": "an old Microsoft Office vulnerability"
+                },
+                {
+                    "subject": "phishing campaigns",
+                    "relation": "distribute",
+                    "object": "Agent Tesla malware"
+                },
+                {
+                    "subject": "infection chains",
+                    "relation": "leverage",
+                    "object": "decoy Excel documents"
+                },
+                {
+                    "subject": "decoy Excel documents",
+                    "relation": "attached in",
+                    "object": "invoice-themed messages"
+                },
+                {
+                    "subject": "decoy Excel documents",
+                    "relation": "trick",
+                    "object": "potential targets into opening them"
+                },
+                {
+                    "subject": "opening the documents",
+                    "relation": "activates",
+                    "object": "exploitation of CVE-2017-11882"
+                },
+                {
+                    "subject": "CVE-2017-11882",
+                    "relation": "is a",
+                    "object": "memory corruption vulnerability in Office's Equation Editor"
+                },
+                {
+                    "subject": "CVE-2017-11882",
+                    "relation": "could result in",
+                    "object": "code execution with the privileges of the user"
+                },
+                {
+                    "subject": "Zscaler ThreatLabz",
+                    "relation": "reported",
+                    "object": "the findings"
+                },
+                {
+                    "subject": "Fortinet FortiGuard Labs",
+                    "relation": "detailed",
+                    "object": "a similar phishing campaign"
+                },
+                {
+                    "subject": "similar phishing campaign",
+                    "relation": "exploited",
+                    "object": "security flaw to deliver the malware"
+                },
+                {
+                    "subject": "user",
+                    "relation": "downloads",
+                    "object": "malicious attachment"
+                },
+                {
+                    "subject": "user",
+                    "relation": "opens",
+                    "object": "malicious attachment"
+                },
+                {
+                    "subject": "vulnerable version of Microsoft Excel",
+                    "relation": "initiates communication with",
+                    "object": "malicious destination"
+                },
+                {
+                    "subject": "Excel file",
+                    "relation": "proceeds to download",
+                    "object": "additional files"
+                },
+                {
+                    "subject": "additional files",
+                    "relation": "downloaded without",
+                    "object": "further user interaction"
+                },
+                {
+                    "subject": "first payload",
+                    "relation": "is an",
+                    "object": "obfuscated Visual Basic Script"
+                },
+                {
+                    "subject": "obfuscated Visual Basic Script",
+                    "relation": "initiates the download of",
+                    "object": "malicious JPG file"
+                },
+                {
+                    "subject": "malicious JPG file",
+                    "relation": "comes embedded with",
+                    "object": "Base64-encoded DLL file"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2794,
+                "cost": 0.0022351999999999997
+            },
+            "output": {
+                "tokens": 541,
+                "cost": 0.0010819999999999998
+            },
+            "total": {
+                "tokens": 3335,
+                "cost": 0.0033171999999999993
+            }
+        },
+        "time": 33.11048102378845,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\thehackernews\\Agent-Tesla-QD1-2e9.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "thehackernews: ESG.json",
+                    0.14369188887513107
+                ],
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.15422323663778792
+                ],
+                [
+                    "thehackernews: UAC-0099.json",
+                    0.16179006118690545
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.19722037643026166
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

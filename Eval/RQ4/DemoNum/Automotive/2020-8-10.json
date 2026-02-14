@@ -1,0 +1,69 @@
+{
+    "CTI": {
+        "text": "The ransomware operators behind Conti ransomware claimed that they breached the Volkswagen Group. The ransomware operators appeared to have targeted one of the Volkswagen Group franchises based in Salzkotten, Germany. As of August 2020, the data leak contained a combined total of 857 number of workshop services related to invoices and automotive part sales related invoices.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Conti ransomware operators",
+                    "relation": "claimed to have breached",
+                    "object": "Volkswagen Group"
+                },
+                {
+                    "subject": "Conti ransomware operators",
+                    "relation": "targeted",
+                    "object": "a Volkswagen Group franchise based in Salzkotten, Germany"
+                },
+                {
+                    "subject": "data leak",
+                    "relation": "contained",
+                    "object": "857 number of workshop services related to invoices and automotive part sales related invoices"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 3236,
+                "cost": 0.0025888
+            },
+            "output": {
+                "tokens": 126,
+                "cost": 0.000252
+            },
+            "total": {
+                "tokens": 3362,
+                "cost": 0.0028408
+            }
+        },
+        "time": 4.394009590148926,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-8-10-QD1-b24.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "trendmicro: Conti.json",
+                    0.11979785723035538
+                ],
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.13164053615178495
+                ],
+                [
+                    "AVERTIUM: akira.json",
+                    0.13451279069247316
+                ],
+                [
+                    "AVERTIUM: mallox.json",
+                    0.14515016099798458
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

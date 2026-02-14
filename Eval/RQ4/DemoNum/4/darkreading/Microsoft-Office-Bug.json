@@ -1,0 +1,127 @@
+{
+    "CTI": {
+        "text": "Attackers are exploiting a 6-year-old Microsoft Office remote code execution (RCE) flaw to deliver spyware, in an email campaign weaponized by malicious Excel attachments and characterized by sophisticated evasion tactics. Threat actors dangle lures relating to business activity in spam emails that deliver files that contain CVE-2017-11882, an RCE flaw that dates back to 2014 and can allow for system takeover, Zscaler revealed in a blog post published Dec. 19. The end goal of the attack is to load Agent Tesla, a remote access Trojan (RAT) and advanced keylogger first discovered in 2014, and exfiltrate credentials and other data from an infected system via a Telegram bot run by the attackers.",
+        "link": "https://www.darkreading.com/cloud-security/attackers-exploit-microsoft-office-bug-spyware"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Attackers",
+                "relation": "are exploiting",
+                "object": "a 6-year-old Microsoft Office remote code execution flaw"
+            },
+            {
+                "subject": "remote code execution flaw",
+                "relation": "delivers",
+                "object": "spyware"
+            },
+            {
+                "subject": "email campaign",
+                "relation": "weaponized by",
+                "object": "malicious Excel attachments"
+            },
+            {
+                "subject": "email campaign",
+                "relation": "characterized by",
+                "object": "sophisticated evasion tactics"
+            },
+            {
+                "subject": "Threat actors",
+                "relation": "dangle lures relating to",
+                "object": "business activity in spam emails"
+            },
+            {
+                "subject": "spam emails",
+                "relation": "deliver files that contain",
+                "object": "CVE-2017-11882"
+            },
+            {
+                "subject": "CVE-2017-11882",
+                "relation": "is an",
+                "object": "RCE flaw"
+            },
+            {
+                "subject": "CVE-2017-11882",
+                "relation": "dates back to",
+                "object": "2014"
+            },
+            {
+                "subject": "CVE-2017-11882",
+                "relation": "can allow for",
+                "object": "system takeover"
+            },
+            {
+                "subject": "Zscaler",
+                "relation": "revealed",
+                "object": "the attack details"
+            },
+            {
+                "subject": "end goal of the attack",
+                "relation": "is to load",
+                "object": "Agent Tesla"
+            },
+            {
+                "subject": "Agent Tesla",
+                "relation": "is a",
+                "object": "remote access Trojan (RAT) and advanced keylogger"
+            },
+            {
+                "subject": "Agent Tesla",
+                "relation": "first discovered in",
+                "object": "2014"
+            },
+            {
+                "subject": "Agent Tesla",
+                "relation": "exfiltrates",
+                "object": "credentials and other data from an infected system"
+            },
+            {
+                "subject": "data exfiltration",
+                "relation": "via",
+                "object": "a Telegram bot run by the attackers"
+            }
+        ],
+        "triples_count": 15,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2784,
+                "cost": 0.0022272
+            },
+            "output": {
+                "tokens": 441,
+                "cost": 0.000882
+            },
+            "total": {
+                "tokens": 3225,
+                "cost": 0.0031092
+            }
+        },
+        "time": 24.97577142715454,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\darkreading\\Microsoft-Office-Bug-QD1-be9.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: Microsoft.json",
+                    0.12537074080312716
+                ],
+                [
+                    "thehackernews: ESG.json",
+                    0.13275773876035138
+                ],
+                [
+                    "threatPost: Atlassian.json",
+                    0.14395134752323036
+                ],
+                [
+                    "thehackernews: Agent-Tesla.json",
+                    0.19722037643026166
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "CTI": {
+        "text": "Parts manufacturer Gedia Automotive Group, has been forced to shut down its IT systems and send staff home due to a massive cyber attack. The group behind the attack used the Sodinokibi malware, a malware that specializes in exploiting known security weaknesses to access companies\u2019 IT systems. The malware encrypts sensitive data and demands a ransom payment to give companies access to their data. The attackers used the open-source tool \"Adrecon\" to gather information from Gedia's active directory. The hackers threaten to post more than 50 GB of confidential information, including blueprints of future projects and confidential employee and customer information. They already released a file in a Russian hacking forum containing records with sensitive user name and passwords, as proof that they have infiltrated the company.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Gedia Automotive Group",
+                    "relation": "was attacked by",
+                    "object": "Sodinokibi malware"
+                },
+                {
+                    "subject": "Sodinokibi malware",
+                    "relation": "specializes in",
+                    "object": "exploiting known security weaknesses"
+                },
+                {
+                    "subject": "Sodinokibi malware",
+                    "relation": "encrypts",
+                    "object": "sensitive data"
+                },
+                {
+                    "subject": "Sodinokibi malware",
+                    "relation": "demands",
+                    "object": "ransom payment"
+                },
+                {
+                    "subject": "Attackers",
+                    "relation": "used",
+                    "object": "Adrecon"
+                },
+                {
+                    "subject": "Adrecon",
+                    "relation": "is an",
+                    "object": "open-source tool"
+                },
+                {
+                    "subject": "Adrecon",
+                    "relation": "gathers information from",
+                    "object": "active directory"
+                },
+                {
+                    "subject": "Hackers",
+                    "relation": "threaten to post",
+                    "object": "50 GB of confidential information"
+                },
+                {
+                    "subject": "Confidential information",
+                    "relation": "includes",
+                    "object": "blueprints of future projects"
+                },
+                {
+                    "subject": "Confidential information",
+                    "relation": "includes",
+                    "object": "employee and customer information"
+                },
+                {
+                    "subject": "Hackers",
+                    "relation": "released",
+                    "object": "a file in a Russian hacking forum"
+                },
+                {
+                    "subject": "Released file",
+                    "relation": "contains",
+                    "object": "records with sensitive user name and passwords"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2719,
+                "cost": 0.0021752
+            },
+            "output": {
+                "tokens": 323,
+                "cost": 0.000646
+            },
+            "total": {
+                "tokens": 3042,
+                "cost": 0.0028212
+            }
+        },
+        "time": 15.73216724395752,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-1-6-QD1-c5b.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.0923686453647221
+                ],
+                [
+                    "Google_TAG: winrar.json",
+                    0.09248405631937832
+                ],
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.0993508222999246
+                ],
+                [
+                    "darkreading: Jupyter-Infostealer.json",
+                    0.10992427601548123
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

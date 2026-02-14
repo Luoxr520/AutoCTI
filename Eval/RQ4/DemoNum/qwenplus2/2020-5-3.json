@@ -1,0 +1,72 @@
+{
+    "CTI": {
+        "text": "B-H Transfer, a US-based trucking company, was targeted by ransomware in February, just as COVID-19 spread across the US. The attackers penetrated the company's backup files, deleted, and encrypted them. It took the company almost two weeks to restore its systems to the original state.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "B-H Transfer",
+                "relation": "was targeted by",
+                "object": "ransomware"
+            },
+            {
+                "subject": "attackers",
+                "relation": "penetrated",
+                "object": "the company's backup files"
+            },
+            {
+                "subject": "attackers",
+                "relation": "deleted and encrypted",
+                "object": "the company's backup files"
+            },
+            {
+                "subject": "B-H Transfer",
+                "relation": "took",
+                "object": "almost two weeks to restore its systems to the original state"
+            }
+        ],
+        "triples_count": 4,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2750,
+                "cost": 0.0021999999999999997
+            },
+            "output": {
+                "tokens": 110,
+                "cost": 0.00021999999999999998
+            },
+            "total": {
+                "tokens": 2860,
+                "cost": 0.00242
+            }
+        },
+        "time": 7.177773475646973,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-3-QD1-26f.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: Microsoft.json",
+                    0.07634944169155179
+                ],
+                [
+                    "AVERTIUM: akira.json",
+                    0.07896104100275153
+                ],
+                [
+                    "securityweek: screenconnect.json",
+                    0.09799496539753605
+                ],
+                [
+                    "BleepingComputer: goanywhere.json",
+                    0.10438978754547656
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

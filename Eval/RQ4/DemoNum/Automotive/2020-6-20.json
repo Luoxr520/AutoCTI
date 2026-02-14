@@ -1,0 +1,84 @@
+{
+    "CTI": {
+        "text": "Researchers found an exploitable code execution vulnerability in the web-based management of WAGO's programmable automation controllers, used in the automotive industry. The vulnerability allows a specially crafted series of HTTP requests to cause local code execution resulting in remote code execution.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Researchers",
+                    "relation": "found",
+                    "object": "an exploitable code execution vulnerability"
+                },
+                {
+                    "subject": "vulnerability",
+                    "relation": "is in",
+                    "object": "the web-based management of WAGO's programmable automation controllers"
+                },
+                {
+                    "subject": "WAGO's programmable automation controllers",
+                    "relation": "used in",
+                    "object": "the automotive industry"
+                },
+                {
+                    "subject": "vulnerability",
+                    "relation": "allows",
+                    "object": "a specially crafted series of HTTP requests"
+                },
+                {
+                    "subject": "a specially crafted series of HTTP requests",
+                    "relation": "causes",
+                    "object": "local code execution"
+                },
+                {
+                    "subject": "local code execution",
+                    "relation": "results in",
+                    "object": "remote code execution"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 1972,
+                "cost": 0.0015776
+            },
+            "output": {
+                "tokens": 174,
+                "cost": 0.000348
+            },
+            "total": {
+                "tokens": 2146,
+                "cost": 0.0019256
+            }
+        },
+        "time": 10.405028581619263,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-20-QD1-e3c.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: CVE-2023-36884.json",
+                    0.1281491973257759
+                ],
+                [
+                    "symantec: Log4j.json",
+                    0.1320461449693935
+                ],
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.15108439075728008
+                ],
+                [
+                    "symantec: Follina.json",
+                    0.16939700783927272
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

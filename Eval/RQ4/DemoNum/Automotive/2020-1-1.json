@@ -1,0 +1,51 @@
+{
+    "CTI": {
+        "text": "Two Toyota Tacoma trucks and a Toyota 4Runnerwere truck were stolen from their owners\u2019 driveways in Cornwall, Canada and found soon afterwards in Montreal. It\u2019s believed that the thieves reprogrammed the truck\u2019s keyless push start ignition.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [],
+        "triples_count": 0,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2699,
+                "cost": 0.0021592
+            },
+            "output": {
+                "tokens": 5,
+                "cost": 9.999999999999999e-06
+            },
+            "total": {
+                "tokens": 2704,
+                "cost": 0.0021692
+            }
+        },
+        "time": 2.3227286338806152,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-1-1-QD1-973.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Seedworm.json",
+                    0.024049027356123666
+                ],
+                [
+                    "Google_TAG: egypt.json",
+                    0.0271940564430837
+                ],
+                [
+                    "AVERTIUM: fargo.json",
+                    0.037111344927469675
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.038616297511055137
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

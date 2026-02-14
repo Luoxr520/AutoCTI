@@ -1,0 +1,102 @@
+{
+    "CTI": {
+        "text": "Researchers identified two vulnerabilities in robotic fleet vehicles made by Model Industrial Robots. One of the wireless interfaces in MiR200 and MiR100 robots, come with a pre-configured Wi-Fi mode that has well known credentials. Moreover, the vehicle\u2019s control dashboard is accessible through a hardcoded IP address with widely spread credentials. This flaw allows attackers to take control of the robot remotely and make use of the default user interfaces MiR has created, lowering the complexity of attacks and making them available to entry-level attackers. More elaborated attacks can also be established by clearing authentication and sending network requests directly.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Researchers",
+                "relation": "identified",
+                "object": "two vulnerabilities"
+            },
+            {
+                "subject": "vulnerabilities",
+                "relation": "are in",
+                "object": "robotic fleet vehicles made by Model Industrial Robots"
+            },
+            {
+                "subject": "MiR200 and MiR100 robots",
+                "relation": "come with",
+                "object": "a pre-configured Wi-Fi mode"
+            },
+            {
+                "subject": "pre-configured Wi-Fi mode",
+                "relation": "has",
+                "object": "well known credentials"
+            },
+            {
+                "subject": "vehicle\u2019s control dashboard",
+                "relation": "is accessible through",
+                "object": "a hardcoded IP address"
+            },
+            {
+                "subject": "hardcoded IP address",
+                "relation": "has",
+                "object": "widely spread credentials"
+            },
+            {
+                "subject": "this flaw",
+                "relation": "allows",
+                "object": "attackers to take control of the robot remotely"
+            },
+            {
+                "subject": "attackers",
+                "relation": "can make use of",
+                "object": "the default user interfaces MiR has created"
+            },
+            {
+                "subject": "default user interfaces",
+                "relation": "lower",
+                "object": "the complexity of attacks"
+            },
+            {
+                "subject": "attacks",
+                "relation": "can be established by",
+                "object": "clearing authentication and sending network requests directly"
+            }
+        ],
+        "triples_count": 10,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3017,
+                "cost": 0.0024135999999999997
+            },
+            "output": {
+                "tokens": 281,
+                "cost": 0.000562
+            },
+            "total": {
+                "tokens": 3298,
+                "cost": 0.0029755999999999997
+            }
+        },
+        "time": 17.090675592422485,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-9-QD1-8b7.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: apache-activemq.json",
+                    0.063719375236575
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.06925273790729748
+                ],
+                [
+                    "symantec: Crambus.json",
+                    0.07146459425877988
+                ],
+                [
+                    "securityweek: nuget.json",
+                    0.0750923130499116
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

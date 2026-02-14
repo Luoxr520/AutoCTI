@@ -1,0 +1,102 @@
+{
+    "CTI": {
+        "text": "Microsoft has identified a nation-state activity group tracked as Flax Typhoon, based in China, that is targeting dozens of organizations in Taiwan with the likely intention of performing espionage. Flax Typhoon gains and maintains long-term access to Taiwanese organizations' networks with minimal use of malware, relying on tools built into the operating system, along with some normally benign software to quietly remain in these networks. Microsoft has not observed Flax Typhoon using this access to conduct additional actions. This blog aims to raise awareness of the techniques used by this threat actor and inform better defenses to protect against future attacks.",
+        "link": "https://www.microsoft.com/en-us/security/blog/2023/08/24/flax-typhoon-using-legitimate-software-to-quietly-access-taiwanese-organizations/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Flax Typhoon",
+                "relation": "is tracked as",
+                "object": "nation-state activity group"
+            },
+            {
+                "subject": "Flax Typhoon",
+                "relation": "based in",
+                "object": "China"
+            },
+            {
+                "subject": "Flax Typhoon",
+                "relation": "targeting",
+                "object": "dozens of organizations in Taiwan"
+            },
+            {
+                "subject": "Flax Typhoon",
+                "relation": "likely intention of",
+                "object": "performing espionage"
+            },
+            {
+                "subject": "Flax Typhoon",
+                "relation": "gains and maintains",
+                "object": "long-term access to Taiwanese organizations' networks"
+            },
+            {
+                "subject": "Flax Typhoon",
+                "relation": "uses minimal",
+                "object": "malware"
+            },
+            {
+                "subject": "Flax Typhoon",
+                "relation": "relies on",
+                "object": "tools built into the operating system"
+            },
+            {
+                "subject": "Flax Typhoon",
+                "relation": "relies on",
+                "object": "benign software"
+            },
+            {
+                "subject": "Flax Typhoon",
+                "relation": "remains in",
+                "object": "these networks quietly"
+            },
+            {
+                "subject": "Microsoft",
+                "relation": "has not observed",
+                "object": "Flax Typhoon using this access to conduct additional actions"
+            }
+        ],
+        "triples_count": 10,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3084,
+                "cost": 0.0024671999999999997
+            },
+            "output": {
+                "tokens": 278,
+                "cost": 0.000556
+            },
+            "total": {
+                "tokens": 3362,
+                "cost": 0.0030231999999999998
+            }
+        },
+        "time": 19.41228437423706,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\Microsoft\\taiwanese-QD1-eb6.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: north-korean.json",
+                    0.10745727350299607
+                ],
+                [
+                    "Microsoft: peach-sandstorm.json",
+                    0.11398702441188113
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.14944872063442746
+                ],
+                [
+                    "Microsoft: flax-typhoon.json",
+                    0.4675926325392116
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

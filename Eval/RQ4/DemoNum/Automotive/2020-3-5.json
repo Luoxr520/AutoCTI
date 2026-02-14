@@ -1,0 +1,72 @@
+{
+    "CTI": {
+        "text": "Unauthenticated users were able to execute code on remote servers of fleet management and maintenance software, Fleetco. The original exploit demonstrated how an attacker could create new accident records.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Unauthenticated users",
+                "relation": "were able to execute",
+                "object": "code on remote servers"
+            },
+            {
+                "subject": "remote servers",
+                "relation": "of",
+                "object": "Fleetco"
+            },
+            {
+                "subject": "Fleetco",
+                "relation": "is",
+                "object": "fleet management and maintenance software"
+            },
+            {
+                "subject": "original exploit",
+                "relation": "demonstrated",
+                "object": "how an attacker could create new accident records"
+            }
+        ],
+        "triples_count": 4,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2216,
+                "cost": 0.0017728
+            },
+            "output": {
+                "tokens": 110,
+                "cost": 0.00021999999999999998
+            },
+            "total": {
+                "tokens": 2326,
+                "cost": 0.0019928
+            }
+        },
+        "time": 6.246844291687012,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-3-5-QD1-ded.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: atlassian.json",
+                    0.10313143335097222
+                ],
+                [
+                    "darkreading: SolarWinds-Style.json",
+                    0.10906221467482659
+                ],
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.11135920145408607
+                ],
+                [
+                    "BleepingComputer: goanywhere.json",
+                    0.13147153788988464
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

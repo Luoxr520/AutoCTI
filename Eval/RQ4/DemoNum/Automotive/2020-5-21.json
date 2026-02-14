@@ -1,0 +1,69 @@
+{
+    "CTI": {
+        "text": "London's Metropolitan Police reported that a Ford S Max was stolen with a keyless hacking device.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Ford S Max",
+                    "relation": "was stolen with",
+                    "object": "a keyless hacking device"
+                },
+                {
+                    "subject": "Metropolitan Police",
+                    "relation": "reported",
+                    "object": "a Ford S Max was stolen"
+                },
+                {
+                    "subject": "keyless hacking device",
+                    "relation": "used in",
+                    "object": "the theft of a Ford S Max"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2399,
+                "cost": 0.0019191999999999998
+            },
+            "output": {
+                "tokens": 110,
+                "cost": 0.00021999999999999998
+            },
+            "total": {
+                "tokens": 2509,
+                "cost": 0.0021392
+            }
+        },
+        "time": 10.369659900665283,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-21-QD1-90a.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.0503552333843305
+                ],
+                [
+                    "trendmicro: Crysis.json",
+                    0.05638995978085246
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.0659863442092737
+                ],
+                [
+                    "securityweek: pwn2own.json",
+                    0.09322490122785788
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

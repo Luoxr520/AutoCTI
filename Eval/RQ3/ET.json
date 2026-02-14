@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {"id": 0, "name": "Seedworm", "type": "Attacker"},
+    {"id": 1, "name": "Muddywater", "type": "Attacker"},
+    {"id": 2, "name": "organizations in the telecommunications sector", "type": "Unclassified"},
+    {"id": 3, "name": "Egypt", "type": "Location"},
+    {"id": 4, "name": "Sudan", "type": "Location"},
+    {"id": 5, "name": "Tanzania", "type": "Location"},
+    {"id": 6, "name": "at least 2017", "type": "Time"},
+    {"id": 7, "name": "attacks on organizations in the Middle East", "type": "Event"},
+    {"id": 8, "name": "a cyberespionage group", "type": "Attacker"},
+    {"id": 9, "name": "Iran's Ministry of Intelligence and Security (MOIS)", "type": "Organization"},
+    {"id": 10, "name": "The attackers", "type": "Attacker"},
+    {"id": 11, "name": "MuddyC2Go infrastructure", "type": "Infrastructure"},
+    {"id": 12, "name": "a MuddyC2Go PowerShell launcher", "type": "Tool"},
+    {"id": 13, "name": "the SimpleHelp remote access tool", "type": "Tool"},
+    {"id": 14, "name": "Venom Proxy", "type": "Tool"},
+    {"id": 15, "name": "a custom keylogging tool", "type": "Malware"},
+    {"id": 16, "name": "publicly available and living-off-the-land tools", "type": "Tool"}
+  ],
+  "links": [
+    {"source": 0, "target": 1, "relation": "is known as"},
+    {"source": 0, "target": 2, "relation": "targeted"},
+    {"source": 2, "target": 3, "relation": "locate in"},
+    {"source": 2, "target": 4, "relation": "locate in"},
+    {"source": 2, "target": 5, "relation": "locate in"},
+    {"source": 0, "target": 6, "relation": "has been active since"},
+    {"source": 0, "target": 7, "relation": "is most strongly associated with"},
+    {"source": 0, "target": 8, "relation": "is"},
+    {"source": 0, "target": 9, "relation": "is a subordinate part of"},
+    {"source": 10, "target": 11, "relation": "used"},
+    {"source": 10, "target": 12, "relation": "used"},
+    {"source": 10, "target": 13, "relation": "use"},
+    {"source": 10, "target": 14, "relation": "use"},
+    {"source": 10, "target": 15, "relation": "use"},
+    {"source": 10, "target": 16, "relation": "use"}
+  ]
+}

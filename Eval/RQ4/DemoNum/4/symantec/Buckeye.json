@@ -1,0 +1,112 @@
+{
+    "CTI": {
+        "text": "Beginning in March 2016, Buckeye began using a variant of DoublePulsar (Backdoor.Doublepulsar), a backdoor that was subsequently released by the Shadow Brokers in 2017. DoublePulsar was delivered to victims using a custom exploit tool (Trojan.Bemstour) that was specifically designed to install DoublePulsar. Bemstour exploits two Windows vulnerabilities in order to achieve remote kernel code execution on targeted computers. One vulnerability is a Windows zero-day vulnerability (CVE-2019-0703) discovered by Symantec. The second Windows vulnerability (CVE-2017-0143) was patched in March 2017 after it was discovered to have been used by two exploit tools\u2014EternalRomance and EternalSynergy\u2014that were also released as part of the Shadow Brokers leak.",
+        "link": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/buckeye-windows-zero-day-exploit"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Buckeye",
+                "relation": "began using",
+                "object": "a variant of DoublePulsar (Backdoor.Doublepulsar)"
+            },
+            {
+                "subject": "DoublePulsar",
+                "relation": "was released by",
+                "object": "the Shadow Brokers"
+            },
+            {
+                "subject": "DoublePulsar",
+                "relation": "delivered to victims using",
+                "object": "a custom exploit tool (Trojan.Bemstour)"
+            },
+            {
+                "subject": "Trojan.Bemstour",
+                "relation": "designed to install",
+                "object": "DoublePulsar"
+            },
+            {
+                "subject": "Bemstour",
+                "relation": "exploits",
+                "object": "two Windows vulnerabilities"
+            },
+            {
+                "subject": "Bemstour",
+                "relation": "achieves",
+                "object": "remote kernel code execution on targeted computers"
+            },
+            {
+                "subject": "One vulnerability",
+                "relation": "is a",
+                "object": "Windows zero-day vulnerability (CVE-2019-0703)"
+            },
+            {
+                "subject": "CVE-2019-0703",
+                "relation": "discovered by",
+                "object": "Symantec"
+            },
+            {
+                "subject": "The second Windows vulnerability",
+                "relation": "is",
+                "object": "CVE-2017-0143"
+            },
+            {
+                "subject": "CVE-2017-0143",
+                "relation": "patched in",
+                "object": "March 2017"
+            },
+            {
+                "subject": "CVE-2017-0143",
+                "relation": "used by",
+                "object": "two exploit tools\u2014EternalRomance and EternalSynergy"
+            },
+            {
+                "subject": "EternalRomance and EternalSynergy",
+                "relation": "released as part of",
+                "object": "the Shadow Brokers leak"
+            }
+        ],
+        "triples_count": 12,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2596,
+                "cost": 0.0020767999999999997
+            },
+            "output": {
+                "tokens": 400,
+                "cost": 0.0007999999999999999
+            },
+            "total": {
+                "tokens": 2996,
+                "cost": 0.0028767999999999997
+            }
+        },
+        "time": 23.180508375167847,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\symantec\\Buckeye-QD1-7a3.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: goblin.json",
+                    0.10417454790467569
+                ],
+                [
+                    "threatPost: CISA.json",
+                    0.10915013244073388
+                ],
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.15144034589186636
+                ],
+                [
+                    "darkreading: Microsoft-Outlook.json",
+                    0.15792402635456138
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

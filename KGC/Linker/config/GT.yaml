@@ -1,0 +1,33 @@
+defaults:  
+  - _self_
+
+# CTI_Source: BleepingComputer
+# inFile: akira.json
+
+addition:
+  darkreading:
+    - Bluetooth-Flaw.json
+  securityweek:
+    - wallescape.json
+  thehackernews:
+    - ESG.json
+  threatPost:
+    - H0lyGh0st.json
+  trendmicro:
+    - Akira.json
+
+inSet: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/dataset/Merger-output-large-GT
+outSet: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/dataset/Linker-outputs-GT
+
+## oepnai config
+model: qwen-omni-turbo
+api_key: sk-47f2d862adf74ade822f5db3c5a6a2c1
+url: https://dashscope.aliyuncs.com/compatible-mode/v1
+
+
+## prompt constructor
+link_prompt_folder: Toolbox/LinkerPrompt
+link_prompt_file: GT.jinja
+
+## prompt store
+link_prompt_set: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/dataset/Linker-outputs-GT/prompt_store/metrics

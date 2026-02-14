@@ -1,0 +1,137 @@
+{
+    "CTI": {
+        "text": "A suspicious NuGet package designed to harvest data from industrial systems appears to be targeting developers who use technology from Chinese company Bozhon, ReversingLabs reports. Named SqzrFramework480 and published on the NuGet repository in January 2024, the package is a .NET library responsible for calibrating robotic movement settings, managing and creating GUIs, initializing and configuring machine vision libraries, and more.However, it can also harvest various types of information from different types of industrial systems, including cameras and robotic arms, can take screenshots, send ping packets, and open sockets for data transfer. \u201cNone of those behaviors are resolutely malicious. However, when taken together, they raise alarms. For example, we can assume that the screenshots that are being taken are sent to the remote server via the open socket. The ping serves as a heartbeat check to see if the exfiltration server is alive,\u201d ReversingLabs notes. The function that takes screenshots, which is not explicitly declared in the code, operates in a continuous loop if successful, capturing the primary screen every minute and sending the information to a remote IP address, via the opened socket.",
+        "link": "https://www.securityweek.com/suspicious-nuget-package-harvesting-information-from-industrial-systems/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "NuGet package",
+                "relation": "designed to harvest data from",
+                "object": "industrial systems"
+            },
+            {
+                "subject": "NuGet package",
+                "relation": "targeting",
+                "object": "developers who use technology from Chinese company Bozhon"
+            },
+            {
+                "subject": "NuGet package",
+                "relation": "named",
+                "object": "SqzrFramework480"
+            },
+            {
+                "subject": "SqzrFramework480",
+                "relation": "published on",
+                "object": "the NuGet repository"
+            },
+            {
+                "subject": "SqzrFramework480",
+                "relation": "is a",
+                "object": ".NET library"
+            },
+            {
+                "subject": "SqzrFramework480",
+                "relation": "responsible for",
+                "object": "calibrating robotic movement settings"
+            },
+            {
+                "subject": "SqzrFramework480",
+                "relation": "manages and creates",
+                "object": "GUIs"
+            },
+            {
+                "subject": "SqzrFramework480",
+                "relation": "initializes and configures",
+                "object": "machine vision libraries"
+            },
+            {
+                "subject": "SqzrFramework480",
+                "relation": "can harvest",
+                "object": "various types of information from different types of industrial systems"
+            },
+            {
+                "subject": "SqzrFramework480",
+                "relation": "can take",
+                "object": "screenshots"
+            },
+            {
+                "subject": "SqzrFramework480",
+                "relation": "can send",
+                "object": "ping packets"
+            },
+            {
+                "subject": "SqzrFramework480",
+                "relation": "can open",
+                "object": "sockets for data transfer"
+            },
+            {
+                "subject": "screenshots",
+                "relation": "sent to",
+                "object": "remote server via the open socket"
+            },
+            {
+                "subject": "ping",
+                "relation": "serves as",
+                "object": "a heartbeat check to see if the exfiltration server is alive"
+            },
+            {
+                "subject": "function that takes screenshots",
+                "relation": "operates in",
+                "object": "a continuous loop if successful"
+            },
+            {
+                "subject": "function that takes screenshots",
+                "relation": "captures",
+                "object": "the primary screen every minute"
+            },
+            {
+                "subject": "captured information",
+                "relation": "sent to",
+                "object": "a remote IP address, via the opened socket"
+            }
+        ],
+        "triples_count": 17,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3269,
+                "cost": 0.0026152
+            },
+            "output": {
+                "tokens": 502,
+                "cost": 0.001004
+            },
+            "total": {
+                "tokens": 3771,
+                "cost": 0.0036191999999999995
+            }
+        },
+        "time": 34.11816096305847,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\securityweek\\nuget-QD1-a64.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: vmware.json",
+                    0.056854284813798034
+                ],
+                [
+                    "AVERTIUM: CVE-2023-36884.json",
+                    0.057079615281677334
+                ],
+                [
+                    "darkreading: Jupyter-Infostealer.json",
+                    0.06318604842548722
+                ],
+                [
+                    "securityweek: pypi.json",
+                    0.10127678136111298
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

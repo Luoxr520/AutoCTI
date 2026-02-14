@@ -1,0 +1,212 @@
+{
+    "CTI": {
+        "text": "In February 2022, CISA, the Federal Bureau of Investigation (FBI), the U.S. Cyber Command Cyber National Mission Force (CNMF), the United Kingdom's National Cyber Security Centre (NCSC-UK), and the National Security Agency (NSA) released a joint statement regarding their observation of Iranian government-sponsored APT MuddyWater and their malicious cyber activity. MuddyWater is known for cyber espionage, as well as other cybercriminal operations as part of Iran's Ministry of Intelligence and Security. The threat actors have targeted several government and private sector organizations in the defense, oil and natural gas, local government, and telecommunications industries - focusing on Asia, Africa, Europe, and North America. MuddyWater conducts broad cyber campaigns, exploiting publicly reported vulnerabilities and using open-source tools and strategies to gain access to their target's systems. Also, known as MERCURY, Earth Vetala, Static Kitten, Seedworm, and TEMP.Zagros, MuddyWater is an Iranian APT and a subservient element within the Iranian Ministry of Intelligence and Security (MOIS). The group has been active since 2018 and has provided stolen data and access to the Iranian government by exploiting known vulnerabilities and using open-source tools to deploy their ransomware. In November 2021, Cisco Talos observed a campaign targeting Turkey government entities, including the Scientific and Technological Research Council of Turkey - Tubitak. MuddyWater has three goals when conducting their attacks: cyber espionage, intellectual property theft, and ransomware attacks.",
+        "link": "https://explore.avertium.com/resource/in-depth-look-at-iranian-apt-muddywater"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "MuddyWater",
+                "relation": "is an Iranian government-sponsored APT",
+                "object": "Iranian government"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "known for",
+                "object": "cyber espionage"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "conducts",
+                "object": "cybercriminal operations"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "part of",
+                "object": "Iran's Ministry of Intelligence and Security"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "targets",
+                "object": "government organizations"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "targets",
+                "object": "private sector organizations"
+            },
+            {
+                "subject": "targeted organizations",
+                "relation": "in industries",
+                "object": "defense"
+            },
+            {
+                "subject": "targeted organizations",
+                "relation": "in industries",
+                "object": "oil and natural gas"
+            },
+            {
+                "subject": "targeted organizations",
+                "relation": "in industries",
+                "object": "local government"
+            },
+            {
+                "subject": "targeted organizations",
+                "relation": "in industries",
+                "object": "telecommunications"
+            },
+            {
+                "subject": "targeted organizations",
+                "relation": "focus on",
+                "object": "Asia"
+            },
+            {
+                "subject": "targeted organizations",
+                "relation": "focus on",
+                "object": "Africa"
+            },
+            {
+                "subject": "targeted organizations",
+                "relation": "focus on",
+                "object": "Europe"
+            },
+            {
+                "subject": "targeted organizations",
+                "relation": "focus on",
+                "object": "North America"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "conducts",
+                "object": "broad cyber campaigns"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "exploits",
+                "object": "publicly reported vulnerabilities"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "uses",
+                "object": "open-source tools and strategies"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "is also known as",
+                "object": "MERCURY"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "is also known as",
+                "object": "Earth Vetala"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "is also known as",
+                "object": "Static Kitten"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "is also known as",
+                "object": "Seedworm"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "is also known as",
+                "object": "TEMP.Zagros"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "is a subservient element within",
+                "object": "Iranian Ministry of Intelligence and Security (MOIS)"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "has been active since",
+                "object": "2018"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "provides",
+                "object": "stolen data and access to the Iranian government"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "exploits",
+                "object": "known vulnerabilities"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "deploys",
+                "object": "ransomware"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "observed targeting",
+                "object": "Turkey government entities"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "observed targeting",
+                "object": "Scientific and Technological Research Council of Turkey - Tubitak"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "has goals",
+                "object": "cyber espionage"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "has goals",
+                "object": "intellectual property theft"
+            },
+            {
+                "subject": "MuddyWater",
+                "relation": "has goals",
+                "object": "ransomware attacks"
+            }
+        ],
+        "triples_count": 32,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3020,
+                "cost": 0.0024159999999999997
+            },
+            "output": {
+                "tokens": 818,
+                "cost": 0.0016359999999999999
+            },
+            "total": {
+                "tokens": 3838,
+                "cost": 0.004052
+            }
+        },
+        "time": 46.68581700325012,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\AVERTIUM\\muddywater-QD1-12f.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Google_TAG: iranian.json",
+                    0.1374787724002937
+                ],
+                [
+                    "thehackernews: FalseFont.json",
+                    0.15771460843482657
+                ],
+                [
+                    "AVERTIUM: charming-kitten.json",
+                    0.19329483975423312
+                ],
+                [
+                    "symantec: Seedworm.json",
+                    0.22967220956862217
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

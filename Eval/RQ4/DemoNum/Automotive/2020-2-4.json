@@ -1,0 +1,89 @@
+{
+    "CTI": {
+        "text": "Tracker, a South African company operating a vehicle recovery service was hacked by ransomware, disrupting customer access to its services. To stop the spread of the ransomware across the network, the company took its systems offline, thereby causing a service disruption. Additionally, the company operates a telematic server to track and analyze its customer's vehicle usage and has over a million subscribers. It has not yet been disclosed if customers\u2019 sensitive data was compromised during the attack.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Tracker",
+                    "relation": "was hacked by",
+                    "object": "ransomware"
+                },
+                {
+                    "subject": "ransomware",
+                    "relation": "disrupted",
+                    "object": "customer access to services"
+                },
+                {
+                    "subject": "company",
+                    "relation": "took its systems offline",
+                    "object": "to stop the spread of ransomware"
+                },
+                {
+                    "subject": "company",
+                    "relation": "operates",
+                    "object": "a telematic server"
+                },
+                {
+                    "subject": "telematic server",
+                    "relation": "is used to",
+                    "object": "track and analyze vehicle usage"
+                },
+                {
+                    "subject": "Tracker",
+                    "relation": "has",
+                    "object": "over a million subscribers"
+                },
+                {
+                    "subject": "customers\u2019 sensitive data",
+                    "relation": "may have been compromised",
+                    "object": "during the attack"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2629,
+                "cost": 0.0021032
+            },
+            "output": {
+                "tokens": 187,
+                "cost": 0.000374
+            },
+            "total": {
+                "tokens": 2816,
+                "cost": 0.0024771999999999997
+            }
+        },
+        "time": 9.073058128356934,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-2-4-QD1-ae7.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: 3AM.json",
+                    0.08037953234090596
+                ],
+                [
+                    "darkreading: apache-activemq.json",
+                    0.08423045144551415
+                ],
+                [
+                    "AVERTIUM: cuba-ransomware.json",
+                    0.08446523431417861
+                ],
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.08807490944883278
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

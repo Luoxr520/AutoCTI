@@ -1,0 +1,84 @@
+{
+    "CTI": {
+        "text": "Car thieves smashed the window of a \u00a346,000 Audi in Birmingham and started the car using a relay gadget bought online. It took the thieves 40 seconds in total to start the car's engine and drive away.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "car thieves",
+                    "relation": "smashed the window of",
+                    "object": "Audi"
+                },
+                {
+                    "subject": "Audi",
+                    "relation": "has a value of",
+                    "object": "\u00a346,000"
+                },
+                {
+                    "subject": "thieves",
+                    "relation": "started the car using",
+                    "object": "relay gadget"
+                },
+                {
+                    "subject": "relay gadget",
+                    "relation": "was bought",
+                    "object": "online"
+                },
+                {
+                    "subject": "thieves",
+                    "relation": "took",
+                    "object": "40 seconds to start the car's engine"
+                },
+                {
+                    "subject": "location",
+                    "relation": "is",
+                    "object": "Birmingham"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2839,
+                "cost": 0.0022711999999999997
+            },
+            "output": {
+                "tokens": 193,
+                "cost": 0.000386
+            },
+            "total": {
+                "tokens": 3032,
+                "cost": 0.0026571999999999998
+            }
+        },
+        "time": 6.751436710357666,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-12-QD1-b17.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "trendmicro: Earth-Kitsune.json",
+                    0.02547711925624223
+                ],
+                [
+                    "securityweek: pwn2own.json",
+                    0.032980624496991844
+                ],
+                [
+                    "BleepingComputer: chrome.json",
+                    0.033660874303169025
+                ],
+                [
+                    "securityweek: screenconnect.json",
+                    0.033962775558341464
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

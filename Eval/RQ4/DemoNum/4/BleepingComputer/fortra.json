@@ -1,0 +1,112 @@
+{
+    "CTI": {
+        "text": "In early 2023, it was revealed that the Clop ransomware gang had breached 130 companies and organizations by leveraging a critical remote code execution flaw in GoAnywhere MFT. The flaw is tracked as CVE-2023-0669 and had been exploited as a zero-day vulnerability since January 18, 2023. Fortra discovered its exploitation on February 3, 2023, and released patches three days later. Unfortunately, the damage had already been done, with Clop conducting widespread data theft attacks that impacted organizations worldwide, causing data leaks, reputational damage, and operational disruptions. Some notable victims of those attacks include Crown Resorts, CHS, Hatch Bank, Rubrik, the City of Toronto, Hitachi Energy, Procter & Gamble, and Saks Fifth Avenue.",
+        "link": "https://www.bleepingcomputer.com/news/security/fortra-warns-of-new-critical-goanywhere-mft-auth-bypass-patch-now/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Clop ransomware gang",
+                "relation": "had breached",
+                "object": "130 companies and organizations"
+            },
+            {
+                "subject": "Clop ransomware gang",
+                "relation": "leveraged",
+                "object": "a critical remote code execution flaw in GoAnywhere MFT"
+            },
+            {
+                "subject": "The flaw",
+                "relation": "is tracked as",
+                "object": "CVE-2023-0669"
+            },
+            {
+                "subject": "CVE-2023-0669",
+                "relation": "was exploited as",
+                "object": "a zero-day vulnerability"
+            },
+            {
+                "subject": "Fortra",
+                "relation": "discovered",
+                "object": "its exploitation"
+            },
+            {
+                "subject": "Fortra",
+                "relation": "released",
+                "object": "patches"
+            },
+            {
+                "subject": "Clop",
+                "relation": "conducted",
+                "object": "widespread data theft attacks"
+            },
+            {
+                "subject": "Data theft attacks",
+                "relation": "impacted",
+                "object": "organizations worldwide"
+            },
+            {
+                "subject": "Data theft attacks",
+                "relation": "caused",
+                "object": "data leaks"
+            },
+            {
+                "subject": "Data theft attacks",
+                "relation": "caused",
+                "object": "reputational damage"
+            },
+            {
+                "subject": "Data theft attacks",
+                "relation": "caused",
+                "object": "operational disruptions"
+            },
+            {
+                "subject": "Notable victims",
+                "relation": "include",
+                "object": "Crown Resorts, CHS, Hatch Bank, Rubrik, the City of Toronto, Hitachi Energy, Procter & Gamble, and Saks Fifth Avenue"
+            }
+        ],
+        "triples_count": 12,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2694,
+                "cost": 0.0013469999999999999
+            },
+            "output": {
+                "tokens": 351,
+                "cost": 0.0005265000000000001
+            },
+            "total": {
+                "tokens": 3045,
+                "cost": 0.0018735
+            }
+        },
+        "time": 17.72028136253357,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\BleepingComputer\\fortra-QD1-d42.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: apache-activemq.json",
+                    0.10757882021817561
+                ],
+                [
+                    "BleepingComputer: goanywhere.json",
+                    0.11502833918011099
+                ],
+                [
+                    "symantec: Clop.json",
+                    0.17575579143586453
+                ],
+                [
+                    "symantec: Clop.json",
+                    0.18956531045208413
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "CTI": {
+        "text": "A researcher discovered two vulnerabilities in \"Project Worlds Official Car Rental System 1\" (an open-sourced platform used to create car rental sites). The first vulnerability allows unprivileged attackers to remotely read, delete, or modify the information in the app through SQL injection. The second vulnerability allows a remote privileged user to upload and execute an arbitrary file on the app.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A researcher",
+                "relation": "discovered",
+                "object": "two vulnerabilities in Project Worlds Official Car Rental System 1"
+            },
+            {
+                "subject": "The first vulnerability",
+                "relation": "allows",
+                "object": "unprivileged attackers to remotely read, delete, or modify the information in the app through SQL injection"
+            },
+            {
+                "subject": "The second vulnerability",
+                "relation": "allows",
+                "object": "a remote privileged user to upload and execute an arbitrary file on the app"
+            }
+        ],
+        "triples_count": 3,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2136,
+                "cost": 0.0017088
+            },
+            "output": {
+                "tokens": 107,
+                "cost": 0.000214
+            },
+            "total": {
+                "tokens": 2243,
+                "cost": 0.0019228
+            }
+        },
+        "time": 5.351019382476807,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-4-3-QD1-eb7.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: Microsoft.json",
+                    0.10207734495298337
+                ],
+                [
+                    "darkreading: Microsoft-Outlook.json",
+                    0.10633726441997493
+                ],
+                [
+                    "symantec: Follina.json",
+                    0.10790642901918623
+                ],
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.1198608635440015
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

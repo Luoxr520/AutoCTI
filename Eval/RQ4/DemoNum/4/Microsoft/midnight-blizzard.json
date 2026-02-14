@@ -1,0 +1,102 @@
+{
+    "CTI": {
+        "text": "Microsoft Threat Intelligence has identified highly targeted social engineering attacks using credential theft phishing lures sent as Microsoft Teams chats by the threat actor that Microsoft tracks as Midnight Blizzard (previously tracked as NOBELIUM). This latest attack, combined with past activity, further demonstrates Midnight Blizzard's ongoing execution of their objectives using both new and common techniques. In this latest activity, the threat actor uses previously compromised Microsoft 365 tenants owned by small businesses to create new domains that appear as technical support entities. Using these domains from compromised tenants, Midnight Blizzard leverages Teams messages to send lures that attempt to steal credentials from a targeted organization by engaging a user and eliciting approval of multifactor authentication (MFA) prompts. As with any social engineering lures, we encourage organizations to reinforce security best practices to all users and reinforce that any authentication requests not initiated by the user should be treated as malicious.",
+        "link": "https://www.microsoft.com/en-us/security/blog/2023/08/02/midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Midnight Blizzard",
+                "relation": "is tracked by",
+                "object": "Microsoft"
+            },
+            {
+                "subject": "Midnight Blizzard",
+                "relation": "previously tracked as",
+                "object": "NOBELIUM"
+            },
+            {
+                "subject": "Midnight Blizzard",
+                "relation": "uses",
+                "object": "credential theft phishing lures"
+            },
+            {
+                "subject": "credential theft phishing lures",
+                "relation": "sent as",
+                "object": "Microsoft Teams chats"
+            },
+            {
+                "subject": "Midnight Blizzard",
+                "relation": "uses",
+                "object": "previously compromised Microsoft 365 tenants"
+            },
+            {
+                "subject": "previously compromised Microsoft 365 tenants",
+                "relation": "owned by",
+                "object": "small businesses"
+            },
+            {
+                "subject": "Midnight Blizzard",
+                "relation": "creates",
+                "object": "new domains that appear as technical support entities"
+            },
+            {
+                "subject": "Midnight Blizzard",
+                "relation": "leverages",
+                "object": "Teams messages to send lures"
+            },
+            {
+                "subject": "lures",
+                "relation": "attempt to steal",
+                "object": "credentials from a targeted organization"
+            },
+            {
+                "subject": "lures",
+                "relation": "engage a user and elicit",
+                "object": "approval of multifactor authentication (MFA) prompts"
+            }
+        ],
+        "triples_count": 10,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2558,
+                "cost": 0.0020464
+            },
+            "output": {
+                "tokens": 280,
+                "cost": 0.00056
+            },
+            "total": {
+                "tokens": 2838,
+                "cost": 0.0026064
+            }
+        },
+        "time": 21.640089988708496,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\Microsoft\\midnight-blizzard-QD1-612.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.1320543458798502
+                ],
+                [
+                    "Microsoft: star-blizzard.json",
+                    0.16048076802969968
+                ],
+                [
+                    "Microsoft: cadet-blizzard.json",
+                    0.1640188881545538
+                ],
+                [
+                    "Microsoft: malware-distributor.json",
+                    0.21976578100979077
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

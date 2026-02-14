@@ -1,0 +1,102 @@
+{
+    "CTI": {
+        "text": "Clop is an extortion and ransomware operation run by a cyber-crime group known as Snakefly (aka TA505, FIN11). While the group initially extorted victims by encrypting files using its own ransomware payload (Ransom.Clop), in recent times it has been known to eschew encryption entirely and rely on the threat of leaking stolen data to extort its victims. The group has a track record in exploiting zero-day vulnerabilities. In 2021, it was linked to the exploitation of multiple vulnerabilities in Accellion FTA, another file-transfer application. Earlier this year it was responsible for exploiting a zero-day vulnerability (CVE-2023-0669) in the GoAnywhere MFT platform.",
+        "link": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/moveit-vulnerabilities-exploits"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Clop",
+                "relation": "is an extortion and ransomware operation run by",
+                "object": "Snakefly"
+            },
+            {
+                "subject": "Snakefly",
+                "relation": "also known as",
+                "object": "TA505"
+            },
+            {
+                "subject": "Snakefly",
+                "relation": "also known as",
+                "object": "FIN11"
+            },
+            {
+                "subject": "Clop",
+                "relation": "extorted victims by",
+                "object": "encrypting files using its own ransomware payload (Ransom.Clop)"
+            },
+            {
+                "subject": "Clop",
+                "relation": "has been known to",
+                "object": "eschew encryption entirely"
+            },
+            {
+                "subject": "Clop",
+                "relation": "relies on",
+                "object": "the threat of leaking stolen data to extort its victims"
+            },
+            {
+                "subject": "Snakefly",
+                "relation": "has a track record in",
+                "object": "exploiting zero-day vulnerabilities"
+            },
+            {
+                "subject": "Snakefly",
+                "relation": "was linked to",
+                "object": "the exploitation of multiple vulnerabilities in Accellion FTA"
+            },
+            {
+                "subject": "Accellion FTA",
+                "relation": "is",
+                "object": "a file-transfer application"
+            },
+            {
+                "subject": "Snakefly",
+                "relation": "was responsible for",
+                "object": "exploiting a zero-day vulnerability (CVE-2023-0669) in the GoAnywhere MFT platform"
+            }
+        ],
+        "triples_count": 10,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3200,
+                "cost": 0.0025599999999999998
+            },
+            "output": {
+                "tokens": 311,
+                "cost": 0.0006219999999999999
+            },
+            "total": {
+                "tokens": 3511,
+                "cost": 0.003182
+            }
+        },
+        "time": 22.507264375686646,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\symantec\\Clop-QD1-f28.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: akira.json",
+                    0.12706709475263975
+                ],
+                [
+                    "AVERTIUM: mallox.json",
+                    0.1392744853985905
+                ],
+                [
+                    "BleepingComputer: goanywhere.json",
+                    0.14510759003277146
+                ],
+                [
+                    "BleepingComputer: fortra.json",
+                    0.18318299727373305
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

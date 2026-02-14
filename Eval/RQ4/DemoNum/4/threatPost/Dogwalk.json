@@ -1,0 +1,112 @@
+{
+    "CTI": {
+        "text": "Microsoft is urging users to patch a zero-day vulnerability dubbed Dogwalk that is actively being exploited in the wild. The bug (CVE-2022-34713) is tied to a Microsoft Windows Support Diagnostic Tool and allows a remote attacker to execute code on a vulnerable system. The warning is part of a massive August Patch Tuesday update that included 121 flaws, 17 of which were critical and 101 carrying a Common Vulnerability Scoring System rating of Important. Microsoft states that CVE-2022-34713 is a \u201cvariant of\u201d Dogwalk, but different. Microsoft scored the vulnerability as Important and warns that the exploitation of the bug can only be preformed by an adversary with physical access to a vulnerable computer.",
+        "link": "https://threatpost.com/microsoft-patches-dogwalk-zero-day-and-17-critical-flaws/180378/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Microsoft",
+                "relation": "is urging",
+                "object": "users to patch"
+            },
+            {
+                "subject": "zero-day vulnerability",
+                "relation": "dubbed",
+                "object": "Dogwalk"
+            },
+            {
+                "subject": "zero-day vulnerability",
+                "relation": "is",
+                "object": "actively being exploited in the wild"
+            },
+            {
+                "subject": "bug",
+                "relation": "is tied to",
+                "object": "a Microsoft Windows Support Diagnostic Tool"
+            },
+            {
+                "subject": "bug",
+                "relation": "allows",
+                "object": "a remote attacker to execute code on a vulnerable system"
+            },
+            {
+                "subject": "CVE-2022-34713",
+                "relation": "is a variant of",
+                "object": "Dogwalk"
+            },
+            {
+                "subject": "CVE-2022-34713",
+                "relation": "is",
+                "object": "different from Dogwalk"
+            },
+            {
+                "subject": "CVE-2022-34713",
+                "relation": "scored as",
+                "object": "Important by Microsoft"
+            },
+            {
+                "subject": "exploitation",
+                "relation": "can only be performed by",
+                "object": "an adversary with physical access to a vulnerable computer"
+            },
+            {
+                "subject": "August Patch Tuesday update",
+                "relation": "included",
+                "object": "121 flaws"
+            },
+            {
+                "subject": "August Patch Tuesday update",
+                "relation": "included",
+                "object": "17 critical flaws"
+            },
+            {
+                "subject": "August Patch Tuesday update",
+                "relation": "included",
+                "object": "101 Important CVSS rated flaws"
+            }
+        ],
+        "triples_count": 12,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2192,
+                "cost": 0.0017536
+            },
+            "output": {
+                "tokens": 344,
+                "cost": 0.0006879999999999999
+            },
+            "total": {
+                "tokens": 2536,
+                "cost": 0.0024416
+            }
+        },
+        "time": 18.62616777420044,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\threatPost\\Dogwalk-QD1-9c1.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: Google-Patches.json",
+                    0.17505470754778807
+                ],
+                [
+                    "symantec: Follina.json",
+                    0.212595498553118
+                ],
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.21894771602647117
+                ],
+                [
+                    "threatPost: CISA.json",
+                    0.24471561440237663
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

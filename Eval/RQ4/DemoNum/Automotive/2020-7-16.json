@@ -1,0 +1,89 @@
+{
+    "CTI": {
+        "text": "A hacker made the Mercedes' MBUX infotainment system work on an old Mercedes W203 through an Arduino linked to the CAN bus which decoded CAN frames and sent them to the Android tablet over a USB connection. He was able to display live information on the vehicle\u2019s fuel usage, climate control, and window state.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "A hacker",
+                    "relation": "made work",
+                    "object": "Mercedes' MBUX infotainment system on an old Mercedes W203"
+                },
+                {
+                    "subject": "MBUX infotainment system",
+                    "relation": "connected through",
+                    "object": "an Arduino linked to the CAN bus"
+                },
+                {
+                    "subject": "Arduino",
+                    "relation": "decoded",
+                    "object": "CAN frames"
+                },
+                {
+                    "subject": "Arduino",
+                    "relation": "sent",
+                    "object": "CAN frames to the Android tablet over a USB connection"
+                },
+                {
+                    "subject": "Android tablet",
+                    "relation": "displayed",
+                    "object": "live information on the vehicle\u2019s fuel usage"
+                },
+                {
+                    "subject": "Android tablet",
+                    "relation": "displayed",
+                    "object": "live information on the vehicle\u2019s climate control"
+                },
+                {
+                    "subject": "Android tablet",
+                    "relation": "displayed",
+                    "object": "live information on the vehicle\u2019s window state"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 3059,
+                "cost": 0.0024472
+            },
+            "output": {
+                "tokens": 210,
+                "cost": 0.00041999999999999996
+            },
+            "total": {
+                "tokens": 3269,
+                "cost": 0.0028672
+            }
+        },
+        "time": 9.01616382598877,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-16-QD1-60c.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Crambus.json",
+                    0.03451756164444676
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.037815189070856764
+                ],
+                [
+                    "securityweek: vultur.json",
+                    0.04723691713395793
+                ],
+                [
+                    "Unit42: PlugX.json",
+                    0.0759446829593889
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "CTI": {
+        "text": "Crysis/Dharma ransomware (detected by Trend Micro as Ransom.Win32.CRYSIS.TIBGGS) has released a hacking toolkit named Toolbox, Sophos reports. Toolbox contains Mimikatz to harvest passwords, NirSoft Remote Desktop PassView to steal remote desktop protocol (RDP) passwords, Hash Suite Tools Free to dump hashes, and other tools to help find target computers and deploy the ransomware payload. With this kit, even rookie hackers can infiltrate networks easily. Crysis operates under a ransomware-as-a-service (RaaS) model, and this hacking tool only makes it easier for affiliates to spread the ransomware to more targets.",
+        "link": "https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/threat-recap-darkside-crysis-negasteal-coinminer"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Crysis/Dharma ransomware",
+                "relation": "detected by",
+                "object": "Trend Micro as Ransom.Win32.CRYSIS.TIBGGS"
+            },
+            {
+                "subject": "Crysis/Dharma ransomware",
+                "relation": "released",
+                "object": "Toolbox"
+            },
+            {
+                "subject": "Toolbox",
+                "relation": "contains",
+                "object": "Mimikatz to harvest passwords"
+            },
+            {
+                "subject": "Toolbox",
+                "relation": "contains",
+                "object": "NirSoft Remote Desktop PassView to steal RDP passwords"
+            },
+            {
+                "subject": "Toolbox",
+                "relation": "contains",
+                "object": "Hash Suite Tools Free to dump hashes"
+            },
+            {
+                "subject": "Toolbox",
+                "relation": "helps find",
+                "object": "target computers"
+            },
+            {
+                "subject": "Toolbox",
+                "relation": "deploys",
+                "object": "ransomware payload"
+            },
+            {
+                "subject": "Toolbox",
+                "relation": "enables",
+                "object": "rookie hackers to infiltrate networks easily"
+            },
+            {
+                "subject": "Crysis",
+                "relation": "operates under",
+                "object": "ransomware-as-a-service (RaaS) model"
+            },
+            {
+                "subject": "hacking tool",
+                "relation": "makes it easier for",
+                "object": "affiliates to spread the ransomware to more targets"
+            }
+        ],
+        "triples_count": 10,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3081,
+                "cost": 0.0024648
+            },
+            "output": {
+                "tokens": 298,
+                "cost": 0.000596
+            },
+            "total": {
+                "tokens": 3379,
+                "cost": 0.0030608
+            }
+        },
+        "time": 19.638395309448242,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\trendmicro\\Crysis-QD1-b57.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "trendmicro: BlackCat.json",
+                    0.09216804753325408
+                ],
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.09759987210949467
+                ],
+                [
+                    "AVERTIUM: mallox.json",
+                    0.10737885199867499
+                ],
+                [
+                    "AVERTIUM: yanluowang.json",
+                    0.11342559213776812
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

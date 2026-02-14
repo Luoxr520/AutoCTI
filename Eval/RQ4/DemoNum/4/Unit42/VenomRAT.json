@@ -1,0 +1,97 @@
+{
+    "CTI": {
+        "text": "Researchers should be aware of threat actors repurposing older proof of concept (PoC) code to quickly craft a fake PoC for a newly released vulnerability. On Aug. 17, 2023, the Zero Day Initiative publicly reported a remote code execution (RCE) vulnerability in WinRAR tracked as CVE-2023-40477. They had disclosed it to the vendor on June 8, 2023. Four days after the public reporting of CVE-2023-40477, an actor using an alias of whalersplonk committed a fake PoC script to their GitHub repository. The fake PoC meant to exploit this WinRAR vulnerability was based on a publicly available PoC script that exploited a SQL injection vulnerability in an application called GeoServer, which is tracked as CVE-2023-25157. We analyzed the fake PoC script and all the links in the infection chain, which ultimately installed a VenomRAT payload.",
+        "link": "https://unit42.paloaltonetworks.com/fake-cve-2023-40477-poc-hides-venomrat/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "threat actors",
+                "relation": "repurposing",
+                "object": "older proof of concept (PoC) code"
+            },
+            {
+                "subject": "older proof of concept (PoC) code",
+                "relation": "used to craft",
+                "object": "a fake PoC for a newly released vulnerability"
+            },
+            {
+                "subject": "Zero Day Initiative",
+                "relation": "publicly reported",
+                "object": "a remote code execution (RCE) vulnerability in WinRAR"
+            },
+            {
+                "subject": "remote code execution (RCE) vulnerability in WinRAR",
+                "relation": "tracked as",
+                "object": "CVE-2023-40477"
+            },
+            {
+                "subject": "actor using an alias of whalersplonk",
+                "relation": "committed",
+                "object": "a fake PoC script to their GitHub repository"
+            },
+            {
+                "subject": "fake PoC script",
+                "relation": "meant to exploit",
+                "object": "WinRAR vulnerability"
+            },
+            {
+                "subject": "fake PoC script",
+                "relation": "based on",
+                "object": "a publicly available PoC script that exploited a SQL injection vulnerability in GeoServer"
+            },
+            {
+                "subject": "SQL injection vulnerability in GeoServer",
+                "relation": "tracked as",
+                "object": "CVE-2023-25157"
+            },
+            {
+                "subject": "infection chain",
+                "relation": "ultimately installed",
+                "object": "a VenomRAT payload"
+            }
+        ],
+        "triples_count": 9,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2450,
+                "cost": 0.00196
+            },
+            "output": {
+                "tokens": 311,
+                "cost": 0.0006219999999999999
+            },
+            "total": {
+                "tokens": 2761,
+                "cost": 0.002582
+            }
+        },
+        "time": 16.26706314086914,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\Unit42\\VenomRAT-QD1-056.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Google_TAG: winrar.json",
+                    0.1215880029648068
+                ],
+                [
+                    "symantec: Log4j.json",
+                    0.1219965942944366
+                ],
+                [
+                    "Google_TAG: zimbra.json",
+                    0.12451184779409993
+                ],
+                [
+                    "darkreading: SolarWinds-Style.json",
+                    0.14198513424535608
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

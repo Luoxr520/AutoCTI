@@ -1,0 +1,99 @@
+{
+    "CTI": {
+        "text": "Researchers identified two vulnerabilities in MAVLink, a protocol designed for communication with unmanned vehicles. The first vulnerability is the protocol's lack of encryption, which allows a remote attacker who has access to the communication medium access to sensitive information by intercepting the unencrypted messages. The second vulnerability is that the protocol lacks an authentication system and is therefore vulnerable to a variety of attacks, including identity spoofing, unauthorized access, MITM attacks, and more.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "MAVLink",
+                    "relation": "is a",
+                    "object": "protocol"
+                },
+                {
+                    "subject": "MAVLink",
+                    "relation": "designed for",
+                    "object": "communication with unmanned vehicles"
+                },
+                {
+                    "subject": "first vulnerability",
+                    "relation": "is",
+                    "object": "lack of encryption"
+                },
+                {
+                    "subject": "lack of encryption",
+                    "relation": "allows",
+                    "object": "remote attacker access to sensitive information"
+                },
+                {
+                    "subject": "remote attacker",
+                    "relation": "accesses",
+                    "object": "unencrypted messages"
+                },
+                {
+                    "subject": "second vulnerability",
+                    "relation": "is",
+                    "object": "lack of authentication system"
+                },
+                {
+                    "subject": "lack of authentication system",
+                    "relation": "vulnerable to",
+                    "object": "identity spoofing"
+                },
+                {
+                    "subject": "lack of authentication system",
+                    "relation": "vulnerable to",
+                    "object": "unauthorized access"
+                },
+                {
+                    "subject": "lack of authentication system",
+                    "relation": "vulnerable to",
+                    "object": "MITM attacks"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2812,
+                "cost": 0.0022496
+            },
+            "output": {
+                "tokens": 236,
+                "cost": 0.000472
+            },
+            "total": {
+                "tokens": 3048,
+                "cost": 0.0027216000000000002
+            }
+        },
+        "time": 10.599991798400879,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-14-QD1-ec2.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: app-installer.json",
+                    0.09830847933347292
+                ],
+                [
+                    "BleepingComputer: chrome.json",
+                    0.10049847313223768
+                ],
+                [
+                    "darkreading: Jupyter-Infostealer.json",
+                    0.11046513100801994
+                ],
+                [
+                    "symantec: Follina.json",
+                    0.11142390371032873
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+defaults:  
+  - _self_
+
+# CTI_Source: AVERTIUM
+# inFile: akira-S18-NL2.json
+inSet: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/dataset/Tagger-output-gpt4-8-v2
+outSet: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/dataset/Tagger-output-gpt4-8-v2-processed

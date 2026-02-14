@@ -1,0 +1,69 @@
+{
+    "CTI": {
+        "text": "Inchcape, an Australian independent international automotive retailer, with operations in nearly 30 countries, was hit by the Windows Ransomexx ransomware. In the attack, company data was stolen, including administration, customer fulfilment and client information, some of which was then leaked on the dark web.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Inchcape",
+                    "relation": "was hit by",
+                    "object": "Windows Ransomexx ransomware"
+                },
+                {
+                    "subject": "Company data",
+                    "relation": "was stolen",
+                    "object": "including administration, customer fulfilment and client information"
+                },
+                {
+                    "subject": "Some of the stolen data",
+                    "relation": "was leaked",
+                    "object": "on the dark web"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2794,
+                "cost": 0.0022351999999999997
+            },
+            "output": {
+                "tokens": 95,
+                "cost": 0.00018999999999999998
+            },
+            "total": {
+                "tokens": 2889,
+                "cost": 0.0024251999999999998
+            }
+        },
+        "time": 5.547135591506958,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-12-1-QD1-cfb.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: apache-activemq.json",
+                    0.06592813700435189
+                ],
+                [
+                    "AVERTIUM: ragnar.json",
+                    0.07737706476856623
+                ],
+                [
+                    "threatPost: Hikvision.json",
+                    0.0814146345601922
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.1862574699567593
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

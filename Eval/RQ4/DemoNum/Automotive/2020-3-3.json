@@ -1,0 +1,89 @@
+{
+    "CTI": {
+        "text": "Researchers who create autonomous pilots for comma.ai demonstrated they were able to control the steering through Flexray network commands. In order to reverse engineer the steering messages, the researchers created and open sourced a FlexRay decoder. They discovered that the steering messages on Audi Q8\u2019s flexray protocol closely matched CAN steering messages that they were familiar with, and applied their previous experience to manipulate the bytes in the messages on the FlexRay bus to control the Electric power assisted steering. Compared to CAN, the FlexRay protocol is a lot stricter on timing which makes transmission of arbitrary messages through the network more challenging. To make the demonstration more intriguing, the researchers programmed a joystick to send the steering commands.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Researchers",
+                    "relation": "create",
+                    "object": "autonomous pilots for comma.ai"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "demonstrated",
+                    "object": "control of the steering through Flexray network commands"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "created and open sourced",
+                    "object": "a FlexRay decoder"
+                },
+                {
+                    "subject": "Steering messages on Audi Q8\u2019s flexray protocol",
+                    "relation": "closely matched",
+                    "object": "CAN steering messages"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "manipulated",
+                    "object": "bytes in the messages on the FlexRay bus to control the Electric power assisted steering"
+                },
+                {
+                    "subject": "FlexRay protocol",
+                    "relation": "is stricter on",
+                    "object": "timing compared to CAN"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "programmed",
+                    "object": "a joystick to send the steering commands"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2444,
+                "cost": 0.0019552
+            },
+            "output": {
+                "tokens": 253,
+                "cost": 0.0005059999999999999
+            },
+            "total": {
+                "tokens": 2697,
+                "cost": 0.0024611999999999998
+            }
+        },
+        "time": 11.803959131240845,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-3-3-QD1-996.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Crambus.json",
+                    0.03902508860086809
+                ],
+                [
+                    "trendmicro: Ryuk.json",
+                    0.03953068204524828
+                ],
+                [
+                    "threatPost: TA558.json",
+                    0.04132408291566962
+                ],
+                [
+                    "securityweek: wallescape.json",
+                    0.04217704513877067
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

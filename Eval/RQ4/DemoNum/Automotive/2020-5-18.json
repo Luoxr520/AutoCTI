@@ -1,0 +1,82 @@
+{
+    "CTI": {
+        "text": "A researcher created a tool that faked the RPM displayed in the dashboard of his old Mercedes to make the gear transmission seem quicker than it was. The tool crafted CAN BUS messages according to the target gear and changed the value displayed RPM according to the target gear.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "researcher",
+                "relation": "created",
+                "object": "tool"
+            },
+            {
+                "subject": "tool",
+                "relation": "faked",
+                "object": "RPM displayed in the dashboard"
+            },
+            {
+                "subject": "tool",
+                "relation": "targeted",
+                "object": "old Mercedes"
+            },
+            {
+                "subject": "tool",
+                "relation": "crafted",
+                "object": "CAN BUS messages"
+            },
+            {
+                "subject": "CAN BUS messages",
+                "relation": "according to",
+                "object": "target gear"
+            },
+            {
+                "subject": "tool",
+                "relation": "changed",
+                "object": "value displayed RPM"
+            }
+        ],
+        "triples_count": 6,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2589,
+                "cost": 0.0020712
+            },
+            "output": {
+                "tokens": 137,
+                "cost": 0.000274
+            },
+            "total": {
+                "tokens": 2726,
+                "cost": 0.0023452
+            }
+        },
+        "time": 10.576398372650146,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-18-QD1-880.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.032655765400357584
+                ],
+                [
+                    "Google_TAG: iranian.json",
+                    0.03452969358316732
+                ],
+                [
+                    "AVERTIUM: yanluowang.json",
+                    0.03735574485020388
+                ],
+                [
+                    "darkreading: SpectralBlur.json",
+                    0.043974751668491505
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

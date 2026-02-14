@@ -1,0 +1,112 @@
+{
+    "CTI": {
+        "text": "The threat actor known as UAC-0050 is leveraging phishing attacks to distribute Remcos RAT using new strategies to evade detection from security software. The group's weapon of choice is Remcos RAT, a notorious malware for remote surveillance and control, which has been at the forefront of its espionage arsenal. However, in their latest operational twist, the UAC-0050 group has integrated a pipe method for interprocess communication, showcasing their advanced adaptability. UAC-0050, active since 2020, has a history of targeting Ukrainian and Polish entities via social engineering campaigns that impersonate legitimate organizations to trick recipients into opening malicious attachments. In February 2023, the Computer Emergency Response Team of Ukraine (CERT-UA) attributed the adversary to a phishing campaign designed to deliver Remcos RAT.",
+        "link": "https://thehackernews.com/2024/01/uac-0050-group-using-new-phishing.html"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "UAC-0050",
+                "relation": "is leveraging",
+                "object": "phishing attacks"
+            },
+            {
+                "subject": "phishing attacks",
+                "relation": "distribute",
+                "object": "Remcos RAT"
+            },
+            {
+                "subject": "UAC-0050",
+                "relation": "uses",
+                "object": "new strategies to evade detection from security software"
+            },
+            {
+                "subject": "Remcos RAT",
+                "relation": "is a",
+                "object": "notorious malware for remote surveillance and control"
+            },
+            {
+                "subject": "Remcos RAT",
+                "relation": "has been at the forefront of",
+                "object": "espionage arsenal"
+            },
+            {
+                "subject": "UAC-0050",
+                "relation": "integrated",
+                "object": "a pipe method for interprocess communication"
+            },
+            {
+                "subject": "UAC-0050",
+                "relation": "showcases",
+                "object": "advanced adaptability"
+            },
+            {
+                "subject": "UAC-0050",
+                "relation": "has a history of targeting",
+                "object": "Ukrainian and Polish entities"
+            },
+            {
+                "subject": "UAC-0050",
+                "relation": "targets via",
+                "object": "social engineering campaigns"
+            },
+            {
+                "subject": "social engineering campaigns",
+                "relation": "impersonate",
+                "object": "legitimate organizations"
+            },
+            {
+                "subject": "social engineering campaigns",
+                "relation": "trick recipients into opening",
+                "object": "malicious attachments"
+            },
+            {
+                "subject": "CERT-UA",
+                "relation": "attributed",
+                "object": "the adversary to a phishing campaign designed to deliver Remcos RAT"
+            }
+        ],
+        "triples_count": 12,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2973,
+                "cost": 0.0023783999999999997
+            },
+            "output": {
+                "tokens": 354,
+                "cost": 0.000708
+            },
+            "total": {
+                "tokens": 3327,
+                "cost": 0.0030863999999999996
+            }
+        },
+        "time": 16.277768850326538,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\thehackernews\\UAC-0050-QD1-2eb.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "thehackernews: Kimsuky.json",
+                    0.1085422175373842
+                ],
+                [
+                    "thehackernews: JinxLoader.json",
+                    0.13444266632632218
+                ],
+                [
+                    "darkreading: RemcosRAT.json",
+                    0.1500264833767855
+                ],
+                [
+                    "thehackernews: UAC-0099.json",
+                    0.22722179077017868
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

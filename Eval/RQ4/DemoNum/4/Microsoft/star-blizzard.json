@@ -1,0 +1,132 @@
+{
+    "CTI": {
+        "text": "Microsoft Threat Intelligence continues to track and disrupt malicious activity attributed to a Russian state-sponsored actor we track as Star Blizzard (formerly SEABORGIUM, also known as COLDRIVER and Callisto Group). Star Blizzard has improved their detection evasion capabilities since 2022 while remaining focused on email credential theft against the same targets. Star Blizzard, whose activities we assess to have historically supported both espionage and cyber influence objectives, continues to prolifically target individuals and organizations involved in international affairs, defense, and logistics support to Ukraine, as well as academia, information security companies, and other entities aligning with Russian state interests. Microsoft continues to refine and deploy protections against Star Blizzard's evolving spear-phishing tactics.",
+        "link": "https://www.microsoft.com/en-us/security/blog/2023/12/07/star-blizzard-increases-sophistication-and-evasion-in-ongoing-attacks/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Star Blizzard",
+                "relation": "is tracked as",
+                "object": "Russian state-sponsored actor"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "formerly tracked as",
+                "object": "SEABORGIUM"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "also known as",
+                "object": "COLDRIVER"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "also known as",
+                "object": "Callisto Group"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "improved",
+                "object": "detection evasion capabilities"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "remains focused on",
+                "object": "email credential theft"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "supports",
+                "object": "espionage objectives"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "supports",
+                "object": "cyber influence objectives"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "targets",
+                "object": "individuals involved in international affairs"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "targets",
+                "object": "organizations involved in international affairs"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "targets",
+                "object": "defense"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "targets",
+                "object": "logistics support to Ukraine"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "targets",
+                "object": "academia"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "targets",
+                "object": "information security companies"
+            },
+            {
+                "subject": "Star Blizzard",
+                "relation": "targets",
+                "object": "entities aligning with Russian state interests"
+            },
+            {
+                "subject": "Microsoft",
+                "relation": "refines and deploys",
+                "object": "protections against Star Blizzard's evolving spear-phishing tactics"
+            }
+        ],
+        "triples_count": 16,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2704,
+                "cost": 0.0021632
+            },
+            "output": {
+                "tokens": 395,
+                "cost": 0.00079
+            },
+            "total": {
+                "tokens": 3099,
+                "cost": 0.0029532
+            }
+        },
+        "time": 23.945845127105713,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\Microsoft\\star-blizzard-QD1-632.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: midnight-blizzard.json",
+                    0.16048076802969968
+                ],
+                [
+                    "Microsoft: cadet-blizzard.json",
+                    0.2519201176618527
+                ],
+                [
+                    "Google_TAG: coldriver.json",
+                    0.2641017988641832
+                ],
+                [
+                    "darkreading: Star-Blizzard.json",
+                    0.3153482355071328
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

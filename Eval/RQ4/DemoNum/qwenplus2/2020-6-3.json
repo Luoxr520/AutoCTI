@@ -1,0 +1,122 @@
+{
+    "CTI": {
+        "text": "Researchers found security issues in a vehicle fine enforcement clamp that communicates via cellular network. They were able to use the SIM card to discover the barnacle's API and gain access to the entire environment by refreshing a request 10 times. Malicious hackers could have exploited this access to control all of the parking clamps and leak user data. The researchers also discovered they were able to unlock the barnacles for free, as the payment gateway didn't validate the credit card effectively, and also discovered that one of the S3 buckets was wide open and indexed by Google.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Researchers",
+                "relation": "found",
+                "object": "security issues"
+            },
+            {
+                "subject": "security issues",
+                "relation": "are in",
+                "object": "a vehicle fine enforcement clamp"
+            },
+            {
+                "subject": "vehicle fine enforcement clamp",
+                "relation": "communicates via",
+                "object": "cellular network"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "used",
+                "object": "the SIM card"
+            },
+            {
+                "subject": "SIM card",
+                "relation": "to discover",
+                "object": "the barnacle's API"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "gained access to",
+                "object": "the entire environment"
+            },
+            {
+                "subject": "access to the entire environment",
+                "relation": "by refreshing",
+                "object": "a request 10 times"
+            },
+            {
+                "subject": "Malicious hackers",
+                "relation": "could have exploited",
+                "object": "this access"
+            },
+            {
+                "subject": "this access",
+                "relation": "to control",
+                "object": "all of the parking clamps"
+            },
+            {
+                "subject": "Malicious hackers",
+                "relation": "could have exploited",
+                "object": "this access to leak user data"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "discovered they were able to",
+                "object": "unlock the barnacles for free"
+            },
+            {
+                "subject": "payment gateway",
+                "relation": "didn't validate",
+                "object": "the credit card effectively"
+            },
+            {
+                "subject": "one of the S3 buckets",
+                "relation": "was",
+                "object": "wide open"
+            },
+            {
+                "subject": "one of the S3 buckets",
+                "relation": "was indexed by",
+                "object": "Google"
+            }
+        ],
+        "triples_count": 14,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2462,
+                "cost": 0.0019695999999999997
+            },
+            "output": {
+                "tokens": 341,
+                "cost": 0.000682
+            },
+            "total": {
+                "tokens": 2803,
+                "cost": 0.0026515999999999996
+            }
+        },
+        "time": 15.717012643814087,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-3-QD1-2ca.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: chrome.json",
+                    0.08155019928103716
+                ],
+                [
+                    "darkreading: Google-Patches.json",
+                    0.0861176069269354
+                ],
+                [
+                    "thehackernews: OfBiz.json",
+                    0.10379132920995789
+                ],
+                [
+                    "Unit42: Google-Workspace.json",
+                    0.13146785725034138
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

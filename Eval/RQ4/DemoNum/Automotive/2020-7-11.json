@@ -1,0 +1,84 @@
+{
+    "CTI": {
+        "text": "A Polish criminal network stole at least 34 cars worth $1.6 million using keyless technologies. The thieves used \"technical equipment\" to crack the vehicle's \u201cKEYLESS GO\u201d systems. The police were able to identify that at least 13 of the vehicles were dismantled into parts by the thieves, who manually removed identification numbers from the parts.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "A Polish criminal network",
+                    "relation": "stole",
+                    "object": "at least 34 cars"
+                },
+                {
+                    "subject": "stolen cars",
+                    "relation": "worth",
+                    "object": "$1.6 million"
+                },
+                {
+                    "subject": "The thieves",
+                    "relation": "used",
+                    "object": "technical equipment"
+                },
+                {
+                    "subject": "technical equipment",
+                    "relation": "cracked",
+                    "object": "vehicle's KEYLESS GO systems"
+                },
+                {
+                    "subject": "at least 13 of the vehicles",
+                    "relation": "were dismantled into",
+                    "object": "parts"
+                },
+                {
+                    "subject": "the thieves",
+                    "relation": "manually removed",
+                    "object": "identification numbers from the parts"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2491,
+                "cost": 0.0019928
+            },
+            "output": {
+                "tokens": 200,
+                "cost": 0.00039999999999999996
+            },
+            "total": {
+                "tokens": 2691,
+                "cost": 0.0023927999999999996
+            }
+        },
+        "time": 10.230191946029663,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-11-QD1-686.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Seedworm.json",
+                    0.05095087216342617
+                ],
+                [
+                    "AVERTIUM: cuba-ransomware.json",
+                    0.05884516015095022
+                ],
+                [
+                    "Unit42: Exposed-IAM-Keys.json",
+                    0.06399181685109151
+                ],
+                [
+                    "trendmicro: LockBit.json",
+                    0.06617272747669059
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

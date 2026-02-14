@@ -1,0 +1,21 @@
+defaults:  
+  - _self_
+
+# ## whether test a single file or a directory
+# inFile: akira.json
+# CTI_Source: securityweek #report error while running
+inFile: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/dataset/IE-inputs/AVERTIUM/akira.json
+CTI_Source: securityweek
+
+## compare inSet with ground_truth_set
+ground_truth_set: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/dataset/RE-IE-outputs-3-asc
+inSet: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4
+
+## output evaluation results into the outSet
+outSet: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4-eval-v1
+outMetricSet: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4-eval-v1/prompt_store/metrics
+
+## openAI setting
+openai_key: sk-47f2d862adf74ade822f5db3c5a6a2c1
+embedding_model: multimodal-embedding-v1
+thresh: 0.7

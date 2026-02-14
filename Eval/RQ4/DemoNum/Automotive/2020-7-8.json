@@ -1,0 +1,77 @@
+{
+    "CTI": {
+        "text": "A researcher found a vulnerability in Tesla Model 3's NFC tag that allowed him to perform a relay attack. By leveraging the signal of a legitimate NFC tag associated with the vehicle, the researcher was able to open the vehicle's door. Due to the limitation of the NFC protocol, this attack required a proximity of 10cm to Tesla's NFC tag.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "a researcher",
+                "relation": "found",
+                "object": "a vulnerability in Tesla Model 3's NFC tag"
+            },
+            {
+                "subject": "a vulnerability in Tesla Model 3's NFC tag",
+                "relation": "allowed",
+                "object": "to perform a relay attack"
+            },
+            {
+                "subject": "the researcher",
+                "relation": "leveraged",
+                "object": "the signal of a legitimate NFC tag associated with the vehicle"
+            },
+            {
+                "subject": "the researcher",
+                "relation": "was able to open",
+                "object": "the vehicle's door"
+            },
+            {
+                "subject": "the attack",
+                "relation": "required",
+                "object": "a proximity of 10cm to Tesla's NFC tag"
+            }
+        ],
+        "triples_count": 5,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 2288,
+                "cost": 0.0018303999999999998
+            },
+            "output": {
+                "tokens": 150,
+                "cost": 0.0003
+            },
+            "total": {
+                "tokens": 2438,
+                "cost": 0.0021303999999999997
+            }
+        },
+        "time": 6.843557119369507,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-8-QD1-029.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.04882262166305905
+                ],
+                [
+                    "Google_TAG: apt37.json",
+                    0.054726671517031825
+                ],
+                [
+                    "Google_TAG: zimbra.json",
+                    0.07057977555590311
+                ],
+                [
+                    "Google_TAG: north-korean-campaign.json",
+                    0.1236406779640733
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

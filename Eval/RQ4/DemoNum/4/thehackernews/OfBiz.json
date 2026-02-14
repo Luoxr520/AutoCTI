@@ -1,0 +1,127 @@
+{
+    "CTI": {
+        "text": "A new zero-day security flaw has been discovered in Apache OfBiz, an open-source Enterprise Resource Planning (ERP) system that could be exploited to bypass authentication protections.The vulnerability, tracked as CVE-2023-51467, resides in the login functionality and is the result of an incomplete patch for another critical vulnerability (CVE-2023-49070, CVSS score: 9.8) that was released earlier this month. CVE-2023-49070 refers to a pre-authenticated remote code execution flaw impacting versions prior to 18.12.10 that, when successfully exploited, could allow threat actors to gain full control over the server and siphon sensitive data. It is caused due to a deprecated XML-RPC component within Apache OFBiz. CVE-2023-51467 could be triggered using empty and invalid USERNAME and PASSWORD parameters in an HTTP request to return an authentication success message, effectively circumventing the protection and enabling a threat actor to access otherwise unauthorized internal resources.",
+        "link": "https://thehackernews.com/2023/12/critical-zero-day-in-apache-ofbiz-erp.html"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A new zero-day security flaw",
+                "relation": "discovered in",
+                "object": "Apache OfBiz"
+            },
+            {
+                "subject": "Apache OfBiz",
+                "relation": "is an",
+                "object": "open-source Enterprise Resource Planning (ERP) system"
+            },
+            {
+                "subject": "vulnerability",
+                "relation": "tracked as",
+                "object": "CVE-2023-51467"
+            },
+            {
+                "subject": "CVE-2023-51467",
+                "relation": "resides in",
+                "object": "the login functionality"
+            },
+            {
+                "subject": "CVE-2023-51467",
+                "relation": "is the result of",
+                "object": "an incomplete patch for another critical vulnerability"
+            },
+            {
+                "subject": "another critical vulnerability",
+                "relation": "tracked as",
+                "object": "CVE-2023-49070"
+            },
+            {
+                "subject": "CVE-2023-49070",
+                "relation": "carries",
+                "object": "a CVSS score of 9.8"
+            },
+            {
+                "subject": "CVE-2023-49070",
+                "relation": "refers to",
+                "object": "a pre-authenticated remote code execution flaw"
+            },
+            {
+                "subject": "pre-authenticated remote code execution flaw",
+                "relation": "impacts",
+                "object": "versions prior to 18.12.10"
+            },
+            {
+                "subject": "CVE-2023-49070",
+                "relation": "could allow",
+                "object": "threat actors to gain full control over the server and siphon sensitive data"
+            },
+            {
+                "subject": "CVE-2023-49070",
+                "relation": "caused due to",
+                "object": "a deprecated XML-RPC component within Apache OFBiz"
+            },
+            {
+                "subject": "CVE-2023-51467",
+                "relation": "could be triggered using",
+                "object": "empty and invalid USERNAME and PASSWORD parameters in an HTTP request"
+            },
+            {
+                "subject": "HTTP request",
+                "relation": "returns",
+                "object": "an authentication success message"
+            },
+            {
+                "subject": "authentication success message",
+                "relation": "circumvents",
+                "object": "protection"
+            },
+            {
+                "subject": "CVE-2023-51467",
+                "relation": "enables",
+                "object": "a threat actor to access otherwise unauthorized internal resources"
+            }
+        ],
+        "triples_count": 15,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2580,
+                "cost": 0.002064
+            },
+            "output": {
+                "tokens": 534,
+                "cost": 0.001068
+            },
+            "total": {
+                "tokens": 3114,
+                "cost": 0.003132
+            }
+        },
+        "time": 42.681541442871094,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\thehackernews\\OfBiz-QD1-eb7.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: CISA.json",
+                    0.15509385505475964
+                ],
+                [
+                    "thehackernews: ESG.json",
+                    0.15776297683366516
+                ],
+                [
+                    "BleepingComputer: chrome.json",
+                    0.16766637505972865
+                ],
+                [
+                    "darkreading: Apache-ERP.json",
+                    0.29762249741746144
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

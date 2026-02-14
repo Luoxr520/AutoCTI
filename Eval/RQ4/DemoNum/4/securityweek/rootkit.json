@@ -1,0 +1,147 @@
+{
+    "CTI": {
+        "text": "The notorious North Korean threat group known as Lazarus exploited a Windows zero-day vulnerability for privilege escalation in attacks involving a rootkit named FudModule, according to cybersecurity firm Avast. The vulnerability is tracked as CVE-2024-21338 and it was observed by Avast in Lazarus attacks last year. The security company developed a proof-of-concept (PoC) exploit and sent it to Microsoft in August 2023. The flaw was patched by Microsoft with the company\u2019s February 2024 Patch Tuesday updates, but the initial advisory for CVE-2024-21338 did not list it as a zero-day. The vulnerability impacts the \u2018appid.sys\u2019 driver associated with Microsoft\u2019s AppLocker security feature. By targeting a vulnerability in a driver that is present on many systems \u2014 rather than using a bring your own vulnerable driver (BYOVD) approach \u2014 the attacker benefits from a higher degree of stealth. \u201cBy exploiting such a vulnerability, the attacker is in a sense living off the land with no need to bring, drop, or load any custom drivers, making it possible for a kernel attack to be truly fileless. This not only evades most detection mechanisms but also enables the attack on systems where driver allowlisting is in place,\u201d Avast explained. By exploiting CVE-2024-21338, Lazarus hackers were able to elevate their privileges on the compromised system and establish a kernel read/write primitive. This enabled them to perform direct kernel object manipulation in an updated version of the FudModule rootkit, which came to light in 2022. ",
+        "link": "https://www.securityweek.com/windows-zero-day-exploited-by-north-korean-hackers-in-rootkit-attack/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Lazarus",
+                "relation": "exploited",
+                "object": "a Windows zero-day vulnerability"
+            },
+            {
+                "subject": "Windows zero-day vulnerability",
+                "relation": "tracked as",
+                "object": "CVE-2024-21338"
+            },
+            {
+                "subject": "Avast",
+                "relation": "observed",
+                "object": "Lazarus attacks"
+            },
+            {
+                "subject": "security company",
+                "relation": "developed",
+                "object": "a proof-of-concept (PoC) exploit"
+            },
+            {
+                "subject": "security company",
+                "relation": "sent",
+                "object": "the PoC exploit to Microsoft"
+            },
+            {
+                "subject": "Microsoft",
+                "relation": "patched",
+                "object": "the flaw"
+            },
+            {
+                "subject": "initial advisory for CVE-2024-21338",
+                "relation": "did not list it as",
+                "object": "a zero-day"
+            },
+            {
+                "subject": "vulnerability",
+                "relation": "impacts",
+                "object": "the 'appid.sys' driver"
+            },
+            {
+                "subject": "'appid.sys' driver",
+                "relation": "is associated with",
+                "object": "Microsoft\u2019s AppLocker security feature"
+            },
+            {
+                "subject": "attacker",
+                "relation": "benefits from",
+                "object": "a higher degree of stealth"
+            },
+            {
+                "subject": "attacker",
+                "relation": "exploiting such a vulnerability",
+                "object": "living off the land with no need to bring, drop, or load any custom drivers"
+            },
+            {
+                "subject": "kernel attack",
+                "relation": "possible to be",
+                "object": "truly fileless"
+            },
+            {
+                "subject": "attack",
+                "relation": "evades",
+                "object": "most detection mechanisms"
+            },
+            {
+                "subject": "attack",
+                "relation": "enables",
+                "object": "on systems where driver allowlisting is in place"
+            },
+            {
+                "subject": "Lazarus hackers",
+                "relation": "were able to elevate",
+                "object": "their privileges on the compromised system"
+            },
+            {
+                "subject": "Lazarus hackers",
+                "relation": "established",
+                "object": "a kernel read/write primitive"
+            },
+            {
+                "subject": "kernel read/write primitive",
+                "relation": "enabled",
+                "object": "direct kernel object manipulation"
+            },
+            {
+                "subject": "direct kernel object manipulation",
+                "relation": "in",
+                "object": "an updated version of the FudModule rootkit"
+            },
+            {
+                "subject": "FudModule rootkit",
+                "relation": "came to light",
+                "object": "in 2022"
+            }
+        ],
+        "triples_count": 19,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2709,
+                "cost": 0.0021671999999999998
+            },
+            "output": {
+                "tokens": 545,
+                "cost": 0.00109
+            },
+            "total": {
+                "tokens": 3254,
+                "cost": 0.0032572
+            }
+        },
+        "time": 32.30023908615112,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\securityweek\\rootkit-QD1-ce1.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: CISA.json",
+                    0.12725900963412765
+                ],
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.14718785505945436
+                ],
+                [
+                    "threatPost: Dogwalk.json",
+                    0.15107160241906395
+                ],
+                [
+                    "BleepingComputer: kasseika.json",
+                    0.21749818942568164
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "CTI": {
+        "text": "A ransomware attack has been detected in the systems of Aebi Sschmidt, one of the largest manufacturing companies in Europe. The Swiss company, dedicated to the manufacture of airport and highway maintenance vehicles, had to interrupt its operations following the cyber security incident. The company\u2019s systems collapsed throughout its entire international network, including branches in the United States. Individuals close to the incident claim that the company\u2019s email server also suffered severe affectations.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Aebi Sschmidt",
+                "relation": "is one of the largest",
+                "object": "manufacturing companies in Europe"
+            },
+            {
+                "subject": "Aebi Sschmidt",
+                "relation": "dedicated to",
+                "object": "the manufacture of airport and highway maintenance vehicles"
+            },
+            {
+                "subject": "Aebi Sschmidt",
+                "relation": "had to interrupt",
+                "object": "its operations"
+            },
+            {
+                "subject": "cyber security incident",
+                "relation": "caused",
+                "object": "systems collapse throughout its entire international network"
+            },
+            {
+                "subject": "branches in the United States",
+                "relation": "were affected by",
+                "object": "the cyber security incident"
+            },
+            {
+                "subject": "company\u2019s email server",
+                "relation": "suffered",
+                "object": "severe affectations"
+            }
+        ],
+        "triples_count": 6,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2571,
+                "cost": 0.0020568
+            },
+            "output": {
+                "tokens": 182,
+                "cost": 0.00036399999999999996
+            },
+            "total": {
+                "tokens": 2753,
+                "cost": 0.0024208
+            }
+        },
+        "time": 6.947922229766846,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2019-4-1-QD1-784.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: pypi.json",
+                    0.06414901940462416
+                ],
+                [
+                    "Unit42: CL0P-Seeds.json",
+                    0.06879756253224786
+                ],
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.08335725315201911
+                ],
+                [
+                    "AVERTIUM: muddywater.json",
+                    0.08563132179116488
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

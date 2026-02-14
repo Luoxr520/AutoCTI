@@ -1,0 +1,107 @@
+{
+    "CTI": {
+        "text": "In an interview in January 2023, threat actors behind TargetCompany clarified that each major update of the ransomware entailed a change in the encryption algorithm and different decryptor characteristics. These are accompanied by a change in file name extensions, hence the evolution of names by which the ransomware group is known. We will discuss this evolution further in our blog entry. TargetCompany's earlier variants provided a \u201c.onion\u201d contact site for negotiations and dropped ransom notes named How to decrypt files.txt. Meanwhile, later variants of the TargetCompany ransomware no longer use the name of the targeted enterprise as file name extensions. In mid- to late 2022, the group was given the name\u202fFargo due to the extension that it added to its encrypted files in that period. Other extensions used by the ransomware group include \u201c.mallox,\u201d and \u201c.xollam.\u201d These later variants were observed using a combination of Chacha20, Curve 25519, and AES-128 algorithms to encrypt the victim's files. The ransomware group eventually established a data leak site under the name Mallox, and later variants dropped ransom notes as HOW TO RECOVER!!.txt.",
+        "link": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-targetcompany"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "TargetCompany",
+                "relation": "clarified",
+                "object": "each major update of the ransomware entailed a change in the encryption algorithm and different decryptor characteristics"
+            },
+            {
+                "subject": "TargetCompany",
+                "relation": "entails",
+                "object": "change in file name extensions"
+            },
+            {
+                "subject": "TargetCompany's earlier variants",
+                "relation": "provided",
+                "object": "a \u201c.onion\u201d contact site for negotiations"
+            },
+            {
+                "subject": "TargetCompany's earlier variants",
+                "relation": "dropped",
+                "object": "ransom notes named How to decrypt files.txt"
+            },
+            {
+                "subject": "later variants of TargetCompany ransomware",
+                "relation": "no longer use",
+                "object": "the name of the targeted enterprise as file name extensions"
+            },
+            {
+                "subject": "group",
+                "relation": "given the name",
+                "object": "Fargo"
+            },
+            {
+                "subject": "Fargo",
+                "relation": "added extension to encrypted files",
+                "object": "in mid- to late 2022"
+            },
+            {
+                "subject": "extensions used by the ransomware group",
+                "relation": "include",
+                "object": "'.mallox,' and '.xollam.'"
+            },
+            {
+                "subject": "later variants of TargetCompany ransomware",
+                "relation": "used",
+                "object": "Chacha20, Curve 25519, and AES-128 algorithms to encrypt the victim's files"
+            },
+            {
+                "subject": "ransomware group",
+                "relation": "established",
+                "object": "a data leak site under the name Mallox"
+            },
+            {
+                "subject": "later variants of TargetCompany ransomware",
+                "relation": "dropped ransom notes as",
+                "object": "HOW TO RECOVER!!.txt"
+            }
+        ],
+        "triples_count": 11,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3506,
+                "cost": 0.0028048
+            },
+            "output": {
+                "tokens": 374,
+                "cost": 0.000748
+            },
+            "total": {
+                "tokens": 3880,
+                "cost": 0.0035528
+            }
+        },
+        "time": 30.822900772094727,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\trendmicro\\TargetCompany-QD1-b65.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: H0lyGh0st.json",
+                    0.15266660824411118
+                ],
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.18290675609544774
+                ],
+                [
+                    "AVERTIUM: fargo.json",
+                    0.19176154176328886
+                ],
+                [
+                    "AVERTIUM: mallox.json",
+                    0.22542608852131804
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

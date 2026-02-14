@@ -1,0 +1,112 @@
+{
+    "CTI": {
+        "text": "We discovered a recent WhatsApp phishing campaign through our telemetry that led to banking trojan activity. In this campaign, the attacker shares a malicious APK file through WhatsApp with a message asking users to enter sensitive information in the app. The widely circulated fake banking message states \u201cYour [redacted] BANK Account will be Blocked Today please update your PANCARD immediately open [redacted]-Bank.apk for update your PANCARD. Thank You.\u201d and includes a APK file named [redacted]-BANK[.]apk. Upon investigation, we discovered that the APK file was malicious and interacting with it installs a fraudulent application on the victim device. The installed app impersonates a legitimate bank located in India and disguises itself as the bank's official Know Your Customer (KYC) application to trick users into submitting their sensitive information, despite this particular banking organization not being affiliated with an official KYC-related app. This information is then sent to a command and control (C2) server, as well as to the attacker's hard-coded phone number used in SMS functionality.",
+        "link": "https://www.microsoft.com/en-us/security/blog/2023/11/20/social-engineering-attacks-lure-indian-users-to-install-android-banking-trojans/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "WhatsApp phishing campaign",
+                "relation": "led to",
+                "object": "banking trojan activity"
+            },
+            {
+                "subject": "attacker",
+                "relation": "shares",
+                "object": "a malicious APK file through WhatsApp"
+            },
+            {
+                "subject": "message",
+                "relation": "asks users to",
+                "object": "enter sensitive information in the app"
+            },
+            {
+                "subject": "fake banking message",
+                "relation": "states",
+                "object": "Your [redacted] BANK Account will be Blocked Today please update your PANCARD immediately open [redacted]-Bank.apk for update your PANCARD. Thank You."
+            },
+            {
+                "subject": "message",
+                "relation": "includes",
+                "object": "APK file named [redacted]-BANK[.]apk"
+            },
+            {
+                "subject": "APK file",
+                "relation": "was",
+                "object": "malicious"
+            },
+            {
+                "subject": "interacting with APK file",
+                "relation": "installs",
+                "object": "a fraudulent application on the victim device"
+            },
+            {
+                "subject": "installed app",
+                "relation": "impersonates",
+                "object": "a legitimate bank located in India"
+            },
+            {
+                "subject": "installed app",
+                "relation": "disguises itself as",
+                "object": "the bank's official Know Your Customer (KYC) application"
+            },
+            {
+                "subject": "banking organization",
+                "relation": "is not affiliated with",
+                "object": "an official KYC-related app"
+            },
+            {
+                "subject": "information",
+                "relation": "is sent to",
+                "object": "command and control (C2) server"
+            },
+            {
+                "subject": "information",
+                "relation": "is sent to",
+                "object": "attacker's hard-coded phone number used in SMS functionality"
+            }
+        ],
+        "triples_count": 12,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2973,
+                "cost": 0.0023783999999999997
+            },
+            "output": {
+                "tokens": 371,
+                "cost": 0.0007419999999999999
+            },
+            "total": {
+                "tokens": 3344,
+                "cost": 0.0031203999999999997
+            }
+        },
+        "time": 18.686694383621216,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\Microsoft\\lure-indian-users-QD1-45c.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: diamond-sleet.json",
+                    0.08005970068460852
+                ],
+                [
+                    "thehackernews: Xamalicious.json",
+                    0.0837146511489962
+                ],
+                [
+                    "Unit42: CryptoClippy.json",
+                    0.08539226205232611
+                ],
+                [
+                    "securityweek: vultur.json",
+                    0.14725181501075407
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

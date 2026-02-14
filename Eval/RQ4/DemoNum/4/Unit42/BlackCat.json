@@ -1,0 +1,97 @@
+{
+    "CTI": {
+        "text": "BlackCat operators recently announced new updates to their tooling, including a utility called Munchkin that allows attackers to propagate the BlackCat payload to remote machines and shares on a victim organization network. For the past two years, the BlackCat ransomware operators have continued to evolve and iterate their tooling as part of their ransomware-as-a-service (RaaS) business model. As part of a recent investigation, Unit 42 researchers have acquired an instance of Munchkin that is unique, in that it is loaded in a customized Alpine virtual machine (VM). This new tactic of leveraging a customized VM to deploy malware has been gaining traction in recent months, allowing ransomware threat actors to use VMs to circumvent security solutions in deploying their malware payloads.",
+        "link": "https://unit42.paloaltonetworks.com/blackcat-ransomware-releases-new-utility-munchkin/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "BlackCat operators",
+                "relation": "announced updates to",
+                "object": "their tooling"
+            },
+            {
+                "subject": "Updates",
+                "relation": "include a utility called",
+                "object": "Munchkin"
+            },
+            {
+                "subject": "Munchkin",
+                "relation": "allows attackers to propagate",
+                "object": "the BlackCat payload to remote machines and shares on a victim organization network"
+            },
+            {
+                "subject": "BlackCat ransomware operators",
+                "relation": "have continued to evolve and iterate",
+                "object": "their tooling"
+            },
+            {
+                "subject": "BlackCat ransomware operators",
+                "relation": "operate under",
+                "object": "a ransomware-as-a-service (RaaS) business model"
+            },
+            {
+                "subject": "Unit 42 researchers",
+                "relation": "acquired an instance of",
+                "object": "Munchkin"
+            },
+            {
+                "subject": "Munchkin",
+                "relation": "is loaded in",
+                "object": "a customized Alpine virtual machine (VM)"
+            },
+            {
+                "subject": "New tactic",
+                "relation": "involves leveraging",
+                "object": "a customized VM to deploy malware"
+            },
+            {
+                "subject": "Customized VM",
+                "relation": "allows ransomware threat actors to circumvent",
+                "object": "security solutions in deploying their malware payloads"
+            }
+        ],
+        "triples_count": 9,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3146,
+                "cost": 0.0025168
+            },
+            "output": {
+                "tokens": 278,
+                "cost": 0.000556
+            },
+            "total": {
+                "tokens": 3424,
+                "cost": 0.0030728
+            }
+        },
+        "time": 24.3621826171875,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\Unit42\\BlackCat-QD1-889.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: mallox.json",
+                    0.10376866691997355
+                ],
+                [
+                    "trendmicro: Trigona.json",
+                    0.10384479529099985
+                ],
+                [
+                    "AVERTIUM: yanluowang.json",
+                    0.10947752064530467
+                ],
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.11587169161254837
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

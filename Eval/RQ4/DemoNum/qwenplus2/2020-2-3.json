@@ -1,0 +1,82 @@
+{
+    "CTI": {
+        "text": "A vehicle lessee, who had returned his car 4 years prior, was able to login to the myford.com mobile platform using credentials from 2016. Logging into the portal, he was then able to lock and unlock the vehicle, start the engine, and remotely track its location and current usage. The issue was discovered when he received an email update from Ford stating that the clock in his car was set incorrectly.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A vehicle lessee",
+                "relation": "was able to login to",
+                "object": "the myford.com mobile platform"
+            },
+            {
+                "subject": "credentials",
+                "relation": "from",
+                "object": "2016"
+            },
+            {
+                "subject": "Logging into the portal",
+                "relation": "allowed to",
+                "object": "lock and unlock the vehicle"
+            },
+            {
+                "subject": "Logging into the portal",
+                "relation": "allowed to",
+                "object": "start the engine"
+            },
+            {
+                "subject": "Logging into the portal",
+                "relation": "allowed to",
+                "object": "remotely track its location and current usage"
+            },
+            {
+                "subject": "The issue",
+                "relation": "was discovered when",
+                "object": "he received an email update from Ford"
+            }
+        ],
+        "triples_count": 6,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2747,
+                "cost": 0.0021976
+            },
+            "output": {
+                "tokens": 164,
+                "cost": 0.000328
+            },
+            "total": {
+                "tokens": 2911,
+                "cost": 0.0025256000000000002
+            }
+        },
+        "time": 8.535088777542114,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-2-3-QD1-434.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: vultur.json",
+                    0.04523082663216747
+                ],
+                [
+                    "darkreading: Star-Blizzard.json",
+                    0.04549023862594323
+                ],
+                [
+                    "symantec: Pegasus.json",
+                    0.045579812616203905
+                ],
+                [
+                    "Unit42: Exposed-IAM-Keys.json",
+                    0.08102183999397886
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

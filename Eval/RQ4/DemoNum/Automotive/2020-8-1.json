@@ -1,0 +1,97 @@
+{
+    "CTI": {
+        "text": "Hackers are selling a database with information of a million Moscow region drivers for $1,500. The information includes the full name of car owners, their phone numbers, the vehicle\u2019s VIN, the vehicle's registration date, brand, model, and production year. The information in the database is not up-to-date and only includes information from 2019 and earlier.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Hackers",
+                "relation": "are selling",
+                "object": "a database with information of a million Moscow region drivers"
+            },
+            {
+                "subject": "database",
+                "relation": "includes",
+                "object": "full name of car owners"
+            },
+            {
+                "subject": "database",
+                "relation": "includes",
+                "object": "phone numbers of car owners"
+            },
+            {
+                "subject": "database",
+                "relation": "includes",
+                "object": "vehicle\u2019s VIN"
+            },
+            {
+                "subject": "database",
+                "relation": "includes",
+                "object": "vehicle's registration date"
+            },
+            {
+                "subject": "database",
+                "relation": "includes",
+                "object": "brand of vehicle"
+            },
+            {
+                "subject": "database",
+                "relation": "includes",
+                "object": "model of vehicle"
+            },
+            {
+                "subject": "database",
+                "relation": "includes",
+                "object": "production year of vehicle"
+            },
+            {
+                "subject": "information in the database",
+                "relation": "is not up-to-date",
+                "object": "only includes information from 2019 and earlier"
+            }
+        ],
+        "triples_count": 9,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 3005,
+                "cost": 0.002404
+            },
+            "output": {
+                "tokens": 225,
+                "cost": 0.00045
+            },
+            "total": {
+                "tokens": 3230,
+                "cost": 0.0028539999999999998
+            }
+        },
+        "time": 10.767778158187866,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-8-1-QD1-82d.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: Jupyter-Infostealer.json",
+                    0.06749090244307768
+                ],
+                [
+                    "AVERTIUM: fargo.json",
+                    0.068753133999411
+                ],
+                [
+                    "Unit42: Agonizing-Serpens.json",
+                    0.06915657030916765
+                ],
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.07433161592582979
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "CTI": {
+        "text": "Tesla\u2019s \" Traffic Light and Stop Sign Control \" feature confuses Burger King signs for stop signs, causing the vehicle to slow down when capturing the sign from a distance. While this event was not an intentional cyber manipulation, black hat actors might try to re-use this technique and create malicious signs that will disrupt vehicles on the road.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Tesla\u2019s Traffic Light and Stop Sign Control feature",
+                    "relation": "confuses",
+                    "object": "Burger King signs for stop signs"
+                },
+                {
+                    "subject": "vehicle",
+                    "relation": "slows down when capturing",
+                    "object": "the sign from a distance"
+                },
+                {
+                    "subject": "black hat actors",
+                    "relation": "might try to re-use",
+                    "object": "this technique"
+                },
+                {
+                    "subject": "malicious signs",
+                    "relation": "will disrupt",
+                    "object": "vehicles on the road"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2620,
+                "cost": 0.0020959999999999998
+            },
+            "output": {
+                "tokens": 146,
+                "cost": 0.000292
+            },
+            "total": {
+                "tokens": 2766,
+                "cost": 0.002388
+            }
+        },
+        "time": 8.795279502868652,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-10-QD1-fcd.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: 3AM.json",
+                    0.041456728725725644
+                ],
+                [
+                    "darkreading: SpectralBlur.json",
+                    0.04680872639715059
+                ],
+                [
+                    "securityweek: teamcity.json",
+                    0.051832895863282484
+                ],
+                [
+                    "Unit42: CryptoClippy.json",
+                    0.08487943749410332
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

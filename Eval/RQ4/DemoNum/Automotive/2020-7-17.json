@@ -1,0 +1,69 @@
+{
+    "CTI": {
+        "text": "An officer reported that a Mercedes GLS350 was stolen via keyless theft from outside the owner's house in Newham, UK. The car was found with a false license plate within 20 minutes of the theft.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Mercedes GLS350",
+                    "relation": "was stolen via",
+                    "object": "keyless theft"
+                },
+                {
+                    "subject": "car",
+                    "relation": "was found with",
+                    "object": "false license plate"
+                },
+                {
+                    "subject": "theft location",
+                    "relation": "is",
+                    "object": "outside the owner's house in Newham, UK"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 2901,
+                "cost": 0.0023208
+            },
+            "output": {
+                "tokens": 92,
+                "cost": 0.000184
+            },
+            "total": {
+                "tokens": 2993,
+                "cost": 0.0025048
+            }
+        },
+        "time": 4.713901519775391,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-17-QD1-9c2.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: Star-Blizzard.json",
+                    0.03789406995828486
+                ],
+                [
+                    "BleepingComputer: androxgh0st.json",
+                    0.04546411286462285
+                ],
+                [
+                    "AVERTIUM: muddywater.json",
+                    0.055417844788763944
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.05597818129993271
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

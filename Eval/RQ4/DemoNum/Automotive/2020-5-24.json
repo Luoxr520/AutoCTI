@@ -1,0 +1,64 @@
+{
+    "CTI": {
+        "text": "Car thieves have made off with five expensive motors - using a device that mimics a keyless fob. The cars were stolen from multiple driveways in the UK.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Car thieves",
+                    "relation": "used",
+                    "object": "a device that mimics a keyless fob"
+                },
+                {
+                    "subject": "The cars",
+                    "relation": "were stolen from",
+                    "object": "multiple driveways in the UK"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2400,
+                "cost": 0.0019199999999999998
+            },
+            "output": {
+                "tokens": 78,
+                "cost": 0.000156
+            },
+            "total": {
+                "tokens": 2478,
+                "cost": 0.0020759999999999997
+            }
+        },
+        "time": 5.585358381271362,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-24-QD1-e14.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Unit42: PlugX.json",
+                    0.03644365983376968
+                ],
+                [
+                    "trendmicro: Earth-Kitsune.json",
+                    0.03761227944782325
+                ],
+                [
+                    "symantec: Clop.json",
+                    0.04185681963927658
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.059554326915499535
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

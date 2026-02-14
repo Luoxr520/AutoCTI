@@ -1,0 +1,94 @@
+{
+    "CTI": {
+        "text": "A researcher created an Android application using an Arduino device to add extra features to multiple Mercedes models by injecting CAN messages. The app enables anyone who installs it to control the door locks, display custom text on the instrument cluster display, control the vehicle's ESP, and control the hazard light by turning them on and off or setting a custom interval for the hazard lights activity.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "A researcher",
+                    "relation": "created",
+                    "object": "an Android application"
+                },
+                {
+                    "subject": "The Android application",
+                    "relation": "uses",
+                    "object": "an Arduino device"
+                },
+                {
+                    "subject": "The Android application",
+                    "relation": "adds",
+                    "object": "extra features to multiple Mercedes models"
+                },
+                {
+                    "subject": "The app",
+                    "relation": "enables",
+                    "object": "control of door locks"
+                },
+                {
+                    "subject": "The app",
+                    "relation": "displays",
+                    "object": "custom text on the instrument cluster display"
+                },
+                {
+                    "subject": "The app",
+                    "relation": "controls",
+                    "object": "the vehicle's ESP"
+                },
+                {
+                    "subject": "The app",
+                    "relation": "controls",
+                    "object": "the hazard light by turning them on and off or setting a custom interval"
+                },
+                {
+                    "subject": "The app",
+                    "relation": "injects",
+                    "object": "CAN messages"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2882,
+                "cost": 0.0023056
+            },
+            "output": {
+                "tokens": 258,
+                "cost": 0.000516
+            },
+            "total": {
+                "tokens": 3140,
+                "cost": 0.0028216
+            }
+        },
+        "time": 11.165401458740234,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2019-12-1-QD1-79e.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: SilverRAT.json",
+                    0.05499699078040197
+                ],
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.06663931076275946
+                ],
+                [
+                    "thehackernews: Xamalicious.json",
+                    0.07228926646594763
+                ],
+                [
+                    "securityweek: vultur.json",
+                    0.0794643214690956
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

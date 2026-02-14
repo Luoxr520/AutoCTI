@@ -1,0 +1,92 @@
+{
+    "CTI": {
+        "text": "A researcher used open-sourced hardware and software to build an OBD-II device to intercept CAN messages and send the information to the cloud. The tool used a cellular modem to transmit a vehicle's GPS coordinates, RPM, speed, and temperature in real-time allowing the owner to monitor the vehicle remotely.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A researcher",
+                "relation": "used",
+                "object": "open-sourced hardware and software"
+            },
+            {
+                "subject": "open-sourced hardware and software",
+                "relation": "to build",
+                "object": "an OBD-II device"
+            },
+            {
+                "subject": "OBD-II device",
+                "relation": "intercepts",
+                "object": "CAN messages"
+            },
+            {
+                "subject": "OBD-II device",
+                "relation": "sends",
+                "object": "information to the cloud"
+            },
+            {
+                "subject": "tool",
+                "relation": "used",
+                "object": "a cellular modem"
+            },
+            {
+                "subject": "cellular modem",
+                "relation": "transmits",
+                "object": "vehicle's GPS coordinates, RPM, speed, and temperature"
+            },
+            {
+                "subject": "cellular modem",
+                "relation": "transmits",
+                "object": "in real-time"
+            },
+            {
+                "subject": "owner",
+                "relation": "monitors",
+                "object": "the vehicle remotely"
+            }
+        ],
+        "triples_count": 8,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2671,
+                "cost": 0.0021368
+            },
+            "output": {
+                "tokens": 209,
+                "cost": 0.00041799999999999997
+            },
+            "total": {
+                "tokens": 2880,
+                "cost": 0.0025548
+            }
+        },
+        "time": 11.299033164978027,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-13-QD1-73c.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: mastodon.json",
+                    0.04770055894066376
+                ],
+                [
+                    "threatPost: Atlassian.json",
+                    0.04909822377478833
+                ],
+                [
+                    "securityweek: vultur.json",
+                    0.05308949386237332
+                ],
+                [
+                    "Microsoft: defending-new-vectors.json",
+                    0.08508363708595665
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

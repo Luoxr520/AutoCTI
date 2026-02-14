@@ -1,0 +1,107 @@
+{
+    "CTI": {
+        "text": "Researchers reverse engineered the Android head unit system of KIA Cee'd, exploited the vehicle's ability to install third-party applications, and instead installed an app containing malware. They exploited a previously discovered root privilege escalation vulnerability and created an exploit that could inject CAN frames to the M-bus and modify some of the IVI functionalities, such as manipulating the radio volume, switch the infotainment on and off, activate the reverse camera, and set a navigation address.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Researchers",
+                "relation": "reverse engineered",
+                "object": "the Android head unit system of KIA Cee'd"
+            },
+            {
+                "subject": "vehicle",
+                "relation": "has ability to",
+                "object": "install third-party applications"
+            },
+            {
+                "subject": "third-party applications",
+                "relation": "contained",
+                "object": "malware"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "exploited",
+                "object": "root privilege escalation vulnerability"
+            },
+            {
+                "subject": "root privilege escalation vulnerability",
+                "relation": "previously discovered",
+                "object": "unknown"
+            },
+            {
+                "subject": "exploit",
+                "relation": "could inject",
+                "object": "CAN frames to the M-bus"
+            },
+            {
+                "subject": "CAN frames",
+                "relation": "modify",
+                "object": "IVI functionalities"
+            },
+            {
+                "subject": "IVI functionalities",
+                "relation": "include",
+                "object": "manipulating the radio volume"
+            },
+            {
+                "subject": "IVI functionalities",
+                "relation": "include",
+                "object": "switch the infotainment on and off"
+            },
+            {
+                "subject": "IVI functionalities",
+                "relation": "include",
+                "object": "activate the reverse camera"
+            },
+            {
+                "subject": "IVI functionalities",
+                "relation": "include",
+                "object": "set a navigation address"
+            }
+        ],
+        "triples_count": 11,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2844,
+                "cost": 0.0022752
+            },
+            "output": {
+                "tokens": 280,
+                "cost": 0.00056
+            },
+            "total": {
+                "tokens": 3124,
+                "cost": 0.0028351999999999995
+            }
+        },
+        "time": 16.27755641937256,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-11-9-QD1-50b.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: magento.json",
+                    0.0625274133084554
+                ],
+                [
+                    "BleepingComputer: apple.json",
+                    0.06293788627128995
+                ],
+                [
+                    "thehackernews: Sea-Turtle.json",
+                    0.07034924968351203
+                ],
+                [
+                    "securityweek: wallescape.json",
+                    0.07483207433209516
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

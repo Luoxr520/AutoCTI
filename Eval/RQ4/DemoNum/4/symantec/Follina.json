@@ -1,0 +1,92 @@
+{
+    "CTI": {
+        "text": "Follina (CVE-2022-30190) is a vulnerability in the Microsoft Support Diagnostic Tool (MSDT) that allows remote code execution on vulnerable systems through the ms-msdt protocol handler scheme. The bug is present in all supported versions of Windows. The vulnerability can be easily exploited by a specially crafted Word document that downloads and loads a malicious HTML file through Word's remote template feature. The HTML file ultimately allows the attacker to load and execute PowerShell code within Windows. The vulnerability can also be exploited through the RTF file format.",
+        "link": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/follina-msdt-exploit-malware"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Follina",
+                "relation": "is a vulnerability in",
+                "object": "the Microsoft Support Diagnostic Tool (MSDT)"
+            },
+            {
+                "subject": "Follina",
+                "relation": "allows",
+                "object": "remote code execution on vulnerable systems"
+            },
+            {
+                "subject": "Remote code execution",
+                "relation": "allowed through",
+                "object": "the ms-msdt protocol handler scheme"
+            },
+            {
+                "subject": "Bug",
+                "relation": "is present in",
+                "object": "all supported versions of Windows"
+            },
+            {
+                "subject": "Vulnerability",
+                "relation": "can be exploited by",
+                "object": "a specially crafted Word document"
+            },
+            {
+                "subject": "Specially crafted Word document",
+                "relation": "downloads and loads",
+                "object": "a malicious HTML file"
+            },
+            {
+                "subject": "Malicious HTML file",
+                "relation": "allows",
+                "object": "the attacker to load and execute PowerShell code within Windows"
+            },
+            {
+                "subject": "Vulnerability",
+                "relation": "can be exploited through",
+                "object": "the RTF file format"
+            }
+        ],
+        "triples_count": 8,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2394,
+                "cost": 0.0019152
+            },
+            "output": {
+                "tokens": 231,
+                "cost": 0.00046199999999999995
+            },
+            "total": {
+                "tokens": 2625,
+                "cost": 0.0023772
+            }
+        },
+        "time": 20.174237489700317,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\symantec\\Follina-QD1-480.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: app-installer.json",
+                    0.17111350893666133
+                ],
+                [
+                    "threatPost: Dogwalk.json",
+                    0.21346085345628463
+                ],
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.22362235183145157
+                ],
+                [
+                    "threatPost: Microsoft.json",
+                    0.25782653597484195
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

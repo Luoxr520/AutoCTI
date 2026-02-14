@@ -1,0 +1,99 @@
+{
+    "CTI": {
+        "text": "While assessing the security features of 13 new cars, Thatcham Research found that though progress is being made by carmakers, 7 out of the 13 new models they inspected were still coming to market with inherent vulnerabilities in their entry systems. Four vehicles inspected did not pass the Thatcham relay theft tests. These include: Mazda CX-30, MG HS Excite T-GDI, Subaru Forester e-Boxer XE Premium, and Vauxhall Corsa Ultimate Turbo 100. Hyundai i10 Premium Mpi, MG HS Excite T-GDI, and Tesla Model 3 received a basic rating for passing the relay theft, yet were still missing certain traditional security features. Tesla will apply additional security features on its next firmware upgrade and its rating will change accordingly.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Thatcham Research",
+                    "relation": "assessed",
+                    "object": "security features of 13 new cars"
+                },
+                {
+                    "subject": "carmakers",
+                    "relation": "are making",
+                    "object": "progress"
+                },
+                {
+                    "subject": "7 out of 13 new models",
+                    "relation": "have",
+                    "object": "inherent vulnerabilities in their entry systems"
+                },
+                {
+                    "subject": "Four vehicles",
+                    "relation": "did not pass",
+                    "object": "Thatcham relay theft tests"
+                },
+                {
+                    "subject": "Mazda CX-30, MG HS Excite T-GDI, Subaru Forester e-Boxer XE Premium, Vauxhall Corsa Ultimate Turbo 100",
+                    "relation": "did not pass",
+                    "object": "Thatcham relay theft tests"
+                },
+                {
+                    "subject": "Hyundai i10 Premium Mpi, MG HS Excite T-GDI, Tesla Model 3",
+                    "relation": "received",
+                    "object": "a basic rating for passing the relay theft"
+                },
+                {
+                    "subject": "Hyundai i10 Premium Mpi, MG HS Excite T-GDI, Tesla Model 3",
+                    "relation": "are missing",
+                    "object": "certain traditional security features"
+                },
+                {
+                    "subject": "Tesla",
+                    "relation": "will apply",
+                    "object": "additional security features on its next firmware upgrade"
+                },
+                {
+                    "subject": "Tesla's rating",
+                    "relation": "will change",
+                    "object": "accordingly"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3011,
+                "cost": 0.0024088
+            },
+            "output": {
+                "tokens": 378,
+                "cost": 0.0007559999999999999
+            },
+            "total": {
+                "tokens": 3389,
+                "cost": 0.0031647999999999997
+            }
+        },
+        "time": 15.995407104492188,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-3-1-QD1-c6c.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: migraine-could.json",
+                    0.03354430418441495
+                ],
+                [
+                    "AVERTIUM: muddywater.json",
+                    0.03378326854745905
+                ],
+                [
+                    "thehackernews: Agent-Tesla.json",
+                    0.036574550065343193
+                ],
+                [
+                    "darkreading: SilverRAT.json",
+                    0.06596675037786141
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

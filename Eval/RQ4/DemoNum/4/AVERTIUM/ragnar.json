@@ -1,0 +1,137 @@
+{
+    "CTI": {
+        "text": "Although Ragnar Locker was discovered by the FBI in April 2020, the group has actually been active since December 2019. Ragnar Locker is both the name of the ransomware group and the name of the ransomware. The gang works as a part of a ransomware family, which means they are associated with several ransomware variants or threat actor groups. Ragnar Locker is known for using the double extortion tactic, which involves threat actors exfiltrating sensitive data, then triggering the encryption attack, and ultimately threatening to leak the data if the demanded ransom isn't paid. To avoid prevention and detection, the threat actor frequently changes their obfuscation techniques. Ragnar Locker initiates their attacks by compromising the networks of companies through RDP service - using brute force to guess passwords or using stolen credentials purchased on the dark web. After compromising their target's network, the threat actor elevates their privileges by exploiting CVE-2017-0213 found in Windows COM Aggregate Marshaler. According to Microsoft, CVE-2017-0213 is an elevation of privilege that allows attackers to run arbitrary code with elevated privileges. To exploit the vulnerability, the attacker runs a specially crafted application.",
+        "link": "https://explore.avertium.com/resource/ragnar-locker-ransomware"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Ragnar Locker",
+                "relation": "discovered by",
+                "object": "the FBI"
+            },
+            {
+                "subject": "Ragnar Locker",
+                "relation": "has been active since",
+                "object": "December 2019"
+            },
+            {
+                "subject": "Ragnar Locker",
+                "relation": "is",
+                "object": "both the name of the ransomware group and the name of the ransomware"
+            },
+            {
+                "subject": "Ragnar Locker",
+                "relation": "works as part of",
+                "object": "a ransomware family"
+            },
+            {
+                "subject": "Ragnar Locker",
+                "relation": "is associated with",
+                "object": "several ransomware variants or threat actor groups"
+            },
+            {
+                "subject": "Ragnar Locker",
+                "relation": "uses",
+                "object": "double extortion tactic"
+            },
+            {
+                "subject": "Double extortion tactic",
+                "relation": "involves",
+                "object": "exfiltrating sensitive data"
+            },
+            {
+                "subject": "Double extortion tactic",
+                "relation": "triggers",
+                "object": "encryption attack"
+            },
+            {
+                "subject": "Double extortion tactic",
+                "relation": "threatens to leak data if",
+                "object": "demanded ransom isn't paid"
+            },
+            {
+                "subject": "Threat actor",
+                "relation": "frequently changes",
+                "object": "obfuscation techniques"
+            },
+            {
+                "subject": "Ragnar Locker",
+                "relation": "initiates attacks by compromising",
+                "object": "networks of companies through RDP service"
+            },
+            {
+                "subject": "Ragnar Locker",
+                "relation": "uses brute force to guess",
+                "object": "passwords"
+            },
+            {
+                "subject": "Ragnar Locker",
+                "relation": "uses stolen credentials purchased on",
+                "object": "the dark web"
+            },
+            {
+                "subject": "Threat actor",
+                "relation": "elevates privileges by exploiting",
+                "object": "CVE-2017-0213"
+            },
+            {
+                "subject": "CVE-2017-0213",
+                "relation": "is found in",
+                "object": "Windows COM Aggregate Marshaler"
+            },
+            {
+                "subject": "CVE-2017-0213",
+                "relation": "is an elevation of privilege that allows attackers to run",
+                "object": "arbitrary code with elevated privileges"
+            },
+            {
+                "subject": "To exploit CVE-2017-0213",
+                "relation": "attacker runs",
+                "object": "a specially crafted application"
+            }
+        ],
+        "triples_count": 17,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3698,
+                "cost": 0.0029584
+            },
+            "output": {
+                "tokens": 517,
+                "cost": 0.001034
+            },
+            "total": {
+                "tokens": 4215,
+                "cost": 0.0039924
+            }
+        },
+        "time": 30.58387851715088,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\AVERTIUM\\ragnar-QD1-c77.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: mallox.json",
+                    0.13691137893834734
+                ],
+                [
+                    "AVERTIUM: fargo.json",
+                    0.13887705481458837
+                ],
+                [
+                    "trendmicro: TargetCompany.json",
+                    0.14656525703094303
+                ],
+                [
+                    "darkreading: apache-activemq.json",
+                    0.15153852451573424
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "CTI": {
+        "text": "In less than a week, two vehicles in the Milton Keynes region in the UK were stolen using relay devices. Both thefts occurred during the nighttime. While driving away, one of the cars stalled and the thieves, unable to restart it, fled, leaving the car abandoned on the road.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "two vehicles",
+                    "relation": "were stolen using",
+                    "object": "relay devices"
+                },
+                {
+                    "subject": "theft location",
+                    "relation": "is in",
+                    "object": "Milton Keynes region, UK"
+                },
+                {
+                    "subject": "both thefts",
+                    "relation": "occurred during",
+                    "object": "nighttime"
+                },
+                {
+                    "subject": "one of the cars",
+                    "relation": "stalled",
+                    "object": "while driving away"
+                },
+                {
+                    "subject": "the thieves",
+                    "relation": "were unable to",
+                    "object": "restart the car"
+                },
+                {
+                    "subject": "the thieves",
+                    "relation": "fled",
+                    "object": "leaving the car abandoned on the road"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2710,
+                "cost": 0.002168
+            },
+            "output": {
+                "tokens": 161,
+                "cost": 0.00032199999999999997
+            },
+            "total": {
+                "tokens": 2871,
+                "cost": 0.0024899999999999996
+            }
+        },
+        "time": 9.157926559448242,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-16-QD1-7e1.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: SilverRAT.json",
+                    0.038473041494867424
+                ],
+                [
+                    "threatPost: iPhone-Users.json",
+                    0.044980839676974124
+                ],
+                [
+                    "darkreading: Microsoft-Outlook.json",
+                    0.051411259988808806
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.053046645637066486
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "CTI": {
+        "text": "In less than a minute, thieves managed to re-program the keys of a Honda CRV using a special tool. Although found in a crowded mall parking lot, the thieves managed to steal the vehicle and getaway.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [],
+        "triples_count": 0,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2631,
+                "cost": 0.0021048
+            },
+            "output": {
+                "tokens": 5,
+                "cost": 9.999999999999999e-06
+            },
+            "total": {
+                "tokens": 2636,
+                "cost": 0.0021148
+            }
+        },
+        "time": 2.2962210178375244,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-1-4-QD1-bb9.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Unit42: CryptoClippy.json",
+                    0.0507482827661606
+                ],
+                [
+                    "BleepingComputer: goanywhere.json",
+                    0.06473044379485168
+                ],
+                [
+                    "Google_TAG: iranian.json",
+                    0.06797147845075643
+                ],
+                [
+                    "Unit42: Citrix-Bleed.json",
+                    0.07029900589341864
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

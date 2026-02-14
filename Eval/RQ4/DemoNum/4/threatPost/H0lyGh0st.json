@@ -1,0 +1,112 @@
+{
+    "CTI": {
+        "text": "Microsoft researchers have linked an emerging ransomware threat that already has compromised a number of small-to-mid-sized businesses to financially motivated North Korean state-sponsored actors that have been active since last year. A group tracked by researchers from Microsoft Threat Intelligence Center (MSTIC) as DEV-0530 but that calls itself H0lyGh0st has been developing and using ransomware in attacks since June 2021. H0lyGh0st\u2019s standard modus operandi is to use a namesake ransomware to encrypt all files on the target device using the file extension .h0lyenc, then send the victim a sample of the files as proof. The group interacts with victims on a .onion site that it maintains and on which it provides a contact form for victims to get in touch, researchers said.",
+        "link": "https://threatpost.com/h0lygh0st-ransomware-north-korea/180232/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Microsoft researchers",
+                "relation": "linked",
+                "object": "an emerging ransomware threat"
+            },
+            {
+                "subject": "Ransomware threat",
+                "relation": "has compromised",
+                "object": "a number of small-to-mid-sized businesses"
+            },
+            {
+                "subject": "Ransomware threat",
+                "relation": "is linked to",
+                "object": "financially motivated North Korean state-sponsored actors"
+            },
+            {
+                "subject": "Group tracked by MSTIC",
+                "relation": "is known as",
+                "object": "DEV-0530"
+            },
+            {
+                "subject": "Group",
+                "relation": "calls itself",
+                "object": "H0lyGh0st"
+            },
+            {
+                "subject": "H0lyGh0st",
+                "relation": "has been developing and using",
+                "object": "ransomware in attacks since June 2021"
+            },
+            {
+                "subject": "H0lyGh0st",
+                "relation": "uses",
+                "object": "namesake ransomware to encrypt all files on the target device"
+            },
+            {
+                "subject": "Namesake ransomware",
+                "relation": "adds file extension",
+                "object": ".h0lyenc"
+            },
+            {
+                "subject": "H0lyGh0st",
+                "relation": "sends",
+                "object": "the victim a sample of the files as proof"
+            },
+            {
+                "subject": "H0lyGh0st",
+                "relation": "interacts with victims on",
+                "object": "a .onion site"
+            },
+            {
+                "subject": ".onion site",
+                "relation": "maintained by",
+                "object": "H0lyGh0st"
+            },
+            {
+                "subject": ".onion site",
+                "relation": "provides",
+                "object": "a contact form for victims to get in touch"
+            }
+        ],
+        "triples_count": 12,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3514,
+                "cost": 0.0028112
+            },
+            "output": {
+                "tokens": 377,
+                "cost": 0.000754
+            },
+            "total": {
+                "tokens": 3891,
+                "cost": 0.0035651999999999997
+            }
+        },
+        "time": 23.008267164230347,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\threatPost\\H0lyGh0st-QD1-972.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: apache-activemq.json",
+                    0.12289835741994982
+                ],
+                [
+                    "AVERTIUM: mallox.json",
+                    0.13100884921416103
+                ],
+                [
+                    "darkreading: Gh0st-RAT.json",
+                    0.14239955937953166
+                ],
+                [
+                    "trendmicro: TargetCompany.json",
+                    0.15266660824411118
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

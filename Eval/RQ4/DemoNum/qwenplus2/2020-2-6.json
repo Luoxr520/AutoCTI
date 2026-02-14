@@ -1,0 +1,89 @@
+{
+    "CTI": {
+        "text": "Researchers from McAfee were able to fool an autonomous vehicle\u2019s driver assist system by manipulation of the camera. The researchers placed a small piece of tape horizontally across a 35 mile-per-hour speed limit sign. The change caused the vehicle to read the limit as 85 miles per hour, and its cruise control system automatically accelerated. The tests involved a 2016 Model S and Model X that used camera systems supplied by Mobileye Inc.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Researchers from McAfee",
+                    "relation": "fooled",
+                    "object": "an autonomous vehicle\u2019s driver assist system"
+                },
+                {
+                    "subject": "autonomous vehicle\u2019s driver assist system",
+                    "relation": "manipulated by",
+                    "object": "camera manipulation"
+                },
+                {
+                    "subject": "researchers",
+                    "relation": "placed",
+                    "object": "a small piece of tape"
+                },
+                {
+                    "subject": "small piece of tape",
+                    "relation": "caused",
+                    "object": "vehicle to read speed limit as 85 miles per hour"
+                },
+                {
+                    "subject": "cruise control system",
+                    "relation": "automatically accelerated",
+                    "object": "vehicle"
+                },
+                {
+                    "subject": "tests",
+                    "relation": "involved",
+                    "object": "2016 Model S and Model X"
+                },
+                {
+                    "subject": "2016 Model S and Model X",
+                    "relation": "used camera systems supplied by",
+                    "object": "Mobileye Inc"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3035,
+                "cost": 0.002428
+            },
+            "output": {
+                "tokens": 211,
+                "cost": 0.00042199999999999996
+            },
+            "total": {
+                "tokens": 3246,
+                "cost": 0.00285
+            }
+        },
+        "time": 10.087976694107056,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-2-6-QD1-9d1.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: H0lyGh0st.json",
+                    0.036758283679056904
+                ],
+                [
+                    "thehackernews: Rugmi.json",
+                    0.0456547640197429
+                ],
+                [
+                    "BleepingComputer: kasseika.json",
+                    0.06907491492591193
+                ],
+                [
+                    "securityweek: rootkit.json",
+                    0.08549061334074914
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

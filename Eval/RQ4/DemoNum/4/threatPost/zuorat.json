@@ -1,0 +1,112 @@
+{
+    "CTI": {
+        "text": "A novel multistage remote access trojan (RAT) that\u2019s been active since April 2020 is exploiting known vulnerabilities to target popular SOHO routers from Cisco Systems, Netgear, Asus and others. The malware, dubbed ZuoRAT, can access the local LAN, capture packets being transmitted on the device and stage man-in-the-middle attacks through DNS and HTTPS hijacking, according to researchers from Lumen Technologies\u2019 threat-intelligence arm Black Lotus Labs. The ability to not only hop on a LAN from a SOHO device and then stage further attacks suggests that the RAT may be the work of a state-sponsored actor.",
+        "link": "https://threatpost.com/zuorat-soho-routers/180113/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "ZuoRAT",
+                "relation": "is a",
+                "object": "novel multistage remote access trojan (RAT)"
+            },
+            {
+                "subject": "ZuoRAT",
+                "relation": "has been active since",
+                "object": "April 2020"
+            },
+            {
+                "subject": "ZuoRAT",
+                "relation": "exploits",
+                "object": "known vulnerabilities"
+            },
+            {
+                "subject": "ZuoRAT",
+                "relation": "targets",
+                "object": "popular SOHO routers from Cisco Systems"
+            },
+            {
+                "subject": "ZuoRAT",
+                "relation": "targets",
+                "object": "Netgear routers"
+            },
+            {
+                "subject": "ZuoRAT",
+                "relation": "targets",
+                "object": "Asus routers"
+            },
+            {
+                "subject": "ZuoRAT",
+                "relation": "can access",
+                "object": "the local LAN"
+            },
+            {
+                "subject": "ZuoRAT",
+                "relation": "captures",
+                "object": "packets being transmitted on the device"
+            },
+            {
+                "subject": "ZuoRAT",
+                "relation": "stages",
+                "object": "man-in-the-middle attacks through DNS hijacking"
+            },
+            {
+                "subject": "ZuoRAT",
+                "relation": "stages",
+                "object": "man-in-the-middle attacks through HTTPS hijacking"
+            },
+            {
+                "subject": "Black Lotus Labs",
+                "relation": "researchers from",
+                "object": "Lumen Technologies\u2019 threat-intelligence arm"
+            },
+            {
+                "subject": "The ability to hop on a LAN",
+                "relation": "suggests",
+                "object": "state-sponsored actor involvement"
+            }
+        ],
+        "triples_count": 12,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2838,
+                "cost": 0.0022704
+            },
+            "output": {
+                "tokens": 344,
+                "cost": 0.0006879999999999999
+            },
+            "total": {
+                "tokens": 3182,
+                "cost": 0.0029584
+            }
+        },
+        "time": 24.07658576965332,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\threatPost\\zuorat-QD1-1b5.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: Gh0st-RAT.json",
+                    0.08480577347032534
+                ],
+                [
+                    "thehackernews: UAC-0050.json",
+                    0.08901573717499876
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.10641250980177663
+                ],
+                [
+                    "thehackernews: Sea-Turtle.json",
+                    0.11145411180700306
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

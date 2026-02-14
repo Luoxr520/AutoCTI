@@ -1,0 +1,142 @@
+{
+    "CTI": {
+        "text": "Security researchers are documenting a new vulnerability found in the util-linux core utilities package in Linux systems, warnign that it allows attackers to leak user passwords and modify the clipboard. The security defect, tracked as CVE-2024-28085 and dubbed \u2018WallEscape\u2019, impacts the \u2018wall\u2019 command of util-linux that fails to filter escape sequences from command line arguments. An attacker could embed escape sequences into crafted messages and send them via the \u2018wall\u2019 command, allowing them to leak passwords and modify commands, if specific conditions are met. \u201cThis allows unprivileged users to put arbitrary text on other users\u2019 terminals, if mesg is set to y and wall is setgid,\u201d said security researcher Skyler Ferrante.Ferrante, who is credited with discovering the flaw, said the bug can be exploited to leak user passwords on Ubuntu 22.04 with default configurations, where \u2018wall\u2019 is installed with the special setgid permissions and mesg is set to y. Debian Bookworm is also affected, but CentOS and Red Hat products are not. According to Ferrante, the flaw can also leak an unknown command on Ubuntu 22.0 \u201cif a system runs a command when commands are not found, with the unknown command as an argument.\u201d In addition, it can be exploited to change the output of any command.",
+        "link": "https://www.securityweek.com/wallescape-linux-vulnerability-leaks-user-passwords/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "security researchers",
+                "relation": "are documenting",
+                "object": "a new vulnerability in the util-linux core utilities package"
+            },
+            {
+                "subject": "the new vulnerability",
+                "relation": "is tracked as",
+                "object": "CVE-2024-28085"
+            },
+            {
+                "subject": "CVE-2024-28085",
+                "relation": "is dubbed",
+                "object": "'WallEscape'"
+            },
+            {
+                "subject": "CVE-2024-28085",
+                "relation": "impacts",
+                "object": "the 'wall' command of util-linux"
+            },
+            {
+                "subject": "the 'wall' command",
+                "relation": "fails to filter",
+                "object": "escape sequences from command line arguments"
+            },
+            {
+                "subject": "an attacker",
+                "relation": "could embed",
+                "object": "escape sequences into crafted messages"
+            },
+            {
+                "subject": "crafted messages",
+                "relation": "are sent via",
+                "object": "the 'wall' command"
+            },
+            {
+                "subject": "embedding escape sequences",
+                "relation": "allows",
+                "object": "leaking passwords and modifying commands"
+            },
+            {
+                "subject": "specific conditions",
+                "relation": "are met",
+                "object": "if mesg is set to y and wall is setgid"
+            },
+            {
+                "subject": "unprivileged users",
+                "relation": "can put",
+                "object": "arbitrary text on other users\u2019 terminals"
+            },
+            {
+                "subject": "Skyler Ferrante",
+                "relation": "discovered",
+                "object": "the flaw"
+            },
+            {
+                "subject": "the bug",
+                "relation": "can be exploited to leak",
+                "object": "user passwords on Ubuntu 22.04 with default configurations"
+            },
+            {
+                "subject": "Ubuntu 22.04",
+                "relation": "has",
+                "object": "the 'wall' installed with special setgid permissions and mesg set to y"
+            },
+            {
+                "subject": "Debian Bookworm",
+                "relation": "is affected by",
+                "object": "CVE-2024-28085"
+            },
+            {
+                "subject": "CentOS",
+                "relation": "is not affected by",
+                "object": "CVE-2024-28085"
+            },
+            {
+                "subject": "Red Hat products",
+                "relation": "are not affected by",
+                "object": "CVE-2024-28085"
+            },
+            {
+                "subject": "the flaw",
+                "relation": "can leak an unknown command",
+                "object": "on Ubuntu 22.0 if a system runs a command when commands are not found, with the unknown command as an argument"
+            },
+            {
+                "subject": "the flaw",
+                "relation": "can be exploited to change",
+                "object": "the output of any command"
+            }
+        ],
+        "triples_count": 18,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2767,
+                "cost": 0.0022136
+            },
+            "output": {
+                "tokens": 590,
+                "cost": 0.0011799999999999998
+            },
+            "total": {
+                "tokens": 3357,
+                "cost": 0.0033936
+            }
+        },
+        "time": 35.2598831653595,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\securityweek\\wallescape-QD1-32f.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: atlassian.json",
+                    0.0743924513906117
+                ],
+                [
+                    "threatPost: Microsoft.json",
+                    0.08398020598293378
+                ],
+                [
+                    "securityweek: magento.json",
+                    0.08639176397312756
+                ],
+                [
+                    "thehackernews: chrome-zero-day.json",
+                    0.09318396923675344
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

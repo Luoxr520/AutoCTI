@@ -1,0 +1,102 @@
+{
+    "CTI": {
+        "text": "Unknown groups have launched probes against a zero-day vulnerability identified in Apache's OfBiz enterprise resource planning (ERP) framework - an increasingly popular strategy of analyzing patches for ways to bypass software fixes. The 0-day vulnerability (CVE-2023-51467) in Apache OFBiz, disclosed on Dec. 26, allows an attacker to access sensitive information and remotely execute code against applications using the ERP framework, according to an analysis by cybersecurity firm SonicWall. The Apache Software Foundation had originally released a patch for a related issue, CVE-2023-49070, but the fix failed to protect against other variations of the attack.",
+        "link": "https://www.darkreading.com/vulnerabilities-threats/apache-erp-0day-underscores-dangers-of-incomplete-patches"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Unknown groups",
+                "relation": "have launched",
+                "object": "probes against a zero-day vulnerability"
+            },
+            {
+                "subject": "zero-day vulnerability",
+                "relation": "identified in",
+                "object": "Apache's OfBiz enterprise resource planning (ERP) framework"
+            },
+            {
+                "subject": "strategy",
+                "relation": "is",
+                "object": "analyzing patches for ways to bypass software fixes"
+            },
+            {
+                "subject": "0-day vulnerability",
+                "relation": "is tracked as",
+                "object": "CVE-2023-51467"
+            },
+            {
+                "subject": "CVE-2023-51467",
+                "relation": "allows an attacker to",
+                "object": "access sensitive information"
+            },
+            {
+                "subject": "CVE-2023-51467",
+                "relation": "allows an attacker to",
+                "object": "remotely execute code"
+            },
+            {
+                "subject": "applications",
+                "relation": "using",
+                "object": "the ERP framework"
+            },
+            {
+                "subject": "Apache Software Foundation",
+                "relation": "had originally released",
+                "object": "a patch for a related issue"
+            },
+            {
+                "subject": "related issue",
+                "relation": "is",
+                "object": "CVE-2023-49070"
+            },
+            {
+                "subject": "patch",
+                "relation": "failed to protect against",
+                "object": "other variations of the attack"
+            }
+        ],
+        "triples_count": 10,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3051,
+                "cost": 0.0024408
+            },
+            "output": {
+                "tokens": 304,
+                "cost": 0.0006079999999999999
+            },
+            "total": {
+                "tokens": 3355,
+                "cost": 0.0030488
+            }
+        },
+        "time": 24.034406900405884,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\darkreading\\Apache-ERP-QD1-244.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: chrome.json",
+                    0.10397629343671236
+                ],
+                [
+                    "BleepingComputer: androxgh0st.json",
+                    0.12316303677642915
+                ],
+                [
+                    "darkreading: apache-activemq.json",
+                    0.17147263191323167
+                ],
+                [
+                    "thehackernews: OfBiz.json",
+                    0.29762249741746144
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

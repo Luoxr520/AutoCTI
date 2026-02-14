@@ -1,0 +1,122 @@
+{
+    "CTI": {
+        "text": "The most severe of the externally reported flaws is a use-after-free bug in ANGLE, the open source cross-platform graphics engine used in Chrome and other popular browsers. The issue is tracked as CVE-2024-2883 and Google notes in its advisory that the researcher who discovered the bug has received a $10,000 bug bounty reward. According to the advisory, the three other defects reported by external researchers are all high-severity vulnerabilities. The first is CVE-2024-2885, a use-after-free issue in Dawn. The remaining two flaws, tracked as CVE-2024-2886 and CVE-2024-2887, are zero-day vulnerabilities that were exploited and reported last week at the Pwn2Own Vancouver 2024 hacking contest. No additional bounty rewards, aside from those earned at the competition, were handed out for these issues. CVE-2024-2886, a use-after-free in WebCodecs, was demonstrated by Seunghyun Lee of KAIST Hacking Lab, who exploited two such issues in the browser at the hacking contest and earned a total of $145,000 in rewards. CVE-2024-2887 is a Type Confusion bug in WebAssembly, exploited on the first day of Pwn2Own by security researcher Manfred Paul, who earned a $42,500 reward for it.Paul also demonstrated Safari and Firefox vulnerabilities at the hacking contest, earning a total of over $200,000 in rewards and winning the competition. Mozilla was first to release patches for the zero-day demonstrated at Pwn2Own.",
+        "link": "https://www.securityweek.com/chrome-update-patches-zero-day-vulnerabilities-exploited-at-pwn2own/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "CVE-2024-2883",
+                "relation": "is a",
+                "object": "use-after-free bug in ANGLE"
+            },
+            {
+                "subject": "ANGLE",
+                "relation": "is",
+                "object": "an open source cross-platform graphics engine"
+            },
+            {
+                "subject": "ANGLE",
+                "relation": "is used in",
+                "object": "Chrome and other popular browsers"
+            },
+            {
+                "subject": "Google",
+                "relation": "notes",
+                "object": "a $10,000 bug bounty reward for the researcher who discovered CVE-2024-2883"
+            },
+            {
+                "subject": "CVE-2024-2885",
+                "relation": "is a",
+                "object": "use-after-free issue in Dawn"
+            },
+            {
+                "subject": "CVE-2024-2886",
+                "relation": "is a",
+                "object": "use-after-free in WebCodecs"
+            },
+            {
+                "subject": "CVE-2024-2887",
+                "relation": "is a",
+                "object": "Type Confusion bug in WebAssembly"
+            },
+            {
+                "subject": "CVE-2024-2886",
+                "relation": "was demonstrated by",
+                "object": "Seunghyun Lee of KAIST Hacking Lab"
+            },
+            {
+                "subject": "Seunghyun Lee",
+                "relation": "earned",
+                "object": "$145,000 in rewards for exploiting two issues at Pwn2Own"
+            },
+            {
+                "subject": "CVE-2024-2887",
+                "relation": "was exploited by",
+                "object": "Manfred Paul"
+            },
+            {
+                "subject": "Manfred Paul",
+                "relation": "earned",
+                "object": "$42,500 reward for exploiting CVE-2024-2887"
+            },
+            {
+                "subject": "Manfred Paul",
+                "relation": "demonstrated",
+                "object": "Safari and Firefox vulnerabilities at Pwn2Own"
+            },
+            {
+                "subject": "Manfred Paul",
+                "relation": "earned",
+                "object": "over $200,000 in rewards and won the competition"
+            },
+            {
+                "subject": "Mozilla",
+                "relation": "released patches for",
+                "object": "the zero-day demonstrated at Pwn2Own"
+            }
+        ],
+        "triples_count": 14,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2899,
+                "cost": 0.0023192
+            },
+            "output": {
+                "tokens": 495,
+                "cost": 0.00099
+            },
+            "total": {
+                "tokens": 3394,
+                "cost": 0.0033092
+            }
+        },
+        "time": 25.86252522468567,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\securityweek\\pwn2own-QD1-4e0.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: screenconnect.json",
+                    0.11264591751221542
+                ],
+                [
+                    "darkreading: Google-Patches.json",
+                    0.12734828578926638
+                ],
+                [
+                    "thehackernews: chrome-zero-day.json",
+                    0.14703479800076819
+                ],
+                [
+                    "darkreading: Google-Patches.json",
+                    0.1672751919588255
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

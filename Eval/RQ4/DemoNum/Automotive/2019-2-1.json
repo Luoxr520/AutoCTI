@@ -1,0 +1,72 @@
+{
+    "CTI": {
+        "text": "Hackers are hacking the car's computer and rolling back the mileage on odometers to make the vehicles seem more valuable. The fraud is costing victims an average of $4,000 each.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Hackers",
+                "relation": "are hacking",
+                "object": "the car's computer"
+            },
+            {
+                "subject": "Hackers",
+                "relation": "are rolling back",
+                "object": "the mileage on odometers"
+            },
+            {
+                "subject": "rolling back the mileage",
+                "relation": "makes",
+                "object": "vehicles seem more valuable"
+            },
+            {
+                "subject": "fraud",
+                "relation": "is costing",
+                "object": "victims an average of $4,000 each"
+            }
+        ],
+        "triples_count": 4,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2384,
+                "cost": 0.0019072
+            },
+            "output": {
+                "tokens": 114,
+                "cost": 0.00022799999999999999
+            },
+            "total": {
+                "tokens": 2498,
+                "cost": 0.0021352
+            }
+        },
+        "time": 6.630367755889893,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2019-2-1-QD1-5c9.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Follina.json",
+                    0.04616570775984045
+                ],
+                [
+                    "securityweek: pwn2own.json",
+                    0.04897379110785324
+                ],
+                [
+                    "threatPost: Hijacker.json",
+                    0.050880821417354644
+                ],
+                [
+                    "trendmicro: Crysis.json",
+                    0.05936542666893076
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

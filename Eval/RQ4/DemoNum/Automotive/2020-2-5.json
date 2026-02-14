@@ -1,0 +1,92 @@
+{
+    "CTI": {
+        "text": "Toll Group, an Australian transportation company, was struck by a targeted ransomware attack leading the company to disable their systems as a precautionary measure. The shutdown impacted several of its customer-facing applications and created a delay in the company's operations, forcing the company to return to manual processing. The ransomware is believed to have infected as many as 1,000 servers, including Active Directory and corporate VPN, affecting the company's 40,000 employees.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Toll Group",
+                "relation": "was struck by",
+                "object": "a targeted ransomware attack"
+            },
+            {
+                "subject": "Toll Group",
+                "relation": "disabled",
+                "object": "their systems as a precautionary measure"
+            },
+            {
+                "subject": "shutdown",
+                "relation": "impacted",
+                "object": "several of its customer-facing applications"
+            },
+            {
+                "subject": "shutdown",
+                "relation": "created",
+                "object": "a delay in the company's operations"
+            },
+            {
+                "subject": "company",
+                "relation": "returned to",
+                "object": "manual processing"
+            },
+            {
+                "subject": "ransomware",
+                "relation": "infected",
+                "object": "as many as 1,000 servers"
+            },
+            {
+                "subject": "ransomware",
+                "relation": "affected",
+                "object": "Active Directory and corporate VPN"
+            },
+            {
+                "subject": "ransomware",
+                "relation": "affected",
+                "object": "40,000 employees"
+            }
+        ],
+        "triples_count": 8,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2781,
+                "cost": 0.0022248
+            },
+            "output": {
+                "tokens": 215,
+                "cost": 0.00043
+            },
+            "total": {
+                "tokens": 2996,
+                "cost": 0.0026547999999999997
+            }
+        },
+        "time": 11.244489192962646,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-2-5-QD1-da3.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: yanluowang.json",
+                    0.08367142374105332
+                ],
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.08940595226931791
+                ],
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.10124458243267866
+                ],
+                [
+                    "securityweek: screenconnect.json",
+                    0.10219722678444645
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

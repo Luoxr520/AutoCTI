@@ -1,0 +1,107 @@
+{
+    "CTI": {
+        "text": "An advanced persistent threat (APT) group, dubbed ToddyCat, is believed behind a series of attacks targeting Microsoft Exchange servers of high-profile government and military installations in Asia and Europe. The campaigns, according to researchers, began in December 2020, and have been largely poorly understood in their complexity until now. The first wave of attacks exclusively targeted Microsoft Exchange Servers, which were compromised with Samurai, a sophisticated passive backdoor that usually works on ports 80 and 443. The APT leverages two passive backdoors within the Exchange Server environment with malware called Samurai and Ninja, which researchers say are used by the adversaries to take complete control of the victim\u2019s hardware and network.",
+        "link": "https://threatpost.com/elusive-toddycat-apt-targets-microsoft-exchange-servers/180031/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "ToddyCat",
+                "relation": "is an",
+                "object": "advanced persistent threat (APT) group"
+            },
+            {
+                "subject": "ToddyCat",
+                "relation": "targeted",
+                "object": "Microsoft Exchange servers of high-profile government and military installations in Asia and Europe"
+            },
+            {
+                "subject": "campaigns",
+                "relation": "began",
+                "object": "in December 2020"
+            },
+            {
+                "subject": "first wave of attacks",
+                "relation": "exclusively targeted",
+                "object": "Microsoft Exchange Servers"
+            },
+            {
+                "subject": "Microsoft Exchange Servers",
+                "relation": "were compromised with",
+                "object": "Samurai"
+            },
+            {
+                "subject": "Samurai",
+                "relation": "is a",
+                "object": "sophisticated passive backdoor"
+            },
+            {
+                "subject": "Samurai",
+                "relation": "works on",
+                "object": "ports 80 and 443"
+            },
+            {
+                "subject": "ToddyCat",
+                "relation": "leverages",
+                "object": "two passive backdoors within the Exchange Server environment"
+            },
+            {
+                "subject": "passive backdoors",
+                "relation": "include",
+                "object": "Samurai"
+            },
+            {
+                "subject": "passive backdoors",
+                "relation": "include",
+                "object": "Ninja"
+            },
+            {
+                "subject": "Samurai and Ninja",
+                "relation": "are used by",
+                "object": "the adversaries to take complete control of the victim\u2019s hardware and network"
+            }
+        ],
+        "triples_count": 11,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2828,
+                "cost": 0.0022624
+            },
+            "output": {
+                "tokens": 318,
+                "cost": 0.000636
+            },
+            "total": {
+                "tokens": 3146,
+                "cost": 0.0028983999999999998
+            }
+        },
+        "time": 21.093537092208862,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\threatPost\\toddycat-QD1-7b3.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Crambus.json",
+                    0.09806110891100125
+                ],
+                [
+                    "symantec: Grayfly.json",
+                    0.11366341347893055
+                ],
+                [
+                    "symantec: Follina.json",
+                    0.1288551566056639
+                ],
+                [
+                    "AVERTIUM: charming-kitten.json",
+                    0.17443035928508321
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

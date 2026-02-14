@@ -1,0 +1,94 @@
+{
+    "CTI": {
+        "text": "A group of hackers recently hacked one of Mercedes-Benz's official Instagram accounts. The hackers posted BMW promotions through the account and also changed the name, profile picture, and bio, requesting Bitcoin donations for supposed Coronavirus pandemic victims. The hackers also posted a picture of a swastika.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "hackers",
+                    "relation": "hacked",
+                    "object": "Mercedes-Benz's official Instagram account"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "posted",
+                    "object": "BMW promotions"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "changed",
+                    "object": "name"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "changed",
+                    "object": "profile picture"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "changed",
+                    "object": "bio"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "requested",
+                    "object": "Bitcoin donations"
+                },
+                {
+                    "subject": "Bitcoin donations",
+                    "relation": "for",
+                    "object": "supposed Coronavirus pandemic victims"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "posted",
+                    "object": "a picture of a swastika"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2205,
+                "cost": 0.001764
+            },
+            "output": {
+                "tokens": 190,
+                "cost": 0.00037999999999999997
+            },
+            "total": {
+                "tokens": 2395,
+                "cost": 0.002144
+            }
+        },
+        "time": 8.200438976287842,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-2-QD1-ca6.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Google_TAG: iranian.json",
+                    0.05324521317638923
+                ],
+                [
+                    "darkreading: Google-Patches.json",
+                    0.059869422160827857
+                ],
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.0742983764448162
+                ],
+                [
+                    "symantec: Follina.json",
+                    0.07945677798658707
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

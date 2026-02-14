@@ -1,0 +1,127 @@
+{
+    "CTI": {
+        "text": "As part of TAG's mission to counter serious threats to Google and our users, we've analyzed a range of persistent threats including APT35 and Charming Kitten, an Iranian government-backed group that regularly targets high risk users. For years, we have been countering this group\u2019s efforts to hijack accounts, deploy malware, and their use of novel techniques to conduct espionage aligned with the interests of the Iranian government. Now, we\u2019re shining light on a new tool of theirs. In December 2021, TAG discovered a novel Charming Kitten tool, named HYPERSCRAPE, used to steal user data from Gmail, Yahoo!, and Microsoft Outlook accounts. The attacker runs HYPERSCRAPE on their own machine to download victims\u2019 inboxes using previously acquired credentials. We have seen it deployed against fewer than two dozen accounts located in Iran. The oldest known sample is from 2020, and the tool is still under active development. We have taken actions to re-secure these accounts and have notified the victims through our Government Backed Attacker Warnings.",
+        "link": "https://blog.google/threat-analysis-group/new-iranian-apt-data-extraction-tool/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Charming Kitten",
+                "relation": "is also known as",
+                "object": "APT35"
+            },
+            {
+                "subject": "Charming Kitten",
+                "relation": "is",
+                "object": "an Iranian government-backed group"
+            },
+            {
+                "subject": "Charming Kitten",
+                "relation": "regularly targets",
+                "object": "high risk users"
+            },
+            {
+                "subject": "TAG",
+                "relation": "has been countering",
+                "object": "Charming Kitten's efforts to hijack accounts"
+            },
+            {
+                "subject": "TAG",
+                "relation": "has been countering",
+                "object": "Charming Kitten's deployment of malware"
+            },
+            {
+                "subject": "TAG",
+                "relation": "has been countering",
+                "object": "Charming Kitten's use of novel techniques"
+            },
+            {
+                "subject": "Charming Kitten",
+                "relation": "conducts espionage",
+                "object": "aligned with the interests of the Iranian government"
+            },
+            {
+                "subject": "TAG",
+                "relation": "discovered",
+                "object": "a novel Charming Kitten tool named HYPERSCRAPE"
+            },
+            {
+                "subject": "HYPERSCRAPE",
+                "relation": "used to steal",
+                "object": "user data from Gmail, Yahoo!, and Microsoft Outlook accounts"
+            },
+            {
+                "subject": "attacker",
+                "relation": "runs",
+                "object": "HYPERSCRAPE on their own machine"
+            },
+            {
+                "subject": "HYPERSCRAPE",
+                "relation": "downloads",
+                "object": "victims\u2019 inboxes using previously acquired credentials"
+            },
+            {
+                "subject": "HYPERSCRAPE",
+                "relation": "deployed against",
+                "object": "fewer than two dozen accounts located in Iran"
+            },
+            {
+                "subject": "HYPERSCRAPE",
+                "relation": "is still under",
+                "object": "active development"
+            },
+            {
+                "subject": "TAG",
+                "relation": "re-secured",
+                "object": "these accounts"
+            },
+            {
+                "subject": "TAG",
+                "relation": "notified",
+                "object": "the victims through Government Backed Attacker Warnings"
+            }
+        ],
+        "triples_count": 15,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2937,
+                "cost": 0.0023496
+            },
+            "output": {
+                "tokens": 443,
+                "cost": 0.000886
+            },
+            "total": {
+                "tokens": 3380,
+                "cost": 0.0032356
+            }
+        },
+        "time": 29.213516235351562,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\Google_TAG\\iranian-QD1-6ad.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: muddywater.json",
+                    0.1374787724002937
+                ],
+                [
+                    "Google_TAG: north-korean-campaign.json",
+                    0.1552993715551683
+                ],
+                [
+                    "AVERTIUM: charming-kitten.json",
+                    0.19599434054518083
+                ],
+                [
+                    "Google_TAG: coldriver.json",
+                    0.2251928470464505
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

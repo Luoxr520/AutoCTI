@@ -1,0 +1,117 @@
+{
+    "CTI": {
+        "text": "Equation has employed a number of specialist tools. Among these are Trojan.Grokey a custom keylogger (also known as \u201cGrok\u201d) and W32.Fanni, which is also known as \u201cFanny worm\u201d. This worm's chief purpose appears to be the targeting of air-gapped networks. It can receive commands and exfiltrate data through infected USB sticks. Fanny used two zero day exploits that were also used in the Stuxnet attacks. The exploits were used in Fanny prior to Stuxnet indicating that Equation had prior knowledge of the vulnerabilities. Another similarity lies in the fact that Stuxnet was also designed to attack air-gapped networks.",
+        "link": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/equation-cyberespionage-group"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Equation",
+                "relation": "employed",
+                "object": "Trojan.Grokey"
+            },
+            {
+                "subject": "Trojan.Grokey",
+                "relation": "is a",
+                "object": "custom keylogger"
+            },
+            {
+                "subject": "Trojan.Grokey",
+                "relation": "also known as",
+                "object": "Grok"
+            },
+            {
+                "subject": "Equation",
+                "relation": "employed",
+                "object": "W32.Fanni"
+            },
+            {
+                "subject": "W32.Fanni",
+                "relation": "also known as",
+                "object": "Fanny worm"
+            },
+            {
+                "subject": "Fanny worm",
+                "relation": "targets",
+                "object": "air-gapped networks"
+            },
+            {
+                "subject": "Fanny worm",
+                "relation": "can receive commands through",
+                "object": "infected USB sticks"
+            },
+            {
+                "subject": "Fanny worm",
+                "relation": "exfiltrates data through",
+                "object": "infected USB sticks"
+            },
+            {
+                "subject": "Fanny worm",
+                "relation": "used",
+                "object": "two zero day exploits"
+            },
+            {
+                "subject": "zero day exploits",
+                "relation": "were also used in",
+                "object": "Stuxnet attacks"
+            },
+            {
+                "subject": "exploits",
+                "relation": "were used in Fanny prior to",
+                "object": "Stuxnet"
+            },
+            {
+                "subject": "Equation",
+                "relation": "had prior knowledge of",
+                "object": "vulnerabilities"
+            },
+            {
+                "subject": "Stuxnet",
+                "relation": "designed to attack",
+                "object": "air-gapped networks"
+            }
+        ],
+        "triples_count": 13,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3177,
+                "cost": 0.0025415999999999998
+            },
+            "output": {
+                "tokens": 343,
+                "cost": 0.000686
+            },
+            "total": {
+                "tokens": 3520,
+                "cost": 0.0032275999999999997
+            }
+        },
+        "time": 19.188475370407104,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\symantec\\Equation-QD1-bc9.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Google_TAG: apt37.json",
+                    0.060881526363288585
+                ],
+                [
+                    "Unit42: PlugX.json",
+                    0.07628456785689483
+                ],
+                [
+                    "symantec: Buckeye.json",
+                    0.07930821390461208
+                ],
+                [
+                    "Unit42: P2PInfect.json",
+                    0.12165794548310119
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

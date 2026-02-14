@@ -1,0 +1,51 @@
+{
+    "CTI": {
+        "text": "A vehicle was stolen in Bonnevoie, Luxemburg via a keyless theft gadget and was tracked using a smartphone app that allowed the owner to locate the car. The vehicle was recovered in France a few days after the theft.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [],
+        "triples_count": 0,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2582,
+                "cost": 0.0020656
+            },
+            "output": {
+                "tokens": 5,
+                "cost": 9.999999999999999e-06
+            },
+            "total": {
+                "tokens": 2587,
+                "cost": 0.0020756
+            }
+        },
+        "time": 2.4540789127349854,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-14-QD1-713.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: CVE-2023-36884.json",
+                    0.04349536833728811
+                ],
+                [
+                    "AVERTIUM: charming-kitten.json",
+                    0.046073021276682447
+                ],
+                [
+                    "BleepingComputer: androxgh0st.json",
+                    0.05136617269652044
+                ],
+                [
+                    "BleepingComputer: fortra.json",
+                    0.05939867709111599
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

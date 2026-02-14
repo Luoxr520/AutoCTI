@@ -1,0 +1,77 @@
+{
+    "CTI": {
+        "text": "A former police officer was involved in the theft of 10 vehicles across Peterborough, UK between June and October 2019. The thief used a \u00a315,000 relay device that required working with a partner to capture the vehicles. The former officer left the stolen vehicles in communal car parks to allow time for any GPS system to track them down. Six vehicles were recovered, but untraced vehicles were dismantled and exported in parts to Eastern Europe and Africa.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A former police officer",
+                "relation": "involved in",
+                "object": "the theft of 10 vehicles"
+            },
+            {
+                "subject": "the thief",
+                "relation": "used",
+                "object": "a \u00a315,000 relay device"
+            },
+            {
+                "subject": "a \u00a315,000 relay device",
+                "relation": "required",
+                "object": "working with a partner"
+            },
+            {
+                "subject": "the former officer",
+                "relation": "left",
+                "object": "stolen vehicles in communal car parks"
+            },
+            {
+                "subject": "untraced vehicles",
+                "relation": "were dismantled and exported",
+                "object": "in parts to Eastern Europe and Africa"
+            }
+        ],
+        "triples_count": 5,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2385,
+                "cost": 0.001908
+            },
+            "output": {
+                "tokens": 155,
+                "cost": 0.00031
+            },
+            "total": {
+                "tokens": 2540,
+                "cost": 0.002218
+            }
+        },
+        "time": 8.384443044662476,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-7-QD1-03c.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "trendmicro: Magniber.json",
+                    0.03258595267043936
+                ],
+                [
+                    "darkreading: Zimbra.json",
+                    0.03392335183672145
+                ],
+                [
+                    "Google_TAG: north-korean-campaign.json",
+                    0.036995149830972705
+                ],
+                [
+                    "Microsoft: star-blizzard.json",
+                    0.03964445023178756
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

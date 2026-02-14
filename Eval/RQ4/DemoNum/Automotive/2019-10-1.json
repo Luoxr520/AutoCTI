@@ -1,0 +1,79 @@
+{
+    "CTI": {
+        "text": "Mobile app Mercedes-Benz car owners used to remotely locate, unlock, and start their cars displayed other people\u2019s account and vehicle information. Mercedes-Benz\u2019 connected car app pulled in information from other accounts, allowing users to see other car owners\u2019 names, recent activity, phone numbers, and more. The app went offline \u201cdue to site maintenance\u201d a few hours later.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Mercedes-Benz car owners app",
+                    "relation": "used to",
+                    "object": "remotely locate, unlock, and start their cars"
+                },
+                {
+                    "subject": "Mercedes-Benz car owners app",
+                    "relation": "displayed",
+                    "object": "other people\u2019s account and vehicle information"
+                },
+                {
+                    "subject": "Mercedes-Benz connected car app",
+                    "relation": "pulled in",
+                    "object": "information from other accounts"
+                },
+                {
+                    "subject": "users",
+                    "relation": "could see",
+                    "object": "other car owners\u2019 names, recent activity, phone numbers, and more"
+                },
+                {
+                    "subject": "the app",
+                    "relation": "went offline",
+                    "object": "'due to site maintenance'"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2685,
+                "cost": 0.0021479999999999997
+            },
+            "output": {
+                "tokens": 192,
+                "cost": 0.000384
+            },
+            "total": {
+                "tokens": 2877,
+                "cost": 0.0025319999999999995
+            }
+        },
+        "time": 10.291186094284058,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2019-10-1-QD1-84e.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "trendmicro: TargetCompany.json",
+                    0.04977333070226893
+                ],
+                [
+                    "thehackernews: Xamalicious.json",
+                    0.052308487919271035
+                ],
+                [
+                    "Microsoft: app-installer.json",
+                    0.05799072802049604
+                ],
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.11452429762019639
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

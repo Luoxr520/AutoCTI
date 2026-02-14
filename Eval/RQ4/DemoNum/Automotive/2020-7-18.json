@@ -1,0 +1,132 @@
+{
+    "CTI": {
+        "text": "An issue was discovered on Realtek RTL8195AM, RTL8711AM, RTL8711AF, and RTL8710AF devices. A stack-based buffer overflow exists in the client code that takes care of WPA2's 4-way-handshake via a malformed EAPOL-Key packet with a long keydata buffer. These devices are highly popular standalone, low-power-consumption WiFi hardware modules, used for embedded devices in several industries such as the agriculture, healthcare, and automotive sectors.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Realtek RTL8195AM",
+                "relation": "has",
+                "object": "a stack-based buffer overflow"
+            },
+            {
+                "subject": "Realtek RTL8711AM",
+                "relation": "has",
+                "object": "a stack-based buffer overflow"
+            },
+            {
+                "subject": "Realtek RTL8711AF",
+                "relation": "has",
+                "object": "a stack-based buffer overflow"
+            },
+            {
+                "subject": "Realtek RTL8710AF",
+                "relation": "has",
+                "object": "a stack-based buffer overflow"
+            },
+            {
+                "subject": "stack-based buffer overflow",
+                "relation": "exists in",
+                "object": "client code"
+            },
+            {
+                "subject": "client code",
+                "relation": "takes care of",
+                "object": "WPA2's 4-way-handshake"
+            },
+            {
+                "subject": "WPA2's 4-way-handshake",
+                "relation": "via",
+                "object": "a malformed EAPOL-Key packet"
+            },
+            {
+                "subject": "malformed EAPOL-Key packet",
+                "relation": "with",
+                "object": "a long keydata buffer"
+            },
+            {
+                "subject": "Realtek RTL8195AM",
+                "relation": "is",
+                "object": "a popular standalone, low-power-consumption WiFi hardware module"
+            },
+            {
+                "subject": "Realtek RTL8711AM",
+                "relation": "is",
+                "object": "a popular standalone, low-power-consumption WiFi hardware module"
+            },
+            {
+                "subject": "Realtek RTL8711AF",
+                "relation": "is",
+                "object": "a popular standalone, low-power-consumption WiFi hardware module"
+            },
+            {
+                "subject": "Realtek RTL8710AF",
+                "relation": "is",
+                "object": "a popular standalone, low-power-consumption WiFi hardware module"
+            },
+            {
+                "subject": "these devices",
+                "relation": "are used for",
+                "object": "embedded devices"
+            },
+            {
+                "subject": "embedded devices",
+                "relation": "in",
+                "object": "agriculture"
+            },
+            {
+                "subject": "embedded devices",
+                "relation": "in",
+                "object": "healthcare"
+            },
+            {
+                "subject": "embedded devices",
+                "relation": "in",
+                "object": "automotive sectors"
+            }
+        ],
+        "triples_count": 16,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 2442,
+                "cost": 0.0019535999999999998
+            },
+            "output": {
+                "tokens": 462,
+                "cost": 0.0009239999999999999
+            },
+            "total": {
+                "tokens": 2904,
+                "cost": 0.0028775999999999997
+            }
+        },
+        "time": 12.656287908554077,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-18-QD1-51a.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "thehackernews: chrome-zero-day.json",
+                    0.06481856048449174
+                ],
+                [
+                    "BleepingComputer: apple.json",
+                    0.07983774594805025
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.10322808964391819
+                ],
+                [
+                    "symantec: 3AM.json",
+                    0.10419244532290713
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

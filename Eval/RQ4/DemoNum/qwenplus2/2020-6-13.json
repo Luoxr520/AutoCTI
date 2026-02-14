@@ -1,0 +1,51 @@
+{
+    "CTI": {
+        "text": "In an attempt to mimic a Heads Up Display (HUD) on a C6 Corvette, a hacker built a custom HUD that showed the vehicle\u2019s speed and RPM on a transparent display mounted on a dashboard. The hacker collected the RPM and the speed of the vehicle with a Bluetooth OBD-II reader and then transferred the details to a development board that recorded the vehicle data to a SD card and another MCU that ran the actual LED displayed in the HUD.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [],
+        "triples_count": 0,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2749,
+                "cost": 0.0021992
+            },
+            "output": {
+                "tokens": 5,
+                "cost": 9.999999999999999e-06
+            },
+            "total": {
+                "tokens": 2754,
+                "cost": 0.0022092
+            }
+        },
+        "time": 2.2856879234313965,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-13-QD1-71a.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: vultur.json",
+                    0.023234633734616258
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.02612551272902205
+                ],
+                [
+                    "Unit42: Diplomats-Beware.json",
+                    0.03261091011193708
+                ],
+                [
+                    "darkreading: Bluetooth-Flaw.json",
+                    0.06723438153752413
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

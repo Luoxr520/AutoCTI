@@ -1,0 +1,127 @@
+{
+    "CTI": {
+        "text": "The threat actor known as UAC-0099 has been linked to continued attacks aimed at Ukraine, some of which leverage a high-severity flaw in the WinRAR software to deliver a malware strain called LONEPAGE. The threat actor targets Ukrainian employees working for companies outside of Ukraine. UAC-0099 was first documented by the Computer Emergency Response Team of Ukraine (CERT-UA) in June 2023, detailing its attacks against state organizations and media entities for espionage motives. The attack chains leveraged phishing messages containing HTA, RAR, and LNK file attachments that led to the deployment of LONEPAGE, a Visual Basic Script (VBS) malware that's capable of contacting a command-and-control (C2) server to retrieve additional payloads such as keyloggers, stealers, and screenshot malware. The latest analysis from Deep Instinct reveals that the use of HTA attachments is just one of three different infection chains, the other two of which leverage self-extracting (SFX) archives and booby-trapped ZIP files. The ZIP files exploit the WinRAR vulnerability (CVE-2023-38831, CVSS score: 7.8) to distribute LONEPAGE.",
+        "link": "https://thehackernews.com/2023/12/uac-0099-using-winrar-exploit-to-target.html"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "UAC-0099",
+                "relation": "linked to",
+                "object": "continued attacks aimed at Ukraine"
+            },
+            {
+                "subject": "UAC-0099",
+                "relation": "targets",
+                "object": "Ukrainian employees working for companies outside of Ukraine"
+            },
+            {
+                "subject": "CERT-UA",
+                "relation": "first documented",
+                "object": "UAC-0099"
+            },
+            {
+                "subject": "UAC-0099",
+                "relation": "attacks against",
+                "object": "state organizations and media entities"
+            },
+            {
+                "subject": "UAC-0099",
+                "relation": "motivated by",
+                "object": "espionage motives"
+            },
+            {
+                "subject": "attack chains",
+                "relation": "leveraged",
+                "object": "phishing messages containing HTA, RAR, and LNK file attachments"
+            },
+            {
+                "subject": "phishing messages",
+                "relation": "led to the deployment of",
+                "object": "LONEPAGE"
+            },
+            {
+                "subject": "LONEPAGE",
+                "relation": "is a",
+                "object": "Visual Basic Script (VBS) malware"
+            },
+            {
+                "subject": "LONEPAGE",
+                "relation": "capable of contacting",
+                "object": "command-and-control (C2) server"
+            },
+            {
+                "subject": "LONEPAGE",
+                "relation": "retrieves additional payloads such as",
+                "object": "keyloggers, stealers, and screenshot malware"
+            },
+            {
+                "subject": "Deep Instinct",
+                "relation": "reveals",
+                "object": "use of HTA attachments is one of three different infection chains"
+            },
+            {
+                "subject": "infection chains",
+                "relation": "leverage",
+                "object": "self-extracting (SFX) archives"
+            },
+            {
+                "subject": "infection chains",
+                "relation": "leverage",
+                "object": "booby-trapped ZIP files"
+            },
+            {
+                "subject": "ZIP files",
+                "relation": "exploit",
+                "object": "WinRAR vulnerability (CVE-2023-38831)"
+            },
+            {
+                "subject": "CVE-2023-38831",
+                "relation": "used to distribute",
+                "object": "LONEPAGE"
+            }
+        ],
+        "triples_count": 15,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2839,
+                "cost": 0.0022711999999999997
+            },
+            "output": {
+                "tokens": 475,
+                "cost": 0.00095
+            },
+            "total": {
+                "tokens": 3314,
+                "cost": 0.0032211999999999996
+            }
+        },
+        "time": 26.853129625320435,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\thehackernews\\UAC-0099-QD1-11b.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Google_TAG: winrar.json",
+                    0.11949219079285749
+                ],
+                [
+                    "securityweek: strelastealer.json",
+                    0.12767044366085686
+                ],
+                [
+                    "thehackernews: Agent-Tesla.json",
+                    0.16179006118690545
+                ],
+                [
+                    "thehackernews: UAC-0050.json",
+                    0.22722179077017868
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

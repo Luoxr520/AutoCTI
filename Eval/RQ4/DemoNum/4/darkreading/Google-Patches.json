@@ -1,0 +1,107 @@
+{
+    "CTI": {
+        "text": "The latest zero-day, which Google is tracking as CVE-2023-6345, stems from an integer overflow issue in Skia, an open source 2D graphic library in Chrome. The bug is one of seven Chrome vulnerabilities for which Google issued a security update this week. The company's advisory contained sparse details on CVE-2023-6345 beyond mentioning the fact that an exploit for it is publicly available. A brief description on NIST's National Vulnerability Database (NVD) site described the flaw as affecting versions of Chrome prior to 119.0.6045.199 and allowing a remote attacker who has compromised the renderer process to potentially perform a sandbox escape via a malicious file.",
+        "link": "https://www.darkreading.com/vulnerabilities-threats/google-patches-another-chrome-zero-day-as-browser-attacks-mount"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Google",
+                "relation": "is tracking",
+                "object": "CVE-2023-6345"
+            },
+            {
+                "subject": "CVE-2023-6345",
+                "relation": "stems from",
+                "object": "an integer overflow issue in Skia"
+            },
+            {
+                "subject": "Skia",
+                "relation": "is",
+                "object": "an open source 2D graphic library in Chrome"
+            },
+            {
+                "subject": "CVE-2023-6345",
+                "relation": "is one of",
+                "object": "seven Chrome vulnerabilities"
+            },
+            {
+                "subject": "Google",
+                "relation": "issued",
+                "object": "a security update for CVE-2023-6345"
+            },
+            {
+                "subject": "Google's advisory",
+                "relation": "contained sparse details on",
+                "object": "CVE-2023-6345"
+            },
+            {
+                "subject": "an exploit for CVE-2023-6345",
+                "relation": "is",
+                "object": "publicly available"
+            },
+            {
+                "subject": "NIST's National Vulnerability Database (NVD)",
+                "relation": "described",
+                "object": "CVE-2023-6345"
+            },
+            {
+                "subject": "CVE-2023-6345",
+                "relation": "affects",
+                "object": "versions of Chrome prior to 119.0.6045.199"
+            },
+            {
+                "subject": "CVE-2023-6345",
+                "relation": "allows",
+                "object": "a remote attacker who has compromised the renderer process"
+            },
+            {
+                "subject": "remote attacker",
+                "relation": "can potentially perform",
+                "object": "a sandbox escape via a malicious file"
+            }
+        ],
+        "triples_count": 11,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2776,
+                "cost": 0.0022207999999999998
+            },
+            "output": {
+                "tokens": 389,
+                "cost": 0.0007779999999999999
+            },
+            "total": {
+                "tokens": 3165,
+                "cost": 0.0029988
+            }
+        },
+        "time": 26.135963439941406,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\darkreading\\Google-Patches-QD1-9df.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: pwn2own.json",
+                    0.12970393884062756
+                ],
+                [
+                    "BleepingComputer: chrome.json",
+                    0.15506308934707902
+                ],
+                [
+                    "trendmicro: Earth-Kitsune.json",
+                    0.16226381541850798
+                ],
+                [
+                    "thehackernews: chrome-zero-day.json",
+                    0.24341021022725864
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

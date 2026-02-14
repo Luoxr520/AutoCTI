@@ -1,0 +1,152 @@
+{
+    "CTI": {
+        "text": "CISA and the FBI warned today that threat actors using Androxgh0st malware are building a botnet focused on cloud credential theft and using the stolen information to deliver additional malicious payloads. It scans for websites and servers vulnerable to the following remote code execution (RCE) vulnerabilities: CVE-2017-9841 (PHPUnit unit testing framework), CVE-2021-41773 (Apache HTTP Server), and CVE-2018-15133 (Laravel PHP web framework). Androxgh0st is a Python-scripted malware primarily used to target .env files that contain confidential information, such as credentials for various high profile applications, i.e., Amazon Web Services [AWS], Microsoft Office 365, SendGrid, and Twilio from the Laravel web application framework. Androxgh0st malware also supports numerous functions capable of abusing the Simple Mail Transfer Protocol (SMTP), such as scanning and exploiting exposed credentials and application programming interfaces (APIs), and web shell deployment. Stolen Twilio and SendGrid credentials can be used by the threat actors to conduct spam campaigns impersonating the breached companies.",
+        "link": "https://www.bleepingcomputer.com/news/security/fbi-androxgh0st-malware-botnet-steals-aws-microsoft-credentials/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "CISA and the FBI",
+                "relation": "warned",
+                "object": "threat actors using Androxgh0st malware"
+            },
+            {
+                "subject": "Threat actors",
+                "relation": "building",
+                "object": "a botnet"
+            },
+            {
+                "subject": "Botnet",
+                "relation": "focused on",
+                "object": "cloud credential theft"
+            },
+            {
+                "subject": "Stolen information",
+                "relation": "used to deliver",
+                "object": "additional malicious payloads"
+            },
+            {
+                "subject": "Androxgh0st",
+                "relation": "scans for",
+                "object": "websites and servers vulnerable to RCE vulnerabilities"
+            },
+            {
+                "subject": "Androxgh0st",
+                "relation": "exploits",
+                "object": "CVE-2017-9841 (PHPUnit unit testing framework)"
+            },
+            {
+                "subject": "Androxgh0st",
+                "relation": "exploits",
+                "object": "CVE-2021-41773 (Apache HTTP Server)"
+            },
+            {
+                "subject": "Androxgh0st",
+                "relation": "exploits",
+                "object": "CVE-2018-15133 (Laravel PHP web framework)"
+            },
+            {
+                "subject": "Androxgh0st",
+                "relation": "is a",
+                "object": "Python-scripted malware"
+            },
+            {
+                "subject": "Androxgh0st",
+                "relation": "targets",
+                "object": ".env files that contain confidential information"
+            },
+            {
+                "subject": ".env files",
+                "relation": "contain",
+                "object": "credentials for various high profile applications"
+            },
+            {
+                "subject": "High profile applications",
+                "relation": "include",
+                "object": "Amazon Web Services [AWS]"
+            },
+            {
+                "subject": "High profile applications",
+                "relation": "include",
+                "object": "Microsoft Office 365"
+            },
+            {
+                "subject": "High profile applications",
+                "relation": "include",
+                "object": "SendGrid"
+            },
+            {
+                "subject": "High profile applications",
+                "relation": "include",
+                "object": "Twilio"
+            },
+            {
+                "subject": "Androxgh0st",
+                "relation": "supports",
+                "object": "numerous functions capable of abusing SMTP"
+            },
+            {
+                "subject": "SMTP",
+                "relation": "used for",
+                "object": "scanning and exploiting exposed credentials and APIs"
+            },
+            {
+                "subject": "SMTP",
+                "relation": "used for",
+                "object": "web shell deployment"
+            },
+            {
+                "subject": "Stolen Twilio and SendGrid credentials",
+                "relation": "used by",
+                "object": "threat actors"
+            },
+            {
+                "subject": "Threat actors",
+                "relation": "conduct",
+                "object": "spam campaigns impersonating the breached companies"
+            }
+        ],
+        "triples_count": 20,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2822,
+                "cost": 0.001411
+            },
+            "output": {
+                "tokens": 570,
+                "cost": 0.0008550000000000001
+            },
+            "total": {
+                "tokens": 3392,
+                "cost": 0.002266
+            }
+        },
+        "time": 24.41930603981018,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\BleepingComputer\\androxgh0st-QD1-aaa.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: north-korean.json",
+                    0.09742480193421514
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.11162797102494813
+                ],
+                [
+                    "darkreading: Apache-ERP.json",
+                    0.12316303677642915
+                ],
+                [
+                    "darkreading: Gh0st-RAT.json",
+                    0.14381270836555277
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

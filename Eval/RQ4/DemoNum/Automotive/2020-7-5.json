@@ -1,0 +1,99 @@
+{
+    "CTI": {
+        "text": "A tech firm from Bulgaria is selling devices for car thieves which are strikingly similar to old Nintendo Game Boys consoles. The company\u2019s SOS Key Tool is marketed as \u2018the most advanced locksmith tool\u2019 available. It is currently sold for \u00a320,000, and unlike other popular devices, it doesn't require a relay from a nearby key fob to unlock vehicles. The gadget records the car\u2019s data and acts as a responder which the vehicle recognizes as an authorized remote. The car will unlock and start as if the thief had a valid key fob. A tutorial video on YouTube shows how it can be used to unlock modern Kia, Hyundai, and Mitsubishi models within a minute.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "A tech firm from Bulgaria",
+                    "relation": "is selling",
+                    "object": "devices for car thieves"
+                },
+                {
+                    "subject": "The devices",
+                    "relation": "are similar to",
+                    "object": "old Nintendo Game Boys consoles"
+                },
+                {
+                    "subject": "The company\u2019s SOS Key Tool",
+                    "relation": "is marketed as",
+                    "object": "the most advanced locksmith tool"
+                },
+                {
+                    "subject": "SOS Key Tool",
+                    "relation": "is sold for",
+                    "object": "\u00a320,000"
+                },
+                {
+                    "subject": "SOS Key Tool",
+                    "relation": "doesn't require",
+                    "object": "a relay from a nearby key fob to unlock vehicles"
+                },
+                {
+                    "subject": "The gadget",
+                    "relation": "records",
+                    "object": "the car\u2019s data"
+                },
+                {
+                    "subject": "The gadget",
+                    "relation": "acts as",
+                    "object": "a responder which the vehicle recognizes as an authorized remote"
+                },
+                {
+                    "subject": "The car",
+                    "relation": "will unlock and start as if",
+                    "object": "the thief had a valid key fob"
+                },
+                {
+                    "subject": "A tutorial video on YouTube",
+                    "relation": "shows how it can be used to unlock",
+                    "object": "modern Kia, Hyundai, and Mitsubishi models within a minute"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 2920,
+                "cost": 0.002336
+            },
+            "output": {
+                "tokens": 282,
+                "cost": 0.0005639999999999999
+            },
+            "total": {
+                "tokens": 3202,
+                "cost": 0.0029
+            }
+        },
+        "time": 14.150537490844727,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-5-QD1-ccc.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: cactus.json",
+                    0.0380651798775061
+                ],
+                [
+                    "symantec: Budworm.json",
+                    0.03906304195779105
+                ],
+                [
+                    "thehackernews: ESG.json",
+                    0.0405268028195043
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.0626056969376992
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

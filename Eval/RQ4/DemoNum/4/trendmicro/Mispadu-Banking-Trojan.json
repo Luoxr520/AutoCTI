@@ -1,0 +1,92 @@
+{
+    "CTI": {
+        "text": "Recent spam campaigns leading to URSA/Mispadu banking trojan (detected by Trend Micro as TrojanSpy.Win32.MISPADU.THIADBO) have been uncovered, as reported by malware analyst Pedro Tavares in a Twitter post and by Seguranca Informatica in a blog post. Mispadu malware steals credentials from users' systems. This attack targets systems with Spanish and Portuguese as system languages. It is also likely that they have targets similar to previous Mispadu attacks where users from Mexico, Spain, Portugal, and other nearby regions were targeted. This behavior is in line with past Mispadu schemes, such as the one where spam emails for fake discount coupons were used as bait.",
+        "link": "https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/mispadu-banking-trojan-resurfaces"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "spam campaigns",
+                "relation": "lead to",
+                "object": "URSA/Mispadu banking trojan"
+            },
+            {
+                "subject": "Mispadu malware",
+                "relation": "steals",
+                "object": "credentials from users' systems"
+            },
+            {
+                "subject": "attack",
+                "relation": "targets",
+                "object": "systems with Spanish and Portuguese as system languages"
+            },
+            {
+                "subject": "attack",
+                "relation": "targets",
+                "object": "users from Mexico, Spain, Portugal, and other nearby regions"
+            },
+            {
+                "subject": "Mispadu attacks",
+                "relation": "used",
+                "object": "spam emails for fake discount coupons as bait"
+            },
+            {
+                "subject": "TrojanSpy.Win32.MISPADU.THIADBO",
+                "relation": "detected by",
+                "object": "Trend Micro"
+            },
+            {
+                "subject": "Pedro Tavares",
+                "relation": "reported",
+                "object": "spam campaigns leading to URSA/Mispadu banking trojan"
+            },
+            {
+                "subject": "Seguranca Informatica",
+                "relation": "reported",
+                "object": "spam campaigns leading to URSA/Mispadu banking trojan"
+            }
+        ],
+        "triples_count": 8,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2671,
+                "cost": 0.0021368
+            },
+            "output": {
+                "tokens": 255,
+                "cost": 0.0005099999999999999
+            },
+            "total": {
+                "tokens": 2926,
+                "cost": 0.0026468
+            }
+        },
+        "time": 16.080267667770386,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\trendmicro\\Mispadu-Banking-Trojan-QD1-3a2.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Unit42: CryptoClippy.json",
+                    0.07517506433454663
+                ],
+                [
+                    "trendmicro: Comm-Apps.json",
+                    0.07776528966980627
+                ],
+                [
+                    "securityweek: strelastealer.json",
+                    0.08583095799327192
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.09046520246010883
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

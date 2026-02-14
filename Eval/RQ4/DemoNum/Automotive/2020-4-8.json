@@ -1,0 +1,89 @@
+{
+    "CTI": {
+        "text": "Sheffield City Council's automatic number-plate recognition (ANPR) system exposed 8.6 million records of road journeys made by thousands of people to the internet. The ANPR camera system's internal management dashboard was left unsecured and could have been accessed by simply entering its IP address into a web browser. Anyone who had access to the IP address could view and search the live system which logs where and when vehicles travel through Sheffield's road network.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Sheffield City Council's ANPR system",
+                    "relation": "exposed",
+                    "object": "8.6 million records of road journeys"
+                },
+                {
+                    "subject": "records",
+                    "relation": "made by",
+                    "object": "thousands of people"
+                },
+                {
+                    "subject": "ANPR camera system",
+                    "relation": "has",
+                    "object": "internal management dashboard"
+                },
+                {
+                    "subject": "internal management dashboard",
+                    "relation": "was left",
+                    "object": "unsecured"
+                },
+                {
+                    "subject": "unsecured dashboard",
+                    "relation": "could have been accessed by",
+                    "object": "entering its IP address into a web browser"
+                },
+                {
+                    "subject": "Anyone with access to the IP address",
+                    "relation": "could view and search",
+                    "object": "the live system"
+                },
+                {
+                    "subject": "live system",
+                    "relation": "logs",
+                    "object": "where and when vehicles travel through Sheffield's road network"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2830,
+                "cost": 0.002264
+            },
+            "output": {
+                "tokens": 206,
+                "cost": 0.000412
+            },
+            "total": {
+                "tokens": 3036,
+                "cost": 0.002676
+            }
+        },
+        "time": 19.933396577835083,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-4-8-QD1-b88.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: SilverRAT.json",
+                    0.057886619108957725
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.06283924251191618
+                ],
+                [
+                    "thehackernews: OfBiz.json",
+                    0.06369113774201444
+                ],
+                [
+                    "BleepingComputer: apple.json",
+                    0.07083841445423936
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

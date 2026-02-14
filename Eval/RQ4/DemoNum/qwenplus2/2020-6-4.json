@@ -1,0 +1,72 @@
+{
+    "CTI": {
+        "text": "Honda's networks in Europe and Japan were affected by issues reportedly related to a Snake Ransomware cyber-attack. Unlike the typical ransomware, Snake is designed to attack industrial control systems and targets entire networks rather than individual workstations. Honda stopped production in some of its plants for a few days due to the ransomware.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Honda's networks",
+                "relation": "were affected by",
+                "object": "Snake Ransomware cyber-attack"
+            },
+            {
+                "subject": "Snake Ransomware",
+                "relation": "is designed to attack",
+                "object": "industrial control systems"
+            },
+            {
+                "subject": "Snake Ransomware",
+                "relation": "targets",
+                "object": "entire networks"
+            },
+            {
+                "subject": "Honda",
+                "relation": "stopped production in",
+                "object": "some of its plants"
+            }
+        ],
+        "triples_count": 4,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3173,
+                "cost": 0.0025383999999999997
+            },
+            "output": {
+                "tokens": 107,
+                "cost": 0.000214
+            },
+            "total": {
+                "tokens": 3280,
+                "cost": 0.0027523999999999995
+            }
+        },
+        "time": 6.681072473526001,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-4-QD1-aa4.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: cuba-ransomware.json",
+                    0.09421514321842679
+                ],
+                [
+                    "AVERTIUM: mallox.json",
+                    0.09600442442515132
+                ],
+                [
+                    "AVERTIUM: yanluowang.json",
+                    0.09952801540581331
+                ],
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.14472603383475025
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

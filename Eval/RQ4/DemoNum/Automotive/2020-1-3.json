@@ -1,0 +1,82 @@
+{
+    "CTI": {
+        "text": "A password-protected highway sign in Kentucky was hacked, showing drivers the distracting message \"send nudes\". The sign belongs to a contractor managing a roadwork project.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "password-protected highway sign",
+                "relation": "was hacked",
+                "object": ""
+            },
+            {
+                "subject": "hacked sign",
+                "relation": "showed",
+                "object": "distracting message"
+            },
+            {
+                "subject": "message",
+                "relation": "said",
+                "object": "send nudes"
+            },
+            {
+                "subject": "sign",
+                "relation": "belongs to",
+                "object": "a contractor"
+            },
+            {
+                "subject": "contractor",
+                "relation": "managing",
+                "object": "roadwork project"
+            },
+            {
+                "subject": "contractor",
+                "relation": "located in",
+                "object": "Kentucky"
+            }
+        ],
+        "triples_count": 6,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2709,
+                "cost": 0.0021671999999999998
+            },
+            "output": {
+                "tokens": 135,
+                "cost": 0.00027
+            },
+            "total": {
+                "tokens": 2844,
+                "cost": 0.0024371999999999996
+            }
+        },
+        "time": 9.543604135513306,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-1-3-QD1-004.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: vultur.json",
+                    0.038253064399352096
+                ],
+                [
+                    "darkreading: SpectralBlur.json",
+                    0.04558928222372032
+                ],
+                [
+                    "darkreading: Star-Blizzard.json",
+                    0.055109315361766956
+                ],
+                [
+                    "BleepingComputer: gitlab.json",
+                    0.0758813033075513
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

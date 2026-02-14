@@ -1,0 +1,99 @@
+{
+    "CTI": {
+        "text": "The Boyd group, which runs Assured Automotive, Gerber Collision, Boyd Autobody, and additional roadside assistance and auto glass operations in the U.S and Canada was hit with a ransomware attack. While most of Boyd\u2019s locations were able to continue to process and complete repairs at normal or near normal levels, this attack and the subsequent recovery period resulted in a temporary interruption of business and a loss of some sales.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "The Boyd group",
+                    "relation": "runs",
+                    "object": "Assured Automotive"
+                },
+                {
+                    "subject": "The Boyd group",
+                    "relation": "runs",
+                    "object": "Gerber Collision"
+                },
+                {
+                    "subject": "The Boyd group",
+                    "relation": "runs",
+                    "object": "Boyd Autobody"
+                },
+                {
+                    "subject": "The Boyd group",
+                    "relation": "runs",
+                    "object": "additional roadside assistance and auto glass operations"
+                },
+                {
+                    "subject": "The Boyd group",
+                    "relation": "operates in",
+                    "object": "the U.S and Canada"
+                },
+                {
+                    "subject": "The Boyd group",
+                    "relation": "was hit with",
+                    "object": "a ransomware attack"
+                },
+                {
+                    "subject": "ransomware attack",
+                    "relation": "resulted in",
+                    "object": "a temporary interruption of business"
+                },
+                {
+                    "subject": "ransomware attack",
+                    "relation": "resulted in",
+                    "object": "a loss of some sales"
+                },
+                {
+                    "subject": "Boyd\u2019s locations",
+                    "relation": "were able to continue",
+                    "object": "processing and completing repairs"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2652,
+                "cost": 0.0021216
+            },
+            "output": {
+                "tokens": 244,
+                "cost": 0.000488
+            },
+            "total": {
+                "tokens": 2896,
+                "cost": 0.0026096
+            }
+        },
+        "time": 9.46337080001831,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2019-7-1-QD1-e1a.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: fargo.json",
+                    0.0475051132180671
+                ],
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.05002833735065256
+                ],
+                [
+                    "trendmicro: Ryuk.json",
+                    0.054244994111294256
+                ],
+                [
+                    "Unit42: Exposed-IAM-Keys.json",
+                    0.056232292590902164
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

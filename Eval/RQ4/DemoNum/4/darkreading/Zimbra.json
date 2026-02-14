@@ -1,0 +1,132 @@
+{
+    "CTI": {
+        "text": "At least four separate cyberattack groups have used a former zero-day security vulnerability in the Zimbra Collaboration Suite (ZCS) to steal email data, user credentials, and authentication tokens from government organizations globally.ZCS is an email server, calendaring, and chat and video platform, used by thousands of companies and hundreds of millions of individuals, according to the Zimbra website. Its client organizations are as diverse as the Japan Advanced Institute of Science and Technology, Germany's Max Planck Institute, and Gunung Sewu, a top business incubator in Southeast Asia. The bug (CVE-2023-37580) is a reflected cross-site scripting (XSS) vulnerability in the Zimbra email server that was patched on July 25, with a hotfix rolling out to its public GitHub repository on July 5. According to a report by Google's Threat Analysis Group (TAG) shared with Dark Reading, the zero-day exploitation started in June, before Zimbra offered remediation.",
+        "link": "https://www.darkreading.com/cyberattacks-data-breaches/apts-swarm-zimbra-zero-day-to-steal-government-info-worldwide"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "four separate cyberattack groups",
+                "relation": "used",
+                "object": "a former zero-day security vulnerability in Zimbra Collaboration Suite (ZCS)"
+            },
+            {
+                "subject": "the vulnerability",
+                "relation": "is used to steal",
+                "object": "email data"
+            },
+            {
+                "subject": "the vulnerability",
+                "relation": "is used to steal",
+                "object": "user credentials"
+            },
+            {
+                "subject": "the vulnerability",
+                "relation": "is used to steal",
+                "object": "authentication tokens"
+            },
+            {
+                "subject": "Zimbra Collaboration Suite (ZCS)",
+                "relation": "is an",
+                "object": "email server"
+            },
+            {
+                "subject": "Zimbra Collaboration Suite (ZCS)",
+                "relation": "provides",
+                "object": "calendaring"
+            },
+            {
+                "subject": "Zimbra Collaboration Suite (ZCS)",
+                "relation": "provides",
+                "object": "chat and video platform"
+            },
+            {
+                "subject": "ZCS",
+                "relation": "is used by",
+                "object": "thousands of companies"
+            },
+            {
+                "subject": "ZCS",
+                "relation": "is used by",
+                "object": "hundreds of millions of individuals"
+            },
+            {
+                "subject": "ZCS",
+                "relation": "is used by",
+                "object": "Japan Advanced Institute of Science and Technology"
+            },
+            {
+                "subject": "ZCS",
+                "relation": "is used by",
+                "object": "Germany's Max Planck Institute"
+            },
+            {
+                "subject": "ZCS",
+                "relation": "is used by",
+                "object": "Gunung Sewu"
+            },
+            {
+                "subject": "CVE-2023-37580",
+                "relation": "is a",
+                "object": "reflected cross-site scripting (XSS) vulnerability"
+            },
+            {
+                "subject": "CVE-2023-37580",
+                "relation": "exists in",
+                "object": "Zimbra email server"
+            },
+            {
+                "subject": "Google's Threat Analysis Group (TAG)",
+                "relation": "reported",
+                "object": "zero-day exploitation started in June"
+            },
+            {
+                "subject": "Zimbra",
+                "relation": "offered remediation for",
+                "object": "CVE-2023-37580"
+            }
+        ],
+        "triples_count": 16,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2634,
+                "cost": 0.0021072
+            },
+            "output": {
+                "tokens": 475,
+                "cost": 0.00095
+            },
+            "total": {
+                "tokens": 3109,
+                "cost": 0.0030572
+            }
+        },
+        "time": 33.177464723587036,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\darkreading\\Zimbra-QD1-dd0.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "thehackernews: ESG.json",
+                    0.10467937514638849
+                ],
+                [
+                    "darkreading: Star-Blizzard.json",
+                    0.11123314123224659
+                ],
+                [
+                    "darkreading: Google-Patches.json",
+                    0.12738763039067774
+                ],
+                [
+                    "Google_TAG: zimbra.json",
+                    0.4453872046902282
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

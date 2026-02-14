@@ -1,0 +1,107 @@
+{
+    "CTI": {
+        "text": "A researcher discovered a vulnerability in Tesla model 3 browser which allowed hackers to deny some of the services in the vehicle's driving interface. By routing the vehicle\u2019s browser traffic to a malicious website, attackers would be able to disable the speedometer, web browser, climate controls, turn signals, navigation, autopilot notifications, and blinker notifications along with other functions from the main screen. The vulnerability was due to improper process separation in Tesla model 3.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "vulnerability",
+                "relation": "discovered in",
+                "object": "Tesla model 3 browser"
+            },
+            {
+                "subject": "hackers",
+                "relation": "deny",
+                "object": "services in the vehicle's driving interface"
+            },
+            {
+                "subject": "attackers",
+                "relation": "route",
+                "object": "vehicle\u2019s browser traffic to a malicious website"
+            },
+            {
+                "subject": "attackers",
+                "relation": "disable",
+                "object": "speedometer"
+            },
+            {
+                "subject": "attackers",
+                "relation": "disable",
+                "object": "web browser"
+            },
+            {
+                "subject": "attackers",
+                "relation": "disable",
+                "object": "climate controls"
+            },
+            {
+                "subject": "attackers",
+                "relation": "disable",
+                "object": "turn signals"
+            },
+            {
+                "subject": "attackers",
+                "relation": "disable",
+                "object": "navigation"
+            },
+            {
+                "subject": "attackers",
+                "relation": "disable",
+                "object": "autopilot notifications"
+            },
+            {
+                "subject": "attackers",
+                "relation": "disable",
+                "object": "blinker notifications"
+            },
+            {
+                "subject": "vulnerability",
+                "relation": "due to",
+                "object": "improper process separation in Tesla model 3"
+            }
+        ],
+        "triples_count": 11,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2223,
+                "cost": 0.0017783999999999999
+            },
+            "output": {
+                "tokens": 264,
+                "cost": 0.0005279999999999999
+            },
+            "total": {
+                "tokens": 2487,
+                "cost": 0.0023063999999999997
+            }
+        },
+        "time": 9.052863597869873,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-3-11-QD1-075.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: github.json",
+                    0.05649369756820282
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.05850383127771853
+                ],
+                [
+                    "AVERTIUM: CVE-2023-36884.json",
+                    0.05970675233002194
+                ],
+                [
+                    "threatPost: Hijacker.json",
+                    0.12962335477342357
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

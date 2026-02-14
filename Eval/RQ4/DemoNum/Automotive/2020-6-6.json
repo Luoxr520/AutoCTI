@@ -1,0 +1,51 @@
+{
+    "CTI": {
+        "text": "A researcher modified his motorcycle dashboard and added a custom shift notification by sending CAN-BUS messages. The tool reacts to the RPM and causes the dashboard to flash yellow when the time comes to shift the gears.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [],
+        "triples_count": 0,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2684,
+                "cost": 0.0021471999999999997
+            },
+            "output": {
+                "tokens": 5,
+                "cost": 9.999999999999999e-06
+            },
+            "total": {
+                "tokens": 2689,
+                "cost": 0.0021571999999999997
+            }
+        },
+        "time": 2.113076686859131,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-6-QD1-5bc.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: vultur.json",
+                    0.029915844738796764
+                ],
+                [
+                    "Unit42: PlugX.json",
+                    0.03338601133210007
+                ],
+                [
+                    "darkreading: SpectralBlur.json",
+                    0.04207742565232963
+                ],
+                [
+                    "Unit42: CL0P-Seeds.json",
+                    0.056662249121077375
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

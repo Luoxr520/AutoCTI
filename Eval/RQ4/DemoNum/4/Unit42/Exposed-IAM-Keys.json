@@ -1,0 +1,117 @@
+{
+    "CTI": {
+        "text": "Unit 42 researchers have identified an active campaign we are calling EleKtra-Leak, which performs automated targeting of exposed identity and access management (IAM) credentials within public GitHub repositories. AWS detects and auto-remediates much of the threat of exposed credentials in popular source code repositories by applying a special quarantine policy \u2014 but by manually removing that automatic protection, we were able to develop deeper insights into the activities that the actor would carry out in the case where compromised credentials are obtained in some other way. In those cases, the threat actor associated with the campaign was able to create multiple AWS Elastic Compute (EC2) instances that they used for wide-ranging and long-lasting cryptojacking operations. We believe these operations have been active for at least two years and are still active today.",
+        "link": ""
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Unit 42 researchers",
+                "relation": "identified",
+                "object": "an active campaign"
+            },
+            {
+                "subject": "campaign",
+                "relation": "called",
+                "object": "EleKtra-Leak"
+            },
+            {
+                "subject": "EleKtra-Leak",
+                "relation": "performs",
+                "object": "automated targeting of exposed IAM credentials"
+            },
+            {
+                "subject": "IAM credentials",
+                "relation": "within",
+                "object": "public GitHub repositories"
+            },
+            {
+                "subject": "AWS",
+                "relation": "detects and auto-remediates",
+                "object": "exposed credentials in popular source code repositories"
+            },
+            {
+                "subject": "AWS",
+                "relation": "applies",
+                "object": "a special quarantine policy"
+            },
+            {
+                "subject": "automatic protection",
+                "relation": "was manually removed",
+                "object": "to develop deeper insights"
+            },
+            {
+                "subject": "threat actor",
+                "relation": "associated with",
+                "object": "the campaign"
+            },
+            {
+                "subject": "threat actor",
+                "relation": "was able to create",
+                "object": "multiple AWS Elastic Compute (EC2) instances"
+            },
+            {
+                "subject": "EC2 instances",
+                "relation": "used for",
+                "object": "cryptojacking operations"
+            },
+            {
+                "subject": "cryptojacking operations",
+                "relation": "are",
+                "object": "wide-ranging and long-lasting"
+            },
+            {
+                "subject": "operations",
+                "relation": "have been active",
+                "object": "for at least two years"
+            },
+            {
+                "subject": "operations",
+                "relation": "are still active",
+                "object": "today"
+            }
+        ],
+        "triples_count": 13,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2464,
+                "cost": 0.0019711999999999998
+            },
+            "output": {
+                "tokens": 337,
+                "cost": 0.000674
+            },
+            "total": {
+                "tokens": 2801,
+                "cost": 0.0026452
+            }
+        },
+        "time": 17.417160272598267,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\Unit42\\Exposed-IAM-Keys-QD1-87f.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.0829431530937346
+                ],
+                [
+                    "BleepingComputer: androxgh0st.json",
+                    0.09133565485027599
+                ],
+                [
+                    "Unit42: Google-Workspace.json",
+                    0.10059211325108613
+                ],
+                [
+                    "BleepingComputer: github.json",
+                    0.11066901626136644
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

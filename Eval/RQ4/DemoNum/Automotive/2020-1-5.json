@@ -1,0 +1,102 @@
+{
+    "CTI": {
+        "text": "A backup MSSQL database of the German car rental company Buchbinder was found unsecured on the internet. The database stored ten terabytes of data and contained information of over 3.1 million customers of the company in Germany, Australia, Italy, Slovakia and Hungary. The breach exposed the personal information of customers like their address, phone numbers and license numbers. In addition, financial information included in the contracts was leaked as well. 170,000 of the records that got exposed included passwords for employees and online portal users, some of them stored unencrypted in plain text.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A backup MSSQL database",
+                "relation": "belonged to",
+                "object": "the German car rental company Buchbinder"
+            },
+            {
+                "subject": "A backup MSSQL database",
+                "relation": "was found",
+                "object": "unsecured on the internet"
+            },
+            {
+                "subject": "The database",
+                "relation": "stored",
+                "object": "ten terabytes of data"
+            },
+            {
+                "subject": "The database",
+                "relation": "contained information of",
+                "object": "over 3.1 million customers"
+            },
+            {
+                "subject": "The customers",
+                "relation": "are from",
+                "object": "Germany, Australia, Italy, Slovakia and Hungary"
+            },
+            {
+                "subject": "The breach",
+                "relation": "exposed",
+                "object": "personal information of customers"
+            },
+            {
+                "subject": "The personal information",
+                "relation": "included",
+                "object": "address, phone numbers and license numbers"
+            },
+            {
+                "subject": "Financial information",
+                "relation": "was leaked",
+                "object": "as well"
+            },
+            {
+                "subject": "170,000 records",
+                "relation": "included",
+                "object": "passwords for employees and online portal users"
+            },
+            {
+                "subject": "Some passwords",
+                "relation": "were stored",
+                "object": "unencrypted in plain text"
+            }
+        ],
+        "triples_count": 10,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2399,
+                "cost": 0.0019191999999999998
+            },
+            "output": {
+                "tokens": 279,
+                "cost": 0.000558
+            },
+            "total": {
+                "tokens": 2678,
+                "cost": 0.0024771999999999997
+            }
+        },
+        "time": 9.493078231811523,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-1-5-QD1-695.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "thehackernews: Rugmi.json",
+                    0.05909459658808506
+                ],
+                [
+                    "symantec: Dyre.json",
+                    0.06566673676966137
+                ],
+                [
+                    "darkreading: CitrixBleed.json",
+                    0.07534366411998733
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.08025132121019346
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "CTI": {
+        "text": "Car thieves targeted vehicles in the Bishopbriggs and Bearsden areas of Scotland using relay devices. According to the police, six Ford vehicles of varying types, from Mondeos to Transit vans, were stolen from driveways and outside homes. In the wider Glasgow area, 13 cars were stolen in a span of only two days.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Car thieves",
+                    "relation": "targeted",
+                    "object": "vehicles"
+                },
+                {
+                    "subject": "vehicles",
+                    "relation": "were in",
+                    "object": "Bishopbriggs and Bearsden areas of Scotland"
+                },
+                {
+                    "subject": "thieves",
+                    "relation": "used",
+                    "object": "relay devices"
+                },
+                {
+                    "subject": "six Ford vehicles",
+                    "relation": "stolen from",
+                    "object": "driveways and outside homes"
+                },
+                {
+                    "subject": "stolen vehicles",
+                    "relation": "included",
+                    "object": "Mondeos to Transit vans"
+                },
+                {
+                    "subject": "13 cars",
+                    "relation": "stolen in",
+                    "object": "wider Glasgow area"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2790,
+                "cost": 0.002232
+            },
+            "output": {
+                "tokens": 161,
+                "cost": 0.00032199999999999997
+            },
+            "total": {
+                "tokens": 2951,
+                "cost": 0.002554
+            }
+        },
+        "time": 8.069156169891357,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-12-QD1-34b.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: androxgh0st.json",
+                    0.03661506245901591
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.05068062877596529
+                ],
+                [
+                    "threatPost: iPhone-Users.json",
+                    0.05156080298372466
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.05287219686044119
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

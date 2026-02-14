@@ -1,0 +1,51 @@
+{
+    "CTI": {
+        "text": "Six vehicles were stolen from Twin Auto Sales, a Detroit-area car dealership through a keyless theft device. The thieves stole a black 2020 Dodge Durango SRT, a black 2017 Jeep Grand Cherokee SRT, a red 2014 Jeep Grand Cherokee SRT, a red 2020 Dodge Charger Scat Pack, a red 2018 Dodge Challenger R/T, and a black 2015 Dodge Challenger Hellcat. According to the dealership owner, the six vehicles were worth about $50,000 each.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [],
+        "triples_count": 0,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2795,
+                "cost": 0.0022359999999999997
+            },
+            "output": {
+                "tokens": 5,
+                "cost": 9.999999999999999e-06
+            },
+            "total": {
+                "tokens": 2800,
+                "cost": 0.0022459999999999997
+            }
+        },
+        "time": 1.564180850982666,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-11-1-QD1-ee2.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: Hijacker.json",
+                    0.034541843062813084
+                ],
+                [
+                    "securityweek: screenconnect.json",
+                    0.04441010383508036
+                ],
+                [
+                    "Unit42: PlugX.json",
+                    0.04568277489085114
+                ],
+                [
+                    "threatPost: zuorat.json",
+                    0.04815461940911268
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

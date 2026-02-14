@@ -1,0 +1,74 @@
+{
+    "CTI": {
+        "text": "BCycle, a corporation that operates bicycle sharing service, found malware on its website that allowed a hacker to find personal information of users who signed up for a membership pass through the company's website. The breached information may have included users' names, credit card numbers, and addresses. The company claimed to cover the cost of one year of identity theft protection for affected customers.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "BCycle",
+                    "relation": "found",
+                    "object": "malware on its website"
+                },
+                {
+                    "subject": "malware",
+                    "relation": "allowed",
+                    "object": "a hacker to find personal information of users"
+                },
+                {
+                    "subject": "breached information",
+                    "relation": "may have included",
+                    "object": "users' names, credit card numbers, and addresses"
+                },
+                {
+                    "subject": "BCycle",
+                    "relation": "claimed to cover",
+                    "object": "the cost of one year of identity theft protection for affected customers"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2214,
+                "cost": 0.0017712
+            },
+            "output": {
+                "tokens": 150,
+                "cost": 0.0003
+            },
+            "total": {
+                "tokens": 2364,
+                "cost": 0.0020712
+            }
+        },
+        "time": 8.945681095123291,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-1-QD1-bef.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Clop.json",
+                    0.07835401765797506
+                ],
+                [
+                    "Unit42: CryptoClippy.json",
+                    0.08843524406856867
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.09575091259939182
+                ],
+                [
+                    "trendmicro: Earth-Kitsune.json",
+                    0.10134118281174448
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

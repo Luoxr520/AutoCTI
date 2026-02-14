@@ -1,0 +1,99 @@
+{
+    "CTI": {
+        "text": "A hacker published the full content of a GitLab server containing detailed information on a Mercedes OLU component, which simplifies access and management of live vehicle data. The server contained all of the 580 repositories related to the OLU, including images, code, detailed documentation, and development environments. The researcher was able to access the server by registering with a non-existent Daimler corporate email and decided to share the information on multiple file sharing sites. Another researcher claims he discovered passwords and API tokens for Daimler's internal systems in the repository. If attained by the wrong hands, these passwords and access tokens could be used to plan and mount future intrusions against Daimler's cloud and internal network.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "A hacker",
+                    "relation": "published",
+                    "object": "the full content of a GitLab server"
+                },
+                {
+                    "subject": "GitLab server",
+                    "relation": "containing",
+                    "object": "detailed information on a Mercedes OLU component"
+                },
+                {
+                    "subject": "Mercedes OLU component",
+                    "relation": "simplifies",
+                    "object": "access and management of live vehicle data"
+                },
+                {
+                    "subject": "server",
+                    "relation": "contained",
+                    "object": "all of the 580 repositories related to the OLU"
+                },
+                {
+                    "subject": "repositories",
+                    "relation": "including",
+                    "object": "images, code, detailed documentation, and development environments"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "accessed the server by",
+                    "object": "registering with a non-existent Daimler corporate email"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "shared the information on",
+                    "object": "multiple file sharing sites"
+                },
+                {
+                    "subject": "Another researcher",
+                    "relation": "claims he discovered",
+                    "object": "passwords and API tokens for Daimler's internal systems"
+                },
+                {
+                    "subject": "passwords and API tokens",
+                    "relation": "could be used to plan and mount",
+                    "object": "future intrusions against Daimler's cloud and internal network"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2646,
+                "cost": 0.0021168
+            },
+            "output": {
+                "tokens": 290,
+                "cost": 0.00058
+            },
+            "total": {
+                "tokens": 2936,
+                "cost": 0.0026968
+            }
+        },
+        "time": 16.281949996948242,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-8-QD1-d43.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: gitlab.json",
+                    0.08641668029356663
+                ],
+                [
+                    "thehackernews: OfBiz.json",
+                    0.0893688712868035
+                ],
+                [
+                    "darkreading: Star-Blizzard.json",
+                    0.08981422631928239
+                ],
+                [
+                    "Microsoft: defending-new-vectors.json",
+                    0.1069870870335495
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "id": "zero-day vulnerability",
+      "name": "zero-day vulnerability",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "Microsoft Windows and Office products",
+      "name": "Microsoft Windows and Office products",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "attackers",
+      "name": "attackers",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "highly targeted attacks",
+      "name": "highly targeted attacks",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "organizations in the government and defense sectors",
+      "name": "organizations in the government and defense sectors",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "organizations",
+      "name": "organizations",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "Europe",
+      "name": "Europe",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "North America",
+      "name": "North America",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "Microsoft",
+      "name": "Microsoft",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "a specially crafted Microsoft Office document",
+      "name": "a specially crafted Microsoft Office document",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "remote code execution",
+      "name": "remote code execution",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "victim",
+      "name": "victim",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "the malicious file",
+      "name": "the malicious file",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "No patch",
+      "name": "No patch",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": "the vulnerability",
+      "name": "the vulnerability",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    }
+  ],
+  "links": [
+    {
+      "source": "zero-day vulnerability",
+      "target": "Microsoft Windows and Office products",
+      "relation": "affects"
+    },
+    {
+      "source": "attackers",
+      "target": "zero-day vulnerability",
+      "relation": "exploit"
+    },
+    {
+      "source": "exploit",
+      "target": "highly targeted attacks",
+      "relation": "used in"
+    },
+    {
+      "source": "highly targeted attacks",
+      "target": "organizations in the government and defense sectors",
+      "relation": "against"
+    },
+    {
+      "source": "organizations",
+      "target": "Europe",
+      "relation": "are in"
+    },
+    {
+      "source": "organizations",
+      "target": "North America",
+      "relation": "are in"
+    },
+    {
+      "source": "Microsoft",
+      "target": "zero-day vulnerability",
+      "relation": "disclosed"
+    },
+    {
+      "source": "attacker",
+      "target": "a specially crafted Microsoft Office document",
+      "relation": "could create"
+    },
+    {
+      "source": "a specially crafted Microsoft Office document",
+      "target": "remote code execution",
+      "relation": "enables"
+    },
+    {
+      "source": "victim",
+      "target": "the malicious file",
+      "relation": "needs to open"
+    },
+    {
+      "source": "No patch",
+      "target": "the vulnerability",
+      "relation": "has been released for"
+    }
+  ]
+}

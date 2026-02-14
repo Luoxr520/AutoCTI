@@ -1,0 +1,107 @@
+{
+    "CTI": {
+        "text": "Researchers have added state-sponsored hackers to the list of adversaries attempting to exploit Microsoft\u2019s now-patched Follina vulnerability. According to researchers at Proofpoint, state-sponsored hackers have attempted to abuse the Follina vulnerability in Microsoft Office, aiming an email-based exploit at U.S. and E.U. government targets via phishing campaigns. Proofpoint researchers spotted the attacks and believe the adversaries have ties to a government, which it did not identify. Attacks consist of campaigns targeting victims U.S. and E.U. government workers. Malicious emails contain fake recruitment pitches promising a 20 percent boost in salaries and entice recipients to download an accompanying attachment. The malicious attachment targets the remote code execution bug CVE-2022-30190, dubbed Follina.",
+        "link": "https://threatpost.com/follina-exploited-by-state-sponsored-hackers/179890/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "state-sponsored hackers",
+                "relation": "added to",
+                "object": "the list of adversaries"
+            },
+            {
+                "subject": "state-sponsored hackers",
+                "relation": "attempting to exploit",
+                "object": "Microsoft\u2019s now-patched Follina vulnerability"
+            },
+            {
+                "subject": "state-sponsored hackers",
+                "relation": "have attempted to abuse",
+                "object": "the Follina vulnerability in Microsoft Office"
+            },
+            {
+                "subject": "state-sponsored hackers",
+                "relation": "aiming",
+                "object": "an email-based exploit at U.S. and E.U. government targets"
+            },
+            {
+                "subject": "email-based exploit",
+                "relation": "via",
+                "object": "phishing campaigns"
+            },
+            {
+                "subject": "Proofpoint researchers",
+                "relation": "spotted",
+                "object": "the attacks"
+            },
+            {
+                "subject": "adversaries",
+                "relation": "have ties to",
+                "object": "a government"
+            },
+            {
+                "subject": "attacks",
+                "relation": "consist of",
+                "object": "campaigns targeting victims U.S. and E.U. government workers"
+            },
+            {
+                "subject": "malicious emails",
+                "relation": "contain",
+                "object": "fake recruitment pitches promising a 20 percent boost in salaries"
+            },
+            {
+                "subject": "malicious emails",
+                "relation": "entice recipients to download",
+                "object": "an accompanying attachment"
+            },
+            {
+                "subject": "the malicious attachment",
+                "relation": "targets",
+                "object": "the remote code execution bug CVE-2022-30190, dubbed Follina"
+            }
+        ],
+        "triples_count": 11,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2336,
+                "cost": 0.0018687999999999999
+            },
+            "output": {
+                "tokens": 333,
+                "cost": 0.0006659999999999999
+            },
+            "total": {
+                "tokens": 2669,
+                "cost": 0.0025348
+            }
+        },
+        "time": 22.665592908859253,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\threatPost\\Follina-QD1-450.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: RemcosRAT.json",
+                    0.10689523903349914
+                ],
+                [
+                    "thehackernews: Agent-Tesla.json",
+                    0.12464468949803117
+                ],
+                [
+                    "threatPost: toddycat.json",
+                    0.12782704088992547
+                ],
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.159133992947919
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

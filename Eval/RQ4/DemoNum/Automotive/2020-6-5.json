@@ -1,0 +1,97 @@
+{
+    "CTI": {
+        "text": "A Canadian company hacked Tesla\u2019s software, and it is now offering some of its Tesla software performance upgrades at a discount. The company offers an easily pluggable connector that cracks Tesla's 'acceleration boost' which unlocks roughly 50 hp in the Model 3 powertrain and shortens the acceleration. The company also added an additional \u201cdrift mode\u201d capability to those who purchase the \u201cacceleration boost\u201d package. The company also offers to upgrade Model 3 Dual Motor vehicles to a Model 3 Performance, however, this service is more invasive, requires professional hardware installation, and will disable the capability to receive software updates from Tesla.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A Canadian company",
+                "relation": "hacked",
+                "object": "Tesla\u2019s software"
+            },
+            {
+                "subject": "A Canadian company",
+                "relation": "offers",
+                "object": "Tesla software performance upgrades"
+            },
+            {
+                "subject": "connector",
+                "relation": "cracks",
+                "object": "Tesla's 'acceleration boost'"
+            },
+            {
+                "subject": "Tesla's 'acceleration boost'",
+                "relation": "unlocks",
+                "object": "50 hp in the Model 3 powertrain"
+            },
+            {
+                "subject": "Tesla's 'acceleration boost'",
+                "relation": "shortens",
+                "object": "the acceleration"
+            },
+            {
+                "subject": "company",
+                "relation": "added",
+                "object": "'drift mode' capability"
+            },
+            {
+                "subject": "company",
+                "relation": "offers to upgrade",
+                "object": "Model 3 Dual Motor vehicles to a Model 3 Performance"
+            },
+            {
+                "subject": "upgrade to Model 3 Performance",
+                "relation": "requires",
+                "object": "professional hardware installation"
+            },
+            {
+                "subject": "upgrade to Model 3 Performance",
+                "relation": "will disable",
+                "object": "capability to receive software updates from Tesla"
+            }
+        ],
+        "triples_count": 9,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2889,
+                "cost": 0.0023112
+            },
+            "output": {
+                "tokens": 252,
+                "cost": 0.000504
+            },
+            "total": {
+                "tokens": 3141,
+                "cost": 0.0028152
+            }
+        },
+        "time": 13.562839984893799,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-5-QD1-9d5.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "trendmicro: LockBit.json",
+                    0.051092139830939486
+                ],
+                [
+                    "securityweek: screenconnect.json",
+                    0.05404355370271308
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.05583531603987593
+                ],
+                [
+                    "securityweek: pypi.json",
+                    0.06962098884939004
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

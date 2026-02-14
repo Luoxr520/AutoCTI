@@ -1,0 +1,82 @@
+{
+    "CTI": {
+        "text": "After recovering from a cyber attack in the beginning of 2020, Toll Group systems were hit by a new ransomware attack. After detecting unusual activity on the company\u2019s servers, the company shut down some IT systems as a precaution. In the attack, some online customer applications were taken offline, and Toll's staff had to rely on personal computers and devices, as they were unable to work from company PCs.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Toll Group systems",
+                "relation": "were hit by",
+                "object": "a new ransomware attack"
+            },
+            {
+                "subject": "company",
+                "relation": "detected",
+                "object": "unusual activity on the company\u2019s servers"
+            },
+            {
+                "subject": "company",
+                "relation": "shut down",
+                "object": "some IT systems as a precaution"
+            },
+            {
+                "subject": "online customer applications",
+                "relation": "were taken offline",
+                "object": ""
+            },
+            {
+                "subject": "Toll's staff",
+                "relation": "had to rely on",
+                "object": "personal computers and devices"
+            },
+            {
+                "subject": "Toll's staff",
+                "relation": "were unable to work from",
+                "object": "company PCs"
+            }
+        ],
+        "triples_count": 6,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2841,
+                "cost": 0.0022727999999999997
+            },
+            "output": {
+                "tokens": 163,
+                "cost": 0.000326
+            },
+            "total": {
+                "tokens": 3004,
+                "cost": 0.0025987999999999996
+            }
+        },
+        "time": 10.806472063064575,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-5-QD1-404.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: apache-activemq.json",
+                    0.07132992258110595
+                ],
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.07728287927896664
+                ],
+                [
+                    "securityweek: rootkit.json",
+                    0.07959127690302348
+                ],
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.09523069896649192
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

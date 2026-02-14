@@ -1,0 +1,72 @@
+{
+    "CTI": {
+        "text": "A \u00a3120,000 Range Rover Autobiography was stolen from a supermarket parking lot in Walthamstow, London. The theft took a mere 80 seconds when thieves took advantage of weaknesses in the keyless entry system. The vehicle was recovered by the Metropolitan Police within 12 hours, due to a tracking device in the vehicle.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A \u00a3120,000 Range Rover Autobiography",
+                "relation": "was stolen from",
+                "object": "a supermarket parking lot"
+            },
+            {
+                "subject": "the theft",
+                "relation": "took advantage of",
+                "object": "weaknesses in the keyless entry system"
+            },
+            {
+                "subject": "the vehicle",
+                "relation": "was recovered by",
+                "object": "the Metropolitan Police"
+            },
+            {
+                "subject": "the vehicle",
+                "relation": "due to",
+                "object": "a tracking device"
+            }
+        ],
+        "triples_count": 4,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2725,
+                "cost": 0.00218
+            },
+            "output": {
+                "tokens": 120,
+                "cost": 0.00023999999999999998
+            },
+            "total": {
+                "tokens": 2845,
+                "cost": 0.0024200000000000003
+            }
+        },
+        "time": 7.3270392417907715,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-16-QD1-6b2.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: cuba-ransomware.json",
+                    0.028765074158091024
+                ],
+                [
+                    "Google_TAG: winrar.json",
+                    0.03094515528861464
+                ],
+                [
+                    "Unit42: Diplomats-Beware.json",
+                    0.031623923622023
+                ],
+                [
+                    "thehackernews: Xamalicious.json",
+                    0.03341127126110767
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

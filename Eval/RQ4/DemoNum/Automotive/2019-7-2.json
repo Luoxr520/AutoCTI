@@ -1,0 +1,129 @@
+{
+    "CTI": {
+        "text": "A researcher has earned $10,000 from Tesla after discovering a stored cross-site scripting (XSS) vulnerability that could have been exploited to obtain and possibly modify vehicle information. He was able to expose some internal Tesla application data. The exposed information included the vehicle\u2019s VIN, speed, temperature, version number, whether it was locked or not, tire pressure, and alerts. The data also included firmware details, geofense locations, CAN viewers, and configurations.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "A researcher",
+                    "relation": "earned",
+                    "object": "$10,000 from Tesla"
+                },
+                {
+                    "subject": "A researcher",
+                    "relation": "discovered",
+                    "object": "a stored cross-site scripting (XSS) vulnerability"
+                },
+                {
+                    "subject": "a stored cross-site scripting (XSS) vulnerability",
+                    "relation": "could have been exploited to",
+                    "object": "obtain and possibly modify vehicle information"
+                },
+                {
+                    "subject": "He",
+                    "relation": "exposed",
+                    "object": "some internal Tesla application data"
+                },
+                {
+                    "subject": "The exposed information",
+                    "relation": "included",
+                    "object": "the vehicle\u2019s VIN"
+                },
+                {
+                    "subject": "The exposed information",
+                    "relation": "included",
+                    "object": "speed"
+                },
+                {
+                    "subject": "The exposed information",
+                    "relation": "included",
+                    "object": "temperature"
+                },
+                {
+                    "subject": "The exposed information",
+                    "relation": "included",
+                    "object": "version number"
+                },
+                {
+                    "subject": "The exposed information",
+                    "relation": "included",
+                    "object": "whether it was locked or not"
+                },
+                {
+                    "subject": "The exposed information",
+                    "relation": "included",
+                    "object": "tire pressure"
+                },
+                {
+                    "subject": "The exposed information",
+                    "relation": "included",
+                    "object": "alerts"
+                },
+                {
+                    "subject": "The data",
+                    "relation": "included",
+                    "object": "firmware details"
+                },
+                {
+                    "subject": "The data",
+                    "relation": "included",
+                    "object": "geofence locations"
+                },
+                {
+                    "subject": "The data",
+                    "relation": "included",
+                    "object": "CAN viewers"
+                },
+                {
+                    "subject": "The data",
+                    "relation": "included",
+                    "object": "configurations"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2457,
+                "cost": 0.0019656
+            },
+            "output": {
+                "tokens": 374,
+                "cost": 0.000748
+            },
+            "total": {
+                "tokens": 2831,
+                "cost": 0.0027136
+            }
+        },
+        "time": 13.123042821884155,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2019-7-2-QD1-fc3.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Clop.json",
+                    0.07500098405331312
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.07723717855342997
+                ],
+                [
+                    "securityweek: wallescape.json",
+                    0.07829898055038695
+                ],
+                [
+                    "Google_TAG: zimbra.json",
+                    0.12346688127231559
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

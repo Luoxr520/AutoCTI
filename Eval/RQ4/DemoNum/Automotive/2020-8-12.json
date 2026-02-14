@@ -1,0 +1,129 @@
+{
+    "CTI": {
+        "text": "A hacker exploited a vulnerability discovered in Tesla's server-side mechanism to access Tesla's network and view a repository of server images. One of the servers accessed, named \u2018Mothership', was the Command-and-Control server used to communicate with Tesla's customer fleet; Any kind of remote commands or diagnostic information from the car to Tesla goes through this server. By reverse-engineering his car\u2019s VPN connection to contact Mothership, the hacker landed on a developer network connection. He found a critical bug in Mothership itself that enabled him to authenticate as any Tesla vehicle in the world. The vulnerability allowed him to control and get information about any car in the fleet and send commands to those cars.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "A hacker",
+                    "relation": "exploited",
+                    "object": "a vulnerability"
+                },
+                {
+                    "subject": "vulnerability",
+                    "relation": "discovered in",
+                    "object": "Tesla's server-side mechanism"
+                },
+                {
+                    "subject": "vulnerability",
+                    "relation": "allowed access to",
+                    "object": "Tesla's network"
+                },
+                {
+                    "subject": "hacker",
+                    "relation": "viewed",
+                    "object": "a repository of server images"
+                },
+                {
+                    "subject": "server",
+                    "relation": "named",
+                    "object": "'Mothership'"
+                },
+                {
+                    "subject": "Mothership",
+                    "relation": "is used as",
+                    "object": "Command-and-Control server"
+                },
+                {
+                    "subject": "Mothership",
+                    "relation": "communicates with",
+                    "object": "Tesla's customer fleet"
+                },
+                {
+                    "subject": "remote commands or diagnostic information",
+                    "relation": "goes through",
+                    "object": "Mothership"
+                },
+                {
+                    "subject": "hacker",
+                    "relation": "reverse-engineered",
+                    "object": "his car\u2019s VPN connection"
+                },
+                {
+                    "subject": "car\u2019s VPN connection",
+                    "relation": "to contact",
+                    "object": "Mothership"
+                },
+                {
+                    "subject": "hacker",
+                    "relation": "landed on",
+                    "object": "a developer network connection"
+                },
+                {
+                    "subject": "hacker",
+                    "relation": "found",
+                    "object": "a critical bug in Mothership"
+                },
+                {
+                    "subject": "critical bug",
+                    "relation": "enabled",
+                    "object": "him to authenticate as any Tesla vehicle in the world"
+                },
+                {
+                    "subject": "vulnerability",
+                    "relation": "allowed him to",
+                    "object": "control and get information about any car in the fleet"
+                },
+                {
+                    "subject": "vulnerability",
+                    "relation": "allowed him to",
+                    "object": "send commands to those cars"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 2657,
+                "cost": 0.0021256
+            },
+            "output": {
+                "tokens": 399,
+                "cost": 0.000798
+            },
+            "total": {
+                "tokens": 3056,
+                "cost": 0.0029236
+            }
+        },
+        "time": 15.261054039001465,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-8-12-QD1-23b.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: Atlassian.json",
+                    0.06856190666947569
+                ],
+                [
+                    "threatPost: CISA.json",
+                    0.06963849234344652
+                ],
+                [
+                    "symantec: Graphican.json",
+                    0.07154709840656018
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.08143232467939858
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

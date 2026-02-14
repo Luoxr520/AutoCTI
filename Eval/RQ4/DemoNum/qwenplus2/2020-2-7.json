@@ -1,0 +1,79 @@
+{
+    "CTI": {
+        "text": "Two hackers connected a USB Ethernet adapter with a built-in backdoor to access Kenya\u2019s NTSA network and databases. Since the hackers possessed a compressor machine used for painting number plates, the hackers most likely used NTSA\u2019s portal to illegally register stolen vehicles.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Two hackers",
+                    "relation": "connected",
+                    "object": "a USB Ethernet adapter with a built-in backdoor"
+                },
+                {
+                    "subject": "USB Ethernet adapter",
+                    "relation": "with",
+                    "object": "a built-in backdoor"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "accessed",
+                    "object": "Kenya\u2019s NTSA network and databases"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "possessed",
+                    "object": "a compressor machine used for painting number plates"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "most likely used",
+                    "object": "NTSA\u2019s portal to illegally register stolen vehicles"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2304,
+                "cost": 0.0018432
+            },
+            "output": {
+                "tokens": 150,
+                "cost": 0.0003
+            },
+            "total": {
+                "tokens": 2454,
+                "cost": 0.0021432
+            }
+        },
+        "time": 6.950194597244263,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-2-7-QD1-a44.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.055401916930513356
+                ],
+                [
+                    "trendmicro: Trigona.json",
+                    0.059881473990610314
+                ],
+                [
+                    "symantec: Follina.json",
+                    0.07824644563970334
+                ],
+                [
+                    "Unit42: PlugX.json",
+                    0.0788829145156742
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

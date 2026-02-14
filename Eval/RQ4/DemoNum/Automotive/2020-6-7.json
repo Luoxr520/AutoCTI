@@ -1,0 +1,89 @@
+{
+    "CTI": {
+        "text": "The North Texas police tracked a group of car thieves that specifically targeted new-generation Nissan cars, using relay attacks to unlock the doors and cloned key fobs to start the engine. After the vehicles were stolen, the thieves changed the vehicle identification numbers and sold the stolen vehicles to unsuspecting individuals at low prices. The group managed to steal about 62 Nissan cars, worth more than $1.2 million.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "North Texas police",
+                    "relation": "tracked",
+                    "object": "a group of car thieves"
+                },
+                {
+                    "subject": "car thieves",
+                    "relation": "specifically targeted",
+                    "object": "new-generation Nissan cars"
+                },
+                {
+                    "subject": "car thieves",
+                    "relation": "used",
+                    "object": "relay attacks to unlock the doors"
+                },
+                {
+                    "subject": "car thieves",
+                    "relation": "used",
+                    "object": "cloned key fobs to start the engine"
+                },
+                {
+                    "subject": "thieves",
+                    "relation": "changed",
+                    "object": "vehicle identification numbers"
+                },
+                {
+                    "subject": "stolen vehicles",
+                    "relation": "sold to",
+                    "object": "unsuspecting individuals at low prices"
+                },
+                {
+                    "subject": "group",
+                    "relation": "managed to steal",
+                    "object": "62 Nissan cars"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2430,
+                "cost": 0.001944
+            },
+            "output": {
+                "tokens": 187,
+                "cost": 0.000374
+            },
+            "total": {
+                "tokens": 2617,
+                "cost": 0.0023179999999999997
+            }
+        },
+        "time": 10.764116525650024,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-7-QD1-d27.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Google_TAG: apt37.json",
+                    0.04211731117705067
+                ],
+                [
+                    "symantec: Clop.json",
+                    0.0438867910953349
+                ],
+                [
+                    "AVERTIUM: charming-kitten.json",
+                    0.05250021461548119
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.06595747776394523
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

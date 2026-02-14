@@ -1,0 +1,107 @@
+{
+    "CTI": {
+        "text": "Researchers this week disclosed details on two security vulnerabilities in Microsoft Outlook that, when chained together, give attackers a way to execute arbitrary code on affected systems without any user interaction. Unusually, both of them can be triggered using a sound file. One of the flaws, tracked as CVE-2023-35384, is actually the second patch bypass that researchers at Akamai have uncovered for a critical privilege escalation vulnerability in Outlook that Microsoft first patched in March. The second flaw that Akamai disclosed this week (CVE-2023-36710) is a remote code execution (RCE) vulnerability in a feature of Windows Media Foundation, and it has to do with how Windows parses sound files.",
+        "link": "https://www.darkreading.com/vulnerabilities-threats/researchers-release-details-on-two-patched-outlook-zero-click-flaws"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "two security vulnerabilities",
+                "relation": "in",
+                "object": "Microsoft Outlook"
+            },
+            {
+                "subject": "vulnerabilities",
+                "relation": "give attackers a way to",
+                "object": "execute arbitrary code on affected systems"
+            },
+            {
+                "subject": "arbitrary code execution",
+                "relation": "without",
+                "object": "any user interaction"
+            },
+            {
+                "subject": "both vulnerabilities",
+                "relation": "can be triggered using",
+                "object": "a sound file"
+            },
+            {
+                "subject": "CVE-2023-35384",
+                "relation": "is",
+                "object": "the second patch bypass"
+            },
+            {
+                "subject": "patch bypass",
+                "relation": "uncovered for",
+                "object": "a critical privilege escalation vulnerability in Outlook"
+            },
+            {
+                "subject": "critical privilege escalation vulnerability",
+                "relation": "first patched by",
+                "object": "Microsoft"
+            },
+            {
+                "subject": "CVE-2023-36710",
+                "relation": "disclosed by",
+                "object": "Akamai"
+            },
+            {
+                "subject": "CVE-2023-36710",
+                "relation": "is a",
+                "object": "remote code execution (RCE) vulnerability"
+            },
+            {
+                "subject": "CVE-2023-36710",
+                "relation": "in",
+                "object": "a feature of Windows Media Foundation"
+            },
+            {
+                "subject": "Windows Media Foundation",
+                "relation": "parses",
+                "object": "sound files"
+            }
+        ],
+        "triples_count": 11,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2296,
+                "cost": 0.0018368
+            },
+            "output": {
+                "tokens": 322,
+                "cost": 0.0006439999999999999
+            },
+            "total": {
+                "tokens": 2618,
+                "cost": 0.0024808
+            }
+        },
+        "time": 17.42081928253174,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\darkreading\\Microsoft-Outlook-QD1-1fd.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Follina.json",
+                    0.14632435919777925
+                ],
+                [
+                    "AVERTIUM: CVE-2023-36884.json",
+                    0.15025416397622313
+                ],
+                [
+                    "symantec: Windows-Zero-Day.json",
+                    0.15486417667089813
+                ],
+                [
+                    "symantec: Buckeye.json",
+                    0.15792402635456138
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

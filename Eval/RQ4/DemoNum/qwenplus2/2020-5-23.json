@@ -1,0 +1,94 @@
+{
+    "CTI": {
+        "text": "A researcher was able to hack into Uber using a vulnerability in Portainer, a Docker container management system. The vulnerability in Portainer allows remote attackers to bypass access restrictions to the Docker API or conduct SSRF attacks. The researcher exploited the SSRF vulnerability to make arbitrary requests to the local Docker API and proved that he was able to run remote commands on the host.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "researcher",
+                    "relation": "hacked into",
+                    "object": "Uber"
+                },
+                {
+                    "subject": "vulnerability",
+                    "relation": "is in",
+                    "object": "Portainer"
+                },
+                {
+                    "subject": "Portainer",
+                    "relation": "is a",
+                    "object": "Docker container management system"
+                },
+                {
+                    "subject": "vulnerability in Portainer",
+                    "relation": "allows",
+                    "object": "remote attackers to bypass access restrictions"
+                },
+                {
+                    "subject": "vulnerability in Portainer",
+                    "relation": "allows",
+                    "object": "SSRF attacks"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "exploited",
+                    "object": "SSRF vulnerability"
+                },
+                {
+                    "subject": "SSRF vulnerability",
+                    "relation": "to make",
+                    "object": "arbitrary requests to the local Docker API"
+                },
+                {
+                    "subject": "researcher",
+                    "relation": "proved",
+                    "object": "able to run remote commands on the host"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2144,
+                "cost": 0.0017151999999999998
+            },
+            "output": {
+                "tokens": 214,
+                "cost": 0.000428
+            },
+            "total": {
+                "tokens": 2358,
+                "cost": 0.0021431999999999996
+            }
+        },
+        "time": 10.497506856918335,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-23-QD1-8db.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Follina.json",
+                    0.07726266448488511
+                ],
+                [
+                    "BleepingComputer: github.json",
+                    0.08329135040888212
+                ],
+                [
+                    "Microsoft: migraine-could.json",
+                    0.08643094714113098
+                ],
+                [
+                    "symantec: Graphican.json",
+                    0.09143207528026331
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

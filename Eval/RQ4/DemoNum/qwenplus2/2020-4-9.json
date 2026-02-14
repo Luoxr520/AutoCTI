@@ -1,0 +1,74 @@
+{
+    "CTI": {
+        "text": "A family-owned Massachusetts trucking company was a victim of a ransomware attack by the malware Maze. The carrier\u2019s system was locked down for more than a week and more than 781 megabytes of the company\u2019s data was released on publicly accessible web pages.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "A family-owned Massachusetts trucking company",
+                    "relation": "was a victim of",
+                    "object": "a ransomware attack"
+                },
+                {
+                    "subject": "ransomware attack",
+                    "relation": "was by",
+                    "object": "the malware Maze"
+                },
+                {
+                    "subject": "carrier\u2019s system",
+                    "relation": "was locked down for",
+                    "object": "more than a week"
+                },
+                {
+                    "subject": "781 megabytes of the company\u2019s data",
+                    "relation": "was released on",
+                    "object": "publicly accessible web pages"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2577,
+                "cost": 0.0020616
+            },
+            "output": {
+                "tokens": 127,
+                "cost": 0.000254
+            },
+            "total": {
+                "tokens": 2704,
+                "cost": 0.0023155999999999997
+            }
+        },
+        "time": 11.069579362869263,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-4-9-QD1-a2c.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.07757502677465726
+                ],
+                [
+                    "symantec: 3AM.json",
+                    0.08302690656261316
+                ],
+                [
+                    "threatPost: Atlassian.json",
+                    0.08522096198681052
+                ],
+                [
+                    "darkreading: apache-activemq.json",
+                    0.08946369470655019
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

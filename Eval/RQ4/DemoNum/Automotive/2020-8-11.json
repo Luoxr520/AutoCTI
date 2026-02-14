@@ -1,0 +1,89 @@
+{
+    "CTI": {
+        "text": "A hacker discovered a vulnerability in the Bluetooth stack of Mercedes-Benz C Class AMG Premium Plus c220 BlueTec. Bluetooth connections with devices that contain format strings in the device name created an issue in the Bluetooth stack and caused the COMAND infotainment to behave unpredictably. The hacker demonstrated that connecting a device with the strings \"%x\" or \"%c\" in the device name impacted the user interface of the infotainment.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "A hacker",
+                    "relation": "discovered",
+                    "object": "a vulnerability"
+                },
+                {
+                    "subject": "The vulnerability",
+                    "relation": "is in",
+                    "object": "the Bluetooth stack of Mercedes-Benz C Class AMG Premium Plus c220 BlueTec"
+                },
+                {
+                    "subject": "Bluetooth connections",
+                    "relation": "with devices that contain",
+                    "object": "format strings in the device name"
+                },
+                {
+                    "subject": "Format strings",
+                    "relation": "created an issue in",
+                    "object": "the Bluetooth stack"
+                },
+                {
+                    "subject": "The issue",
+                    "relation": "caused",
+                    "object": "the COMAND infotainment to behave unpredictably"
+                },
+                {
+                    "subject": "Connecting a device",
+                    "relation": "with the strings",
+                    "object": "'%x' or '%c' in the device name"
+                },
+                {
+                    "subject": "The strings",
+                    "relation": "impacted",
+                    "object": "the user interface of the infotainment"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 3044,
+                "cost": 0.0024351999999999998
+            },
+            "output": {
+                "tokens": 215,
+                "cost": 0.00043
+            },
+            "total": {
+                "tokens": 3259,
+                "cost": 0.0028651999999999996
+            }
+        },
+        "time": 9.506494045257568,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-8-11-QD1-3d8.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Unit42: PlugX.json",
+                    0.05912126834264064
+                ],
+                [
+                    "securityweek: vultur.json",
+                    0.06639824713338018
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.06678307264148761
+                ],
+                [
+                    "darkreading: Bluetooth-Flaw.json",
+                    0.27713025000771374
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "CTI": {
+        "text": "Officers launched early-morning raids on 21 locations in Essex and East London as part of an investigation into gang related thefts of luxury cars including Jaguars, Range Rovers, and BMWs. At least twelve arrests were made in the raids. The police suspect the gang is responsible for up to 90 thefts of vehicles, worth between \u00a33-4 million, over less than two years. In the raids, the police uncovered key cloning equipment, signal jamming equipment, and devices used to produce new keys for vehicles that were stolen.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Officers",
+                    "relation": "raided",
+                    "object": "21 locations in Essex and East London"
+                },
+                {
+                    "subject": "Raids",
+                    "relation": "targeted",
+                    "object": "gang related thefts of luxury cars"
+                },
+                {
+                    "subject": "Luxury cars",
+                    "relation": "include",
+                    "object": "Jaguars, Range Rovers, and BMWs"
+                },
+                {
+                    "subject": "Police",
+                    "relation": "suspect",
+                    "object": "the gang is responsible for up to 90 thefts of vehicles"
+                },
+                {
+                    "subject": "Stolen vehicles",
+                    "relation": "worth",
+                    "object": "between \u00a33-4 million"
+                },
+                {
+                    "subject": "Raids",
+                    "relation": "uncovered",
+                    "object": "key cloning equipment"
+                },
+                {
+                    "subject": "Raids",
+                    "relation": "uncovered",
+                    "object": "signal jamming equipment"
+                },
+                {
+                    "subject": "Raids",
+                    "relation": "uncovered",
+                    "object": "devices used to produce new keys for vehicles"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2567,
+                "cost": 0.0020536
+            },
+            "output": {
+                "tokens": 277,
+                "cost": 0.000554
+            },
+            "total": {
+                "tokens": 2844,
+                "cost": 0.0026076
+            }
+        },
+        "time": 12.164171695709229,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-2-11-QD1-1ad.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Google_TAG: conti.json",
+                    0.039773117487633514
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.04223156108607186
+                ],
+                [
+                    "trendmicro: BlackCat.json",
+                    0.044909015473839256
+                ],
+                [
+                    "AVERTIUM: charming-kitten.json",
+                    0.06251925434470913
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

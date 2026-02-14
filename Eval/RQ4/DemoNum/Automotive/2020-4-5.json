@@ -1,0 +1,92 @@
+{
+    "CTI": {
+        "text": "A Polish gang of seven men stole millions of dollars worth of vehicles using relay amplifiers. Because the thieves didn\u2019t have a copy of the key fob, they weren't able to switch the vehicle off after they were stolen. The thieves had to drive the vehicles non-stop to their destination directly and had to leave the engine on even when refueling. A new keyfob was probably programmed at the destination. The gang stole Audi brand vehicles and operated during nighttime.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A Polish gang of seven men",
+                "relation": "stole",
+                "object": "millions of dollars worth of vehicles"
+            },
+            {
+                "subject": "thieves",
+                "relation": "used",
+                "object": "relay amplifiers"
+            },
+            {
+                "subject": "thieves",
+                "relation": "were unable to",
+                "object": "switch the vehicle off after they were stolen"
+            },
+            {
+                "subject": "thieves",
+                "relation": "had to drive",
+                "object": "vehicles non-stop to their destination directly"
+            },
+            {
+                "subject": "thieves",
+                "relation": "had to leave",
+                "object": "the engine on even when refueling"
+            },
+            {
+                "subject": "A new keyfob",
+                "relation": "was probably programmed at",
+                "object": "the destination"
+            },
+            {
+                "subject": "The gang",
+                "relation": "stole",
+                "object": "Audi brand vehicles"
+            },
+            {
+                "subject": "The gang",
+                "relation": "operated during",
+                "object": "nighttime"
+            }
+        ],
+        "triples_count": 8,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2363,
+                "cost": 0.0018904
+            },
+            "output": {
+                "tokens": 218,
+                "cost": 0.00043599999999999997
+            },
+            "total": {
+                "tokens": 2581,
+                "cost": 0.0023264
+            }
+        },
+        "time": 11.06089186668396,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-4-5-QD1-f7d.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Google_TAG: conti.json",
+                    0.03364919790084018
+                ],
+                [
+                    "Unit42: Agonizing-Serpens.json",
+                    0.037994046591716554
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.04162725127635929
+                ],
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.052202156195582
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

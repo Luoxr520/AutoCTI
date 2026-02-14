@@ -1,0 +1,67 @@
+{
+    "CTI": {
+        "text": "Renault and Nissan plants hit by massive ransomware (aka WanaCrypt0r) attack, and production was stopped across several of its European plants as a result of the attack.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Renault and Nissan plants",
+                "relation": "hit by",
+                "object": "ransomware attack"
+            },
+            {
+                "subject": "ransomware",
+                "relation": "aka",
+                "object": "WanaCrypt0r"
+            },
+            {
+                "subject": "production",
+                "relation": "was stopped",
+                "object": "across several of its European plants"
+            }
+        ],
+        "triples_count": 3,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2838,
+                "cost": 0.0022704
+            },
+            "output": {
+                "tokens": 77,
+                "cost": 0.000154
+            },
+            "total": {
+                "tokens": 2915,
+                "cost": 0.0024244
+            }
+        },
+        "time": 4.761735916137695,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2017-5-1-QD1-610.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: yanluowang.json",
+                    0.051217921025884114
+                ],
+                [
+                    "AVERTIUM: rhysida.json",
+                    0.0633461262578753
+                ],
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.06624375736604565
+                ],
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.07552167842909116
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "CTI": {
+        "text": "Thieves broke into a high-end BMW and stole two laptops from the vehicle's trunk. It is assumed that the thief used a wireless signal jammer device to break into the vehicle, as no physical damage to the car was reported.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Thieves",
+                    "relation": "broke into",
+                    "object": "a high-end BMW"
+                },
+                {
+                    "subject": "Thieves",
+                    "relation": "stole",
+                    "object": "two laptops from the vehicle's trunk"
+                },
+                {
+                    "subject": "thief",
+                    "relation": "used",
+                    "object": "a wireless signal jammer device"
+                },
+                {
+                    "subject": "no physical damage",
+                    "relation": "reported to",
+                    "object": "the car"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2967,
+                "cost": 0.0023736
+            },
+            "output": {
+                "tokens": 110,
+                "cost": 0.00021999999999999998
+            },
+            "total": {
+                "tokens": 3077,
+                "cost": 0.0025936
+            }
+        },
+        "time": 4.399010181427002,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-3-17-QD1-686.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: Dogwalk.json",
+                    0.03135220810615521
+                ],
+                [
+                    "securityweek: pwn2own.json",
+                    0.032956611415623324
+                ],
+                [
+                    "Unit42: Diplomats-Beware.json",
+                    0.038683034145627584
+                ],
+                [
+                    "BleepingComputer: fortra.json",
+                    0.045715191969570246
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "CTI": {
+        "text": "Visitors to several infected sites, including a store selling auto parts, were victims of a phishing campaign informing them that their security certificate has expired. The campaign overlayed the website's content with a legitimate-looking banner prompting the users to install an updated certificate claiming that their certificate has expired. By clicking install, users downloaded malware directly to their computer.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "visitors",
+                    "relation": "were victims of",
+                    "object": "a phishing campaign"
+                },
+                {
+                    "subject": "phishing campaign",
+                    "relation": "informed",
+                    "object": "security certificate has expired"
+                },
+                {
+                    "subject": "campaign",
+                    "relation": "overlayed",
+                    "object": "website's content with a legitimate-looking banner"
+                },
+                {
+                    "subject": "banner",
+                    "relation": "prompted users to install",
+                    "object": "an updated certificate"
+                },
+                {
+                    "subject": "users",
+                    "relation": "downloaded",
+                    "object": "malware"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2170,
+                "cost": 0.001736
+            },
+            "output": {
+                "tokens": 132,
+                "cost": 0.00026399999999999997
+            },
+            "total": {
+                "tokens": 2302,
+                "cost": 0.002
+            }
+        },
+        "time": 8.394596576690674,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-1-QD1-a2e.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Google_TAG: north-korean-campaign.json",
+                    0.07738976392633351
+                ],
+                [
+                    "Microsoft: diamond-sleet.json",
+                    0.08176515815501013
+                ],
+                [
+                    "Google_TAG: egypt.json",
+                    0.0897140421312188
+                ],
+                [
+                    "Unit42: CryptoClippy.json",
+                    0.1072475205285386
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

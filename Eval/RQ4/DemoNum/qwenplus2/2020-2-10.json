@@ -1,0 +1,82 @@
+{
+    "CTI": {
+        "text": "Second-hand Tesla owners are jailbreaking the vehicles\u2019 software in order to restore features like autopilot and supercharging that Tesla remotely disabled after the vehicle\u2019s warranty and/or ownership changed. One of the hackers claims he was able to restore the supercharging feature for more than 600 Teslas.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Second-hand Tesla owners",
+                "relation": "are jailbreaking",
+                "object": "vehicles\u2019 software"
+            },
+            {
+                "subject": "jailbreaking",
+                "relation": "restores",
+                "object": "features like autopilot and supercharging"
+            },
+            {
+                "subject": "Tesla",
+                "relation": "remotely disabled",
+                "object": "autopilot and supercharging features"
+            },
+            {
+                "subject": "Tesla",
+                "relation": "disabled features after",
+                "object": "warranty and/or ownership change"
+            },
+            {
+                "subject": "One of the hackers",
+                "relation": "claims he restored",
+                "object": "supercharging feature"
+            },
+            {
+                "subject": "supercharging feature",
+                "relation": "restored for",
+                "object": "more than 600 Teslas"
+            }
+        ],
+        "triples_count": 6,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2526,
+                "cost": 0.0020208
+            },
+            "output": {
+                "tokens": 169,
+                "cost": 0.000338
+            },
+            "total": {
+                "tokens": 2695,
+                "cost": 0.0023588000000000003
+            }
+        },
+        "time": 8.737406253814697,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-2-10-QD1-171.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Crambus.json",
+                    0.03812104643947084
+                ],
+                [
+                    "darkreading: Microsoft-Outlook.json",
+                    0.045737479622040084
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.046792264953221176
+                ],
+                [
+                    "darkreading: SilverRAT.json",
+                    0.10383126270069173
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

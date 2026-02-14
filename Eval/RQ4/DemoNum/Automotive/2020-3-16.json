@@ -1,0 +1,92 @@
+{
+    "CTI": {
+        "text": "Researchers demonstrated their ability to exploit a Bluetooth code execution vulnerability to compromise the infotainment unit of Lexus NX300 and send diagnosis messages to the internal CAN network and related ECUs. In order to bypass the infotainment\u2019s CAN message filtering capability, the researchers updated the firmware of one of the microcontrollers. The researchers also designed the code executed to automatically connect to a Wi-Fi hotspot, enabling them to send diagnostic commands that could trigger a car with physical motions through the Wi-FI. The vulnerable component in the infotainment was installed in Lexus (LC, LS, NX, RC, RC F), Toyota Camrys, and Toyota Siennas.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Researchers",
+                "relation": "demonstrated",
+                "object": "their ability to exploit a Bluetooth code execution vulnerability"
+            },
+            {
+                "subject": "Bluetooth code execution vulnerability",
+                "relation": "compromised",
+                "object": "the infotainment unit of Lexus NX300"
+            },
+            {
+                "subject": "infotainment unit",
+                "relation": "sent",
+                "object": "diagnosis messages to the internal CAN network and related ECUs"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "bypassed",
+                "object": "the infotainment\u2019s CAN message filtering capability"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "updated",
+                "object": "the firmware of one of the microcontrollers"
+            },
+            {
+                "subject": "Researchers",
+                "relation": "designed",
+                "object": "the code executed to automatically connect to a Wi-Fi hotspot"
+            },
+            {
+                "subject": "Wi-Fi hotspot",
+                "relation": "enabled",
+                "object": "them to send diagnostic commands that could trigger a car with physical motions through the Wi-FI"
+            },
+            {
+                "subject": "Vulnerable component",
+                "relation": "was installed in",
+                "object": "Lexus (LC, LS, NX, RC, RC F), Toyota Camrys, and Toyota Siennas"
+            }
+        ],
+        "triples_count": 8,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2965,
+                "cost": 0.002372
+            },
+            "output": {
+                "tokens": 271,
+                "cost": 0.000542
+            },
+            "total": {
+                "tokens": 3236,
+                "cost": 0.002914
+            }
+        },
+        "time": 12.143351554870605,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-3-16-QD1-915.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Crambus.json",
+                    0.058368118781370514
+                ],
+                [
+                    "securityweek: magento.json",
+                    0.060502133235444205
+                ],
+                [
+                    "darkreading: Bluetooth-Flaw.json",
+                    0.06922590830133583
+                ],
+                [
+                    "thehackernews: OfBiz.json",
+                    0.07620342787550259
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

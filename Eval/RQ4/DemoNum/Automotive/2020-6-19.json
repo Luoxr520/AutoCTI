@@ -1,0 +1,51 @@
+{
+    "CTI": {
+        "text": "To get accurate notifications on his vehicle charging status, a hacker reversed engineered BMW's connected drive and created an open-sourced app that actively retrieves real-time charging information from his vehicle using BMW's API. To use the app, users must configure their credentials to authenticate with BMW's API. With some additional development, the app could also allow control of BMW's other connected API features - activation of headlights, horns, and unlock/lock commands through the open sourced app.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [],
+        "triples_count": 0,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2767,
+                "cost": 0.0022136
+            },
+            "output": {
+                "tokens": 5,
+                "cost": 9.999999999999999e-06
+            },
+            "total": {
+                "tokens": 2772,
+                "cost": 0.0022236
+            }
+        },
+        "time": 2.60626220703125,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-19-QD1-647.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "thehackernews: Xamalicious.json",
+                    0.05253392990135257
+                ],
+                [
+                    "Microsoft: app-installer.json",
+                    0.06272078202906856
+                ],
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.09559405381153979
+                ],
+                [
+                    "symantec: Graphican.json",
+                    0.13849514155677092
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "CTI": {
+        "text": "The Budworm advanced persistent threat (APT) group continues to actively develop its toolset. Most recently, the Threat Hunter Team in Symantec, part of Broadcom, discovered Budworm using an updated version of one of its key tools to target a Middle Eastern telecommunications organization and an Asian government. Both attacks occurred in August 2023. Budworm (aka LuckyMouse, Emissary Panda, APT27) deployed a previously unseen variant of its SysUpdate backdoor (SysUpdate DLL inicore_v2.3.30.dll). SysUpdate is exclusively used by Budworm. As well as its custom malware, Budworm also used a variety of living-off-the-land and publicly available tools in these attacks. It appears the activity by the group may have been stopped early in the attack chain as the only malicious activity seen on infected machines is credential harvesting.",
+        "link": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/budworm-tool-update-telecoms-govt"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Budworm",
+                "relation": "continues to develop",
+                "object": "its toolset"
+            },
+            {
+                "subject": "Threat Hunter Team in Symantec",
+                "relation": "discovered",
+                "object": "Budworm using an updated version of one of its key tools"
+            },
+            {
+                "subject": "Budworm",
+                "relation": "targeted",
+                "object": "a Middle Eastern telecommunications organization"
+            },
+            {
+                "subject": "Budworm",
+                "relation": "targeted",
+                "object": "an Asian government"
+            },
+            {
+                "subject": "Budworm",
+                "relation": "is also known as",
+                "object": "LuckyMouse"
+            },
+            {
+                "subject": "Budworm",
+                "relation": "is also known as",
+                "object": "Emissary Panda"
+            },
+            {
+                "subject": "Budworm",
+                "relation": "is also known as",
+                "object": "APT27"
+            },
+            {
+                "subject": "Budworm",
+                "relation": "deployed",
+                "object": "a previously unseen variant of its SysUpdate backdoor"
+            },
+            {
+                "subject": "SysUpdate backdoor",
+                "relation": "has variant",
+                "object": "SysUpdate DLL inicore_v2.3.30.dll"
+            },
+            {
+                "subject": "SysUpdate",
+                "relation": "is exclusively used by",
+                "object": "Budworm"
+            },
+            {
+                "subject": "Budworm",
+                "relation": "used",
+                "object": "custom malware"
+            },
+            {
+                "subject": "Budworm",
+                "relation": "used",
+                "object": "living-off-the-land tools"
+            },
+            {
+                "subject": "Budworm",
+                "relation": "used",
+                "object": "publicly available tools"
+            },
+            {
+                "subject": "malicious activity seen on infected machines",
+                "relation": "is",
+                "object": "credential harvesting"
+            }
+        ],
+        "triples_count": 14,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3162,
+                "cost": 0.0025296
+            },
+            "output": {
+                "tokens": 390,
+                "cost": 0.00078
+            },
+            "total": {
+                "tokens": 3552,
+                "cost": 0.0033095999999999998
+            }
+        },
+        "time": 21.013789653778076,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\symantec\\Budworm-QD1-e85.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: yanluowang.json",
+                    0.09644482623994316
+                ],
+                [
+                    "AVERTIUM: charming-kitten.json",
+                    0.11766239239982305
+                ],
+                [
+                    "symantec: Grayfly.json",
+                    0.12458109733839273
+                ],
+                [
+                    "symantec: Seedworm.json",
+                    0.20995644033808944
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,144 @@
+import os
+import json
+import matplotlib.pyplot as plt
+from collections import defaultdict
+
+def normalize_text(text):
+    """文本标准化"""
+    text = text.strip().lower()
+    text = text.replace('-', ' ').replace('_', ' ').replace(',', ' ')
+    return ' '.join(text.split())
+
+def parse_bio(bio_text):
+    """BIO解析器（支持复合标签）"""
+    entities = []
+    current_entity = []
+    current_tag_type = None
+    
+    for line in bio_text.split('\n'):
+        line = line.strip()
+        if not line:
+            if current_entity:
+                entities.append(normalize_text(' '.join(current_entity)))
+                current_entity = []
+                current_tag_type = None
+            continue
+
+        parts = line.split()
+        if len(parts) < 2:
+            continue
+
+        word, raw_tag = parts[0], parts[1]
+        
+        if raw_tag != 'O':
+            tag_parts = raw_tag.split('_')
+            prefix = tag_parts[0]
+            main_tag = tag_parts[1] if len(tag_parts) > 1 else ''
+        else:
+            prefix, main_tag = 'O', ''
+
+        if prefix in ['B', 'S'] and main_tag:
+            if current_entity:
+                entities.append(normalize_text(' '.join(current_entity)))
+            current_entity = [word]
+            current_tag_type = main_tag
+        elif prefix in ['I', 'E'] and current_tag_type == main_tag:
+            current_entity.append(word)
+        else:
+            if current_entity:
+                entities.append(normalize_text(' '.join(current_entity)))
+                current_entity = []
+                current_tag_type = None
+
+    if current_entity:
+        entities.append(normalize_text(' '.join(current_entity)))
+    
+    return entities
+
+def parse_json(json_data):
+    """JSON解析器（支持嵌套结构）"""
+    entities = []
+    try:
+        triplets = json_data['IE'].get('triplets', [])
+        if isinstance(triplets, dict):
+            triplets = triplets.get('triplets', [])
+        
+        for triplet in triplets:
+            for role in ['subject', 'object']:
+                if value := triplet.get(role, '').strip():
+                    entities.append(normalize_text(value))
+    except Exception as e:
+        print(f"JSON解析错误: {str(e)}")
+    
+    return entities
+
+def calculate_metrics(tp, fp, fn):
+    """仅返回精确率"""
+    precision = tp / (tp + fp) if (tp + fp) > 0 else 0
+    return precision * 100  # 只返回精确率
+
+def evaluate(json_dir, bio_dir):
+    """修复版评估函数"""
+    metrics = []
+    
+    for json_file in os.listdir(json_dir):
+        if not json_file.endswith('.json'):
+            continue
+
+        bio_file = json_file.replace('.json', '_bio.txt')
+        bio_path = os.path.join(bio_dir, bio_file)
+        
+        if not os.path.exists(bio_path):
+            print(f"跳过缺失文件: {bio_path}")
+            continue
+
+        try:
+            with open(bio_path, 'r', encoding='utf-8') as f:
+                true_entities = parse_bio(f.read())
+            
+            with open(os.path.join(json_dir, json_file), 'r') as f:
+                pred_entities = parse_json(json.load(f))
+
+            true_counts = defaultdict(int)
+            pred_counts = defaultdict(int)
+            
+            for ent in true_entities:
+                true_counts[ent] += 1
+            for ent in pred_entities:
+                pred_counts[ent] += 1
+
+            tp = sum(min(true_counts[ent], pred_counts[ent]) for ent in true_counts)
+            fp = sum(pred_counts.values()) - tp
+            fn = sum(true_counts.values()) - tp
+
+            metrics.append(calculate_metrics(tp, fp, fn))
+            
+        except Exception as e:
+            print(f"处理文件 {json_file} 失败: {str(e)}")
+
+    # 数据过滤与可视化
+    valid_metrics = [m for m in metrics if isinstance(m, (int, float)) and m >= 0]
+    
+    plt.figure(figsize=(12, 6))
+    plt.plot(valid_metrics, 'bo-', alpha=0.7)
+    
+    if valid_metrics:
+        avg = sum(valid_metrics) / len(valid_metrics)
+        plt.axhline(y=avg, color='r', linestyle='--', label=f'Average: {avg:.2f}%')
+        plt.legend()
+    
+    plt.xlabel('File Index')
+    plt.ylabel('Precision (%)')
+    plt.title('Entity Recognition Precision Distribution')
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig('precision_analysis.png', dpi=300)
+    plt.show()
+    
+    return avg if valid_metrics else 0
+
+if __name__ == "__main__":
+    json_dir = "D:/BBBB/graduation project/project/CTI-main1/Eval/RQ4/DemoNum/Automotive(qwen-plus)"
+    bio_dir = "D:/BBBB/graduation project/project/CTI-main1/dataset/IE-inputs/Automotive BIOES"
+    final_accuracy = evaluate(json_dir, bio_dir)
+    print(f"最终平均精确率: {final_accuracy:.2f}%")

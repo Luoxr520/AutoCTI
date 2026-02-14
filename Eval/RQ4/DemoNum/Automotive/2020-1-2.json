@@ -1,0 +1,114 @@
+{
+    "CTI": {
+        "text": "The police in Gurugram, India, reported that 4,118 vehicles were stolen in 2019, including several hundred Toyota Fortuner vehicles. Other vehicles targeted were Toyota Innova and Honda. The thieves used cheap devices purchased from China. That enabled them to bypass the engine control module, unlock the vehicle, force start the engine, and access the vehicle's computer. After stealing the vehicle, the thieves disabled its GPS service. They change the vehicle's number plate and issue a new registration certificate so that they won't be traced.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "thieves",
+                    "relation": "stole",
+                    "object": "4,118 vehicles"
+                },
+                {
+                    "subject": "vehicles stolen",
+                    "relation": "include",
+                    "object": "Toyota Fortuner"
+                },
+                {
+                    "subject": "vehicles stolen",
+                    "relation": "include",
+                    "object": "Toyota Innova"
+                },
+                {
+                    "subject": "vehicles stolen",
+                    "relation": "include",
+                    "object": "Honda"
+                },
+                {
+                    "subject": "thieves",
+                    "relation": "used",
+                    "object": "cheap devices purchased from China"
+                },
+                {
+                    "subject": "cheap devices",
+                    "relation": "bypass",
+                    "object": "engine control module"
+                },
+                {
+                    "subject": "cheap devices",
+                    "relation": "unlock",
+                    "object": "the vehicle"
+                },
+                {
+                    "subject": "cheap devices",
+                    "relation": "force start",
+                    "object": "the engine"
+                },
+                {
+                    "subject": "cheap devices",
+                    "relation": "access",
+                    "object": "the vehicle's computer"
+                },
+                {
+                    "subject": "thieves",
+                    "relation": "disabled",
+                    "object": "GPS service"
+                },
+                {
+                    "subject": "thieves",
+                    "relation": "change",
+                    "object": "vehicle's number plate"
+                },
+                {
+                    "subject": "thieves",
+                    "relation": "issue",
+                    "object": "new registration certificate"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2885,
+                "cost": 0.0023079999999999997
+            },
+            "output": {
+                "tokens": 279,
+                "cost": 0.000558
+            },
+            "total": {
+                "tokens": 3164,
+                "cost": 0.0028659999999999996
+            }
+        },
+        "time": 14.590631246566772,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-1-2-QD1-3e8.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "thehackernews: ESG.json",
+                    0.03973393869123763
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.04424036756633826
+                ],
+                [
+                    "Unit42: Diplomats-Beware.json",
+                    0.04944733085114879
+                ],
+                [
+                    "BleepingComputer: chrome.json",
+                    0.052799415551494366
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

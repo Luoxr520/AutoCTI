@@ -1,0 +1,82 @@
+{
+    "CTI": {
+        "text": "A hacking group offered a database of BMW car owners for sale on the dark web. The group claimed that the database contained 384,319 records from a \u201ccall center\u201d that managed customers of different car suppliers. A research company that obtained the database found that it contained almost 500,000 customer records from 2016 to 2018, including details of U.K owners of Mercedes, Seat, Honda, Hyundai, and other vehicle brands.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A hacking group",
+                "relation": "offered for sale",
+                "object": "a database of BMW car owners"
+            },
+            {
+                "subject": "A hacking group",
+                "relation": "claimed that the database contained",
+                "object": "384,319 records from a 'call center'"
+            },
+            {
+                "subject": "A research company",
+                "relation": "obtained",
+                "object": "the database"
+            },
+            {
+                "subject": "The database",
+                "relation": "contained",
+                "object": "almost 500,000 customer records"
+            },
+            {
+                "subject": "The database",
+                "relation": "included details of",
+                "object": "U.K owners of Mercedes, Seat, Honda, Hyundai, and other vehicle brands"
+            },
+            {
+                "subject": "The records",
+                "relation": "date from",
+                "object": "2016 to 2018"
+            }
+        ],
+        "triples_count": 6,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3063,
+                "cost": 0.0024503999999999997
+            },
+            "output": {
+                "tokens": 194,
+                "cost": 0.000388
+            },
+            "total": {
+                "tokens": 3257,
+                "cost": 0.0028383999999999996
+            }
+        },
+        "time": 8.966529607772827,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-11-QD1-6b3.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: akira.json",
+                    0.05428635834792757
+                ],
+                [
+                    "Unit42: P2PInfect.json",
+                    0.05826311921929162
+                ],
+                [
+                    "AVERTIUM: fargo.json",
+                    0.1012915589738333
+                ],
+                [
+                    "darkreading: Google-Patches.json",
+                    0.10160715941912143
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

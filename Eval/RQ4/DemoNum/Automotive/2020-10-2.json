@@ -1,0 +1,82 @@
+{
+    "CTI": {
+        "text": "A researcher learned from two CVEs in Mercedes-Benz and BMW\u2019s infotainment and exploited the same kind of vulnerability on Audi A7 2014 MMI\u2019s infotainment system. The original vulnerabilities and the subsequent exploitations were due to improper handling of \u201cformat strings\u201d, special characters used by programming languages to insert text into a string. Renaming the Bluetooth connection name to \"%x%x%x%x%x\", triggered memory handling issues, crashing the infotainment software. The incident demonstrated that publicly disclosed vulnerabilities in one automotive component may lead to exploitations on similar systems.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "researcher",
+                "relation": "learned from",
+                "object": "two CVEs in Mercedes-Benz and BMW\u2019s infotainment"
+            },
+            {
+                "subject": "researcher",
+                "relation": "exploited",
+                "object": "Audi A7 2014 MMI\u2019s infotainment system"
+            },
+            {
+                "subject": "vulnerabilities",
+                "relation": "due to",
+                "object": "improper handling of format strings"
+            },
+            {
+                "subject": "renaming Bluetooth connection name",
+                "relation": "triggered",
+                "object": "memory handling issues"
+            },
+            {
+                "subject": "renaming Bluetooth connection name",
+                "relation": "caused",
+                "object": "crashing the infotainment software"
+            },
+            {
+                "subject": "publicly disclosed vulnerabilities",
+                "relation": "may lead to",
+                "object": "exploitations on similar systems"
+            }
+        ],
+        "triples_count": 6,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2534,
+                "cost": 0.0020272
+            },
+            "output": {
+                "tokens": 185,
+                "cost": 0.00037
+            },
+            "total": {
+                "tokens": 2719,
+                "cost": 0.0023972
+            }
+        },
+        "time": 10.090338468551636,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-10-2-QD1-4dc.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Log4j.json",
+                    0.06573811903597135
+                ],
+                [
+                    "darkreading: Microsoft-Outlook.json",
+                    0.06807237769896592
+                ],
+                [
+                    "darkreading: Bluetooth-Flaw.json",
+                    0.07615217288015952
+                ],
+                [
+                    "securityweek: pwn2own.json",
+                    0.08865590749641226
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "CTI": {
+        "text": "A car theft gang has managed to steal luxury vehicles worth more than 30 million rubles in the Stavropol Territory in Russia. The thieves stole 14 Lexus and Toyota luxury vehicles and used multiple tools, including alarm disablers and devices that imitate key fob signals, enabling them to break into the ignition locks of the vehicles.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "car theft gang",
+                "relation": "stole",
+                "object": "luxury vehicles"
+            },
+            {
+                "subject": "luxury vehicles",
+                "relation": "worth more than",
+                "object": "30 million rubles"
+            },
+            {
+                "subject": "car theft gang",
+                "relation": "operated in",
+                "object": "Stavropol Territory"
+            },
+            {
+                "subject": "car theft gang",
+                "relation": "operated in",
+                "object": "Russia"
+            },
+            {
+                "subject": "thieves",
+                "relation": "stole",
+                "object": "14 Lexus and Toyota luxury vehicles"
+            },
+            {
+                "subject": "thieves",
+                "relation": "used",
+                "object": "multiple tools"
+            },
+            {
+                "subject": "tools",
+                "relation": "include",
+                "object": "alarm disablers"
+            },
+            {
+                "subject": "tools",
+                "relation": "include",
+                "object": "devices that imitate key fob signals"
+            },
+            {
+                "subject": "devices",
+                "relation": "enabled",
+                "object": "breaking into the ignition locks of the vehicles"
+            }
+        ],
+        "triples_count": 9,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2693,
+                "cost": 0.0021544
+            },
+            "output": {
+                "tokens": 219,
+                "cost": 0.00043799999999999997
+            },
+            "total": {
+                "tokens": 2912,
+                "cost": 0.0025924
+            }
+        },
+        "time": 11.21780800819397,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-1-8-QD1-e11.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: cuba-ransomware.json",
+                    0.031059991273325312
+                ],
+                [
+                    "AVERTIUM: cactus.json",
+                    0.031143007443847563
+                ],
+                [
+                    "Unit42: Agonizing-Serpens.json",
+                    0.03509006467672776
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.04910877236269241
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

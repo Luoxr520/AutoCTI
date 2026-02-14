@@ -1,0 +1,102 @@
+{
+    "CTI": {
+        "text": "Millions of cars using chip-enabled mechanical keys implement the DST80 cryptographic algorithm in a way that allows an attacker to easily crack the secret cryptographic key value. Some of the inspected fobs created their cryptographic key based on openly transmitted information, such as their serial number. Other key fobs used 24 bits of randomness rather than the 80 bits that the DST80 offers, making their secret values easy to brute force. Combining these cryptographic flaws with a little old-fashioned hot-wiring\u2014or even a well-placed screwdriver\u2014lets hackers clone those keys and drive away in seconds.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Millions of cars",
+                "relation": "use",
+                "object": "chip-enabled mechanical keys"
+            },
+            {
+                "subject": "Chip-enabled mechanical keys",
+                "relation": "implement",
+                "object": "DST80 cryptographic algorithm"
+            },
+            {
+                "subject": "DST80 cryptographic algorithm",
+                "relation": "allows",
+                "object": "attacker to easily crack the secret cryptographic key value"
+            },
+            {
+                "subject": "Some inspected fobs",
+                "relation": "create",
+                "object": "cryptographic key based on openly transmitted information"
+            },
+            {
+                "subject": "Openly transmitted information",
+                "relation": "includes",
+                "object": "serial number"
+            },
+            {
+                "subject": "Other key fobs",
+                "relation": "use",
+                "object": "24 bits of randomness"
+            },
+            {
+                "subject": "24 bits of randomness",
+                "relation": "rather than",
+                "object": "80 bits that DST80 offers"
+            },
+            {
+                "subject": "Cryptographic flaws",
+                "relation": "combine with",
+                "object": "hot-wiring"
+            },
+            {
+                "subject": "Cryptographic flaws",
+                "relation": "combine with",
+                "object": "well-placed screwdriver"
+            },
+            {
+                "subject": "Combining these methods",
+                "relation": "lets",
+                "object": "hackers clone those keys and drive away in seconds"
+            }
+        ],
+        "triples_count": 10,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3033,
+                "cost": 0.0024264
+            },
+            "output": {
+                "tokens": 281,
+                "cost": 0.000562
+            },
+            "total": {
+                "tokens": 3314,
+                "cost": 0.0029884
+            }
+        },
+        "time": 13.601192951202393,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-3-8-QD1-63b.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: qualcomm.json",
+                    0.03878666861908598
+                ],
+                [
+                    "BleepingComputer: gitlab.json",
+                    0.04032820353316179
+                ],
+                [
+                    "AVERTIUM: fivehands.json",
+                    0.04063929535807585
+                ],
+                [
+                    "BleepingComputer: purplefox.json",
+                    0.04238589632340142
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "CTI": {
+        "text": "A researcher gained access to Tesla's cloud IT service management tool and was able to retrieve sensitive information from the system. He found the credentials to the system in a public Github repository. Though logging into the system from its standard user interface requires multi-factor authentication, the researcher proved he was able to bypass it by crafting requests directly to the IT service API. A motivated attacker could use this access to view help desk tickets that were issued, and map Tesla\u2019s internal servers, IP addresses, and issues reported to Tesla\u2019s system administors.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A researcher",
+                "relation": "gained access to",
+                "object": "Tesla's cloud IT service management tool"
+            },
+            {
+                "subject": "A researcher",
+                "relation": "was able to retrieve",
+                "object": "sensitive information"
+            },
+            {
+                "subject": "sensitive information",
+                "relation": "from",
+                "object": "the system"
+            },
+            {
+                "subject": "credentials",
+                "relation": "found in",
+                "object": "a public Github repository"
+            },
+            {
+                "subject": "logging into the system",
+                "relation": "requires",
+                "object": "multi-factor authentication"
+            },
+            {
+                "subject": "A researcher",
+                "relation": "bypassed",
+                "object": "multi-factor authentication"
+            },
+            {
+                "subject": "A researcher",
+                "relation": "crafted requests directly to",
+                "object": "the IT service API"
+            },
+            {
+                "subject": "A motivated attacker",
+                "relation": "could use this access to view",
+                "object": "help desk tickets"
+            },
+            {
+                "subject": "A motivated attacker",
+                "relation": "could map",
+                "object": "Tesla\u2019s internal servers"
+            },
+            {
+                "subject": "A motivated attacker",
+                "relation": "could map",
+                "object": "IP addresses"
+            },
+            {
+                "subject": "A motivated attacker",
+                "relation": "could map",
+                "object": "issues reported to Tesla\u2019s system administrators"
+            }
+        ],
+        "triples_count": 11,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2451,
+                "cost": 0.0019608
+            },
+            "output": {
+                "tokens": 283,
+                "cost": 0.000566
+            },
+            "total": {
+                "tokens": 2734,
+                "cost": 0.0025268
+            }
+        },
+        "time": 16.178951501846313,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-2-QD1-bc7.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: github.json",
+                    0.08048804684682075
+                ],
+                [
+                    "thehackernews: OfBiz.json",
+                    0.08840158160442085
+                ],
+                [
+                    "Unit42: Exposed-IAM-Keys.json",
+                    0.09249615026432967
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.11913765752663637
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

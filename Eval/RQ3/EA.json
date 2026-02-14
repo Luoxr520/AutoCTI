@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "name": "zero-day vulnerability",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Microsoft Windows and Office products",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 3,
+      "name": "attacker",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 4,
+      "name": "exploit",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 5,
+      "name": "highly targeted attacks",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 7,
+      "name": "organizations in the government and defense sectors",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 6,
+      "name": "organizations",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Europe",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 10,
+      "name": "North America",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Microsoft",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 11,
+      "name": "a specially crafted Microsoft Office document",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 13,
+      "name": "remote code execution",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 14,
+      "name": "victim",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 12,
+      "name": "the malicious file",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 15,
+      "name": "No patch",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    },
+    {
+      "id": 1,
+      "name": "the vulnerability",
+      "image": "https://nrdstudio.cn/res/n.jpg"
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 2,
+      "relation": "affects"
+    },
+    {
+      "source": 3,
+      "target": 0,
+      "relation": "exploit"
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "relation": "used in"
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "relation": "against"
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "relation": "are in"
+    },
+    {
+      "source": 6,
+      "target": 10,
+      "relation": "are in"
+    },
+    {
+      "source": 8,
+      "target": 0,
+      "relation": "disclosed"
+    },
+    {
+      "source": 3,
+      "target": 11,
+      "relation": "could create"
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "relation": "enables"
+    },
+    {
+      "source": 14,
+      "target": 12,
+      "relation": "needs to open"
+    },
+    {
+      "source": 15,
+      "target": 1,
+      "relation": "has been released for"
+    }
+  ]
+}

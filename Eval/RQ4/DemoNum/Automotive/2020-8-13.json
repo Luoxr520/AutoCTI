@@ -1,0 +1,77 @@
+{
+    "CTI": {
+        "text": "The police forces in Grimsby, UK, warned the owners of high-value cars to be extra vigilant after a rise in thefts throughout August 2020, as many keyless entry Land Rovers and Range Rovers were targeted by thieves.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "police forces",
+                "relation": "warned",
+                "object": "owners of high-value cars"
+            },
+            {
+                "subject": "owners of high-value cars",
+                "relation": "should be",
+                "object": "extra vigilant"
+            },
+            {
+                "subject": "thefts",
+                "relation": "rose in",
+                "object": "Grimsby, UK"
+            },
+            {
+                "subject": "keyless entry Land Rovers",
+                "relation": "were targeted by",
+                "object": "thieves"
+            },
+            {
+                "subject": "Range Rovers",
+                "relation": "were targeted by",
+                "object": "thieves"
+            }
+        ],
+        "triples_count": 5,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 2710,
+                "cost": 0.002168
+            },
+            "output": {
+                "tokens": 133,
+                "cost": 0.000266
+            },
+            "total": {
+                "tokens": 2843,
+                "cost": 0.002434
+            }
+        },
+        "time": 6.62842059135437,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-8-13-QD1-830.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: rootkit.json",
+                    0.030013456673379298
+                ],
+                [
+                    "Google_TAG: ukraine.json",
+                    0.03077633448567069
+                ],
+                [
+                    "symantec: Seedworm.json",
+                    0.033728554672734334
+                ],
+                [
+                    "darkreading: CitrixBleed.json",
+                    0.03994790289175606
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "CTI": {
+        "text": "The Texas Department of Transportation\u2019s network was hacked in a \u201cransomware event\". Upon detecting the hack, staff at the transportation department immediately isolated the affected parts of the network. The department\u2019s website says some features are unavailable due to technical difficulties, but it is not clear what functions were affected by the attack.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Texas Department of Transportation\u2019s network",
+                    "relation": "was hacked in",
+                    "object": "a ransomware event"
+                },
+                {
+                    "subject": "staff at the transportation department",
+                    "relation": "immediately isolated",
+                    "object": "the affected parts of the network"
+                },
+                {
+                    "subject": "department\u2019s website",
+                    "relation": "has some features unavailable due to",
+                    "object": "technical difficulties"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3329,
+                "cost": 0.0026631999999999997
+            },
+            "output": {
+                "tokens": 114,
+                "cost": 0.00022799999999999999
+            },
+            "total": {
+                "tokens": 3443,
+                "cost": 0.0028911999999999996
+            }
+        },
+        "time": 5.5609049797058105,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-10-QD1-cab.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: uantum-ransomware.json",
+                    0.04878616293499898
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.049584516246948866
+                ],
+                [
+                    "AVERTIUM: rhysida.json",
+                    0.058245884525910625
+                ],
+                [
+                    "Google_TAG: ukraine.json",
+                    0.08342332729559052
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

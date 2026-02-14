@@ -1,0 +1,97 @@
+{
+    "CTI": {
+        "text": "The cybercriminals behind the malicious encryptor NetWalker hacked Trinity Metros, a Texas based transit agency and threatened to release all their data unless the company gave them money. The criminal group posted screenshots of the victim\u2019s encrypted files on their online blog on the dark-web. Examples of the folder names, which offer a hint of the content inside, include \"Accounting and HR Shared,\" \"Daily Operations Documents,\" \"Planning Documents,\" and \"Security.\"",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "NetWalker",
+                "relation": "hacked",
+                "object": "Trinity Metros"
+            },
+            {
+                "subject": "NetWalker",
+                "relation": "threatened to release",
+                "object": "all their data"
+            },
+            {
+                "subject": "NetWalker",
+                "relation": "demanded",
+                "object": "money from the company"
+            },
+            {
+                "subject": "NetWalker",
+                "relation": "posted",
+                "object": "screenshots of the victim\u2019s encrypted files"
+            },
+            {
+                "subject": "NetWalker",
+                "relation": "used",
+                "object": "their online blog on the dark-web"
+            },
+            {
+                "subject": "folder names",
+                "relation": "include",
+                "object": "'Accounting and HR Shared'"
+            },
+            {
+                "subject": "folder names",
+                "relation": "include",
+                "object": "'Daily Operations Documents'"
+            },
+            {
+                "subject": "folder names",
+                "relation": "include",
+                "object": "'Planning Documents'"
+            },
+            {
+                "subject": "folder names",
+                "relation": "include",
+                "object": "'Security'"
+            }
+        ],
+        "triples_count": 9,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 2438,
+                "cost": 0.0019504
+            },
+            "output": {
+                "tokens": 223,
+                "cost": 0.000446
+            },
+            "total": {
+                "tokens": 2661,
+                "cost": 0.0023964
+            }
+        },
+        "time": 8.858742952346802,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-2-QD1-704.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: TA558.json",
+                    0.06707985562069127
+                ],
+                [
+                    "trendmicro: TargetCompany.json",
+                    0.06713803067951792
+                ],
+                [
+                    "AVERTIUM: akira.json",
+                    0.06743542807726752
+                ],
+                [
+                    "trendmicro: LockBit.json",
+                    0.08280120116008227
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

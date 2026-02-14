@@ -1,0 +1,147 @@
+{
+    "CTI": {
+        "text": "Researchers have detected a vulnerability in a misconfigured back-end server run by Calamp, a telematics service provider (TSP) company. This gave them direct access to most of its production databases. Such access can give malicious hackers everything they needed to track the vehicle's location, steal user information, and even cut out the engine remotely. Many apps, including the vehicle tracking app Viper SmartStart were breached. SmartStart lets users locate, start, and control their car from their phone, and connects the car to the outside world using a Calamp modem to its cloud-based servers. The researchers found that the Viper mobile app,was connecting to two different servers -- one used by Viper, and another run by Calamp. Using the same credentials as the app, the researchers were also able to log in and gain complete access to the Calamp server. By querying the database, it is possible to find a car by looking up nearby latitude and longitude coordinates, reset the password, unlock the driver's side door, start the engine remotely, and drive away.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Researchers",
+                "relation": "have detected",
+                "object": "a vulnerability"
+            },
+            {
+                "subject": "a vulnerability",
+                "relation": "in",
+                "object": "a misconfigured back-end server"
+            },
+            {
+                "subject": "a misconfigured back-end server",
+                "relation": "run by",
+                "object": "Calamp"
+            },
+            {
+                "subject": "Calamp",
+                "relation": "is",
+                "object": "a telematics service provider (TSP) company"
+            },
+            {
+                "subject": "a vulnerability",
+                "relation": "gave them",
+                "object": "direct access to most of its production databases"
+            },
+            {
+                "subject": "direct access to most of its production databases",
+                "relation": "can give",
+                "object": "malicious hackers everything they needed"
+            },
+            {
+                "subject": "malicious hackers",
+                "relation": "can track",
+                "object": "the vehicle's location"
+            },
+            {
+                "subject": "malicious hackers",
+                "relation": "can steal",
+                "object": "user information"
+            },
+            {
+                "subject": "malicious hackers",
+                "relation": "can cut out",
+                "object": "the engine remotely"
+            },
+            {
+                "subject": "Many apps",
+                "relation": "including",
+                "object": "the vehicle tracking app Viper SmartStart"
+            },
+            {
+                "subject": "Viper SmartStart",
+                "relation": "lets users",
+                "object": "locate, start, and control their car from their phone"
+            },
+            {
+                "subject": "Viper SmartStart",
+                "relation": "connects",
+                "object": "the car to the outside world using a Calamp modem to its cloud-based servers"
+            },
+            {
+                "subject": "the researchers",
+                "relation": "found",
+                "object": "the Viper mobile app was connecting to two different servers"
+            },
+            {
+                "subject": "two different servers",
+                "relation": "include",
+                "object": "one used by Viper, and another run by Calamp"
+            },
+            {
+                "subject": "the researchers",
+                "relation": "were also able to log in and gain complete access to",
+                "object": "the Calamp server"
+            },
+            {
+                "subject": "By querying the database",
+                "relation": "it is possible to find",
+                "object": "a car by looking up nearby latitude and longitude coordinates"
+            },
+            {
+                "subject": "By querying the database",
+                "relation": "it is possible to",
+                "object": "reset the password"
+            },
+            {
+                "subject": "By querying the database",
+                "relation": "it is possible to",
+                "object": "unlock the driver's side door"
+            },
+            {
+                "subject": "By querying the database",
+                "relation": "it is possible to",
+                "object": "start the engine remotely"
+            }
+        ],
+        "triples_count": 19,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2683,
+                "cost": 0.0021463999999999997
+            },
+            "output": {
+                "tokens": 536,
+                "cost": 0.001072
+            },
+            "total": {
+                "tokens": 3219,
+                "cost": 0.0032183999999999997
+            }
+        },
+        "time": 20.728824853897095,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2018-5-1-QD1-804.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: Atlassian.json",
+                    0.07371304275800421
+                ],
+                [
+                    "BleepingComputer: chrome.json",
+                    0.07504299249844638
+                ],
+                [
+                    "thehackernews: Xamalicious.json",
+                    0.07777704500010608
+                ],
+                [
+                    "Microsoft: defending-new-vectors.json",
+                    0.07900505853393415
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

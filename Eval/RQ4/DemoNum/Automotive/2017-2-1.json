@@ -1,0 +1,69 @@
+{
+    "CTI": {
+        "text": "Police issue warning after keyless car theft in Middlesbrough, UK. The theft happened on Saxonfield, Colby Newham, Middlesbrough, between 9pm on Tuesday, February 5 and 1am the following morning when a Ford Fiesta ST-2 Turbo was stolen.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Police",
+                    "relation": "issued",
+                    "object": "a warning"
+                },
+                {
+                    "subject": "keyless car theft",
+                    "relation": "occurred in",
+                    "object": "Middlesbrough, UK"
+                },
+                {
+                    "subject": "stolen vehicle",
+                    "relation": "is",
+                    "object": "Ford Fiesta ST-2 Turbo"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3001,
+                "cost": 0.0024008
+            },
+            "output": {
+                "tokens": 103,
+                "cost": 0.000206
+            },
+            "total": {
+                "tokens": 3104,
+                "cost": 0.0026068
+            }
+        },
+        "time": 6.8581860065460205,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2017-2-1-QD1-489.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: muddywater.json",
+                    0.04398592910359267
+                ],
+                [
+                    "darkreading: Gh0st-RAT.json",
+                    0.06772383956064136
+                ],
+                [
+                    "symantec: 3AM.json",
+                    0.07732856100544465
+                ],
+                [
+                    "BleepingComputer: androxgh0st.json",
+                    0.08986024248951145
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

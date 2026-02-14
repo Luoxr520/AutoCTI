@@ -1,0 +1,94 @@
+{
+    "CTI": {
+        "text": "Egypt-based ride hailing app, SWVL, was hacked in a cyberattack that exposed the personal information of passengers, including emails, names, and phone numbers. If abused, the hackers could sell the information on the dark web or use it to gain access to other accounts that belong to the victims using the password they got from SWVL.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "SWVL",
+                    "relation": "was hacked in",
+                    "object": "a cyberattack"
+                },
+                {
+                    "subject": "cyberattack",
+                    "relation": "exposed",
+                    "object": "personal information of passengers"
+                },
+                {
+                    "subject": "personal information",
+                    "relation": "includes",
+                    "object": "emails"
+                },
+                {
+                    "subject": "personal information",
+                    "relation": "includes",
+                    "object": "names"
+                },
+                {
+                    "subject": "personal information",
+                    "relation": "includes",
+                    "object": "phone numbers"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "could sell",
+                    "object": "the information on the dark web"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "could use",
+                    "object": "the information to gain access to other accounts"
+                },
+                {
+                    "subject": "password",
+                    "relation": "got from",
+                    "object": "SWVL"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 2522,
+                "cost": 0.0020176
+            },
+            "output": {
+                "tokens": 195,
+                "cost": 0.00039
+            },
+            "total": {
+                "tokens": 2717,
+                "cost": 0.0024076
+            }
+        },
+        "time": 7.586238622665405,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-3-QD1-bee.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.06918652457343417
+                ],
+                [
+                    "Google_TAG: ukraine.json",
+                    0.0692389532546321
+                ],
+                [
+                    "Google_TAG: iranian.json",
+                    0.07009800775444085
+                ],
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.07020077948649801
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

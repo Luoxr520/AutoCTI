@@ -1,0 +1,72 @@
+{
+    "CTI": {
+        "text": "Intel\u2019s security teams identified a potential security vulnerability in the Intel Advanced Driver Assistance Systems Innovation Engine (ADAS IE) firmware that may allow escalation of privilege. With this vulnerability, a hacker could potentially take control of the automated driving elements of the vehicle.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Intel's security teams",
+                "relation": "identified",
+                "object": "a potential security vulnerability"
+            },
+            {
+                "subject": "a potential security vulnerability",
+                "relation": "is in",
+                "object": "Intel Advanced Driver Assistance Systems Innovation Engine (ADAS IE) firmware"
+            },
+            {
+                "subject": "a potential security vulnerability",
+                "relation": "may allow",
+                "object": "escalation of privilege"
+            },
+            {
+                "subject": "a hacker",
+                "relation": "could potentially take control of",
+                "object": "the automated driving elements of the vehicle"
+            }
+        ],
+        "triples_count": 4,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2431,
+                "cost": 0.0019448
+            },
+            "output": {
+                "tokens": 118,
+                "cost": 0.000236
+            },
+            "total": {
+                "tokens": 2549,
+                "cost": 0.0021808
+            }
+        },
+        "time": 4.98753809928894,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-11-5-QD1-8de.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: Lazarus.json",
+                    0.10037226112483807
+                ],
+                [
+                    "BleepingComputer: github.json",
+                    0.10113246574290699
+                ],
+                [
+                    "Microsoft: migraine-could.json",
+                    0.12307719425472717
+                ],
+                [
+                    "securityweek: rootkit.json",
+                    0.13322640309942568
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "CTI": {
+        "text": "During the Geneva International Motor Show, many of the cars were showing their location as being in Buckingham, England, and the year as 2036 due to a GPS spoofing attack.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "cars",
+                "relation": "showing",
+                "object": "location as being in Buckingham, England"
+            },
+            {
+                "subject": "cars",
+                "relation": "showing",
+                "object": "year as 2036"
+            },
+            {
+                "subject": "GPS spoofing attack",
+                "relation": "caused",
+                "object": "location and year misinformation"
+            }
+        ],
+        "triples_count": 3,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2996,
+                "cost": 0.0023967999999999997
+            },
+            "output": {
+                "tokens": 84,
+                "cost": 0.000168
+            },
+            "total": {
+                "tokens": 3080,
+                "cost": 0.0025648
+            }
+        },
+        "time": 5.314012050628662,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2019-3-1-QD1-bf9.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: chrome.json",
+                    0.03367749161255109
+                ],
+                [
+                    "securityweek: rootkit.json",
+                    0.03437132695686772
+                ],
+                [
+                    "AVERTIUM: uantum-ransomware.json",
+                    0.03650254520590677
+                ],
+                [
+                    "trendmicro: Comm-Apps.json",
+                    0.03810223558782052
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

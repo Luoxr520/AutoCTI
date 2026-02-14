@@ -1,0 +1,44 @@
+您是一名安全分析师，您正在通过阅读和提取有关网络威胁的报告来分析网络威胁。提取的信息应遵循 {“subject”： ...， “relation”： “...”， “object”： “...”} 的格式。并非所有信息都是有用的，有用的信息包括：威胁行为者、攻击模式、活动、身份、指标、基础设施、位置、工具、漏洞、恶意软件等MALOnt中的实体。我提供了 2 个示例，请阅读示例并学习如何提取有用的信息。最后，您应该从目标报告中提取三元组。您的响应必须是 JSON，而不是其他任何内容。
+示例 1：
+
+“CTI”：该恶意软件家族使用 .NET 框架，并利用域名服务 （DNS） 协议创建隐蔽通道并提供不同的后门功能。今年年初，乌克兰网络安全研究人员发现 Fighting Ursa 利用了 Microsoft Outlook 中的零日漏洞（现在称为 CVE-2023-23397）。此漏洞尤其令人担忧，因为它不需要用户交互即可利用。在过去 20 个月中，Unit 42 研究人员观察到该组织使用 CVE-2023-23397 以 14 个国家/地区内的至少 30 个组织为目标，这些组织可能对俄罗斯政府及其军队具有战略情报价值。
+
+"triplets": [
+{“subject”： “此恶意软件家族”， “relation”： “利用”， “object”： “.NET framework”}，
+{“subject”： “此恶意软件家族”， “relation”： “充分利用”， “object”： “域名服务 （DNS） 协议”}，
+{“subject”： “此恶意软件家族”， “relation”： “创建”， “object”： “隐蔽通道”}，
+{“subject”： “此恶意软件家族”， “relation”： “提供”， “object”： “不同的后门功能”}，
+{“subject”： “乌克兰网络安全研究人员”， “relation”： “发现”， “object”： “Fighting Ursa”}，
+{“subject”： “Fighting Ursa”， “relation”： “充分利用”， “object”： “Microsoft Outlook 中的零日漏洞”}，
+{“subject”： “Microsoft Outlook 中的零日漏洞”， “relation”： “已知”， “object”： “CVE-2023-23397”}，
+{“subject”： “CVE-2023-23397”， “relation”： “被利用”， “object”： “无用户交互”}，
+{“subject”： “Unit 42 researchers”， “relation”： “发现”， “object”： “Fighting Ursa”}，
+{“subject”： “Fighting Ursa”， “relation”： “used”， “object”： “CVE-2023-23397”}，
+{“subject”： “Fighting Ursa”， “relation”： “目标”， “object”： “14 个国家内至少 30 个组织”}，
+{“subject”： “14 个国家/地区的至少 30 个组织”， “relation”： “可能具有战略情报价值”， “object”： “俄罗斯政府及其军队”}
+]
+---------------------
+
+示例 2：
+
+“CTI”：Fighting Ursa（又名 APT28、Fancy Bear、Strontium/Forest Blizzard、Pawn Storm、Sofacy 或 Sednit）是一个与俄罗斯军事情报有关的组织，他们以关注俄罗斯感兴趣的目标而闻名——尤其是那些军事利益的目标。与大熊座战斗的功劳归于俄罗斯总参谋部主要情报局 （GRU） 第 85 特别服务中心 （GTsSS） 军事情报单位 26165。
+
+"triplets": [
+{“subject”： “Fighting Ursa”， “relation”： “已知”， “object”： “APT28”}，
+{“subject”： “Fighting Ursa”， “relation”： “已知为”， “object”： “Fancy Bear”}，
+{“subject”： “Fighting Ursa”， “relation”： “已知”， “object”： “Strontium/Forest Blizzard”}，
+{“subject”： “Fighting Ursa”， “relation”： “已知”， “object”： “Pawn Storm”}，
+{“subject”： “Fighting Ursa”， “relation”： “已知”， “object”： “Sofacy”}，
+{“subject”： “Fighting Ursa”， “relation”： “已知”， “object”： “Sednit”}，
+{“subject”： “Fighting Ursa”， “relation”： “是”， “object”： “与俄罗斯军事情报有关的团体”}，
+{“subject”： “Fighting Ursa”， “relation”： “关注”， “object”： “俄罗斯感兴趣的目标”}，
+{“subject”： “俄罗斯利益目标”， “relation”： “特别是”， “object”： “军事利益”}，
+{“subject”： “Fighting Ursa”， “relation”： “已被归因于”， “object”： “俄罗斯总参谋部总情报局 （GRU） 第 85 特别服务中心 （GTsSS） 军事情报单位 26165”}
+]
+---------------------
+目标报告：
+
+“CTI”： {{ "该勒索软件组织在勒索软件市场上是一个相对较新的参与者，它已经声称对最近的三起攻击负责。受害者包括：一家工程咨询公司；，包装材料生产厂家；还有托儿服务。在他们的泄密网站上列出了三名受害者的名字，威胁说如果他们拒绝支付赎金，就公布公司记录。研究人员发现了勒索木马，当时它似乎正处于测试阶段。该木马目前正在通过瞄准未受保护的网站，以特定的重点。一旦感染，丢弃一个或多个有效载荷文件。在感染后，勒索病毒会在Windows中创建多个注册表值之前留下一封勒索信，例如Run和RunOnce注册表。文件的存在意味着你的数据可能已经被勒索软件加密了。" }}
+
+"triplets":  “”“在此处插入您的答案”“”
+

@@ -1,0 +1,142 @@
+{
+    "CTI": {
+        "text": "This report is an overview of the FiveHands Ransomware variant that successfully attacked an organization (CISA release date May 6, 2021). CISA reports that the variant used publicly-available pen test and exploitation tools, plus FiveHands ransomware and SombRAT remote access trojan (RAT), to steal information, obfuscate files, accomplish network discovery, accomplish credential access, and demand ransom from the victim. Tools used include SoftPerfect Network Scanner, FiveHands ransomware, PsExec.exe, ServeManager.exe, SombRAT, RouterScan.exe, grabff.exe, rclone.exe, and s3browser-9-5-3.exe. The initial access vector was a zero-day vulnerability in a VPN product. What followed is that the bad actor used SoftPerfect Network Scanner for the discovery of hostnames and network services. PsExec was then used to execute ServeManager.exe (what CISA calls FiveHands ransomware). FiveHands is a novel ransomware variant that uses a public key encryption scheme called NTRUEncrypt. Note: the NTRUEncrypt public key cryptosystem encryption algorithm (NTRU), is a lattice-based alternative to Rivest-Shamir-Adleman, known as RSA, and Elliptic-curve cryptography, or ECC, and is based on the shortest vector problem in a lattice. To prevent data recovery, FiveHands uses WMI to first enumerate then delete Volume Shadow copies. The malware also encrypts files in the recovery folder. After the files are encrypted, the program will write a ransom note to each folder and directory on the system.",
+        "link": "https://explore.avertium.com/resource/fivehands-ransomware-overview"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "FiveHands Ransomware",
+                "relation": "attacked",
+                "object": "an organization"
+            },
+            {
+                "subject": "FiveHands Ransomware",
+                "relation": "used",
+                "object": "publicly-available pen test and exploitation tools"
+            },
+            {
+                "subject": "FiveHands Ransomware",
+                "relation": "used",
+                "object": "SombRAT remote access trojan (RAT)"
+            },
+            {
+                "subject": "FiveHands Ransomware",
+                "relation": "used",
+                "object": "SoftPerfect Network Scanner"
+            },
+            {
+                "subject": "FiveHands Ransomware",
+                "relation": "used",
+                "object": "PsExec.exe"
+            },
+            {
+                "subject": "FiveHands Ransomware",
+                "relation": "used",
+                "object": "ServeManager.exe"
+            },
+            {
+                "subject": "FiveHands Ransomware",
+                "relation": "used",
+                "object": "RouterScan.exe"
+            },
+            {
+                "subject": "FiveHands Ransomware",
+                "relation": "used",
+                "object": "grabff.exe"
+            },
+            {
+                "subject": "FiveHands Ransomware",
+                "relation": "used",
+                "object": "rclone.exe"
+            },
+            {
+                "subject": "FiveHands Ransomware",
+                "relation": "used",
+                "object": "s3browser-9-5-3.exe"
+            },
+            {
+                "subject": "initial access vector",
+                "relation": "was a",
+                "object": "zero-day vulnerability in a VPN product"
+            },
+            {
+                "subject": "bad actor",
+                "relation": "used",
+                "object": "SoftPerfect Network Scanner for discovery of hostnames and network services"
+            },
+            {
+                "subject": "bad actor",
+                "relation": "used",
+                "object": "PsExec to execute ServeManager.exe"
+            },
+            {
+                "subject": "FiveHands ransomware",
+                "relation": "is a novel variant that uses",
+                "object": "NTRUEncrypt public key encryption scheme"
+            },
+            {
+                "subject": "NTRUEncrypt",
+                "relation": "is a lattice-based alternative to",
+                "object": "RSA and ECC"
+            },
+            {
+                "subject": "FiveHands",
+                "relation": "uses WMI to enumerate then delete",
+                "object": "Volume Shadow copies"
+            },
+            {
+                "subject": "FiveHands",
+                "relation": "encrypts files in",
+                "object": "the recovery folder"
+            },
+            {
+                "subject": "FiveHands",
+                "relation": "writes a ransom note to",
+                "object": "each folder and directory on the system"
+            }
+        ],
+        "triples_count": 18,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3315,
+                "cost": 0.002652
+            },
+            "output": {
+                "tokens": 508,
+                "cost": 0.001016
+            },
+            "total": {
+                "tokens": 3823,
+                "cost": 0.003668
+            }
+        },
+        "time": 29.745457410812378,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\AVERTIUM\\fivehands-QD1-338.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: cactus.json",
+                    0.11865635308595339
+                ],
+                [
+                    "symantec: 3AM.json",
+                    0.12380446916709129
+                ],
+                [
+                    "AVERTIUM: fargo.json",
+                    0.12997667496974388
+                ],
+                [
+                    "AVERTIUM: yanluowang.json",
+                    0.1459535246980436
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "CTI": {
+        "text": "A new ransomware family calling itself 3AM has emerged. To date, the ransomware has only been used in a limited fashion. Symantec's Threat Hunter Team, part of Broadcom, has seen it used in a single attack by a ransomware affiliate that attempted to deploy LockBit on a target's network and then switched to 3AM when LockBit was blocked. 3AM is written in Rust and appears to be a completely new malware family. The ransomware attempts to stop multiple services on the infected computer before it begins encrypting files. Once encryption is complete, it attempts to delete Volume Shadow (VSS) copies. It is still unclear whether its authors have any links to known cybercrime organizations. ",
+        "link": ""
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "3AM ransomware",
+                "relation": "has emerged",
+                "object": "as a new ransomware family"
+            },
+            {
+                "subject": "3AM ransomware",
+                "relation": "has been used",
+                "object": "in a limited fashion"
+            },
+            {
+                "subject": "Symantec's Threat Hunter Team",
+                "relation": "observed",
+                "object": "3AM ransomware in a single attack"
+            },
+            {
+                "subject": "ransomware affiliate",
+                "relation": "attempted to deploy",
+                "object": "LockBit on a target's network"
+            },
+            {
+                "subject": "ransomware affiliate",
+                "relation": "switched to",
+                "object": "3AM when LockBit was blocked"
+            },
+            {
+                "subject": "3AM ransomware",
+                "relation": "is written in",
+                "object": "Rust"
+            },
+            {
+                "subject": "3AM ransomware",
+                "relation": "appears to be",
+                "object": "a completely new malware family"
+            },
+            {
+                "subject": "3AM ransomware",
+                "relation": "attempts to stop",
+                "object": "multiple services on the infected computer"
+            },
+            {
+                "subject": "3AM ransomware",
+                "relation": "deletes",
+                "object": "Volume Shadow (VSS) copies after encryption"
+            },
+            {
+                "subject": "authors of 3AM",
+                "relation": "have unclear links to",
+                "object": "known cybercrime organizations"
+            }
+        ],
+        "triples_count": 10,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3226,
+                "cost": 0.0025808
+            },
+            "output": {
+                "tokens": 299,
+                "cost": 0.000598
+            },
+            "total": {
+                "tokens": 3525,
+                "cost": 0.0031788
+            }
+        },
+        "time": 19.286778211593628,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\symantec\\3AM-QD1-c72.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: mallox.json",
+                    0.12441845523500514
+                ],
+                [
+                    "AVERTIUM: royal-ransomware.json",
+                    0.12788639308137553
+                ],
+                [
+                    "trendmicro: LockBit.json",
+                    0.13628145706744732
+                ],
+                [
+                    "AVERTIUM: yanluowang.json",
+                    0.17874146253944415
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

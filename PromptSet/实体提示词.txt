@@ -1,0 +1,113 @@
+“将给定三元组的主语和宾语分为下列类别之一：
+[
+    "Account",
+    "Action",
+    "Attacker",
+    "Campaign",
+    "Event",
+    "Exploit Target Object",
+    "Host",
+    {
+        "Indicator":[
+            "Adress",
+            "Email",
+            "File",
+            "Hash"
+        ]
+    },
+    "Information",
+    "Location",
+    "Malware",
+    "Malware Characteristic",
+    "Malware Family",
+    "Organization",
+    "Software",
+    "System",
+    "Time",
+    "Vulnerability",
+    "这个实体不能归类到任何现有类型"
+]
+你的响应必须是JSON格式，不能有其他内容。
+---------------------
+示例 1：
+
+“triple”： {“subject”： “Akira 勒索软件组织”， “relation”： “是”， “object”： “勒索软件市场中相对较新的参与者”}
+
+“tagged_triple”： {“subject”： {“text”： “Akira 勒索软件组”， “class”： “攻击者”}， “relation”： “是”， “object”： {“text”： “勒索软件市场中相对较新的参与者”， “class”： “此实体不能归类为任何现有类型”}}
+---------------------
+示例 2：
+
+“triple”： {“subject”： “Akira 勒索软件组织”， “relation”： “声称对以下事件负责”， “object”： “最近的三次攻击”}
+
+“tagged_triple”： {“subject”： {“text”： “Akira 勒索软件组”， “class”： “攻击者”}， “relation”： “声称负责”， “object”： {“text”： “最近的三次攻击”， “class”： “事件”}}
+---------------------
+示例 3：
+
+“triple”： {“subject”： “受害者”， “relation”： “包括”， “object”： “4LEAF”}
+
+“tagged_triple”： {“subject”： {“text”： “受害者”， “class”： “利用目标对象”}， “relation”： “包括”， “object”： {“text”： “4LEAF”， “class”： “利用目标对象”}}
+---------------------
+
+
+“triple”：： {'subject'： 'Akira 勒索软件组织'， 'relation'： '是'， 'object'： '勒索软件市场中相对较新的参与者'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： 'Akira 勒索软件组织'， 'relation'： '声称对此负责'， 'object'： '最近的三次攻击'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： '受害者'， 'relation'： '包括'， 'object'： '4LEAF'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： '受害者'， 'relation'： '包括'， 'object'： 'Park-Rite'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： '受害者'， 'relation'： '包括'， 'object'： '家庭日托服务'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： 'Akira'， 'relation'： '列出'， 'object'： '泄露网站上三名受害者的姓名'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： 'Akira'， 'relation'： '威胁'， 'object'： '如果公司拒绝支付赎金，则公布公司记录'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： '研究人员'， 'relation'： '发现'， 'object'： '2017 年 8 月 28 日的勒索软件木马'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： '特洛伊木马'， 'relation'： '似乎是'， 'object'： '处于测试阶段'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： '木马'， 'relation'： '正在分发'， 'object'： '针对未受保护的网站'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： '特洛伊木马'， 'relation'： '有特定的关注点'， 'object'： 'WordPress 网站'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： 'Akira'， 'relation'： '掉落'， 'object'： '一个或多个有效负载文件'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： 'Akira'， 'relation'： '留下'， 'object'： '赎金票据'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： 'Akira'， 'relation'： '创建'， 'object'： 'Windows 中的多个注册表值'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+“triple”：： {'subject'： '存在 .akira 文件'， 'relation'： '意味着'， 'object'： '您的数据可能已被 Akira 勒索软件加密'}
+
+“tagged_triple”： “”“在此处插入您的答案”“”
+---------------------
+
+您的回答应遵循以下格式：{“tagged_triples”： ['tagged_triple_1'， 'tagged_triple_2'， ...， 'tagged_triple_n']}”

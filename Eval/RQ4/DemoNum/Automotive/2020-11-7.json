@@ -1,0 +1,122 @@
+{
+    "CTI": {
+        "text": "A researcher discovered vulnerabilities in Tesla Model X cars and their keyless entry fobs and was able to fully unlock, start, and steal a vehicle. Tesla designed its Model X key fobs to receive over-the-air firmware updates via Bluetooth by wirelessly connecting to the computer inside a Model X, but without confirming that the new firmware code included unforgeable cryptographic signature from Tesla. The researcher built a custom-made $300 Tesla Model X hacking tool which included a Model X body control module, a disassembled key fob, a Raspberry Pi minicomputer, and a battery. The researcher used a personal computer with a Bluetooth radio to connect to a target Model X's keyfob, rewrite the firmware, query the secure enclave chip inside the fob that generated an unlock code for the vehicle, and then sent that code back to the personal computer via Bluetooth. The whole process took 90 seconds.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Tesla Model X cars",
+                "relation": "has vulnerabilities in",
+                "object": "keyless entry fobs"
+            },
+            {
+                "subject": "Tesla Model X key fobs",
+                "relation": "designed to receive",
+                "object": "over-the-air firmware updates via Bluetooth"
+            },
+            {
+                "subject": "over-the-air firmware updates",
+                "relation": "lack",
+                "object": "unforgeable cryptographic signature from Tesla"
+            },
+            {
+                "subject": "researcher",
+                "relation": "built",
+                "object": "a custom-made Tesla Model X hacking tool"
+            },
+            {
+                "subject": "custom-made Tesla Model X hacking tool",
+                "relation": "includes",
+                "object": "Model X body control module"
+            },
+            {
+                "subject": "custom-made Tesla Model X hacking tool",
+                "relation": "includes",
+                "object": "disassembled key fob"
+            },
+            {
+                "subject": "custom-made Tesla Model X hacking tool",
+                "relation": "includes",
+                "object": "Raspberry Pi minicomputer"
+            },
+            {
+                "subject": "custom-made Tesla Model X hacking tool",
+                "relation": "includes",
+                "object": "battery"
+            },
+            {
+                "subject": "researcher",
+                "relation": "used",
+                "object": "a personal computer with a Bluetooth radio"
+            },
+            {
+                "subject": "personal computer with a Bluetooth radio",
+                "relation": "connects to",
+                "object": "target Model X's keyfob"
+            },
+            {
+                "subject": "personal computer with a Bluetooth radio",
+                "relation": "rewrites",
+                "object": "firmware"
+            },
+            {
+                "subject": "personal computer with a Bluetooth radio",
+                "relation": "queries",
+                "object": "secure enclave chip inside the fob"
+            },
+            {
+                "subject": "secure enclave chip inside the fob",
+                "relation": "generates",
+                "object": "unlock code for the vehicle"
+            },
+            {
+                "subject": "personal computer with a Bluetooth radio",
+                "relation": "sends",
+                "object": "unlock code back to the personal computer via Bluetooth"
+            }
+        ],
+        "triples_count": 14,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2171,
+                "cost": 0.0017368
+            },
+            "output": {
+                "tokens": 415,
+                "cost": 0.00083
+            },
+            "total": {
+                "tokens": 2586,
+                "cost": 0.0025668
+            }
+        },
+        "time": 19.862831830978394,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-11-7-QD1-6a1.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "trendmicro: BlackCat.json",
+                    0.052186753333799636
+                ],
+                [
+                    "trendmicro: Crysis.json",
+                    0.06619620138012103
+                ],
+                [
+                    "darkreading: Microsoft-Office-Bug.json",
+                    0.06879192492332771
+                ],
+                [
+                    "darkreading: Bluetooth-Flaw.json",
+                    0.1724401225372707
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

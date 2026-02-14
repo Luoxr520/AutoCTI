@@ -1,0 +1,99 @@
+{
+    "CTI": {
+        "text": "A vulnerability in ARMv7 implementation of GNU C Library leaves smart vehicles open to attack through a vulnerable web server exposed through the vehicle\u2019s Wi-Fi network. The vulnerability causes the program execution to continue with corrupted runtime state and allows exploitation after gaining access to the vehicle\u2019s Wi-Fi network. Exploitation of this vulnerability could lead to undefined behavior such as writing to out-of-bounds memory and potentially remote code execution on the vehicle.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "vulnerability",
+                    "relation": "is in",
+                    "object": "ARMv7 implementation of GNU C Library"
+                },
+                {
+                    "subject": "vulnerability",
+                    "relation": "leaves open to attack",
+                    "object": "smart vehicles"
+                },
+                {
+                    "subject": "attack",
+                    "relation": "through",
+                    "object": "vulnerable web server"
+                },
+                {
+                    "subject": "vulnerable web server",
+                    "relation": "exposed through",
+                    "object": "vehicle\u2019s Wi-Fi network"
+                },
+                {
+                    "subject": "vulnerability",
+                    "relation": "causes",
+                    "object": "program execution to continue with corrupted runtime state"
+                },
+                {
+                    "subject": "vulnerability",
+                    "relation": "allows",
+                    "object": "exploitation after gaining access to the vehicle\u2019s Wi-Fi network"
+                },
+                {
+                    "subject": "exploitation",
+                    "relation": "could lead to",
+                    "object": "undefined behavior"
+                },
+                {
+                    "subject": "undefined behavior",
+                    "relation": "such as",
+                    "object": "writing to out-of-bounds memory"
+                },
+                {
+                    "subject": "exploitation",
+                    "relation": "potentially leads to",
+                    "object": "remote code execution on the vehicle"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2289,
+                "cost": 0.0018311999999999998
+            },
+            "output": {
+                "tokens": 254,
+                "cost": 0.000508
+            },
+            "total": {
+                "tokens": 2543,
+                "cost": 0.0023391999999999996
+            }
+        },
+        "time": 11.0060453414917,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-17-QD1-8f0.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: apple.json",
+                    0.08838054058498598
+                ],
+                [
+                    "threatPost: Dogwalk.json",
+                    0.08953824884661933
+                ],
+                [
+                    "BleepingComputer: github.json",
+                    0.10197561144121774
+                ],
+                [
+                    "BleepingComputer: chrome.json",
+                    0.1747349802673948
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

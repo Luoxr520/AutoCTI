@@ -1,0 +1,89 @@
+{
+    "CTI": {
+        "text": "Researchers found a vulnerability in OBDeleven OBD-II which allowed hackers to unlock its premium features free of charge. The OBD-II is controlled via a bluetooth connected app which requires a paid subscription, allowing in-depth access to the ECU for advanced diagnostics and configurations. However, the connection to the ECU was done via the app\u2019s API, regardless of the payment status, and the vulnerability allowed users to use the app directly via the API without making a payment. In addition to the financial damage to the company, the vulnerability opened an entry point for attackers to access the ECU and inject messages.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Researchers",
+                    "relation": "found",
+                    "object": "a vulnerability in OBDeleven OBD-II"
+                },
+                {
+                    "subject": "The vulnerability",
+                    "relation": "allowed",
+                    "object": "hackers to unlock its premium features free of charge"
+                },
+                {
+                    "subject": "OBD-II",
+                    "relation": "is controlled via",
+                    "object": "a bluetooth connected app"
+                },
+                {
+                    "subject": "The bluetooth connected app",
+                    "relation": "requires",
+                    "object": "a paid subscription"
+                },
+                {
+                    "subject": "The connection to the ECU",
+                    "relation": "was done via",
+                    "object": "the app\u2019s API"
+                },
+                {
+                    "subject": "The vulnerability",
+                    "relation": "allowed users to use",
+                    "object": "the app directly via the API without making a payment"
+                },
+                {
+                    "subject": "The vulnerability",
+                    "relation": "opened an entry point for attackers",
+                    "object": "to access the ECU and inject messages"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2748,
+                "cost": 0.0021984
+            },
+            "output": {
+                "tokens": 210,
+                "cost": 0.00041999999999999996
+            },
+            "total": {
+                "tokens": 2958,
+                "cost": 0.0026184
+            }
+        },
+        "time": 12.21529245376587,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-11-6-QD1-670.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "symantec: Graphican.json",
+                    0.0907993316472363
+                ],
+                [
+                    "securityweek: magento.json",
+                    0.09200586092952875
+                ],
+                [
+                    "darkreading: Bluetooth-Flaw.json",
+                    0.09698205360033381
+                ],
+                [
+                    "AVERTIUM: CVE-2023-36884.json",
+                    0.11554872839539829
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

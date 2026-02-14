@@ -1,0 +1,99 @@
+{
+    "CTI": {
+        "text": "2 years after hacking Indian car-rental platform, Zoomcar, the hackers publicly offered the information of 3.5 million app users for sale on the dark web. The hackers waited two years before making the offer public to avoid being caught by officials tracking their IP addresses. For $300, one can buy the usernames, passwords, emails, phone numbers, and IP addresses and potentially use the information to hack accounts on other platforms.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "hackers",
+                    "relation": "hacked",
+                    "object": "Indian car-rental platform Zoomcar"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "offered for sale",
+                    "object": "information of 3.5 million app users"
+                },
+                {
+                    "subject": "the information",
+                    "relation": "includes",
+                    "object": "usernames"
+                },
+                {
+                    "subject": "the information",
+                    "relation": "includes",
+                    "object": "passwords"
+                },
+                {
+                    "subject": "the information",
+                    "relation": "includes",
+                    "object": "emails"
+                },
+                {
+                    "subject": "the information",
+                    "relation": "includes",
+                    "object": "phone numbers"
+                },
+                {
+                    "subject": "the information",
+                    "relation": "includes",
+                    "object": "IP addresses"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "waited",
+                    "object": "two years before making the offer public"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "reason for waiting",
+                    "object": "to avoid being caught by officials tracking their IP addresses"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2356,
+                "cost": 0.0018847999999999998
+            },
+            "output": {
+                "tokens": 231,
+                "cost": 0.00046199999999999995
+            },
+            "total": {
+                "tokens": 2587,
+                "cost": 0.0023467999999999996
+            }
+        },
+        "time": 8.7677001953125,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-11-QD1-2e4.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Google_TAG: iranian.json",
+                    0.06959696048331265
+                ],
+                [
+                    "trendmicro: Crysis.json",
+                    0.07270858366367065
+                ],
+                [
+                    "darkreading: SilverRAT.json",
+                    0.07296022891304506
+                ],
+                [
+                    "darkreading: CitrixBleed.json",
+                    0.07555022114096926
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

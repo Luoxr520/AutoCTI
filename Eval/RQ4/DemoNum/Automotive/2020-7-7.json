@@ -1,0 +1,99 @@
+{
+    "CTI": {
+        "text": "Toronto\u2019s police released a video from a surveillance camera where thieves used a signal booster to steal a Lexus vehicle from the owner's driveway. In the video, one of the thieves stood near the front door of the house and pulled out a device to capture the signal being emitted from the keyless fob, which was located near the inside entrance of the house. The boosted signal unlocked the car and also started the vehicle\u2019s engine, allowing the thieves to flee with the vehicle.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "thieves",
+                    "relation": "used",
+                    "object": "a signal booster"
+                },
+                {
+                    "subject": "thieves",
+                    "relation": "stole",
+                    "object": "a Lexus vehicle"
+                },
+                {
+                    "subject": "one of the thieves",
+                    "relation": "stood near",
+                    "object": "the front door of the house"
+                },
+                {
+                    "subject": "one of the thieves",
+                    "relation": "pulled out",
+                    "object": "a device"
+                },
+                {
+                    "subject": "a device",
+                    "relation": "captured",
+                    "object": "the signal being emitted from the keyless fob"
+                },
+                {
+                    "subject": "the signal",
+                    "relation": "emitted from",
+                    "object": "the keyless fob"
+                },
+                {
+                    "subject": "the keyless fob",
+                    "relation": "located near",
+                    "object": "the inside entrance of the house"
+                },
+                {
+                    "subject": "the boosted signal",
+                    "relation": "unlocked",
+                    "object": "the car"
+                },
+                {
+                    "subject": "the boosted signal",
+                    "relation": "started",
+                    "object": "the vehicle\u2019s engine"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 2947,
+                "cost": 0.0023576
+            },
+            "output": {
+                "tokens": 240,
+                "cost": 0.00047999999999999996
+            },
+            "total": {
+                "tokens": 3187,
+                "cost": 0.0028376
+            }
+        },
+        "time": 11.84328293800354,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-7-QD1-e1b.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "threatPost: zuorat.json",
+                    0.03135912153178608
+                ],
+                [
+                    "securityweek: vultur.json",
+                    0.03477500824390661
+                ],
+                [
+                    "Unit42: Diplomats-Beware.json",
+                    0.03539984580350436
+                ],
+                [
+                    "darkreading: Zimbra.json",
+                    0.03700186995721989
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

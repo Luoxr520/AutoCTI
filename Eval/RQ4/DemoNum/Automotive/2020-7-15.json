@@ -1,0 +1,72 @@
+{
+    "CTI": {
+        "text": "Toyota revealed that researchers found a buffer overflow vulnerability in the Global TechStream (GTS) diagnostic cable. The vulnerability could allow an attacker to execute arbitrary code or cause a denial of service (DoS) condition.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Toyota",
+                "relation": "revealed",
+                "object": "researchers found a buffer overflow vulnerability"
+            },
+            {
+                "subject": "buffer overflow vulnerability",
+                "relation": "is in",
+                "object": "the Global TechStream (GTS) diagnostic cable"
+            },
+            {
+                "subject": "vulnerability",
+                "relation": "could allow",
+                "object": "an attacker to execute arbitrary code"
+            },
+            {
+                "subject": "vulnerability",
+                "relation": "could cause",
+                "object": "a denial of service (DoS) condition"
+            }
+        ],
+        "triples_count": 4,
+        "cost": {
+            "model": "qwen-plus-latest",
+            "input": {
+                "tokens": 1917,
+                "cost": 0.0015336
+            },
+            "output": {
+                "tokens": 116,
+                "cost": 0.000232
+            },
+            "total": {
+                "tokens": 2033,
+                "cost": 0.0017656
+            }
+        },
+        "time": 3.9954512119293213,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-7-15-QD1-acc.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "BleepingComputer: apple.json",
+                    0.09925549812073728
+                ],
+                [
+                    "BleepingComputer: github.json",
+                    0.1017873288314663
+                ],
+                [
+                    "symantec: Follina.json",
+                    0.10891256956807789
+                ],
+                [
+                    "Microsoft: migraine-could.json",
+                    0.12454440585573144
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

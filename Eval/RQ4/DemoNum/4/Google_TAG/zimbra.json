@@ -1,0 +1,132 @@
+{
+    "CTI": {
+        "text": "In June 2023, Google\u2019s Threat Analysis Group (TAG) discovered an in-the-wild 0-day exploit targeting Zimbra Collaboration, an email server many organizations use to host their email. Since discovering the 0-day, now patched as CVE-2023-37580, TAG has observed four different groups exploiting the same bug to steal email data, user credentials, and authentication tokens. Most of this activity occurred after the initial fix became public on Github. CVE-2023-37580 is a reflected cross-site scripting (XSS) vulnerability. XSS is a web application vulnerability that allows malicious scripts to be injected into another website. In this case, there was a vulnerability in Zimbra that injected the parameter within the URL directly into the webpage, causing the script to be executed. ",
+        "link": "https://blog.google/threat-analysis-group/zimbra-0-day-used-to-target-international-government-organizations/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Google\u2019s Threat Analysis Group (TAG)",
+                "relation": "discovered",
+                "object": "an in-the-wild 0-day exploit"
+            },
+            {
+                "subject": "an in-the-wild 0-day exploit",
+                "relation": "targeting",
+                "object": "Zimbra Collaboration"
+            },
+            {
+                "subject": "Zimbra Collaboration",
+                "relation": "is an",
+                "object": "email server"
+            },
+            {
+                "subject": "Zimbra Collaboration",
+                "relation": "used by",
+                "object": "many organizations to host their email"
+            },
+            {
+                "subject": "the 0-day",
+                "relation": "now patched as",
+                "object": "CVE-2023-37580"
+            },
+            {
+                "subject": "Google\u2019s Threat Analysis Group (TAG)",
+                "relation": "observed",
+                "object": "four different groups exploiting the same bug"
+            },
+            {
+                "subject": "four different groups",
+                "relation": "exploiting",
+                "object": "CVE-2023-37580"
+            },
+            {
+                "subject": "CVE-2023-37580",
+                "relation": "to steal",
+                "object": "email data"
+            },
+            {
+                "subject": "CVE-2023-37580",
+                "relation": "to steal",
+                "object": "user credentials"
+            },
+            {
+                "subject": "CVE-2023-37580",
+                "relation": "to steal",
+                "object": "authentication tokens"
+            },
+            {
+                "subject": "this activity",
+                "relation": "occurred after",
+                "object": "the initial fix became public on Github"
+            },
+            {
+                "subject": "CVE-2023-37580",
+                "relation": "is a",
+                "object": "reflected cross-site scripting (XSS) vulnerability"
+            },
+            {
+                "subject": "XSS",
+                "relation": "is a",
+                "object": "web application vulnerability"
+            },
+            {
+                "subject": "XSS",
+                "relation": "allows",
+                "object": "malicious scripts to be injected into another website"
+            },
+            {
+                "subject": "vulnerability in Zimbra",
+                "relation": "injected",
+                "object": "the parameter within the URL directly into the webpage"
+            },
+            {
+                "subject": "injection of the parameter",
+                "relation": "causing",
+                "object": "the script to be executed"
+            }
+        ],
+        "triples_count": 16,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2572,
+                "cost": 0.0020575999999999997
+            },
+            "output": {
+                "tokens": 500,
+                "cost": 0.001
+            },
+            "total": {
+                "tokens": 3072,
+                "cost": 0.0030575999999999997
+            }
+        },
+        "time": 29.035025358200073,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\Google_TAG\\zimbra-QD1-48b.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: Google-Patches.json",
+                    0.13876382636688994
+                ],
+                [
+                    "Google_TAG: north-korean-campaign.json",
+                    0.1423932836833443
+                ],
+                [
+                    "Google_TAG: apt37.json",
+                    0.1662680635242925
+                ],
+                [
+                    "darkreading: Zimbra.json",
+                    0.4453872046902282
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

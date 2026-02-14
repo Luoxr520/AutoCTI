@@ -1,0 +1,51 @@
+{
+    "CTI": {
+        "text": "Thames Valley, UK Police released videos documenting four different cases of keyless theft that occurred in South Oxfordshire and the Vale of White Horse region. Three BMWs were stolen, including a BMW M4. It is believed the offenders used scanning devices to steal the vehicle from its driveway.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [],
+        "triples_count": 0,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2998,
+                "cost": 0.0023983999999999998
+            },
+            "output": {
+                "tokens": 5,
+                "cost": 9.999999999999999e-06
+            },
+            "total": {
+                "tokens": 3003,
+                "cost": 0.0024083999999999998
+            }
+        },
+        "time": 2.8373165130615234,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-20-QD1-f03.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: muddywater.json",
+                    0.045438162468544
+                ],
+                [
+                    "BleepingComputer: androxgh0st.json",
+                    0.0508934013795799
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.06076581258205882
+                ],
+                [
+                    "Google_TAG: zimbra.json",
+                    0.06320300377983792
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

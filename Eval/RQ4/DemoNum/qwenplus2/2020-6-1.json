@@ -1,0 +1,77 @@
+{
+    "CTI": {
+        "text": "Hackers attacked the website of the UzAuto automaker (formerly known as GM Uzbekistan). The attack caused a temporary malfunction of the site, but due to the efforts of the company's IT experts, not a single file or page on the site were damaged, and the site resumed operations after a short period of time.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Hackers",
+                "relation": "attacked",
+                "object": "the website of the UzAuto automaker"
+            },
+            {
+                "subject": "UzAuto automaker",
+                "relation": "formerly known as",
+                "object": "GM Uzbekistan"
+            },
+            {
+                "subject": "The attack",
+                "relation": "caused",
+                "object": "a temporary malfunction of the site"
+            },
+            {
+                "subject": "company's IT experts",
+                "relation": "ensured",
+                "object": "no files or pages were damaged"
+            },
+            {
+                "subject": "The site",
+                "relation": "resumed operations after",
+                "object": "a short period of time"
+            }
+        ],
+        "triples_count": 5,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2830,
+                "cost": 0.002264
+            },
+            "output": {
+                "tokens": 143,
+                "cost": 0.000286
+            },
+            "total": {
+                "tokens": 2973,
+                "cost": 0.00255
+            }
+        },
+        "time": 7.7346343994140625,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-6-1-QD1-a0a.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "darkreading: Google-Patches.json",
+                    0.061910297431922945
+                ],
+                [
+                    "AVERTIUM: fancy-bear.json",
+                    0.06251928917978634
+                ],
+                [
+                    "trendmicro: Earth-Kitsune.json",
+                    0.08136339525173936
+                ],
+                [
+                    "trendmicro: TargetCompany.json",
+                    0.09073525119069092
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

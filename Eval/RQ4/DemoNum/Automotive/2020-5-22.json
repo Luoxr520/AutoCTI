@@ -1,0 +1,51 @@
+{
+    "CTI": {
+        "text": "The West Midlands police reported that they recovered a Ford Fiesta stolen using a keyless theft device.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [],
+        "triples_count": 0,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3101,
+                "cost": 0.0024808
+            },
+            "output": {
+                "tokens": 5,
+                "cost": 9.999999999999999e-06
+            },
+            "total": {
+                "tokens": 3106,
+                "cost": 0.0024908
+            }
+        },
+        "time": 2.5138838291168213,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-22-QD1-be6.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: vultur.json",
+                    0.04047037512008872
+                ],
+                [
+                    "AVERTIUM: muddywater.json",
+                    0.04215325736561304
+                ],
+                [
+                    "BleepingComputer: androxgh0st.json",
+                    0.056154976190930316
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.06186496152178465
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

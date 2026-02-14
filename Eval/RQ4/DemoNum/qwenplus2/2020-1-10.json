@@ -1,0 +1,51 @@
+{
+    "CTI": {
+        "text": "Developers used Tesla\u2019s mobile app API to create a private monitor and control adaptation for desktops. The open sourced app communicates with Tesla servers and can perform main Tesla mobile app capabilities. The app can track the location and statuses of the vehicle, take remote control of the vehicle\u2019s temperature, and control it's locks. The app can also turn on/off the Sentry mode feature - a Tesla feature allowing the recording of record suspicious activities around a parked vehicle.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [],
+        "triples_count": 0,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2744,
+                "cost": 0.0021952
+            },
+            "output": {
+                "tokens": 5,
+                "cost": 9.999999999999999e-06
+            },
+            "total": {
+                "tokens": 2749,
+                "cost": 0.0022052
+            }
+        },
+        "time": 1.9587316513061523,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-1-10-QD1-5b7.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: app-installer.json",
+                    0.07186349802788686
+                ],
+                [
+                    "BleepingComputer: purplefox.json",
+                    0.07576606401718103
+                ],
+                [
+                    "Microsoft: lure-indian-users.json",
+                    0.10633626329980939
+                ],
+                [
+                    "thehackernews: Xamalicious.json",
+                    0.13853214419461699
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

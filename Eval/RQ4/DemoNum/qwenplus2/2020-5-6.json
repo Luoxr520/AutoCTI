@@ -1,0 +1,84 @@
+{
+    "CTI": {
+        "text": "International rail vehicle construction company, Stadler, disclosed that it was the victim of a cyberattack in which attackers may have stolen company and employee data. The hackers attempted to blackmail the company, demanding large sums of money, and put pressure on Stadler by threatening to publish the private data.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Stadler",
+                    "relation": "was the victim of",
+                    "object": "a cyberattack"
+                },
+                {
+                    "subject": "attackers",
+                    "relation": "may have stolen",
+                    "object": "company and employee data"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "attempted to blackmail",
+                    "object": "Stadler"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "demanded",
+                    "object": "large sums of money"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "put pressure on",
+                    "object": "Stadler"
+                },
+                {
+                    "subject": "hackers",
+                    "relation": "threatened to publish",
+                    "object": "private data"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2382,
+                "cost": 0.0019056
+            },
+            "output": {
+                "tokens": 158,
+                "cost": 0.000316
+            },
+            "total": {
+                "tokens": 2540,
+                "cost": 0.0022216
+            }
+        },
+        "time": 6.221066474914551,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-5-6-QD1-441.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: screenconnect.json",
+                    0.05850904617094154
+                ],
+                [
+                    "trendmicro: Trigona.json",
+                    0.05928736389934678
+                ],
+                [
+                    "BleepingComputer: microsoft.json",
+                    0.06510989714085288
+                ],
+                [
+                    "threatPost: Microsoft.json",
+                    0.07863467632295136
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

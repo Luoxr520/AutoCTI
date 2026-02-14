@@ -1,0 +1,104 @@
+{
+    "CTI": {
+        "text": "Researchers reverse-engineered a TCU of a vehicle and discovered that they were able to utilize the telematics connection to infiltrate the corporate network and gain full control of the network using admin credentials. By pulling out the SIM card from the TCU and plugging it to a laptop, the researchers were able to utilize the SIM's access to the telematics private APN, which was connected to the telematics backend using a VPN. Since the VPN had no significant segregation from the rest of the corporate network, the researchers were able to access the corporate network and servers outside the TCU backend.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Researchers",
+                    "relation": "reverse-engineered",
+                    "object": "a TCU of a vehicle"
+                },
+                {
+                    "subject": "TCU",
+                    "relation": "has",
+                    "object": "telematics connection"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "utilized",
+                    "object": "telematics connection"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "gained",
+                    "object": "full control of the network"
+                },
+                {
+                    "subject": "full control",
+                    "relation": "used",
+                    "object": "admin credentials"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "pulled out",
+                    "object": "SIM card from the TCU"
+                },
+                {
+                    "subject": "SIM card",
+                    "relation": "has access to",
+                    "object": "telematics private APN"
+                },
+                {
+                    "subject": "telematics private APN",
+                    "relation": "is connected to",
+                    "object": "telematics backend using a VPN"
+                },
+                {
+                    "subject": "VPN",
+                    "relation": "has no significant segregation from",
+                    "object": "the rest of the corporate network"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "accessed",
+                    "object": "corporate network and servers"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 3243,
+                "cost": 0.0025943999999999997
+            },
+            "output": {
+                "tokens": 264,
+                "cost": 0.0005279999999999999
+            },
+            "total": {
+                "tokens": 3507,
+                "cost": 0.0031223999999999996
+            }
+        },
+        "time": 16.556771993637085,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-4-6-QD1-d2f.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.07365489692502006
+                ],
+                [
+                    "symantec: Grayfly.json",
+                    0.07370454882047676
+                ],
+                [
+                    "Unit42: Exposed-IAM-Keys.json",
+                    0.08062367547372579
+                ],
+                [
+                    "Microsoft: flax-typhoon.json",
+                    0.09427393459066995
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

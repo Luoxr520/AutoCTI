@@ -1,0 +1,92 @@
+{
+    "CTI": {
+        "text": "Log4j has been making headlines recently after the public disclosure of three critical vulnerabilities in the utility which can lead to remote code execution (CVE-2021-44228 and CVE-2021-45046) and denial of service (CVE-2021-45105). The initial remote code execution vulnerability (CVE-2021-44228) has been dubbed Log4Shell and has dominated cyber-security news ever since it was publicly disclosed on December 9. The vulnerability has been exploited to deploy a plethora of payloads like coin miners, Dridex malware, and even ransomware such as Conti.",
+        "link": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/log4j-vulnerabilities-attacks"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Log4j",
+                "relation": "has",
+                "object": "three critical vulnerabilities"
+            },
+            {
+                "subject": "vulnerabilities",
+                "relation": "can lead to",
+                "object": "remote code execution and denial of service"
+            },
+            {
+                "subject": "CVE-2021-44228",
+                "relation": "is a",
+                "object": "remote code execution vulnerability"
+            },
+            {
+                "subject": "CVE-2021-45046",
+                "relation": "is a",
+                "object": "remote code execution vulnerability"
+            },
+            {
+                "subject": "CVE-2021-45105",
+                "relation": "is a",
+                "object": "denial of service vulnerability"
+            },
+            {
+                "subject": "initial remote code execution vulnerability",
+                "relation": "dubbed",
+                "object": "Log4Shell"
+            },
+            {
+                "subject": "Log4Shell",
+                "relation": "has been exploited to deploy",
+                "object": "a plethora of payloads"
+            },
+            {
+                "subject": "payloads",
+                "relation": "include",
+                "object": "coin miners, Dridex malware, and ransomware such as Conti"
+            }
+        ],
+        "triples_count": 8,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2664,
+                "cost": 0.0021311999999999998
+            },
+            "output": {
+                "tokens": 250,
+                "cost": 0.0005
+            },
+            "total": {
+                "tokens": 2914,
+                "cost": 0.0026311999999999998
+            }
+        },
+        "time": 13.546639204025269,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoNum/4/prompt_store\\symantec\\Log4j-QD1-562.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Unit42: VenomRAT.json",
+                    0.1219965942944366
+                ],
+                [
+                    "darkreading: Microsoft-Outlook.json",
+                    0.12828425182625508
+                ],
+                [
+                    "AVERTIUM: CVE-2023-36884.json",
+                    0.13703902734490978
+                ],
+                [
+                    "securityweek: teamcity.json",
+                    0.155530259212613
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

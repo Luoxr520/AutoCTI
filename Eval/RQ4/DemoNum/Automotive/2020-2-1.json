@@ -1,0 +1,107 @@
+{
+    "CTI": {
+        "text": "Security researchers at the Sky-Go team found 19 vulnerabilities in a Mercedes-Benz E-Class car, allowing them to open its doors remotely and start the engine. The researchers gained access to the car's backend servers by reverse-engineering the vehicle's embedded SIM card, which connects to the cellular network. They communicated with the Mercedes backend servers and spoofed legitimate requests of Mercedes App users correlated to a different car. For legal reasons, the research team only tested the vulnerabilities in China.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Sky-Go team",
+                "relation": "found",
+                "object": "19 vulnerabilities"
+            },
+            {
+                "subject": "19 vulnerabilities",
+                "relation": "in",
+                "object": "Mercedes-Benz E-Class car"
+            },
+            {
+                "subject": "19 vulnerabilities",
+                "relation": "allow",
+                "object": "opening doors remotely"
+            },
+            {
+                "subject": "19 vulnerabilities",
+                "relation": "allow",
+                "object": "starting the engine"
+            },
+            {
+                "subject": "researchers",
+                "relation": "gained access to",
+                "object": "car's backend servers"
+            },
+            {
+                "subject": "gaining access",
+                "relation": "by",
+                "object": "reverse-engineering the vehicle's embedded SIM card"
+            },
+            {
+                "subject": "embedded SIM card",
+                "relation": "connects to",
+                "object": "cellular network"
+            },
+            {
+                "subject": "researchers",
+                "relation": "communicated with",
+                "object": "Mercedes backend servers"
+            },
+            {
+                "subject": "researchers",
+                "relation": "spoofed",
+                "object": "legitimate requests of Mercedes App users"
+            },
+            {
+                "subject": "spoofed requests",
+                "relation": "correlated to",
+                "object": "a different car"
+            },
+            {
+                "subject": "research team",
+                "relation": "only tested vulnerabilities in",
+                "object": "China"
+            }
+        ],
+        "triples_count": 11,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2892,
+                "cost": 0.0023136
+            },
+            "output": {
+                "tokens": 284,
+                "cost": 0.0005679999999999999
+            },
+            "total": {
+                "tokens": 3176,
+                "cost": 0.0028816
+            }
+        },
+        "time": 11.49327278137207,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-2-1-QD1-365.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: flax-typhoon.json",
+                    0.0494208441461247
+                ],
+                [
+                    "BleepingComputer: mastodon.json",
+                    0.05085566757956097
+                ],
+                [
+                    "symantec: Seedworm.json",
+                    0.05420895420918854
+                ],
+                [
+                    "Google_TAG: apt37.json",
+                    0.06710627394604217
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

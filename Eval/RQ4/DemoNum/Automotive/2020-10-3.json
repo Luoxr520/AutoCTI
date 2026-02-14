@@ -1,0 +1,114 @@
+{
+    "CTI": {
+        "text": "Hackers reverse-engineered the signals and circuits on an EV and a J1772 charger, the most common interface for managing EV charging in North America. They successfully disrupted vehicle charging with a spoofing device developed in a laboratory using low-cost hardware and software. The researchers performed three manipulations using a \u201cman in the middle\" (MITM) device that spoofed signals between the charger and vehicle. They were able to limit the vehicle's rate of charging, block the battery charging, and overcharged the vehicle.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": {
+            "triplets": [
+                {
+                    "subject": "Hackers",
+                    "relation": "reverse-engineered",
+                    "object": "the signals and circuits on an EV and a J1772 charger"
+                },
+                {
+                    "subject": "J1772 charger",
+                    "relation": "is the most common interface for",
+                    "object": "managing EV charging in North America"
+                },
+                {
+                    "subject": "Hackers",
+                    "relation": "disrupted",
+                    "object": "vehicle charging"
+                },
+                {
+                    "subject": "disruption",
+                    "relation": "used",
+                    "object": "a spoofing device"
+                },
+                {
+                    "subject": "spoofing device",
+                    "relation": "developed in",
+                    "object": "a laboratory"
+                },
+                {
+                    "subject": "spoofing device",
+                    "relation": "used",
+                    "object": "low-cost hardware and software"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "performed",
+                    "object": "three manipulations"
+                },
+                {
+                    "subject": "manipulations",
+                    "relation": "used",
+                    "object": "a 'man in the middle' (MITM) device"
+                },
+                {
+                    "subject": "MITM device",
+                    "relation": "spoofed",
+                    "object": "signals between the charger and vehicle"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "were able to",
+                    "object": "limit the vehicle's rate of charging"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "were able to",
+                    "object": "block the battery charging"
+                },
+                {
+                    "subject": "Researchers",
+                    "relation": "were able to",
+                    "object": "overcharge the vehicle"
+                }
+            ]
+        },
+        "triples_count": 1,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2542,
+                "cost": 0.0020336
+            },
+            "output": {
+                "tokens": 406,
+                "cost": 0.000812
+            },
+            "total": {
+                "tokens": 2948,
+                "cost": 0.0028456
+            }
+        },
+        "time": 16.236405611038208,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-10-3-QD1-727.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "Microsoft: diamond-sleet.json",
+                    0.03922838493362043
+                ],
+                [
+                    "thehackernews: Sea-Turtle.json",
+                    0.042071747946221455
+                ],
+                [
+                    "Unit42: Diplomats-Beware.json",
+                    0.05153285044530705
+                ],
+                [
+                    "threatPost: zuorat.json",
+                    0.05532528484511246
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

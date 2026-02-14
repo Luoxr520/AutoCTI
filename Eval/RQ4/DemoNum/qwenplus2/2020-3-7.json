@@ -1,0 +1,77 @@
+{
+    "CTI": {
+        "text": "In less than 3 minutes, a BMW M2 was stolen from its owners driveway in Poland using a relay device. According to the owner, the car was located roughly 90-minutes after the theft just 40 km (25 miles) away from his home after being ditched by the thieves, perhaps because they thought the vehicle was being tracked. The car was found with a newly replaced German license plate.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "a BMW M2",
+                "relation": "was stolen from",
+                "object": "its owner's driveway"
+            },
+            {
+                "subject": "the car",
+                "relation": "was located",
+                "object": "40 km away from the owner's home"
+            },
+            {
+                "subject": "the thieves",
+                "relation": "ditched",
+                "object": "the car"
+            },
+            {
+                "subject": "the car",
+                "relation": "was found with",
+                "object": "a newly replaced German license plate"
+            },
+            {
+                "subject": "the theft",
+                "relation": "was achieved using",
+                "object": "a relay device"
+            }
+        ],
+        "triples_count": 5,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2797,
+                "cost": 0.0022375999999999997
+            },
+            "output": {
+                "tokens": 135,
+                "cost": 0.00027
+            },
+            "total": {
+                "tokens": 2932,
+                "cost": 0.0025075999999999996
+            }
+        },
+        "time": 6.615432262420654,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-3-7-QD1-ab4.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "AVERTIUM: ragnar.json",
+                    0.02831929354153706
+                ],
+                [
+                    "BleepingComputer: androxgh0st.json",
+                    0.029135480684975144
+                ],
+                [
+                    "trendmicro: RansomEXX.json",
+                    0.03415621742544525
+                ],
+                [
+                    "Microsoft: volt-typhoon.json",
+                    0.03867358409214793
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}

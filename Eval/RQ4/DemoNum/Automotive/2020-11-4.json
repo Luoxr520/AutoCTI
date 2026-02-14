@@ -1,0 +1,82 @@
+{
+    "CTI": {
+        "text": "Masked car thieves stole a \u00a317,000 Nissan from its owner's driveway in less than a minute by using a relay device to scan the key fob through the front door. The burglars were caught on CCTV using an aerial relay to steal the vehicle from outside the property in the West Midlands, UK.",
+        "link": "NULL"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Masked car thieves",
+                "relation": "stole",
+                "object": "a \u00a317,000 Nissan"
+            },
+            {
+                "subject": "thieves",
+                "relation": "used",
+                "object": "a relay device to scan the key fob through the front door"
+            },
+            {
+                "subject": "burglars",
+                "relation": "were caught on",
+                "object": "CCTV"
+            },
+            {
+                "subject": "burglars",
+                "relation": "used",
+                "object": "an aerial relay to steal the vehicle"
+            },
+            {
+                "subject": "vehicle",
+                "relation": "stolen from",
+                "object": "outside the property"
+            },
+            {
+                "subject": "property",
+                "relation": "located in",
+                "object": "the West Midlands, UK"
+            }
+        ],
+        "triples_count": 6,
+        "cost": {
+            "model": "qwen-plus",
+            "input": {
+                "tokens": 2627,
+                "cost": 0.0021016
+            },
+            "output": {
+                "tokens": 168,
+                "cost": 0.000336
+            },
+            "total": {
+                "tokens": 2795,
+                "cost": 0.0024376
+            }
+        },
+        "time": 8.427284955978394,
+        "Prompt": {
+            "constructed_prompt": "d:/BBBB/graduation project/project/CTI-main1/Eval/RQ2/DemoNum/4/prompt_store\\Automotive\\2020-11-4-QD1-988.jinja",
+            "prompt_template": "QD1.jinja",
+            "demo_retriever": "kNN",
+            "demo_number": 4,
+            "demos": [
+                [
+                    "securityweek: vultur.json",
+                    0.030381738053899654
+                ],
+                [
+                    "AVERTIUM: muddywater.json",
+                    0.03308889887361963
+                ],
+                [
+                    "Unit42: CL0P-Seeds.json",
+                    0.03415948116047492
+                ],
+                [
+                    "Unit42: Agonizing-Serpens.json",
+                    0.06941450270929127
+                ]
+            ],
+            "permutation": "asc"
+        }
+    }
+}
