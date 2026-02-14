@@ -1,7 +1,0 @@
-ground_truth_set: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/dataset/RE-IE-outputs-3-asc
-inSet: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoPerm/rand
-outSet: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoPerm/rand-RE-v1
-outMetricSet: d:/BBBB/graduation project/project/CTINexus-toolkit-main1/Eval/RQ2/DemoPerm/rand-RE-v1/prompt_store/metrics
-openai_key: <YOUR_OPENAI_KEY>
-embedding_model: text-embedding-3-large
-thresh: 0.7
